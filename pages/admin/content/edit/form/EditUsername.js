@@ -1,10 +1,10 @@
 import React, { useContext, useState, useRef } from "react";
 import { Exclamation } from "../../../../../assets/icons/Icon_svg";
-import { AuthContext } from "../../../../../enginecontext/auth/AuthProvider";
-import { LanguageContext } from "../../../../../enginecontext/language/LanguageContext";
-import Modal_body from "../../../../../engine/component/modal/Modal_body";
+import { AuthContext } from "../../../../../engine/context/auth/AuthProvider";
+import { LanguageContext } from "../../../../../engine/context/language/LanguageContext";
 
 import S from "./../EditProfil.module.scss";
+import Modal_body from "../../../../../engine/component/modal/Modal_body";
 import { ModalContext } from "../../../../../engine/context/modal/ModalProvider";
 import EditWithAuth from "../EditWithAuth";
 import { regexAlphNum } from "../../../../../data/regex";
