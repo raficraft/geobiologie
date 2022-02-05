@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>My heart in my Art</title>
+        <title>David Michel. Géobiologie Loire 42</title>
         <meta name="description" content="My heart in my Art" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

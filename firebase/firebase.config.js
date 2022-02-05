@@ -4,13 +4,13 @@ import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBYmSi7K9vapVm8fL7YuZyXx5Rl7kQFNAk",
-  authDomain: "myheartinmyart.firebaseapp.com",
-  projectId: "myheartinmyart",
-  storageBucket: "myheartinmyart.appspot.com",
-  messagingSenderId: "623139485560",
-  appId: "1:623139485560:web:32c7a10285e4a13267ba8d",
-  measurementId: "G-0DKV2EE5L6",
+  apiKey: "AIzaSyCWcc8BS_cXTvvYO_Tt5OpNPsnuamEMqto",
+  authDomain: "geobiologie-loire.firebaseapp.com",
+  projectId: "geobiologie-loire",
+  storageBucket: "geobiologie-loire.appspot.com",
+  messagingSenderId: "70868600746",
+  appId: "1:70868600746:web:2e277f4e06f2e2e35f0dd3",
+  measurementId: "G-HQLNCD5NSZ",
 };
 
 // Initialize Firebase

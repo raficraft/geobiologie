@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
 import Image from "next/image";
 
 import S from "./Nav_left.module.scss";
 
 import logo from "./../../../public/assets/img/logo/logo_small.png";
 import Link from "next/link";
+import { ModalContext } from "../../context/modal/ModalProvider";
 
 export default function Nav_left() {
+  const { openModal } = useContext(ModalContext);
+  function handleClick(e) {
+    e.preventDefault();
+    console.log(e);
+    if (e.detail === 2) {
+      console.log("double");
+
+      openModal("signin");
+    }
+  }
+
   return (
     <aside className={S.aside}>
       <div className={S.logo}>
@@ -17,6 +29,7 @@ export default function Nav_left() {
             alt="Logo en forme de pendule"
             width={logo.width}
             height={logo.height}
+            onClick={handleClick}
           />
         </header>
 
