@@ -33,3 +33,13 @@
     opacity: 1;
   }
 }
+
+@keyframes pendule {
+  0% {
+    transform: rotate(8deg);
+  }
+
+  100% {
+    transform: rotate(-8deg);
+  }
+}

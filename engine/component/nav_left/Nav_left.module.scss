@@ -1,0 +1,57 @@
+@import "./../../../sass/abstract/function";
+@import "./../../../sass/abstract/variables";
+@import "./../../../sass/abstract/animation";
+
+.aside {
+  background-color: $eerie-black;
+  height: 100vh;
+  max-width: 300px;
+  width: 100%;
+  @include flex(column, nowrap, flex-start, center);
+  padding: 3rem 0;
+
+  .logo {
+    margin: 0 0 1rem 0;
+    @include flex(column, nowrap, flex-start, center);
+
+    header {
+      @include flex(column, nowrap, flex-start, center);
+      margin: 0 0 2rem 0;
+      animation-name: pendule;
+      animation-fill-mode: both;
+      animation-duration: 1.2s;
+      transform-origin: top center;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+    }
+
+    footer {
+      h2 {
+        margin: 0;
+        font-family: "Papyrus";
+        width: 100%;
+        text-align: center;
+        line-height: 1;
+        margin: 0 0 1rem 0;
+        color: $beaver;
+      }
+      :nth-child(2n) {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  nav {
+    @include flex(column, nowrap, flex-start, center);
+    ul {
+      @include flex(column, nowrap, flex-start, center);
+
+      li {
+        margin: 0.5rem 0;
+      }
+      a {
+        color: $beaver;
+      }
+    }
+  }
+}

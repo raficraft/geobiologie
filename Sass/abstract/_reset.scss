@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "myFont";
+  src: url("/assets/fonts/Papyrus.ttf");
+}
+
 html,
 body,
 div,
@@ -160,6 +165,10 @@ ul,
 ol,
 blockquote {
   margin-bottom: 1.5em;
+}
+
+li {
+  list-style: none;
 }
 
 h1,
