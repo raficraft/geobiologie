@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { ModalContext } from "../../../../context/modal/ModalProvider";
+import { ModalContext } from "../../../../engine/context/modal/ModalProvider";
 
 import S from "./Upload_avatar.module.scss";
 import G from "./../../../../Sass/abstract/global.module.scss";
