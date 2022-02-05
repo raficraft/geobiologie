@@ -1,11 +1,10 @@
 import React, { useContext } from "react";
 import Image from "next/image";
+import Link from "next/link";
+import logo from "./../../../public/assets/img/logo/logo_small.png";
+import { ModalContext } from "../../context/modal/ModalProvider";
 
 import S from "./Nav_left.module.scss";
-
-import logo from "./../../../public/assets/img/logo/logo_small.png";
-import Link from "next/link";
-import { ModalContext } from "../../context/modal/ModalProvider";
 
 export default function Nav_left() {
   const { openModal } = useContext(ModalContext);
