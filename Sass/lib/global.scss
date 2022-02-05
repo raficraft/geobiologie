@@ -1,0 +1,37 @@
+.primary_content {
+  width: $container_width;
+
+  @media screen and (max-width: 1439px) {
+    width: calc(100% - 2rem);
+  }
+}
+
+.layout {
+  position: relative;
+}
+
+.wrapper {
+  @include flex(column, wrap, center, center);
+  flex: 1;
+  position: relative;
+  .content {
+    @include flex(column, wrap, center, center);
+    flex: 1;
+  }
+}
+
+.oldLink {
+  text-decoration: underline;
+  color: rgb(255, 0, 111) !important;
+  h1 {
+    color: rgb(255, 0, 111) !important;
+  }
+}
+
+//For firestore test remove
+
+.wrapper_edit {
+  width: 960px;
+  @include flex(column, wrap, center, center);
+  margin: auto;
+}

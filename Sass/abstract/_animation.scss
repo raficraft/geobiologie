@@ -1,0 +1,35 @@
+@import "./function";
+@import "./variables";
+
+@keyframes zero_TO_full {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes bottom_TO_origin {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes right_TO_origin {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
