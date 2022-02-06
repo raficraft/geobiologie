@@ -14,7 +14,7 @@ export default function Heroes(props) {
   return (
     <header className={S.wrapper}>
       <video autoplay muted loop ref={videoRef}>
-        <source src="/assets/video/video_3.mp4" type="video/mp4" />
+        <source src="/assets/video/video_2.mp4" type="video/mp4" />
       </video>
       <h2 class={S.title}>David Michel</h2>
     </header>
