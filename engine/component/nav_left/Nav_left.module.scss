@@ -53,6 +53,17 @@
         padding: 0.5rem 0.5rem;
         width: 100%;
         @include flexCenter();
+
+        .triangle {
+          content: "";
+          display: inline-block;
+          height: 0;
+          width: 0;
+          border-right: 5px solid transparent;
+          border-top: 5px solid rgb(151, 151, 151);
+          border-left: 5px solid transparent;
+          margin-left: 8px;
+        }
       }
       ul {
         margin: 0;
@@ -63,6 +74,7 @@
       a {
         color: $beaver;
         transition: $shortTime;
+        @include flex(column, nowrap, flex-start, center);
 
         &:hover {
           color: $light;

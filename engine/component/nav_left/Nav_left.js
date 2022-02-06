@@ -12,7 +12,7 @@ export default function Nav_left() {
   const { openModal } = useContext(ModalContext);
   const { isAuth, currentUser, logout } = useContext(AuthContext);
 
-  const { show, setShow, refOutsideClick } = useClickOutside(false);
+  const [show, setShow] = useState(false);
 
   console.log("WTF ", isAuth);
   console.log("WTF 2", currentUser);
@@ -28,7 +28,7 @@ export default function Nav_left() {
 
   function openList(e) {
     e.preventDefault();
-    setShow(true);
+    setShow(!show);
   }
 
   return (
@@ -66,11 +66,12 @@ export default function Nav_left() {
                 Diagnostiques
               </a>
             </Link>
+            <span className={S.triangle}></span>
           </li>
           {/* SUB LIST */}
 
           {show && (
-            <ul ref={refOutsideClick}>
+            <ul>
               <li>
                 <Link href="/">
                   <a>Electromagnétisme</a>
