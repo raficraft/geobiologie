@@ -11,9 +11,15 @@
 }
 
 .wrapper {
-  @include flex(column, wrap, center, center);
+  @include flex(column, nowrap, flex-start, center);
   flex: 1;
   position: relative;
+  max-width: calc(100% - $navLeft_width);
+  width: 100%;
+  margin-left: $navLeft_width;
+
+  min-height: 100%;
+  height: 100%;
   .content {
     @include flex(column, wrap, center, center);
     flex: 1;
@@ -34,4 +40,11 @@
   width: 960px;
   @include flex(column, wrap, center, center);
   margin: auto;
+}
+
+.mainContent {
+  @include flex(column, wrap, center, center);
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
 }

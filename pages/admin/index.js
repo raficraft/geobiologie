@@ -15,7 +15,7 @@ function DashBoard() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="wrapper">
+      <main className="mainContent">
         <Admin_header></Admin_header>
         <section className="primary_content">
           <div className={` ${S.wrapper}`}>

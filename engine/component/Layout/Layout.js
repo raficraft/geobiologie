@@ -14,9 +14,9 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <section>
-        <section>
-          <Nav_left></Nav_left>
+      <>
+        <Nav_left></Nav_left>
+        <section className="wrapper">
           {children}
           {modal.signup && (
             <Modal_body>
@@ -39,7 +39,7 @@ export default function Layout({ children }) {
             <h1>Footer</h1>
           </footer>
         </section>
-      </section>
+      </>
     </>
   );
 }

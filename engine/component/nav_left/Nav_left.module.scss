@@ -4,17 +4,18 @@
 
 .aside {
   background-color: $eerie-black;
+  position: fixed;
   height: 100vh;
-  max-width: 300px;
+  max-width: $navLeft_width;
   width: 100%;
-  @include flex(column, nowrap, flex-start, center);
+  @include flex(column, nowrap, space-between, center);
   padding: 3rem 0;
 
   .logo {
     margin: 0 0 1rem 0;
     @include flex(column, nowrap, flex-start, center);
 
-    header {
+    .header_top {
       @include flex(column, nowrap, flex-start, center);
       margin: 0 0 2rem 0;
       animation-name: pendule;
@@ -44,14 +45,28 @@
 
   nav {
     @include flex(column, nowrap, flex-start, center);
+    flex: 1;
     ul {
       @include flex(column, nowrap, flex-start, center);
 
       li {
-        margin: 0.5rem 0;
+        padding: 0.5rem 0.5rem;
+        width: 100%;
+        @include flexCenter();
+      }
+      ul {
+        margin: 0;
+        li {
+          background-color: $light;
+        }
       }
       a {
         color: $beaver;
+        transition: $shortTime;
+
+        &:hover {
+          color: $light;
+        }
       }
     }
   }
