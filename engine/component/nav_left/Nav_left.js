@@ -14,9 +14,6 @@ export default function Nav_left() {
 
   const [show, setShow] = useState(false);
 
-  console.log("WTF ", isAuth);
-  console.log("WTF 2", currentUser);
-
   function handleClick(e) {
     e.preventDefault();
     console.log(e);
@@ -27,7 +24,6 @@ export default function Nav_left() {
   }
 
   function openList(e) {
-    e.preventDefault();
     setShow(!show);
   }
 
@@ -48,9 +44,8 @@ export default function Nav_left() {
         </div>
 
         <footer>
-          <h2>David MICHEL</h2>
+          <h2>David Michel</h2>
           <h2>Géobiologue</h2>
-          <h2>Loire - 42</h2>
         </footer>
       </header>
 
@@ -128,7 +123,7 @@ export default function Nav_left() {
         </ul>
       </nav>
       {currentUser && (
-        <footer>
+        <footer className={S.userAccount}>
           <button
             onClick={() => {
               logout();
@@ -136,7 +131,9 @@ export default function Nav_left() {
           >
             Se déconnecter
           </button>
-          <button>Admin</button>
+          <Link href="/admin">
+            <button>DashBoard</button>
+          </Link>
         </footer>
       )}
     </aside>

@@ -9,7 +9,7 @@
   max-width: $navLeft_width;
   width: 100%;
   @include flex(column, nowrap, space-between, center);
-  padding: 3rem 0;
+  padding: 2rem 0.75rem;
 
   .logo {
     margin: 0 0 1rem 0;
@@ -46,9 +46,10 @@
   nav {
     @include flex(column, nowrap, flex-start, center);
     flex: 1;
+    width: 100%;
     ul {
       @include flex(column, nowrap, flex-start, center);
-
+      width: 100%;
       li {
         padding: 0.5rem 0.5rem;
         width: 100%;
@@ -79,6 +80,22 @@
         &:hover {
           color: $light;
         }
+      }
+    }
+  }
+
+  .userAccount {
+    @include flex(column, nowrap, flex-start, center);
+    button {
+      border: none;
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      background-color: transparent;
+      transition: $shortTime;
+      &:hover {
+        color: $red;
       }
     }
   }

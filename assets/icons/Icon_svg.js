@@ -1,5 +1,3 @@
-import React from "react";
-
 export function Home_icon(props) {
   return (
     <svg width="1em" height="1em" viewBox="0 0 24 24" {...props}>
@@ -206,6 +204,30 @@ export function Exclamation(props) {
     <svg width="0.32em" height="1em" viewBox="0 0 448 1408" {...props}>
       <path
         d="M416 1120v224q0 26-19 45t-45 19H96q-26 0-45-19t-19-45v-224q0-26 19-45t45-19h256q26 0 45 19t19 45zM446 64l-28 768q-1 26-20.5 45T352 896H96q-26 0-45.5-19T30 832L2 64Q1 38 19.5 19T64 0h320q26 0 44.5 19T446 64z"
+        fill="currentColor"
+      ></path>
+    </svg>
+  );
+}
+
+/**DAVID */
+
+export function Ying(props) {
+  return (
+    <svg width="1em" height="1em" viewBox="0 0 17 17" {...props}>
+      <g transform="translate(1)" fill="currentColor" fillRule="evenodd">
+        <path d="M7.984.053C3.599.053.045 3.614.045 8.006s3.555 7.953 7.939 7.953s7.939-3.561 7.939-7.953S12.369.053 7.984.053zM7.49 2.045c.838 0 1.519.654 1.519 1.46c0 .806-.681 1.46-1.519 1.46c-.84 0-1.519-.654-1.519-1.46c0-.806.679-1.46 1.519-1.46zm.545 12.863c-3.051 0-5.693-3.99.066-6.924c5.256-2.676 2.803-7.24-.066-6.976c4.375 0 6.939 3.111 6.939 6.95c.001 3.839-3.107 6.95-6.939 6.95z"></path>
+        <ellipse cx="8.493" cy="11.445" rx="1.493" ry="1.445"></ellipse>
+      </g>
+    </svg>
+  );
+}
+
+export function Star(props) {
+  return (
+    <svg width="1em" height="1em" viewBox="0 0 24 24" {...props}>
+      <path
+        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21L12 17.27z"
         fill="currentColor"
       ></path>
     </svg>
