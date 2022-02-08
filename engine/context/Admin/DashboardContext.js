@@ -6,7 +6,7 @@ export default function DashboardProvider({ children }) {
   /**
    * Modal Initial Context
    */
-  const [tabs, setTabs] = useState("profil");
+  const [tabs, setTabs] = useState("edit");
 
   function handleTabs(target) {
     setTabs(target);

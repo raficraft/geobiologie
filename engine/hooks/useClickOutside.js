@@ -21,5 +21,5 @@ export const useClickOutside = (init) => {
     };
   }, [refOutsideClick]);
 
-  return { show, setShow, refOutsideClick };
+  return [show, setShow, refOutsideClick];
 };

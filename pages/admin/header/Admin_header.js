@@ -10,15 +10,18 @@ import Upload_image from "../../../engine/component/form/Upload_image/Upload_ima
 import Modal_body from "../../../engine/component/modal/Modal_body";
 
 import EditProfil from "../content/edit/EditProfil";
-import UserProfil from "../content/profil/UserProfil";
 
 import S from "./Admin_header.module.scss";
 
 import {
   AccountCircle,
+  CheckBold,
   Edit_icon,
   History_icon,
+  NewBox,
 } from "../../../assets/icons/Icon_svg";
+import Review_checked from "../content/review_checked/review_checked";
+import Last_review from "../content/last_review/Last_review";
 
 function Admin_header() {
   const { handleTabs, tabs } = useContext(DashboardContext);
@@ -49,21 +52,34 @@ function Admin_header() {
             <Tabs className={S.test}>
               <button
                 onClick={() => {
-                  handleTabs("profil");
-                }}
-                className={`${S.btn} ${tabs === "profil" ? S.active : null}`}
-              >
-                <AccountCircle></AccountCircle>
-                {nav_admin.profil[lang]}
-              </button>
-              <button
-                onClick={() => {
                   handleTabs("edit");
                 }}
                 className={`${S.btn} ${tabs === "edit" ? S.active : null}`}
               >
                 <Edit_icon></Edit_icon>
-                {nav_admin.edit[lang]}
+                Edit
+              </button>
+              <button
+                onClick={() => {
+                  handleTabs("last_review");
+                }}
+                className={`${S.btn} ${
+                  tabs === "last_review" ? S.active : null
+                }`}
+              >
+                <NewBox></NewBox>
+                En attente...
+              </button>
+              <button
+                onClick={() => {
+                  handleTabs("review_checked");
+                }}
+                className={`${S.btn} ${
+                  tabs === "review_checked" ? S.active : null
+                }`}
+              >
+                <CheckBold></CheckBold>
+                Avis Valider
               </button>
             </Tabs>
           </nav>
@@ -88,14 +104,20 @@ export function TabContent() {
   const { tabs } = useContext(DashboardContext);
   {
     switch (tabs) {
-      case "profil":
-        return <UserProfil></UserProfil>;
-      case "history":
-        return <h1>historique du profil</h1>;
-      case "edit":
-        return <EditProfil></EditProfil>;
+      case "last_review":
+        return <Last_review></Last_review>;
+      case "review_checked":
+        return <Review_checked></Review_checked>;
       default:
-        return <UserProfil></UserProfil>;
+        return (
+          <>
+            <EditProfil></EditProfil>;
+            <aside>
+              <h1>ASIDE CONTAINER</h1>
+            </aside>
+            ;
+          </>
+        );
     }
   }
 }

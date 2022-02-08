@@ -67,7 +67,13 @@ export default function useFirestore(thisCollection, initialState) {
     });
   }
 
-  async function getDocumentByQuery(table, fields, value) {
+  async function getDocumentByQuery(
+    table,
+    fields,
+    value,
+    sort = "ASC",
+    sortBy = "createAt"
+  ) {
     const collectionRef = collection(db, table);
     const q = query(collectionRef, where(fields, "==", value));
 
@@ -77,6 +83,15 @@ export default function useFirestore(thisCollection, initialState) {
       id: doc.id,
       ...doc.data(),
     }));
+
+    //Order by from scratch ^^
+
+    if (sort === "ASC") {
+      snap.sort((a, b) => parseFloat(b[sortBy]) - parseFloat(a[sortBy]));
+      return snap;
+    }
+
+    snap.sort((a, b) => parseFloat(a[sortBy]) - parseFloat(b[sortBy]));
     return snap;
   }
 

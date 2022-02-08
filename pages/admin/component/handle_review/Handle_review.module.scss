@@ -1,0 +1,22 @@
+@import "./../../../../Sass/abstract/function";
+@import "./../../../../Sass/abstract/variables";
+
+.wrapper {
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  @include flex(row, nowrap, flex-start, flex-start);
+  margin: 1.5rem 0;
+
+  cursor: pointer;
+
+  .content {
+    padding: 1rem;
+    border-radius: $smallRadius;
+    border: 1px solid $grey;
+    flex: 1;
+    p {
+      margin: 0;
+    }
+  }
+}

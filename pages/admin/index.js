@@ -5,6 +5,7 @@ import Head from "next/head";
 import S from "./Admin.module.scss";
 
 import Admin_header, { TabContent } from "./header/Admin_header";
+import SubDotMenuProvider from "../../engine/context/subDotMenu/SubdotMenu";
 
 function DashBoard() {
   return (
@@ -19,10 +20,9 @@ function DashBoard() {
         <Admin_header></Admin_header>
         <section className="primary_content">
           <div className={` ${S.wrapper}`}>
-            <TabContent></TabContent>
-            <aside>
-              <h1>ASIDE CONTAINER</h1>
-            </aside>
+            <SubDotMenuProvider>
+              <TabContent></TabContent>
+            </SubDotMenuProvider>
           </div>
         </section>
       </main>
