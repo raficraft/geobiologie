@@ -46,13 +46,15 @@ export default function Handle_review(props) {
 function Review({ review, children }) {
   const date = convertTimestamp(review.createAt);
 
-  const [showDotMenu, setShowDotMenu] = useState(false);
-  const { isSub, setIsSub } = useContext(SubDotMenuContext);
+  const [showDotMenu, setShowDotMenu, refOutsideClick] = useClickOutside(false);
+  const { isSub, setIsSub, refSub } = useContext(SubDotMenuContext);
 
   function toggle_dotMenu(e, toggle) {
-    e.stopPropagation();
-    console.log(e);
     !isSub && setShowDotMenu(toggle);
+  }
+
+  function toggle_subMenu(e, toggle) {
+    setIsSub(toggle);
   }
 
   return (
@@ -62,7 +64,23 @@ function Review({ review, children }) {
       onMouseLeave={(e) => toggle_dotMenu(e, false)}
     >
       <div className="dotMenu_container">
-        {showDotMenu && <DotMenu></DotMenu>}
+        {showDotMenu && (
+          <span
+            className={`dotMenu ${S.dotMenu}`}
+            onClick={(e) => {
+              toggle_subMenu(e, true);
+            }}
+            ref={refOutsideClick}
+          >
+            <span className={`dotMenu_item dot_left`}></span>
+            <span className={`dotMenu_item dot_right`}></span>
+            {isSub && (
+              <div className="dotMenu_sub" ref={refSub}>
+                TOTO
+              </div>
+            )}
+          </span>
+        )}
       </div>
 
       <div className={S.content}>
@@ -73,7 +91,7 @@ function Review({ review, children }) {
   );
 }
 
-function DotMenu() {
+function DotMenu({ callBack }) {
   const { isSub, setIsSub, refOutsideClick } = useContext(SubDotMenuContext);
   function toggle_subMenu(e) {
     setIsSub(!isSub);

@@ -3,14 +3,11 @@ import React, { createContext, useState, useRef, useEffect } from "react";
 export const SubDotMenuContext = createContext();
 
 export default function SubDotMenuProvider({ children }) {
-  const refOutsideClick = useRef(false);
+  const refSub = useRef(false);
   const [isSub, setIsSub] = useState(false);
 
   const handleClickOutside = (event) => {
-    if (
-      refOutsideClick.current &&
-      !refOutsideClick.current.contains(event.target)
-    ) {
+    if (refSub.current && !refSub.current.contains(event.target)) {
       setIsSub(false);
     }
   };
@@ -21,10 +18,10 @@ export default function SubDotMenuProvider({ children }) {
     return () => {
       document.removeEventListener("click", handleClickOutside, true);
     };
-  }, [refOutsideClick]);
+  }, [refSub]);
 
   return (
-    <SubDotMenuContext.Provider value={{ isSub, setIsSub, refOutsideClick }}>
+    <SubDotMenuContext.Provider value={{ isSub, setIsSub, refSub }}>
       {children}
     </SubDotMenuContext.Provider>
   );
