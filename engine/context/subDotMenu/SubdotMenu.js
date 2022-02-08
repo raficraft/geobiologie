@@ -4,7 +4,6 @@ export const SubDotMenuContext = createContext();
 
 export default function SubDotMenuProvider({ children }) {
   const refOutsideClick = useRef(false);
-  const refOutsideClick_snd = useRef(false);
   const [isSub, setIsSub] = useState(false);
 
   const handleClickOutside = (event) => {

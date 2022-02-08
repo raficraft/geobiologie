@@ -59,7 +59,7 @@ function Review({ review, children }) {
     <div
       className={S.wrapper}
       onMouseOver={(e) => toggle_dotMenu(e, true)}
-      onLeave={(e) => toggle_dotMenu(e, false)}
+      onMouseLeave={(e) => toggle_dotMenu(e, false)}
     >
       <div className="dotMenu_container">
         {showDotMenu && <DotMenu></DotMenu>}
@@ -73,7 +73,7 @@ function Review({ review, children }) {
   );
 }
 
-function DotMenu(callBack) {
+function DotMenu() {
   const { isSub, setIsSub, refOutsideClick } = useContext(SubDotMenuContext);
   function toggle_subMenu(e) {
     setIsSub(!isSub);
