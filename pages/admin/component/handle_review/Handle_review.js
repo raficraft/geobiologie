@@ -50,6 +50,7 @@ function Review({ review, children }) {
   const { isSub, setIsSub } = useContext(SubDotMenuContext);
 
   function toggle_dotMenu(e, toggle) {
+    e.stopPropagation();
     console.log(e);
     !isSub && setShowDotMenu(toggle);
   }
@@ -57,8 +58,8 @@ function Review({ review, children }) {
   return (
     <div
       className={S.wrapper}
-      onMouseEnter={(e) => toggle_dotMenu(e, true)}
-      onMouseLeave={(e) => toggle_dotMenu(e, false)}
+      onMouseOver={(e) => toggle_dotMenu(e, true)}
+      onLeave={(e) => toggle_dotMenu(e, false)}
     >
       <div className="dotMenu_container">
         {showDotMenu && <DotMenu></DotMenu>}
@@ -72,11 +73,12 @@ function Review({ review, children }) {
   );
 }
 
-function DotMenu() {
+function DotMenu(callBack) {
   const { isSub, setIsSub, refOutsideClick } = useContext(SubDotMenuContext);
   function toggle_subMenu(e) {
     setIsSub(!isSub);
   }
+
   return (
     <span
       className={`dotMenu ${S.dotMenu}`}
