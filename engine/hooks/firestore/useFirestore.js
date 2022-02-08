@@ -10,6 +10,7 @@ import {
   query,
   where,
   getDocs,
+  orderBy,
 } from "firebase/firestore";
 import { useEffect } from "react/cjs/react.development";
 
@@ -66,6 +67,19 @@ export default function useFirestore(thisCollection, initialState) {
     });
   }
 
+  async function getDocumentByQuery(table, fields, value) {
+    const collectionRef = collection(db, table);
+    const q = query(collectionRef, where(fields, "==", value));
+
+    const querySnapshot = await getDocs(q);
+
+    const snap = querySnapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+    return snap;
+  }
+
   useEffect(() => {
     onSnapshot(collection(db, thisCollection), (snapshot) => {
       const snap = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
@@ -83,5 +97,11 @@ export default function useFirestore(thisCollection, initialState) {
     //   });
   }, []);
 
-  return [currentCollection, setDocument, createDocument, delete_Doc];
+  return [
+    currentCollection,
+    setDocument,
+    createDocument,
+    delete_Doc,
+    getDocumentByQuery,
+  ];
 }

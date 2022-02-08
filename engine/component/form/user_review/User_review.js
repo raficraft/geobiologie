@@ -1,26 +1,108 @@
-import React, { useRef } from "react";
-import { Star } from "../../../../assets/icons/Icon_svg";
+import React, { useRef, useState, useLayoutEffect, useEffect } from "react";
+import { Exclamation, Star } from "../../../../assets/icons/Icon_svg";
+import { reg } from "../../../../data/regex";
+import useFirestore from "../../../hooks/firestore/useFirestore";
 
 import S from "./User_review.module.scss";
 
 export default function User_review() {
-  const inputs = useRef({
+  const [rate, setRate] = useState(0);
+  const inputs = {
+    form: useRef(),
     name: useRef(),
     email: useRef(),
     comment: useRef(),
+    btn: useRef(),
+  };
+
+  const [error, setError] = useState({
+    rate: false,
+    name: false,
+    email: false,
+    comment: false,
   });
 
+  const [, , createDocument] = useFirestore("user_review", {});
+
   function handleRate(e) {
-    console.log(e);
-    console.log(e.target);
-    console.log(e.target.value);
+    setRate(parseInt(e.target.value));
+
+    if (error.rate && parseInt(e.target.value) > 0) {
+      setError((S) => ({ ...S, rate: false }));
+    }
+  }
+
+  function handleInput(e) {
+    e.preventDefault();
+
+    let name = e.target.name;
+    const target = inputs[name].current;
+    const format =
+      e.target.tagName === "TEXTAREA"
+        ? "textarea"
+        : target.getAttribute("type");
+
+    if (format === "text" && !target.value.match(reg.alpha.rules)) {
+      setError((S) => ({ ...S, [name]: reg.alpha.error.FR }));
+      return;
+    } else {
+      setError((S) => ({ ...S, [name]: false }));
+    }
+
+    if (format === "textarea" && !target.value.match(reg.text.rules)) {
+      setError((S) => ({ ...S, [name]: reg.text.error.FR }));
+      return;
+    } else {
+      setError((S) => ({ ...S, [name]: false }));
+    }
+
+    if (format === "email" && !target.value.match(reg.email.rules)) {
+      setError((S) => ({ ...S, [name]: reg.email.error.FR }));
+      return;
+    } else {
+      setError((S) => ({ ...S, [name]: false }));
+    }
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    if (rate === 0) {
+      setError((S) => ({ ...S, rate: "Veuillez choisir une note" }));
+      return;
+    } else {
+      setError((S) => ({ ...S, rate: false }));
+    }
+
+    const payload = {
+      createAt: Date.now(),
+      rate: rate,
+      name: inputs.name.current.value,
+      email: inputs.email.current.value,
+      comment: inputs.comment.current.value,
+      active: false,
+    };
+
+    try {
+      const res = await createDocument("user_review", payload);
+      inputs.form.current.reset();
+      setRate(0);
+      console.log(res);
+    } catch (error) {
+      alert(error);
+    }
   }
 
   return (
     <div className={S.wrapper}>
       <h1>Votre avis nous intéresse !</h1>
 
-      <form>
+      <form
+        onSubmit={(e) => {
+          handleSubmit(e);
+        }}
+        ref={inputs.form}
+      >
         <div>
           <div className={`bloc_input ${S.bloc_ratings}`}>
             <label>Votre note :</label>
@@ -34,7 +116,7 @@ export default function User_review() {
                   handleRate(e);
                 }}
               />
-              <label for="star1" title="text">
+              <label htmlFor="star1" title="text">
                 <Star></Star>
               </label>
               <input
@@ -46,7 +128,7 @@ export default function User_review() {
                   handleRate(e);
                 }}
               />
-              <label for="star2" title="text">
+              <label htmlFor="star2" title="text">
                 <Star></Star>
               </label>
               <input
@@ -58,7 +140,7 @@ export default function User_review() {
                   handleRate(e);
                 }}
               />
-              <label for="star3" title="text">
+              <label htmlFor="star3" title="text">
                 <Star></Star>
               </label>
               <input
@@ -70,7 +152,7 @@ export default function User_review() {
                   handleRate(e);
                 }}
               />
-              <label for="star4" title="text">
+              <label htmlFor="star4" title="text">
                 <Star></Star>
               </label>
               <input
@@ -82,45 +164,92 @@ export default function User_review() {
                   handleRate(e);
                 }}
               />
-              <label for="star5" title="text">
+              <label htmlFor="star5" title="text">
                 <Star></Star>
               </label>
             </div>
+            {/*Manage error or info message */}
+            {error.rate && (
+              <div className="errorText input_infoBubble">
+                <span className="icon">
+                  <Exclamation></Exclamation>
+                </span>
+                <p>{error.rate}</p>
+              </div>
+            )}
           </div>
 
           <div className={`bloc_input ${S.bloc_input}`}>
-            <label htmlFor="username">Votre nom</label>
+            <label htmlFor="name">Votre nom</label>
             <input
               type="text"
-              id="username"
-              name="username"
+              id="name"
+              name="name"
               placeholder="Votre Nom"
               required
-              ref={inputs.email}
+              ref={inputs.name}
+              onInput={(e) => {
+                handleInput(e);
+              }}
             />
+            {/*Manage error or info message */}
+            {error.name && (
+              <div className="errorText input_infoBubble">
+                <span className="icon">
+                  <Exclamation></Exclamation>
+                </span>
+                <p>{error.name}</p>
+              </div>
+            )}
           </div>
 
           <div className={`bloc_input ${S.bloc_input}`}>
             <label htmlFor="email">Votre e-mail</label>
             <input
-              type="text"
+              type="email"
               id="email"
               name="email"
               placeholder="Votre E-mail"
               required
-              ref={inputs.name}
+              ref={inputs.email}
+              onInput={(e) => {
+                handleInput(e);
+              }}
             />
+            {/*Manage error or info message */}
+            {error.email && (
+              <div className="errorText input_infoBubble">
+                <span className="icon">
+                  <Exclamation></Exclamation>
+                </span>
+                <p>{error.email}</p>
+              </div>
+            )}
           </div>
           <div className={`bloc_input ${S.bloc_input}`}>
             <label htmlFor="email">Votre commentaire</label>
             <textarea
+              name="comment"
               required
+              spellCheck="true"
               placeholder="Votre commentaire"
-              ref={inputs.name}
+              ref={inputs.comment}
+              onInput={(e) => {
+                handleInput(e);
+              }}
             ></textarea>
+            {/*Manage error or info message */}
+            {error.comment && (
+              <div className="errorText input_infoBubble">
+                <span className="icon">
+                  <Exclamation></Exclamation>
+                </span>
+                <p>{error.comment}</p>
+              </div>
+            )}
           </div>
         </div>
-        <button class="btn_sub btn_primary" type="submit" disabled>
+        <button className="btn_sub btn_primary" type="submit" ref={inputs.btn}>
           Envoyer
         </button>
       </form>
