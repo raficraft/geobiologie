@@ -90,27 +90,3 @@ function Review({ review, children }) {
     </div>
   );
 }
-
-function DotMenu({ callBack }) {
-  const { isSub, setIsSub, refOutsideClick } = useContext(SubDotMenuContext);
-  function toggle_subMenu(e) {
-    setIsSub(!isSub);
-  }
-
-  return (
-    <span
-      className={`dotMenu ${S.dotMenu}`}
-      onClick={(e) => {
-        toggle_subMenu(e);
-      }}
-    >
-      <span className={`dotMenu_item dot_left`}></span>
-      <span className={`dotMenu_item dot_right`}></span>
-      {isSub && (
-        <div className="dotMenu_sub" ref={refOutsideClick}>
-          TOTO
-        </div>
-      )}
-    </span>
-  );
-}
