@@ -10,7 +10,6 @@ import {
   query,
   where,
   getDocs,
-  orderBy,
 } from "firebase/firestore";
 import { useEffect } from "react/cjs/react.development";
 
@@ -76,7 +75,6 @@ export default function useFirestore(thisCollection, initialState) {
   ) {
     const collectionRef = collection(db, table);
     const q = query(collectionRef, where(fields, "==", value));
-
     const querySnapshot = await getDocs(q);
 
     const snap = querySnapshot.docs.map((doc) => ({
@@ -85,13 +83,13 @@ export default function useFirestore(thisCollection, initialState) {
     }));
 
     //Order by from scratch ^^
-
     if (sort === "ASC") {
       snap.sort((a, b) => parseFloat(b[sortBy]) - parseFloat(a[sortBy]));
       return snap;
     }
 
     snap.sort((a, b) => parseFloat(a[sortBy]) - parseFloat(b[sortBy]));
+
     return snap;
   }
 

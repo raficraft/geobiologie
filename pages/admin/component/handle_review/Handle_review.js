@@ -7,6 +7,7 @@ import { convertTimestamp } from "../../../../engine/utils/utils";
 import S from "./Handle_review.module.scss";
 
 export default function Handle_review(props) {
+  console.log("handle_review COmponent");
   const { active } = { ...props };
   const [loading, setLoading] = useState(true);
   const [currentCollection, , , , getDocumentByQuery] = useFirestore(
@@ -15,6 +16,42 @@ export default function Handle_review(props) {
   );
 
   const [listCollection, setlistCollection] = useState();
+  const [numberOfLinePerPage, setnumberOfLinePerPage] = useState(5);
+  const [pageNumber, setPageNumber] = useState(1);
+  const [lenghtArrayReview, setLengthArrayReview] = useState([]);
+
+  /**
+   * @param {eventHTML} e
+   * @param {number} index
+   * @param {string} goTo
+   */
+
+  const goToPage = (e, startIndex, pageNumber) => {
+    const start =
+      startIndex === 0 ? 0 : startIndex * parseInt(numberOfLinePerPage);
+    const end = pageNumber * parseInt(numberOfLinePerPage);
+    setlistCollection(currentCollection.slice(start, end));
+  };
+
+  function createPaginate() {
+    const paginate = [];
+    for (let index = 0; index < pageNumber; index++) {
+      let pageNumber = index + 1;
+      paginate.push(
+        <button
+          onClick={(e) => {
+            goToPage(e, index, pageNumber);
+          }}
+          key={index}
+        >
+          {pageNumber}
+        </button>
+      );
+    }
+    return paginate;
+  }
+
+  //internal component
 
   function showUserReview(list) {
     return listCollection.map((el, idx) => {
@@ -22,25 +59,36 @@ export default function Handle_review(props) {
     });
   }
 
-  useEffect(() => {
-    async function loadingReview() {
-      setLoading(true);
-      try {
-        const res = await getDocumentByQuery("user_review", "active", active);
-        setlistCollection(res);
-        if (res) {
-          setLoading(false);
-        }
-      } catch (error) {
-        alert(error);
+  useEffect(async () => {
+    setLoading(true);
+    try {
+      const res = await getDocumentByQuery("user_review", "active", active);
+      if (res) {
+        setlistCollection(res.slice(0, numberOfLinePerPage));
+        setLengthArrayReview(Object.keys(res).length);
+        setPageNumber(() => {
+          return Math.ceil(Object.keys(res).length / numberOfLinePerPage);
+        });
+
+        setLoading(false);
       }
+    } catch (error) {
+      alert(error);
     }
-
-    return loadingReview;
   }, [currentCollection]);
-  console.log("render handle review", loading);
 
-  return <>{loading ? <p>Loading ...</p> : <>{showUserReview()}</>}</>;
+  return (
+    <>
+      {loading ? (
+        <p>Loading ...</p>
+      ) : (
+        <>
+          {showUserReview()}
+          <footer>{createPaginate(pageNumber)}</footer>
+        </>
+      )}
+    </>
+  );
 }
 
 function Review({ review, children }) {

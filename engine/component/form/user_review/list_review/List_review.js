@@ -13,9 +13,6 @@ export default function List_review() {
   const [loading, setLoading] = useState(true);
 
   function listUserReview(list) {
-    listCollection.sort(
-      (a, b) => parseFloat(b.createAt) - parseFloat(a.createAt)
-    );
     console.log(listCollection);
 
     return listCollection.map((el, idx) => {
@@ -26,7 +23,7 @@ export default function List_review() {
   useEffect(async () => {
     setLoading(true);
     try {
-      const res = await getDocumentByQuery("user_review", "active", false);
+      const res = await getDocumentByQuery("user_review", "active", true);
       setlistCollection(res);
       if (res) {
         setLoading(false);

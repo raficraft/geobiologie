@@ -1,13 +1,14 @@
 import React from "react";
-import Handle_review from "../../component/handle_review/Handle_review";
 
-import S from "./review_checked.module.scss";
+import S from "./../../Admin.module.scss";
 
-export default function Review_checked() {
+export default function Review_checked({ children }) {
   return (
-    <div>
-      <h1>CHECEKD REVIEW</h1>
-      <Handle_review active={true}></Handle_review>
+    <div className={S.content_col}>
+      <header>
+        <h1>CHECEKD REVIEW</h1>
+      </header>
+      <div>{children}</div>
     </div>
   );
 }

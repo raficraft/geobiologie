@@ -22,6 +22,7 @@ import {
 } from "../../../assets/icons/Icon_svg";
 import Review_checked from "../content/review_checked/review_checked";
 import Last_review from "../content/last_review/Last_review";
+import Handle_review from "../component/handle_review/Handle_review";
 
 function Admin_header() {
   const { handleTabs, tabs } = useContext(DashboardContext);
@@ -105,9 +106,17 @@ export function TabContent() {
   {
     switch (tabs) {
       case "last_review":
-        return <Last_review></Last_review>;
+        return (
+          <Last_review>
+            <Handle_review active={false}></Handle_review>
+          </Last_review>
+        );
       case "review_checked":
-        return <Review_checked></Review_checked>;
+        return (
+          <Review_checked>
+            <Handle_review active={true}></Handle_review>
+          </Review_checked>
+        );
       default:
         return (
           <>
