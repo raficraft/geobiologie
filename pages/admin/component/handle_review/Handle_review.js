@@ -18,6 +18,7 @@ export default function Handle_review(props) {
   const [listCollection, setlistCollection] = useState();
   const [numberOfLinePerPage, setnumberOfLinePerPage] = useState(5);
   const [pageNumber, setPageNumber] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1);
   const [lenghtArrayReview, setLengthArrayReview] = useState([]);
 
   /**
@@ -31,20 +32,22 @@ export default function Handle_review(props) {
       startIndex === 0 ? 0 : startIndex * parseInt(numberOfLinePerPage);
     const end = pageNumber * parseInt(numberOfLinePerPage);
     setlistCollection(currentCollection.slice(start, end));
+    setCurrentPage(startIndex + 1);
   };
 
   function createPaginate() {
     const paginate = [];
     for (let index = 0; index < pageNumber; index++) {
-      let pageNumber = index + 1;
+      let pageIdx = index + 1;
       paginate.push(
         <button
+          className={`paginate_btn ${currentPage === pageIdx ? `active` : ""}`}
           onClick={(e) => {
-            goToPage(e, index, pageNumber);
+            goToPage(e, index, pageIdx);
           }}
           key={index}
         >
-          {pageNumber}
+          {pageIdx}
         </button>
       );
     }
@@ -55,7 +58,7 @@ export default function Handle_review(props) {
 
   function showUserReview(list) {
     return listCollection.map((el, idx) => {
-      return <Review key={el.id} review={el}></Review>;
+      return <Review key={el.id} review={el} {...props}></Review>;
     });
   }
 
@@ -83,15 +86,16 @@ export default function Handle_review(props) {
         <p>Loading ...</p>
       ) : (
         <>
+          <p>{Object.keys(currentCollection).length} avis.</p>
           {showUserReview()}
-          <footer>{createPaginate(pageNumber)}</footer>
+          <footer className={`paginate`}>{createPaginate(pageNumber)}</footer>
         </>
       )}
     </>
   );
 }
 
-function Review({ review, children }) {
+function Review({ review, active }) {
   const date = convertTimestamp(review.createAt);
 
   const [showDotMenu, setShowDotMenu, refOutsideClick] = useClickOutside(false);
@@ -104,6 +108,11 @@ function Review({ review, children }) {
   function toggle_subMenu(e, toggle) {
     setIsSub(toggle);
   }
+
+  //Handle Click
+
+  function delReview() {}
+  function handleActive_Review() {}
 
   return (
     <div
@@ -124,7 +133,10 @@ function Review({ review, children }) {
             <span className={`dotMenu_item dot_right`}></span>
             {isSub && (
               <div className="dotMenu_sub" ref={refSub}>
-                TOTO
+                <button onClick={() => delReview()}>Supprimer</button>
+                <button onClick={() => handleActive_Review(!active)}>
+                  {active === true ? "Désactiver" : "Activer"}
+                </button>
               </div>
             )}
           </span>
