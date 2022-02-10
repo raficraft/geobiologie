@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { db } from "../../../firebase/firebase.config";
 import {
   onSnapshot,
@@ -11,7 +11,6 @@ import {
   where,
   getDocs,
 } from "firebase/firestore";
-import { useEffect } from "react/cjs/react.development";
 
 export default function useFirestore(thisCollection, initialState) {
   const [currentCollection, setCurrentCollection] = useState([]);
@@ -47,7 +46,7 @@ export default function useFirestore(thisCollection, initialState) {
    * @param {"String"} table  Name of collection
    * @param {string} id
    */
-  async function delete_Doc(table, id) {
+  async function delete_doc(table, id) {
     const docRef = doc(db, table, id);
     await deleteDoc(docRef);
   }
@@ -89,32 +88,27 @@ export default function useFirestore(thisCollection, initialState) {
     }
 
     snap.sort((a, b) => parseFloat(a[sortBy]) - parseFloat(b[sortBy]));
-
     return snap;
   }
 
-  useEffect(() => {
-    onSnapshot(collection(db, thisCollection), (snapshot) => {
-      const snap = snapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
-      setCurrentCollection(snap);
-    });
+  useEffect(
+    () =>
+      onSnapshot(collection(db, thisCollection), (snapshot) => {
+        const snap = snapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+        setCurrentCollection(snap);
+      }),
 
-    // db.collection(thisCollection)
-    //   .orderBy("currentAt")
-    //   .onSnapshot(collection(db, thisCollection), (snapshot) => {
-    //     const snap = snapshot.docs.map((doc) => ({
-    //       ...doc.data(),
-    //       id: doc.id,
-    //     }));
-    //     setCurrentCollection(snap);
-    //   });
-  }, []);
+    []
+  );
 
   return [
     currentCollection,
     setDocument,
     createDocument,
-    delete_Doc,
+    delete_doc,
     getDocumentByQuery,
   ];
 }

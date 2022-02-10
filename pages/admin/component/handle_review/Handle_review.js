@@ -7,7 +7,6 @@ import { convertTimestamp } from "../../../../engine/utils/utils";
 import S from "./Handle_review.module.scss";
 
 export default function Handle_review(props) {
-  console.log("handle_review COmponent");
   const { active } = { ...props };
   const [loading, setLoading] = useState(true);
   const [currentCollection, , , , getDocumentByQuery] = useFirestore(
@@ -16,43 +15,12 @@ export default function Handle_review(props) {
   );
 
   const [listCollection, setlistCollection] = useState();
-  const [numberOfLinePerPage, setnumberOfLinePerPage] = useState(5);
-  const [pageNumber, setPageNumber] = useState(1);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [lenghtArrayReview, setLengthArrayReview] = useState([]);
 
   /**
    * @param {eventHTML} e
    * @param {number} index
    * @param {string} goTo
    */
-
-  const goToPage = (e, startIndex, pageNumber) => {
-    const start =
-      startIndex === 0 ? 0 : startIndex * parseInt(numberOfLinePerPage);
-    const end = pageNumber * parseInt(numberOfLinePerPage);
-    setlistCollection(currentCollection.slice(start, end));
-    setCurrentPage(startIndex + 1);
-  };
-
-  function createPaginate() {
-    const paginate = [];
-    for (let index = 0; index < pageNumber; index++) {
-      let pageIdx = index + 1;
-      paginate.push(
-        <button
-          className={`paginate_btn ${currentPage === pageIdx ? `active` : ""}`}
-          onClick={(e) => {
-            goToPage(e, index, pageIdx);
-          }}
-          key={index}
-        >
-          {pageIdx}
-        </button>
-      );
-    }
-    return paginate;
-  }
 
   //internal component
 
@@ -63,21 +31,20 @@ export default function Handle_review(props) {
   }
 
   useEffect(async () => {
-    setLoading(true);
-    try {
-      const res = await getDocumentByQuery("user_review", "active", active);
-      if (res) {
-        setlistCollection(res.slice(0, numberOfLinePerPage));
-        setLengthArrayReview(Object.keys(res).length);
-        setPageNumber(() => {
-          return Math.ceil(Object.keys(res).length / numberOfLinePerPage);
-        });
-
-        setLoading(false);
+    async function callApi() {
+      setLoading(true);
+      try {
+        const res = await getDocumentByQuery("user_review", "active", active);
+        if (res) {
+          setlistCollection(res);
+          setLoading(false);
+        }
+      } catch (error) {
+        alert(error);
       }
-    } catch (error) {
-      alert(error);
     }
+
+    return callApi();
   }, [currentCollection]);
 
   return (
@@ -86,9 +53,16 @@ export default function Handle_review(props) {
         <p>Loading ...</p>
       ) : (
         <>
-          <p>{Object.keys(currentCollection).length} avis.</p>
+          <div>
+            <select defaultValue="5">
+              <option value="all">All</option>
+              <option value="1">1</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+            </select>
+            <p>{Object.keys(listCollection).length} avis.</p>
+          </div>
           {showUserReview()}
-          <footer className={`paginate`}>{createPaginate(pageNumber)}</footer>
         </>
       )}
     </>
@@ -96,8 +70,12 @@ export default function Handle_review(props) {
 }
 
 function Review({ review, active }) {
-  const date = convertTimestamp(review.createAt);
+  const [, setDocument, , delete_doc, getDocumentByQuery] = useFirestore(
+    "user_review",
+    {}
+  );
 
+  const date = convertTimestamp(review.createAt);
   const [showDotMenu, setShowDotMenu, refOutsideClick] = useClickOutside(false);
   const { isSub, setIsSub, refSub } = useContext(SubDotMenuContext);
 
@@ -111,9 +89,18 @@ function Review({ review, active }) {
 
   //Handle Click
 
-  function delReview() {}
-  function handleActive_Review() {}
+  function delReview() {
+    delete_doc("user_review", review.id);
+  }
+  function setReview(review) {
+    const payload = { ...review, active: !active };
+    console.log(payload);
+    setDocument("user_review", payload);
+  }
 
+  useEffect(() => {
+    setIsSub(false);
+  }, []);
   return (
     <div
       className={S.wrapper}
@@ -134,7 +121,7 @@ function Review({ review, active }) {
             {isSub && (
               <div className="dotMenu_sub" ref={refSub}>
                 <button onClick={() => delReview()}>Supprimer</button>
-                <button onClick={() => handleActive_Review(!active)}>
+                <button onClick={() => setReview(review)}>
                   {active === true ? "Désactiver" : "Activer"}
                 </button>
               </div>

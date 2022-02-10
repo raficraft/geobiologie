@@ -14,7 +14,7 @@ export default function Layout({ children }) {
 
   return (
     <>
-      <Nav_left></Nav_left>
+      <Header></Header>
       <section className="wrapper">
         {children}
         {modal.signup && (

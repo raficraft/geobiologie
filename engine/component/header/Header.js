@@ -7,7 +7,6 @@ import Account_user from "./account_user/Account_user";
 import Hamburger_menu from "./hamburger_menu/Hamburger_menu";
 
 import S from "./Header.module.scss";
-import G from "./../../../Sass/abstract/global.module.scss";
 import Lang_select from "./lang_select/Lang_select";
 
 function Header() {
@@ -25,7 +24,7 @@ function Header() {
           </a>
         </Link>
 
-        <Nav_top key="1" />
+        <Nav_top />
 
         <div className={S.nav_right}>
           {/* Change language */}

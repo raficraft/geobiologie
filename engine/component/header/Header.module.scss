@@ -55,7 +55,6 @@
 
   .nav_right {
     @include flex(row, wrap, flex-end, center);
-    flex: 1;
     position: relative;
 
     .select_lang {

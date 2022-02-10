@@ -4,6 +4,9 @@
 
 .nav_top {
   @include flexCenter;
+  background-color: aqua;
+  flex: 1 0 auto;
+
   a {
     position: relative;
     z-index: 100;

@@ -7,7 +7,6 @@ import {
   Article_icon,
   Email_icon,
   Heart_icon,
-  Home_icon,
   ImageGallery,
   Youtube_icon,
 } from "../../../assets/icons/Icon_svg.js";
