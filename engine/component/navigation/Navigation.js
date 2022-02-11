@@ -1,34 +1,33 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import useMediaQuery from "../../hooks/useMediaQueries";
-import S from "./Nav_top.module.scss";
 
 import { nav } from "../../../data/nav/nav";
 import { useClickOutside } from "../../hooks/useClickOutside";
 
-export default function Nav_top() {
+export default function Navigation({ css }) {
   const isMedium = useMediaQuery("(min-width: 578px) and (max-width :767px)");
   const isTablet = useMediaQuery("(min-width: 768px)");
+  const S = css;
 
   function createNav() {
     return nav.map((root, key) => {
-      return <NestedNav root={root} key={key}></NestedNav>;
+      return <NestedNav root={root} key={key} css={css}></NestedNav>;
     });
   }
 
   return (
     <>
-      {(isTablet || isMedium) && (
-        <nav className={S.nav_top}>
-          <ul className={S.navList}>{createNav()}</ul>
-        </nav>
-      )}
+      <nav className={S.nav}>
+        <ul className={S.navList}>{createNav()}</ul>
+      </nav>
     </>
   );
 }
 
-export function NestedNav({ root }) {
+function NestedNav({ root, css }) {
   const [isOpen, setIsOpen, nestedRef] = useClickOutside(false);
+  const S = css;
 
   function openNested(e, toggle) {
     e.preventDefault(e);

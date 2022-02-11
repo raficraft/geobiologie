@@ -5,21 +5,9 @@
 .wrapper {
   @include flex(row, nowrap, center, center);
   background-color: rgb(255, 255, 255);
-  padding-top: calc(6 * #{$space});
-  padding-bottom: calc(3 * #{$space});
+  padding-top: calc(4 * #{$space});
   position: relative;
-  &:after {
-    margin: auto;
-    position: absolute;
-    content: "";
-    bottom: 0;
-    height: 1px;
-    width: $container_width;
-    background-color: $grey;
-    @media screen and (max-width: 1439px) {
-      width: calc(100% - 4rem);
-    }
-  }
+
   .content {
     @include flex(row, wrap, flex-start, center);
 

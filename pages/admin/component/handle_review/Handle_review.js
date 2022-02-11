@@ -25,6 +25,7 @@ export default function Handle_review(props) {
   //internal component
 
   function showUserReview(list) {
+    console.log(listCollection);
     return listCollection.map((el, idx) => {
       return <Review key={el.id} review={el} {...props}></Review>;
     });

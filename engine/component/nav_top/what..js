@@ -7,8 +7,18 @@ import { nav } from "../../../data/nav/nav";
 import { useClickOutside } from "../../hooks/useClickOutside";
 
 export default function Nav_top() {
+  const isMobil = useMediaQuery("(max-width: 767px)");
   const isMedium = useMediaQuery("(min-width: 578px) and (max-width :767px)");
   const isTablet = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 1100px)");
+
+  const [isOpen, setIsOpen, nestedRef] = useClickOutside(false);
+
+  function openNested(e, toggle) {
+    e.preventDefault(e);
+    console.log("yolo");
+    setIsOpen(toggle);
+  }
 
   function createNav() {
     return nav.map((root, key) => {
@@ -19,7 +29,12 @@ export default function Nav_top() {
   return (
     <>
       {(isTablet || isMedium) && (
-        <nav className={S.nav_top}>
+        <nav
+          className={S.nav_top}
+          onMouseLeave={(e) => {
+            openNested(e, false);
+          }}
+        >
           <ul className={S.navList}>{createNav()}</ul>
         </nav>
       )}
@@ -32,7 +47,7 @@ export function NestedNav({ root }) {
 
   function openNested(e, toggle) {
     e.preventDefault(e);
-
+    console.log("yolo");
     setIsOpen(toggle);
   }
 
@@ -41,6 +56,13 @@ export function NestedNav({ root }) {
       <li className={S.navList_item}>
         <a
           className={S.navList_link}
+          onMouseEnter={
+            root.child
+              ? (e) => {
+                  openNested(e, true);
+                }
+              : null
+          }
           onClick={
             root.child
               ? (e) => {

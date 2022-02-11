@@ -2,7 +2,7 @@
 @import "./../../../Sass/abstract/variables.scss";
 @import "./../../../Sass/abstract/animation.scss";
 
-.nav_top {
+.nav {
   @include flexCenter;
   flex: 1 0 auto;
   padding: spacing(1);

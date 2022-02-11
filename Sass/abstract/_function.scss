@@ -1,5 +1,7 @@
 @use "sass:math";
 
+$space: 8px;
+
 $base-font-size: 16px !default;
 
 //Supprime l'unité de mesure
@@ -17,6 +19,10 @@ $base-font-size: 16px !default;
 
 @function centerAbsolute($size) {
   @return calc(50% - #{$size} / 2);
+}
+
+@function spacing($X) {
+  @return calc(#{$X} * #{$space});
 }
 
 //Mixin

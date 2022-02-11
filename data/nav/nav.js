@@ -1,32 +1,49 @@
-export const nav = {
-  magnetisme: {
+import {
+  EnergyIcon,
+  Newspaper,
+  StoneIcon,
+  WaterOutline,
+} from "../../assets/icons/Icon_svg";
+
+export const nav = [
+  {
     title: "magnétisme",
     link: "/",
-    child: {
-      diag: {
+    icon: <EnergyIcon></EnergyIcon>,
+    child: [
+      {
         title: "diagnositque",
         link: "/",
       },
-      soins: {
+      {
         title: "soins",
         link: "/",
       },
-      harmonisation: {
-        title: "soins",
+      {
+        title: "harmonie",
         link: "/",
       },
-    },
+    ],
   },
-  mehnir: {
-    title: "mehnir",
+  {
+    title: "menhir",
     link: "/",
+    icon: <StoneIcon></StoneIcon>,
+    child: [
+      {
+        title: "diagnositque",
+        link: "/",
+      },
+    ],
   },
-  sourcier: {
+  {
     title: "sourcier",
     link: "/",
+    icon: <WaterOutline></WaterOutline>,
   },
-  presse: {
+  {
     title: "presse",
     link: "/",
+    icon: <Newspaper></Newspaper>,
   },
-};
+];
