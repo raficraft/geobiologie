@@ -32,7 +32,7 @@ function Header() {
           {/* Change language */}
 
           {/* Account user */}
-          {/* {isTablet && <Account_user />} */}
+          {isTablet && <Account_user />}
           {isMobil && <Hamburger_menu />}
         </div>
       </div>

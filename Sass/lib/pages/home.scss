@@ -1,0 +1,57 @@
+.inside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  @include flex(row, wrap, center, center);
+  box-shadow: 0px 0 15px 3px rgb(0, 0, 0) inset;
+  pointer-events: none;
+
+  &_content {
+    position: absolute;
+    top: 0;
+    left: -60px;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    @include flex(row, wrap, center, center);
+    // background-color: black;
+    // mix-blend-mode: multiply;
+  }
+
+  .logo {
+    margin-right: spacing(12);
+    animation-name: pendule;
+    animation-fill-mode: both;
+    animation-duration: 1.2s;
+    transform-origin: top center;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    filter: drop-shadow(0px 0px 14px #000000);
+  }
+
+  .title {
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black;
+    font-family: "myFont";
+    font-size: clamp(6vw, 8vw, 8vw);
+    line-height: clamp(6vw, 8vw, 8vw);
+    margin: 0;
+    color: white;
+    margin-left: spacing(8);
+    //background-color: #1b1b1d;
+    //mix-blend-mode: multiply;
+  }
+  .subtitle {
+    text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black;
+    font-family: "myFont";
+    font-size: clamp(4vw, 6vw, 8vw);
+    line-height: clamp(4vw, 6vw, 8vw);
+    margin: 0;
+    color: white;
+    margin-left: spacing(8);
+    text-align: center;
+  }
+}

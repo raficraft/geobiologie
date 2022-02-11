@@ -6,7 +6,12 @@
 
 @font-face {
   font-family: "myFont";
-  src: url("/assets/fonts/Papyrus.ttf");
+  src: url("/assets/fonts/Papyrus.ttf"),
+    url("/assets/fonts/Papyrus.ttf") format("truetype"),
+    url("/assets/fonts/papyrus-webfont.woff2") format("woff2"),
+    url("/assets/fonts/papyrus-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 html,
@@ -244,4 +249,8 @@ button {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(167, 167, 167);
+}
+
+hr {
+  margin: 2rem 0;
 }

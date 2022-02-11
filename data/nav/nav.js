@@ -1,4 +1,5 @@
 import {
+  EarthAtlantic,
   EnergyIcon,
   Newspaper,
   StoneIcon,
@@ -6,6 +7,11 @@ import {
 } from "../../assets/icons/Icon_svg";
 
 export const nav = [
+  {
+    title: "Géobiologie",
+    link: "/",
+    icon: <EarthAtlantic></EarthAtlantic>,
+  },
   {
     title: "magnétisme",
     link: "/",
@@ -43,7 +49,7 @@ export const nav = [
   },
   {
     title: "presse",
-    link: "/",
+    link: "/presse",
     icon: <Newspaper></Newspaper>,
   },
 ];

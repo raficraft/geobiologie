@@ -6,6 +6,7 @@ import { nav } from "../../../data/nav/nav";
 import { useClickOutside } from "../../hooks/useClickOutside";
 
 export default function Navigation({ css }) {
+  const isMobil = useMediaQuery("(max-width: 767px)");
   const isMedium = useMediaQuery("(min-width: 578px) and (max-width :767px)");
   const isTablet = useMediaQuery("(min-width: 768px)");
   const S = css;

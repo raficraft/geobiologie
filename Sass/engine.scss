@@ -1,5 +1,6 @@
 @import "./abstract/variables.scss";
 @import "./abstract/function.scss";
+@import "./abstract/animation.scss";
 @import "./abstract/reset.scss";
 
 @import "./lib/global.scss";
@@ -8,3 +9,5 @@
 @import "./lib/form/btn.scss";
 @import "./lib/component/dotMenu.scss";
 @import "./lib/component/paginate.scss";
+
+@import "./lib/pages/home.scss";

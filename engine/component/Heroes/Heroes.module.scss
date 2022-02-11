@@ -1,38 +1,44 @@
 @import "./../../../Sass/abstract/function";
 @import "./../../../Sass/abstract/variables";
+@import "./../../../Sass/abstract/animation";
 
 .wrapper {
   max-height: 70vh;
   min-height: 70vh;
   background-color: rgb(116, 114, 62);
-  min-width: 100%;
+  max-width: calc(100% - 20rem);
+  width: calc(100% - 20rem);
   margin-bottom: 3rem;
   position: relative;
   @include flexCenter();
-  border-top: spacing(4) solid $light;
-  .title {
-    box-shadow: 0px 0 8px 1px rgb(0, 0, 0) inset;
-    font-size: clamp(4vw, 12vw, 16vw);
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    @include flexCenter();
-    text-shadow: 0 0 15px black;
-    font-family: "Papyrus";
-    //background-color: #1b1b1d;
-    //mix-blend-mode: multiply;
-  }
+  border: spacing(4) solid $light;
+  box-shadow: 0 0 15px 3px black inset;
 
   video {
+    border: 1px solid $black;
     position: absolute;
     display: block;
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: 50% 50%;
+  }
+}
+
+.videoPlayer {
+  max-width: calc(100% - 20rem);
+  width: calc(100% - 20rem);
+  margin-bottom: 3rem;
+  position: relative;
+  @include flexCenter();
+  border: spacing(4) solid $light;
+  box-shadow: 0 0 15px 3px black inset;
+  margin: 0 8rem;
+  video {
+    border: 1px solid $black;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
   }
 }
