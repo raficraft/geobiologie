@@ -38,7 +38,7 @@ export default function Home() {
           </div>
         </Heroes>
         <section className="content">
-          <article>
+          <article class="article">
             <h1>A quoi sert la Géobiologie ?</h1>
             <p>
               La géobiologie étudie les impacts de l’environnement sur la santé
@@ -71,6 +71,14 @@ export default function Home() {
             </p>
             <hr></hr>
           </article>
+
+          <article className="article">
+            <p>
+              Vous pouvez déposer ici vos avis, commentaires et remarques sur le
+              travail que j’ai effectué pour vous.
+            </p>
+          </article>
+
           <List_review></List_review>
           <User_review></User_review>
         </section>

@@ -53,3 +53,9 @@
 button[disabled] {
   background-color: darken($grey, 40%);
 }
+
+.article {
+  p {
+    line-height: 1.8rem;
+  }
+}

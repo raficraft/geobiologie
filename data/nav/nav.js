@@ -2,6 +2,7 @@ import {
   EarthAtlantic,
   EnergyIcon,
   Newspaper,
+  Psy,
   StoneIcon,
   WaterOutline,
 } from "../../assets/icons/Icon_svg";
@@ -9,24 +10,28 @@ import {
 export const nav = [
   {
     title: "Géobiologie",
-    link: "/",
+    link: "/geobiologie",
     icon: <EarthAtlantic></EarthAtlantic>,
   },
   {
-    title: "magnétisme",
+    title: "Soins",
     link: "/",
     icon: <EnergyIcon></EnergyIcon>,
     child: [
       {
-        title: "diagnositque",
+        title: "Thérapie Energetique",
         link: "/",
       },
       {
-        title: "soins",
+        title: "soins de dégagement",
         link: "/",
       },
       {
-        title: "harmonie",
+        title: "liens transgénérationelle",
+        link: "/",
+      },
+      {
+        title: "psychanaliste",
         link: "/",
       },
     ],
@@ -44,6 +49,12 @@ export const nav = [
   },
   {
     title: "sourcier",
+    link: "/",
+    icon: <WaterOutline></WaterOutline>,
+  },
+
+  {
+    title: "stage",
     link: "/",
     icon: <WaterOutline></WaterOutline>,
   },
