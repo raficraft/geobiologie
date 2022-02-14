@@ -4,40 +4,30 @@ import React, { useState, useEffect } from "react";
 import S from "./Carousel.module.scss";
 
 export default function Carousel({ array, idx, currentFile, isVisible }) {
-  console.log("yolo", array);
-  console.log("yolo", array.length);
-  const [containerSize, setContainerSize] = useState("");
-  const [itemSize, setItemSize] = useState("");
-  const [currentTranslate, setCurrentTranslate] = useState("");
-  const [itemsCollection, setItemsCollection] = useState([]);
-  const [currentIdx, setCurrentIdx] = useState(idx);
-  const [transition, setTranstition] = useState(0.5);
+  console.log("render carousel");
 
+  //Value calculate , no state !!!
   const offsetItem = isVisible * 2;
+  const start = array.slice(0, offsetItem);
+  const end = array.slice(offsetItem * -1);
+  const itemCollection = [...end, ...array, ...start];
+  const size = {
+    container: itemCollection.length * 100,
+    item: 100 / itemCollection.length,
+  };
 
-  function makeNewArray() {
-    const start = array.slice(0, offsetItem);
-    const end = array.slice(offsetItem * -1);
-
-    const listItem = [...start, ...array, ...end];
-
-    const containerWidth = listItem.length * 100;
-    const itemWidth = 100 / listItem.length;
-
-    const currentTranslate = idx * itemWidth + offsetItem * itemWidth;
-
-    setContainerSize(containerWidth);
-    setItemSize(itemWidth);
-    setCurrentTranslate(currentTranslate);
-    setItemsCollection(listItem);
-  }
+  const [slider, setSlider] = useState({
+    transition: 0.5,
+    translate: idx * size.item + offsetItem * size.item,
+    currentIdx: idx + offsetItem,
+  });
 
   function createItem() {
-    return itemsCollection.map((item, key) => {
+    return itemCollection.map((item, key) => {
       return (
         <section
           className={S.carousel_item}
-          style={{ width: `${itemSize}%` }}
+          style={{ width: `${size.item}%` }}
           key={key}
         >
           <Image
@@ -53,38 +43,58 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
     });
   }
 
-  function goToNext() {
-    console.log("idx next", currentIdx);
-    console.log("add next", currentIdx + 1);
-    if (currentIdx + 1 < array.length) {
-      setCurrentTranslate(currentTranslate + itemSize);
-      setCurrentIdx(currentIdx + 1);
-    } else {
-      console.log("jump to start");
-      setTranstition(0);
-      setCurrentTranslate(0);
-      setCurrentIdx(0);
-      setTranstition(0.5);
-    }
+  function enableTransition() {
+    setSlider((S) => ({
+      ...S,
+      transition: 0.5,
+    }));
   }
-  function goToPrev() {
-    console.log("idx prev", currentIdx);
-    if (currentIdx < 0) {
-      setCurrentTranslate(currentTranslate - itemSize);
-      setCurrentIdx(currentIdx - 1);
-    } else {
-      setCurrentTranslate(itemSize * array.length);
-      setCurrentIdx(array.length);
+  function disableTransition() {
+    setSlider((S) => ({
+      ...S,
+      transition: "none",
+    }));
+  }
+
+  function jumpToItem(idx) {
+    console.log("jump to");
+    disableTransition();
+
+    const nextTranslate = size.item * idx;
+    setSlider((S) => ({
+      ...S,
+      translate: nextTranslate,
+      currentIdx: idx,
+    }));
+
+    setTimeout(() => {
+      enableTransition();
+    }, 50);
+  }
+
+  function goToNext(idx) {
+    console.log("goToNext");
+    const nextTranslate = idx * size.item;
+    const nextIndex = idx + 1;
+
+    setSlider((S) => ({
+      ...S,
+      translate: nextTranslate,
+      currentIdx: nextIndex,
+    }));
+    if (idx + 1 > array.length + offsetItem + 1) {
+      jumpToItem(2);
+      setTimeout(() => {
+        goToNext(3);
+      }, 100);
     }
   }
 
-  useEffect(() => {
-    makeNewArray();
-  }, []);
+  console.log(slider);
 
   return (
     <>
-      {itemsCollection.length ? (
+      {itemCollection.length ? (
         <section className={S.carousel}>
           <p
             onClick={() => {
@@ -95,7 +105,7 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
           </p>
           <p
             onClick={() => {
-              goToNext();
+              goToNext(slider.currentIdx);
             }}
           >
             NEXT
@@ -104,9 +114,9 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
             <div
               className={S.carousel_container}
               style={{
-                width: `${containerSize}%`,
-                transform: `translate3d(-${currentTranslate}%, 0px, 0px)`,
-                transition: `${transition}s`,
+                width: `${size.container}%`,
+                transform: `translate3d(-${slider.translate}%, 0px, 0px)`,
+                transition: `${slider.transition}s`,
               }}
             >
               {createItem()}
@@ -114,7 +124,7 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
           </div>
         </section>
       ) : (
-        <h1>...Loading</h1>
+        <h1>Loading</h1>
       )}
     </>
   );
