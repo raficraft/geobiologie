@@ -28,7 +28,6 @@ export default function Masonry() {
       };
     }
     if (ratio > 0.3 && ratio < 0.6) {
-      console.log("????");
       return {
         gridColumn: "span 2",
         gridRow: "span 6",
@@ -36,7 +35,6 @@ export default function Masonry() {
     }
 
     if (ratio < 0.3) {
-      console.log("????");
       return {
         gridColumn: "span 2",
         gridRow: "span 8",
