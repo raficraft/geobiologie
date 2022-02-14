@@ -1,17 +1,23 @@
-import { responseSymbol } from "next/dist/server/web/spec-compliant/fetch-event";
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
+import { ModalContext } from "../../context/modal/ModalProvider";
 import useGetimage from "../../hooks/files/useGetimage";
+import Carousel from "../carousel/Carousel";
+import Modal_body from "../modal/Modal_body";
 
 import S from "./Masonry.module.scss";
 
 export default function Masonry() {
   const [filesInfo, loading] = useGetimage("masonry/menhir/");
+  const [carousel, setCarousel] = useState(false);
+  const { modal, openModal, closeModal } = useContext(ModalContext);
+  const [currentFile, setCurrentFile] = useState({
+    current: {},
+    idx: 0,
+  });
 
   function calculateGrid(file) {
     const ratio = file.width / file.height;
-
-    console.log(ratio);
 
     if (ratio >= 2) {
       return { gridColumn: "span 4", gridRow: "span 2" };
@@ -42,6 +48,11 @@ export default function Masonry() {
     }
   }
 
+  function handleClick(file, idx) {
+    setCurrentFile((s) => ({ ...s, current: file, idx: idx }));
+    openModal("edit");
+  }
+
   function createGallery() {
     return filesInfo.map((file, idx) => {
       const calc = calculateGrid(file);
@@ -49,10 +60,13 @@ export default function Masonry() {
         <div key={idx} className={`${S.masonry_item}`} style={calc}>
           <Image
             src={file.src}
-            blurDataURL={file.blurDataURL}
             width={file.width}
             height={file.height}
+            blurDataURL={file.blurDataURL}
             placeholder="blur"
+            onClick={() => {
+              handleClick(file, idx);
+            }}
           ></Image>
         </div>
       );
@@ -65,6 +79,17 @@ export default function Masonry() {
         <section className={S.masonry}>{createGallery()}</section>
       ) : (
         <p>Loading</p>
+      )}
+
+      {modal.edit && filesInfo.length && (
+        <Modal_body>
+          <Carousel
+            currentFile={currentFile.current}
+            idx={currentFile.idx}
+            array={filesInfo}
+            isVisible={1}
+          ></Carousel>
+        </Modal_body>
       )}
     </>
   );
