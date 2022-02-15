@@ -1,10 +1,11 @@
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { ModalContext } from "../../context/modal/ModalProvider";
 
 import S from "./Carousel.module.scss";
 
 export default function Carousel({ array, idx, currentFile, isVisible }) {
-  console.log("render carousel");
+  const { modal, openModal, closeModal } = useContext(ModalContext);
 
   //Value calculate , no state !!!
   const offsetItem = isVisible * 2;
@@ -69,47 +70,110 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
 
     setTimeout(() => {
       enableTransition();
-    }, 50);
+    }, 10);
   }
 
-  function goToNext(idx) {
-    console.log("goToNext");
-    const nextTranslate = idx * size.item;
+  function goToNext(idx = slider.currentIdx) {
+    console.log("goToNext", idx);
     const nextIndex = idx + 1;
+    const nextTranslate = nextIndex * size.item;
 
     setSlider((S) => ({
       ...S,
       translate: nextTranslate,
       currentIdx: nextIndex,
     }));
-    if (idx + 1 > array.length + offsetItem + 1) {
-      jumpToItem(2);
+    if (nextIndex > array.length + isVisible) {
+      jumpToItem(1);
       setTimeout(() => {
-        goToNext(3);
-      }, 100);
+        goToNext(1);
+      }, 20);
     }
   }
 
-  console.log(slider);
+  function goToPrev(idx = slider.currentIdx) {
+    console.log("goToNext", idx);
+    const prevIndex = idx - 1;
+    const prevTranslate = prevIndex * size.item;
+
+    setSlider((S) => ({
+      ...S,
+      translate: prevTranslate,
+      currentIdx: prevIndex,
+    }));
+    if (prevIndex < offsetItem) {
+      jumpToItem(array.length + offsetItem);
+      setTimeout(() => {
+        goToPrev(array.length + offsetItem);
+      }, 20);
+    }
+  }
+
+  //   function handleKeyUp(e) {
+  //     console.log(e.key);
+  //   }
+
+  //   useGlobalDomEvent({
+  //     keydown(e) {
+  //       if (e.key === "Escape") {
+  //         closeModal();
+  //       }
+  //       if (e.key === "ArrowRight") {
+  //         goToNext(slider.currentIdx);
+  //       }
+  //       if (e.key === "ArrowLeft") {
+  //         goToPrev(slider.currentIdx);
+  //         setSlider((S) => ({
+  //           ...S,
+  //           currentIdx: slider.currentIdx + 1,
+  //         }));
+  //       }
+  //     },
+  //   });
+
+  //   //   useKey("ArrowRight", goToNext(slider.currentIdx));
+
+  //   console.log(slider);
+
+  function handleKeyDown(e) {
+    console.log(e);
+
+    if (e.key === "Escape") {
+      closeModal();
+    }
+    if (e.key === "ArrowRight") {
+      goToNext(slider.currentIdx);
+    }
+    if (e.key === "ArrowLeft") {
+      goToPrev(slider.currentIdx);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeyDown);
+    // Remove event listeners on cleanup
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [slider]);
 
   return (
     <>
       {itemCollection.length ? (
         <section className={S.carousel}>
-          <p
+          <span
+            className={S.carousel_prev}
             onClick={() => {
-              goToPrev();
+              goToPrev(slider.currentIdx);
             }}
-          >
-            PREV
-          </p>
-          <p
+          ></span>
+
+          <span
+            className={S.carousel_next}
             onClick={() => {
               goToNext(slider.currentIdx);
             }}
-          >
-            NEXT
-          </p>
+          ></span>
           <div className={S.carousel_marquise}>
             <div
               className={S.carousel_container}
