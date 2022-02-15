@@ -9,10 +9,10 @@ export default async function handler(req, res) {
   const request = req.body;
 
   //process.cwd  has Current Write directory
-  const src = path.join(serverRuntimeConfig.PROJECT_ROOT, request.dir);
+  const src = path.resolve(process.cwd(), request.dir, "/");
 
   try {
-    const files = await promises.readdir(src);
+    const files = await promises.readdirSync(src);
 
     res.status(200).json(files);
   } catch (err) {
