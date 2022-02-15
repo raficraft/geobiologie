@@ -40,6 +40,7 @@ export default function Nav_left() {
             onClick={(e) => {
               handleClick(e);
             }}
+            alt=""
           />
         </div>
 

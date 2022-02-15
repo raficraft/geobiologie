@@ -66,6 +66,7 @@ export default function Masonry() {
             onClick={() => {
               handleClick(file, idx);
             }}
+            alt=""
           ></Image>
         </div>
       );

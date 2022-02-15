@@ -28,6 +28,7 @@ export default function Home() {
                 height={logo.height}
                 className="logo"
                 onClick={(e) => test(e)}
+                alt=""
               />
 
               <div className="heroes_title">
