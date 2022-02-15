@@ -20,7 +20,7 @@ import {
   History_icon,
   NewBox,
 } from "../../../assets/icons/Icon_svg";
-import Review_checked from "../content/review_checked/review_checked";
+import Review_checked from "../content/review_checked/Review_checked";
 import Last_review from "../content/last_review/Last_review";
 import Handle_review from "../component/handle_review/Handle_review";
 
