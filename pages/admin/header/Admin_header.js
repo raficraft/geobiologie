@@ -28,8 +28,6 @@ function Admin_header() {
   const { modal, openModal } = useContext(ModalContext);
   const { lang } = useContext(LanguageContext);
 
-  console.log(tabs);
-
   return (
     <>
       <section className={S.wrapper}>
