@@ -24,6 +24,7 @@ export default function useGetimage(directory, toto) {
 
         try {
           const allFiles = await res.json();
+          console.log("CHECK : ", allFiles);
           for (const f of allFiles) {
             const i = await import(`/public/assets/img/${directory}${f}`);
 

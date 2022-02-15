@@ -1,21 +1,41 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+// // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-import { promises } from "fs";
+// import { promises } from "fs";
+// import path from "path";
+
+// export default async function handler(req, res) {
+//   console.log("IN API dir");
+
+//   const request = req.body;
+
+//   //process.cwd  has Current Write directory
+//   const src = path.resolve(process.cwd(), request.dir, "/");
+
+//   try {
+//     const files = await promises.readdirSync(src);
+
+//     res.status(200).json(files);
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// }
+
+import fs from "fs";
 import path from "path";
 
-export default async function handler(req, res) {
-  console.log("IN API dir");
+export default (req, res) => {
+  const dirRelativeToPublicFolder = "assets/img/masonry/menhir";
 
-  const request = req.body;
+  const dir = path.resolve("./public", dirRelativeToPublicFolder);
 
-  //process.cwd  has Current Write directory
-  const src = path.resolve(process.cwd(), request.dir, "/");
+  const filenames = fs.readdirSync(dir);
 
-  try {
-    const files = await promises.readdirSync(src);
+  console.log("yolo : ", filenames);
 
-    res.status(200).json(files);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-}
+  const images = filenames.map((name) =>
+    path.join("/", dirRelativeToPublicFolder, name)
+  );
+
+  res.statusCode = 200;
+  res.json(filenames);
+};
