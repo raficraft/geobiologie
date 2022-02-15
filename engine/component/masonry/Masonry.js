@@ -9,8 +9,7 @@ import S from "./Masonry.module.scss";
 
 export default function Masonry() {
   const [filesInfo, loading] = useGetimage("masonry/menhir/");
-  const [carousel, setCarousel] = useState(false);
-  const { modal, openModal, closeModal } = useContext(ModalContext);
+  const { modal, openModal } = useContext(ModalContext);
   const [currentFile, setCurrentFile] = useState({
     current: {},
     idx: 0,

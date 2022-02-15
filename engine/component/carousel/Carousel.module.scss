@@ -35,7 +35,6 @@ $rotate-arrow2: -45deg;
     transform: translate3d(0, 0, 0);
     display: flex;
     height: 100%;
-    background-color: red;
   }
 
   &_item {
@@ -132,5 +131,53 @@ $rotate-arrow2: -45deg;
   &_prev:hover,
   &_next:hover {
     transform: scale(1.2);
+  }
+}
+
+.closeParent {
+  content: "";
+  @include size(rem(32), rem(32));
+  display: block;
+  cursor: pointer;
+  background-color: #95a5a6;
+  border-radius: 50%;
+  transition: $shortTime;
+  position: absolute;
+  z-index: 500;
+  top: -16px;
+  right: -16px;
+
+  &_absolute {
+  }
+
+  span,
+  span::before,
+  span::after {
+    position: absolute;
+    @include size(20px, rem(2));
+    background-color: white;
+    content: " ";
+    pointer-events: none;
+    top: centerAbsolute(2px);
+    left: centerAbsolute(20px);
+    display: block;
+    transition: $shortTime;
+    transform-origin: 50% 50%;
+  }
+
+  span {
+    background-color: transparent;
+  }
+
+  &:hover {
+    background-color: #e67e22;
+    transform: rotate(180deg);
+  }
+
+  span::before {
+    transform: translateY(0) rotate(45deg);
+  }
+  span::after {
+    transform: translateY(0) rotate(-45deg);
   }
 }

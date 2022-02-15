@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-import fs, { promises } from "fs";
+import { promises } from "fs";
 import path from "path";
 
 export default async function handler(req, res) {

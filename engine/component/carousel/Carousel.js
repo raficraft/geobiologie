@@ -161,6 +161,14 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
     <>
       {itemCollection.length ? (
         <section className={S.carousel}>
+          <div
+            class={S.closeParent}
+            onClick={() => {
+              closeModal();
+            }}
+          >
+            <span></span>
+          </div>
           <span
             className={S.carousel_prev}
             onClick={() => {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 import List_review from "../engine/component/form/user_review/list_review/List_review";
 import User_review from "../engine/component/form/user_review/User_review";
