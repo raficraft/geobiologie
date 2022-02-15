@@ -8,7 +8,7 @@ export default function useGetimage(directory, toto) {
     const fetchData = async () => {
       const callApi = async () => {
         const bodyRequest = {
-          dir: `/public/assets/img/${directory}`,
+          dir: `assets/img/${directory}`,
         };
 
         const res = await fetch("/api", {
