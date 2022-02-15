@@ -17,7 +17,6 @@ import {
   AccountCircle,
   CheckBold,
   Edit_icon,
-  History_icon,
   NewBox,
 } from "../../../assets/icons/Icon_svg";
 import Review_checked from "../content/review_checked/Review_checked";
