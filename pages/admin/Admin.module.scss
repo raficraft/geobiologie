@@ -3,7 +3,7 @@
 
 .wrapper {
   @include flex(row, nowrap, space-between, center);
-  width: $container_width;
+  width: var(--container_width);
 
   @media screen and (max-width: 1439px) {
     width: calc(100% - 2rem);

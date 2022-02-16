@@ -9,8 +9,8 @@ import S from "./Header.module.scss";
 import Style_nav from "../navigation/Nav_top.module.scss";
 
 function Header() {
-  const isMobil = useMediaQuery("(max-width: 768px)");
-  const isTablet = useMediaQuery("(min-width: 769px)");
+  const isMobil = useMediaQuery("(max-width: 1139px)");
+  const isTablet = useMediaQuery("(min-width: 1140px)");
   //Conponenet
   return (
     <header className={`${S.wrapper}`}>

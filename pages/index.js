@@ -33,18 +33,16 @@ export default function Home() {
         <Heroes src="/assets/video/video_7.mp4" video="drawing">
           <div className="inside">
             <div className="inside_content">
-              <div className="logo">
-                <Image
-                  src={logo}
-                  width={logo.width}
-                  height={logo.height}
-                  className="logo"
-                  alt="Logo en forme de pendule"
-                  onClick={(e) => {
-                    handleClick(e);
-                  }}
-                />
-              </div>
+              <Image
+                src={logo}
+                width={logo.width}
+                height={logo.height}
+                className="logo"
+                alt="Logo en forme de pendule"
+                onClick={(e) => {
+                  handleClick(e);
+                }}
+              />
 
               <div className="heroes_title">
                 <h2 className="title">David Michel</h2>

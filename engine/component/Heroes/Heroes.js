@@ -3,10 +3,6 @@ import React from "react";
 import S from "./Heroes.module.scss";
 
 export default function Heroes({ src, video, children }) {
-  function test() {
-    console.log("yolo");
-  }
-
   return (
     <>
       {video === "drawing" ? (
