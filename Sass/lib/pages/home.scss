@@ -22,15 +22,18 @@
   }
 
   .logo {
-    margin-right: spacing(12);
-    animation-name: pendule;
-    animation-fill-mode: both;
-    animation-duration: 1.2s;
-    transform-origin: top center;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    // margin-right: spacing(12);
+    // animation-name: pendule;
+    // animation-fill-mode: both;
+    // animation-duration: 1.2s;
+    // transform-origin: top center;
+    // animation-direction: alternate;
+    // animation-iteration-count: infinite;
+    // animation-timing-function: ease-in-out;
     filter: drop-shadow(0px 0px 14px #000000);
+    cursor: hand;
+    background-color: #000000;
+    pointer-events: all;
   }
 
   .title {

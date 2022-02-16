@@ -9,7 +9,7 @@
   position: relative;
 
   .content {
-    @include flex(row, wrap, flex-start, center);
+    @include flex(row, wrap, space-between, center);
 
     .home_button {
       @include flexCenter;
@@ -30,6 +30,7 @@
       }
 
       @media screen and (min-width: 767px) {
+        @include flex(row, wrap, flex-start, center);
         &:after {
           @include emptyContent;
           width: 1px;

@@ -63,4 +63,9 @@ export const nav = [
     link: "/presse",
     icon: <Newspaper></Newspaper>,
   },
+  {
+    title: "vente",
+    link: "/vente",
+    icon: <Newspaper></Newspaper>,
+  },
 ];

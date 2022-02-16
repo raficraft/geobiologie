@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Head from "next/head";
 import List_review from "../engine/component/form/user_review/list_review/List_review";
 import User_review from "../engine/component/form/user_review/User_review";
@@ -6,9 +6,20 @@ import Heroes from "../engine/component/Heroes/Heroes";
 import Image from "next/image";
 
 import logo from "./../public/assets/svg/1.5x/logo.png";
+import { ModalContext } from "../engine/context/modal/ModalProvider";
 
 export default function Home() {
+  const { openModal } = useContext(ModalContext);
   /*** */
+
+  function handleClick(e) {
+    e.preventDefault();
+    console.log(e);
+    if (e.detail === 2) {
+      console.log("double");
+      openModal("signin");
+    }
+  }
 
   return (
     <>
@@ -22,14 +33,18 @@ export default function Home() {
         <Heroes src="/assets/video/video_7.mp4" video="drawing">
           <div className="inside">
             <div className="inside_content">
-              <Image
-                src={logo}
-                width={logo.width}
-                height={logo.height}
-                className="logo"
-                onClick={(e) => test(e)}
-                alt=""
-              />
+              <div className="logo">
+                <Image
+                  src={logo}
+                  width={logo.width}
+                  height={logo.height}
+                  className="logo"
+                  alt="Logo en forme de pendule"
+                  onClick={(e) => {
+                    handleClick(e);
+                  }}
+                />
+              </div>
 
               <div className="heroes_title">
                 <h2 className="title">David Michel</h2>
