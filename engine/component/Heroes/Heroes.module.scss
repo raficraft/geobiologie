@@ -3,8 +3,8 @@
 @import "./../../../Sass/abstract/animation";
 
 .wrapper {
-  max-height: 70vh;
-  height: 70vh;
+  max-height: 60vh;
+  height: 60vh;
   background-color: rgb(116, 114, 62);
   max-width: var(--container_width);
   width: 100%;
@@ -14,6 +14,11 @@
   border-top: spacing(4) solid $light;
   border-bottom: spacing(4) solid $light;
   box-shadow: 0 0 15px 3px black inset;
+
+  @media screen and (max-width: 769px) {
+    max-height: 40vh;
+    height: 40vh;
+  }
 
   video {
     border: 1px solid $black;
