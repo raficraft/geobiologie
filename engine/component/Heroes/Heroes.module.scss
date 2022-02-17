@@ -8,11 +8,9 @@
   background-color: rgb(116, 114, 62);
   max-width: var(--container_width);
   width: 100%;
-  margin-bottom: 3rem 0;
   position: relative;
   @include flexCenter();
-  border-top: spacing(4) solid $light;
-  border-bottom: spacing(4) solid $light;
+  margin: spacing(4) 0;
   box-shadow: 0 0 15px 3px black inset;
 
   @media screen and (max-width: 769px) {

@@ -5,9 +5,11 @@
 .wrapper {
   @include flex(row, nowrap, center, center);
   background-color: rgb(255, 255, 255);
-  padding-top: calc(4 * #{$space});
-  position: relative;
 
+  position: relative;
+  padding: spacing(2) 0 spacing(2) 0;
+  border-bottom: 2px solid $black;
+  box-shadow: $standartShadow;
   .content {
     @include flex(row, wrap, space-between, center);
 

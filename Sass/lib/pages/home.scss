@@ -1,70 +1,116 @@
-.inside {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  @include flex(row, wrap, center, center);
-  box-shadow: 0px 0 15px 3px rgb(0, 0, 0) inset;
-  pointer-events: none;
-  @media screen and (max-width: 767px) {
-    @include flex(row, wrap, space-between, center);
-  }
-
-  &_content {
-    @include flex(row, wrap, center, center);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: 0;
-    // mix-blend-mode: multiply;
-  }
-
-  .logo {
-    max-width: 200px;
+.article_home {
+  width: 100%;
+  h3 {
     width: 100%;
-    animation-name: pendule;
-    animation-fill-mode: both;
-    animation-duration: 1.2s;
-    transform-origin: top center;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    filter: drop-shadow(0px 0px 14px #000000);
-    margin: 0 1rem 0 0;
-    cursor: hand;
-    pointer-events: all;
-    @media screen and (max-width: 1025px) {
-      max-width: 140px;
+  }
+}
+
+.media_home {
+  @include flex(flex, wrap, flex-start, flex-start);
+  &-video {
+    background-color: aqua;
+    flex: 4;
+    align-self: stretch;
+  }
+  &-presse {
+    @include flex(row, wrap, center, center);
+    align-self: stretch;
+    background-color: rgb(0, 255, 166);
+    flex: 2;
+    padding: 0 spacing(2);
+
+    &--img {
+      max-width: 280px;
     }
-    @media screen and (max-width: 541px) {
-      max-width: 100px;
-    }
-    @media screen and (max-width: 340px) {
-      max-width: 60px;
+    p {
+      align-self: flex-end;
     }
   }
+  &-radio {
+    @include flex(column, wrap, flex-start, center);
+    background-color: rgb(136, 255, 0);
+    flex: 6 auto 100%;
+    margin-top: spacing(4);
 
-  .heroes_title {
-    @include flex(column, wrap, center, center);
-    .title,
-    .subtitle {
-      text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black;
-      font-family: "myFont";
-      @include text(7vw, 1.2, bold);
-      color: white;
-      text-align: center;
-      @media screen and (max-width: 769px) {
-        @include text(10vw, 1, bold);
+    &--player {
+      @include flex(row, nowrap, flex-start, center);
+      width: 100%;
+    }
+    figure {
+      @include flex(column, wrap, center, flex-start);
+      max-width: 100%;
+      width: 100%;
+      padding: 1rem;
+      background-color: rgb(170, 146, 170);
+      figcaption {
+        margin: 0 0 1rem 0;
+      }
+      @media screen and (min-width: 800px) {
+        audio {
+          width: 100%;
+        }
       }
     }
-    .title {
-      margin: 0 0 spacing(2) 0;
+  }
+
+  @media screen and (max-width: 769px) {
+    &-video {
+      flex: 1 auto 100%;
+      margin-bottom: spacing(4);
     }
-    .subtitle {
+    &-presse,
+    &-radio {
+      flex: 1 auto 50%;
+      align-self: stretch;
       margin: 0;
     }
+    &-presse {
+      padding: 0;
+    }
+
+    &-radio {
+      @include flex(column, nowrap, space-around, center);
+      &--player {
+        @include flex(column, nowrap, flex-start, center);
+        width: 100%;
+        background-color: chocolate;
+        height: 100%;
+
+        figure {
+          @include flex(column, nowrap, center, center);
+          align-self: stretch;
+          figcaption {
+            align-self: flex-start;
+          }
+          audio {
+          }
+        }
+      }
+    }
+  }
+}
+
+.portrait {
+  width: 320px;
+  right: 0;
+  top: 0;
+  float: right;
+  margin: 0 0 spacing(3) spacing(6);
+  overflow: hidden;
+  padding: spacing(2);
+  box-sizing: content-box;
+  & > span {
+    box-shadow: $standartShadow;
+  }
+
+  @media screen and (max-width: 769px) {
+    width: 180px;
+  }
+  @media screen and (max-width: 500px) {
+    width: 130px;
+  }
+
+  @media screen and (max-width: 360px) {
+    width: 100px;
   }
 }
