@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import presse from "./../public/assets/docs/presse.jpg";
 import portrait from "./../public/assets/img/illustration/david/david_michel.jpg";
 
@@ -80,9 +81,11 @@ export default function Index_content() {
 
           <div className="media_home-video">
             <h3>Interview France 3</h3>
-            <video controls width="100%">
-              <source src="/assets/video/video_0.mp4" type="video/mp4" />
-            </video>
+            <div className="media_home-video--container">
+              <video controls width="100%">
+                <source src="/assets/video/video_0.mp4" type="video/mp4" />
+              </video>
+            </div>
           </div>
 
           {/* presse */}
@@ -90,14 +93,16 @@ export default function Index_content() {
           <div className="media_home-presse">
             <h3>Article de presse</h3>
             <div className="media_home-presse--img">
-              <Image
-                src={presse}
-                width={presse.width}
-                height={presse.height}
-                alt="Logo en forme de pendule"
-                blurDataURL={presse.blurDataURL}
-                placeholder="blur"
-              />
+              <Link href="/">
+                <Image
+                  src={presse}
+                  width={presse.width}
+                  height={presse.height}
+                  alt="Logo en forme de pendule"
+                  blurDataURL={presse.blurDataURL}
+                  placeholder="blur"
+                />
+              </Link>
             </div>
             <p className="text-center">
               Document Pdf. Cliquer sur l'image pour consulter
@@ -110,14 +115,14 @@ export default function Index_content() {
             <h3>Interview Radio</h3>
             <div className="media_home-radio--player">
               <figure>
-                <figcaption>Listen to the T-Rex:</figcaption>
+                <figcaption>Reportage David Michel</figcaption>
                 <audio controls src="/media/cc0-audio/t-rex-roar.mp3">
                   Your browser does not support the
                   <code>audio</code> element.
                 </audio>
               </figure>
               <figure>
-                <figcaption>Listen to the T-Rex:</figcaption>
+                <figcaption>Recontre David Michel</figcaption>
                 <audio controls src="/media/cc0-audio/t-rex-roar.mp3">
                   Your browser does not support the
                   <code>audio</code> element.

@@ -194,11 +194,13 @@ h6 {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 
 h2 {
-  font-size: 1.325em;
+  font-size: 1.5em;
+  line-height: 1.4;
+  text-decoration: underline;
 }
 
 h3 {
@@ -258,7 +260,7 @@ button {
 }
 
 .separator {
-  margin: 2rem 0;
+  margin: spacing(8) 0;
   content: "";
   @include size(100%, 1px);
   position: relative;
