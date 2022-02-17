@@ -44,7 +44,7 @@ export const reg = {
   },
 
   text: {
-    rules: /^[\w\-\sàáâãäåçèéêëìíîïðòóôõöùúûüýÿ'!?:;,¨^)(ù ]+$/i,
+    rules: /^[\w\-\sàáâãäåçèéêëìíîïðòóôõöùúûüýÿ'"!?:;.,%¨^)(ù ]+$/i,
     error: {
       FR: "Caratères alphabétiques ou numériques et ponctuations seulement.",
       EN: "Alphabetic or numeric characters and punctuation only.",

@@ -94,14 +94,16 @@ export default function Index_content() {
             <h3>Article de presse</h3>
             <div className="media_home-presse--img">
               <Link href="/">
-                <Image
-                  src={presse}
-                  width={presse.width}
-                  height={presse.height}
-                  alt="Logo en forme de pendule"
-                  blurDataURL={presse.blurDataURL}
-                  placeholder="blur"
-                />
+                <a>
+                  <Image
+                    src={presse}
+                    width={presse.width}
+                    height={presse.height}
+                    alt="Logo en forme de pendule"
+                    blurDataURL={presse.blurDataURL}
+                    placeholder="blur"
+                  />
+                </a>
               </Link>
             </div>
             <p className="text-center">
@@ -122,7 +124,7 @@ export default function Index_content() {
                 </audio>
               </figure>
               <figure>
-                <figcaption>Recontre David Michel</figcaption>
+                <figcaption>Recontre avec David Michel</figcaption>
                 <audio controls src="/media/cc0-audio/t-rex-roar.mp3">
                   Your browser does not support the
                   <code>audio</code> element.
@@ -134,13 +136,6 @@ export default function Index_content() {
       </article>
 
       <span className="separator"></span>
-
-      <article className="article">
-        <p>
-          Vous pouvez déposer ici vos avis, commentaires et remarques sur le
-          travail que j’ai effectué pour vous.
-        </p>
-      </article>
     </>
   );
 }

@@ -199,7 +199,6 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  line-height: 1.4;
   text-decoration: underline;
 }
 
@@ -260,14 +259,42 @@ button {
 }
 
 .separator {
-  margin: spacing(8) 0;
+  margin: spacing(6) 0;
   content: "";
   @include size(100%, 1px);
   position: relative;
-  background-color: grey;
+  background-color: lighten(grey, 20%);
   display: block;
 }
 
 video {
   cursor: pointer;
+}
+
+//Design System Class atomic
+
+.bg_blue {
+  background-color: $blue;
+}
+.bg_green {
+  background-color: $green;
+}
+.bg_red {
+  background-color: $red;
+}
+.bg_yellow {
+  background-color: $yellow;
+}
+
+.text_blue {
+  color: $blue;
+}
+.text_green {
+  color: $green;
+}
+.text_red {
+  color: $red;
+}
+.text_yellow {
+  color: $yellow;
 }

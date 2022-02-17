@@ -6,6 +6,7 @@ import { ModalContext } from "../../../engine/context/modal/ModalProvider";
 import Modal_body from "../modal/Modal_body";
 import Nav_alt from "../nav_alt/Nav_alt";
 import Nav_left from "../nav_left/Nav_left";
+import Aside_link from "../aside_link/Aside_link";
 
 export default function Layout({ children }) {
   const { modal } = useContext(ModalContext);
@@ -14,6 +15,7 @@ export default function Layout({ children }) {
 
   return (
     <>
+      <Aside_link></Aside_link>
       <Header></Header>
       <section className="wrapper">
         {children}

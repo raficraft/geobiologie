@@ -1,0 +1,14 @@
+@import "./../../../Sass/abstract/function";
+@import "./../../../Sass/abstract/variables";
+@import "./../../../Sass/abstract/animation";
+
+.aside_link {
+  position: fixed;
+  @include flex(column, nowrap, center, center);
+  max-width: 2rem;
+  width: 100px;
+  left: 0;
+  top: centerAbsolute(120px);
+  background-color: red;
+  z-index: 500;
+}

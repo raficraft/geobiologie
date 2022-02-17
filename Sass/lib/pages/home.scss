@@ -1,5 +1,6 @@
 .article_home {
   width: 100%;
+  padding: 1rem 1rem;
   h3 {
     width: 100%;
   }
@@ -7,6 +8,8 @@
 
 .media_home {
   @include flex(flex, wrap, flex-start, flex-start);
+  padding: 1rem 1rem;
+
   &-video {
     // background-color: aqua;
     flex: 4;
@@ -21,7 +24,8 @@
     padding: 0 spacing(2);
 
     &--img {
-      max-width: 280px;
+      max-width: 310px;
+      margin: 0 0 spacing(2) 0;
     }
     p {
       align-self: flex-end;
@@ -55,7 +59,7 @@
     }
   }
 
-  @media screen and (max-width: 601px) {
+  @media screen and (max-width: 769px) {
     &-video {
       flex: 1 auto 100%;
       margin: 0 0 spacing(4) 0;
@@ -84,7 +88,6 @@
           align-self: stretch;
           figcaption {
             align-self: flex-start;
-            margin: 0;
           }
         }
       }

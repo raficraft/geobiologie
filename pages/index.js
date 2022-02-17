@@ -50,7 +50,7 @@ export default function Home() {
               </div>
 
               <div className="heroes_title">
-                <h2 className="title">David Michel</h2>
+                <h3 className="title">David Michel</h3>
                 <h3 className="subtitle">Geobiologue</h3>
               </div>
             </div>
@@ -59,7 +59,6 @@ export default function Home() {
         <section className="content">
           <Index_content></Index_content>
           <List_review></List_review>
-          <User_review></User_review>
         </section>
       </main>
     </>
