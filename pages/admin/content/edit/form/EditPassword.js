@@ -106,7 +106,7 @@ export default function EditPassword() {
     }
 
     setEditPwd(true);
-    openModal("edit");
+    openModal("embed");
   }
   return (
     <>
@@ -171,7 +171,7 @@ export default function EditPassword() {
         control of the component that will launch the api call transmitted by
         the provider.*/}
 
-      {modal.edit && editPwd && (
+      {modal.embed && editPwd && (
         <Modal_body>
           <EditWithAuth
             editProfil={handleEditPwd}

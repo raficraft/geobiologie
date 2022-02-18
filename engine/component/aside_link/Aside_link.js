@@ -1,29 +1,82 @@
 import Link from "next/link";
-import React, { useContext } from "react";
+import React, { useContext, useLayoutEffect } from "react";
 
 import S from "./Aside_link.module.scss";
 import { ModalContext } from "../../context/modal/ModalProvider";
+import {
+  Dashboard_icon,
+  Facebook_icon,
+  Logout_icon,
+  Marker_icon,
+  Message_icon,
+  Phone_icon,
+} from "../../../assets/icons/Icon_svg";
+import { useClickOutside } from "../../hooks/useClickOutside";
+import useMediaQuery from "../../hooks/useMediaQueries";
 
 export default function Aside_link() {
-  const { openModal, closeModal } = useContext(ModalContext);
+  const { openModal } = useContext(ModalContext);
+  const [show, setShow, refOutsideClick] = useClickOutside(false);
+  const isDesktop = useMediaQuery("(min-width: 1281px)");
+
+  function toggle_aside() {
+    setShow(!show);
+  }
+
+  useLayoutEffect(() => {
+    isDesktop && setShow(true);
+  });
 
   return (
-    <aside className={S.aside_link}>
-      <span>A</span>
-      <span>B</span>
-      <span>C</span>
-      <span>
-        <Link href="/admin">
-          <a>E</a>
-        </Link>
-      </span>
-      <span
-        onClick={() => {
-          openModal;
-        }}
-      >
-        F
-      </span>
+    <aside className={S.aside_link} data-show={show} ref={refOutsideClick}>
+      <div className={S.aside_link_container}>
+        <span className="bg_blue">
+          <Link href="https://www.facebook.com/profile.php?id=100030549198574">
+            <a target="_blank">
+              <Facebook_icon />
+            </a>
+          </Link>
+        </span>
+        <span className="bg_yellow">
+          <Marker_icon
+            onClick={() => {
+              openModal("map");
+            }}
+          />
+        </span>
+        <span className="bg_red">
+          <Phone_icon />
+        </span>
+        <span
+          className="bg_green"
+          onClick={() => {
+            openModal("review");
+          }}
+        >
+          <Message_icon />
+        </span>
+        <span className="bg_gunMetal">
+          <Link href="/admin">
+            <a>
+              <Dashboard_icon />
+            </a>
+          </Link>
+        </span>
+        <span className="bg_englishViolet">
+          <Logout_icon />
+        </span>
+      </div>
+
+      {!isDesktop && (
+        <span
+          className={S.mobil_toggle}
+          onClick={() => {
+            toggle_aside();
+          }}
+        >
+          <span class={S.dotted_menu}></span>
+        </span>
+      )}
     </aside>
   );
 }

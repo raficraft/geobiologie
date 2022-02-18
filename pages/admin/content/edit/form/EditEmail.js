@@ -96,7 +96,7 @@ export default function EditEmail() {
       return;
     }
     setEditMail(true);
-    openModal("edit");
+    openModal("embed");
   }
 
   return (
@@ -151,7 +151,7 @@ export default function EditEmail() {
         control of the component that will launch the api call transmitted by
         the provider.*/}
 
-      {modal.edit && editMail && (
+      {modal.embed && editMail && (
         <Modal_body>
           <EditWithAuth
             editProfil={handleEditEmail}

@@ -17,6 +17,10 @@
 :root {
   --main-color: hotpink;
   --container_width: 1330px;
+
+  @media screen and (max-width: 1330px) {
+    --container_width: calc(100% - 2rem);
+  }
 }
 
 html,
@@ -273,28 +277,35 @@ video {
 
 //Design System Class atomic
 
-.bg_blue {
+.bg_blue,
+.text_blue {
   background-color: $blue;
 }
-.bg_green {
+.bg_green,
+.text_green {
   background-color: $green;
 }
-.bg_red {
+.bg_red,
+.text_red {
   background-color: $red;
 }
-.bg_yellow {
+.bg_yellow,
+.text_yellow {
   background-color: $yellow;
 }
-
-.text_blue {
-  color: $blue;
+.bg_champagne,
+.text_champagne {
+  background-color: $champagne;
 }
-.text_green {
-  color: $green;
+.bg_gunMetal,
+.text_gunMetal {
+  background-color: $gunMetal;
 }
-.text_red {
-  color: $red;
+.bg_blackChocolate,
+.text_blackChocolate {
+  background-color: $blackChocolate;
 }
-.text_yellow {
-  color: $yellow;
+.bg_englishViolet,
+.text_englishViolet {
+  background-color: $englishViolet;
 }

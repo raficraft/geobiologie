@@ -58,11 +58,7 @@ export const nav = [
     link: "/",
     icon: <WaterOutline></WaterOutline>,
   },
-  {
-    title: "presse",
-    link: "/presse",
-    icon: <Newspaper></Newspaper>,
-  },
+
   {
     title: "vente",
     link: "/vente",

@@ -49,7 +49,7 @@ export default function Masonry() {
 
   function handleClick(file, idx) {
     setCurrentFile((s) => ({ ...s, current: file, idx: idx }));
-    openModal("edit");
+    openModal("embed");
   }
 
   function createGallery() {
@@ -81,7 +81,7 @@ export default function Masonry() {
         <p>Loading</p>
       )}
 
-      {modal.edit && filesInfo.length && (
+      {modal.embed && filesInfo.length && (
         <Modal_body>
           <Carousel
             currentFile={currentFile.current}

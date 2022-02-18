@@ -1,0 +1,44 @@
+@import "./../../../Sass/abstract/function.scss";
+@import "./../../../Sass/abstract/variables.scss";
+@import "./../../../Sass/abstract/animation.scss";
+
+.wrapper {
+  max-width: var(--container_width);
+  border-radius: $bigradius;
+  width: 100%;
+  background-color: $light;
+  animation-name: bottom_TO_origin;
+  animation-duration: $shortTime;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  padding: 1rem;
+  header {
+    padding: 0 0 spacing(2) 0;
+    border-bottom: 1px solid darken($grey, 10%);
+  }
+
+  h2,
+  h3 {
+    margin: 0;
+    text-decoration: none;
+  }
+  .content {
+    @include flex(row, wrap, center, flex-start);
+    .map {
+      flex: 1;
+      margin: spacing(8) spacing(4);
+      iframe {
+        border-radius: 0;
+        box-shadow: $standartShadow;
+        @include size(600px, 400px);
+      }
+    }
+
+    .contact {
+      margin: spacing(8) spacing(4);
+      padding: spacing(2);
+      flex: 1;
+      align-self: stretch;
+    }
+  }
+}

@@ -10,7 +10,12 @@
   height: 100%;
   width: 100%;
   @include flex(column, wrap, center, center);
-  background-color: $grey;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  @media screen and (max-height: 767px) and (max-width: 540px) {
+    background-color: red;
+    overflow-y: scroll;
+  }
 }
 
 .revert-anim {

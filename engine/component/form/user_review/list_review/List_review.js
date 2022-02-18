@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Star } from "../../../../../assets/icons/Icon_svg";
+import { ModalContext } from "../../../../context/modal/ModalProvider";
 import useFirestore from "../../../../hooks/firestore/useFirestore";
 
 import S from "./List_review.module.scss";
@@ -10,6 +11,8 @@ export default function List_review() {
     "user_review",
     {}
   );
+
+  const { openModal } = useContext(ModalContext);
 
   const [reviewPerPage, setReviewPerPage] = useState(5);
   const [nbPage, setNbPage] = useState(1);
@@ -73,7 +76,14 @@ export default function List_review() {
             </select>
           </header>
           {listUserReview()}
-          <button className="btn_primary bg_blue">Donner votre avis</button>
+          <button
+            className="btn_primary bg_blue"
+            onClick={() => {
+              openModal("embed");
+            }}
+          >
+            Donner votre avis
+          </button>
         </section>
       )}
     </>

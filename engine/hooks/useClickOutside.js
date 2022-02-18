@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 export const useClickOutside = (init) => {
+  console.log(init);
   const refOutsideClick = useRef(null);
   const [show, setShow] = useState(init);
 
