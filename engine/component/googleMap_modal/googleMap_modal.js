@@ -27,11 +27,12 @@ export default function GoogleMap_modal() {
 
             <p>Lorem ipsum lorem ipsum lorem ipsum</p>
 
-            <h3>1440 route de Lyon</h3>
-            <h3>42110 SAINT-MARTIN LESTRA</h3>
-            <h3>06 . 58 . 02 . 17 . 24</h3>
-
-            <h3>david.michel1988@hotmail.fr</h3>
+            <div className={S.info}>
+              <h3>1440 route de Lyon</h3>
+              <h3>42110 SAINT-MARTIN LESTRA</h3>
+              <h3>06 . 58 . 02 . 17 . 24</h3>
+              <h3>david.michel1988@hotmail.fr</h3>
+            </div>
           </div>
         </div>
       </section>
