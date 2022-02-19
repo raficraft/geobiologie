@@ -95,8 +95,6 @@ export default function User_review() {
 
   return (
     <div className={S.wrapper}>
-      <h1>Votre avis nous intéresse !</h1>
-
       <form
         onSubmit={(e) => {
           handleSubmit(e);

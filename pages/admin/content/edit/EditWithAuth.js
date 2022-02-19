@@ -1,7 +1,6 @@
 import React, { useContext, useState, useRef } from "react";
 import { accountForm } from "../../../../data/accountForm/accountForm";
-import G from "./../../../../Sass/abstract/global.module.scss";
-import S from "./EditWithAuth.module.scss";
+import S from "./../../../../engine/component/form/Form.module.scss";
 import { ModalContext } from "../../../../engine/context/modal/ModalProvider";
 import { AuthContext } from "../../../../engine/context/auth/AuthProvider";
 import { LanguageContext } from "../../../../engine/context/language/LanguageContext";
@@ -57,50 +56,34 @@ export default function EditWithAuth(props) {
   }
 
   return (
-    <div className={S.content}>
-      <header className={S.header}>
-        <h1>{accountForm.signin.title[lang]}</h1>
+    <form
+      className={S.account_user}
+      onSubmit={(e) => {
+        handleEdit(e);
+      }}
+    >
+      <p className="errotText">
+        Veuillez saisir votre mot de passe pour valider ce changement.
+      </p>
+      <div className="bloc_input">
+        <label htmlFor="pwd">{accountForm.signin.pwd[lang]}</label>
 
-        {/* Close BTN */}
-        <div
-          tabIndex="0"
-          role="button"
-          className={S.close_modal}
-          onClick={(e) => closeModal(e)}
-          onKeyDown={(e) => closeModal(e)}
-        >
-          <span className={S.cross}></span>
-        </div>
-      </header>
-      <form
-        className={S.account_user}
-        onSubmit={(e) => {
-          handleEdit(e);
-        }}
-      >
-        <p className="errotText">
-          Veuillez saisir votre mot de passe pour valider ce changement.
-        </p>
-        <div className="bloc_input">
-          <label htmlFor="pwd">{accountForm.signin.pwd[lang]}</label>
+        <input type="password" name="pwd" id="pwd" ref={inputRef} />
+        {/*Manage error or info message */}
+        {error && (
+          <div className="error_text info_bubble">
+            <span className="icon">
+              <Exclamation></Exclamation>
+            </span>
+            <p>{error}</p>
+          </div>
+        )}
+      </div>
 
-          <input type="password" name="pwd" id="pwd" ref={inputRef} />
-          {/*Manage error or info message */}
-          {error && (
-            <div className="error_text info_bubble">
-              <span className="icon">
-                <Exclamation></Exclamation>
-              </span>
-              <p>{error}</p>
-            </div>
-          )}
-        </div>
-
-        {/* Sub button */}
-        <button className="btn_sub btn_big" type="submit">
-          {loading ? "loading" : "Apliquer la modification"}
-        </button>
-      </form>
-    </div>
+      {/* Sub button */}
+      <button className="btn_sub btn_big" type="submit">
+        {loading ? "loading" : "Apliquer la modification"}
+      </button>
+    </form>
   );
 }

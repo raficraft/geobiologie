@@ -82,7 +82,7 @@ export default function Masonry() {
       )}
 
       {modal.embed && filesInfo.length && (
-        <Modal_body>
+        <Modal_body addContainer={false}>
           <Carousel
             currentFile={currentFile.current}
             idx={currentFile.idx}

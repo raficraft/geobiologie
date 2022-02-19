@@ -25,13 +25,6 @@ function Signin() {
     }
   };
 
-  function close_modals(e) {
-    e.stopPropagation();
-    if (e.target === e.currentTarget) {
-      closeModal();
-    }
-  }
-
   function switch_modal(e) {
     e.stopPropagation();
     closeModal();
@@ -64,68 +57,52 @@ function Signin() {
   }
 
   return (
-    <div className={S.content}>
-      <header className={S.header}>
-        <h1>{accountForm.signin.title[lang]}</h1>
+    <form
+      className={S.account_user}
+      onSubmit={(e) => {
+        handleSubmit(e);
+      }}
+      ref={formRef}
+    >
+      {/* Field Email */}
 
-        {/* Close BTN */}
-        <div
-          tabIndex="0"
-          role="button"
-          className={S.close_modal}
-          onClick={(e) => close_modals(e)}
-          onKeyDown={(e) => close_modals(e)}
-        >
-          <span className={S.cross}></span>
-        </div>
-      </header>
-      <form
-        className={S.account_user}
-        onSubmit={(e) => {
-          handleSubmit(e);
+      <div className="bloc_input">
+        <label htmlFor="email">{accountForm.signin.email[lang]}</label>
+        <input type="text" name="email" id="email" ref={addInputs} />
+      </div>
+
+      {/* Field PWD */}
+
+      <div className="bloc_input">
+        <label htmlFor="pwd">{accountForm.signin.pwd[lang]}</label>
+        <input type="password" name="pwd" id="pwd" ref={addInputs} />
+      </div>
+
+      {/* Remember checkbox */}
+
+      <div className="bloc_checked">
+        <input type="checkbox" id="remmber" name="remember" ref={remember} />
+        <label htmlFor="remember">{accountForm.signin.checked[lang]}</label>
+      </div>
+
+      {/* Error Message */}
+      <div className={S.errorMessage}>
+        <p className="errorText">{error}</p>
+      </div>
+
+      {/* Sub button */}
+      <button className="btn_sub btn_big" type="submit">
+        {accountForm.signin.button[lang]}
+      </button>
+      <p
+        onClick={(e) => {
+          switch_modal(e);
         }}
-        ref={formRef}
+        className="text_switch"
       >
-        {/* Field Email */}
-
-        <div className="bloc_input">
-          <label htmlFor="email">{accountForm.signin.email[lang]}</label>
-          <input type="text" name="email" id="email" ref={addInputs} />
-        </div>
-
-        {/* Field PWD */}
-
-        <div className="bloc_input">
-          <label htmlFor="pwd">{accountForm.signin.pwd[lang]}</label>
-          <input type="password" name="pwd" id="pwd" ref={addInputs} />
-        </div>
-
-        {/* Remember checkbox */}
-
-        <div className="bloc_checked">
-          <input type="checkbox" id="remmber" name="remember" ref={remember} />
-          <label htmlFor="remember">{accountForm.signin.checked[lang]}</label>
-        </div>
-
-        {/* Error Message */}
-        <div className={S.errorMessage}>
-          <p className="errorText">{error}</p>
-        </div>
-
-        {/* Sub button */}
-        <button className="btn_sub btn_big" type="submit">
-          {accountForm.signin.button[lang]}
-        </button>
-        <p
-          onClick={(e) => {
-            switch_modal(e);
-          }}
-          className="text_switch"
-        >
-          {accountForm.signin.switchForm[lang]}
-        </p>
-      </form>
-    </div>
+        {accountForm.signin.switchForm[lang]}
+      </p>
+    </form>
   );
 }
 

@@ -22,30 +22,26 @@ export default function Layout({ children }) {
       <section className="wrapper">
         {children}
         {modal.signup && (
-          <Modal_body>
+          <Modal_body title="inscription" css={{ width: "320px" }}>
             <Signup />
           </Modal_body>
         )}
         {modal.signin && (
-          <Modal_body>
+          <Modal_body title="connexion" css={{ width: "320px" }}>
             <Signin />
           </Modal_body>
         )}
 
-        {modal.nav_alt && (
-          <Modal_body>
-            <Nav_alt></Nav_alt>
-          </Modal_body>
-        )}
+        {modal.nav_alt && <Nav_alt></Nav_alt>}
 
         {modal.review && (
-          <Modal_body>
+          <Modal_body title="Donner votre avis." css={{ top: "1rem" }}>
             <User_review></User_review>
           </Modal_body>
         )}
 
         {modal.map && (
-          <Modal_body>
+          <Modal_body title="Coordonées">
             <GoogleMap_modal></GoogleMap_modal>
           </Modal_body>
         )}

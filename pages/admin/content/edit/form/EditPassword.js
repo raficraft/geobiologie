@@ -172,7 +172,7 @@ export default function EditPassword() {
         the provider.*/}
 
       {modal.embed && editPwd && (
-        <Modal_body>
+        <Modal_body title="Validation de sécurité">
           <EditWithAuth
             editProfil={handleEditPwd}
             newVal={inputPwd.current.value}

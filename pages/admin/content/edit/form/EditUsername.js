@@ -138,7 +138,7 @@ export default function EditUsername() {
         the provider.*/}
 
       {modal.embed && editUser && (
-        <Modal_body>
+        <Modal_body title="Validation de sécurité">
           <EditWithAuth
             editProfil={handleEditUsername}
             newVal={inputRef.current.value}

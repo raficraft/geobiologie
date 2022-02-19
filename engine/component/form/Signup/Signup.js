@@ -23,14 +23,6 @@ function Signup() {
     }
   };
 
-  //Manage modal
-  function close_modals(e) {
-    e.stopPropagation();
-    if (e.target === e.currentTarget) {
-      closeModal();
-    }
-  }
-
   function switch_modal(e) {
     e.stopPropagation();
     closeModal();
@@ -66,77 +58,60 @@ function Signup() {
   }
 
   return (
-    <div className={S.content}>
-      <header className={S.header}>
-        <h1>{accountForm.signup.title[lang]}</h1>
+    <form
+      className={S.account_user}
+      onSubmit={(e) => {
+        handleSubmit(e);
+      }}
+      ref={formRef}
+    >
+      {/* Field Email */}
 
-        {/* Close BTN */}
+      <div className="bloc_input">
+        <label htmlFor="email">{accountForm.signup.email[lang]}</label>
+        <input type="text" ref={addInputs} name="email" id="email" />
+      </div>
 
-        <div
-          tabIndex="0"
-          role="button"
-          className={S.close_modal}
-          onClick={(e) => close_modals(e)}
-          onKeyDown={(e) => close_modals(e)}
-        >
-          <span className={S.cross}></span>
-        </div>
-      </header>
-      <form
-        className={S.account_user}
-        onSubmit={(e) => {
-          handleSubmit(e);
+      {/* Field PWD */}
+
+      <div className="bloc_input">
+        <label htmlFor="pwd">{accountForm.signup.pwd[lang]}</label>
+        <input type="password" ref={addInputs} name="pwd" id="pwd" />
+      </div>
+
+      {/* Confirm  PWD */}
+
+      <div className="bloc_input">
+        <label htmlFor="confirmPsw">
+          {accountForm.signup.confirmPwd[lang]}
+        </label>
+        <input
+          type="password"
+          ref={addInputs}
+          name="confirmPsw"
+          id="confirmPsw"
+        />
+      </div>
+
+      {/* Error message */}
+
+      <div className={S.errorMessage}>
+        <p className="textWarning">{error}</p>
+      </div>
+
+      {/* Sub button */}
+      <button className="btn_sub btn_big" type="submit">
+        {accountForm.signup.button[lang]}
+      </button>
+      <p
+        onClick={(e) => {
+          switch_modal(e);
         }}
-        ref={formRef}
+        className="text_switch"
       >
-        {/* Field Email */}
-
-        <div className="bloc_input">
-          <label htmlFor="email">{accountForm.signup.email[lang]}</label>
-          <input type="text" ref={addInputs} name="email" id="email" />
-        </div>
-
-        {/* Field PWD */}
-
-        <div className="bloc_input">
-          <label htmlFor="pwd">{accountForm.signup.pwd[lang]}</label>
-          <input type="password" ref={addInputs} name="pwd" id="pwd" />
-        </div>
-
-        {/* Confirm  PWD */}
-
-        <div className="bloc_input">
-          <label htmlFor="confirmPsw">
-            {accountForm.signup.confirmPwd[lang]}
-          </label>
-          <input
-            type="password"
-            ref={addInputs}
-            name="confirmPsw"
-            id="confirmPsw"
-          />
-        </div>
-
-        {/* Error message */}
-
-        <div className={S.errorMessage}>
-          <p className="textWarning">{error}</p>
-        </div>
-
-        {/* Sub button */}
-        <button className="btn_sub btn_big" type="submit">
-          {accountForm.signup.button[lang]}
-        </button>
-        <p
-          onClick={(e) => {
-            switch_modal(e);
-          }}
-          className="text_switch"
-        >
-          {accountForm.signup.alReadyAccount[lang]}
-        </p>
-      </form>
-    </div>
+        {accountForm.signup.alReadyAccount[lang]}
+      </p>
+    </form>
   );
 }
 

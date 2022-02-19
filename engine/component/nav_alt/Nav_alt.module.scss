@@ -4,8 +4,11 @@
 
 .wrapper {
   @include flex(column, nowrap, flex-start, center);
-  @include size(100%, 100%);
+  @include size(100%, 100vh);
   background-color: $light;
+  position: fixed;
+  top: 0;
+  bottom: 0;
 
   .content {
     position: relative;

@@ -13,9 +13,11 @@ import {
 } from "../../../assets/icons/Icon_svg";
 import { useClickOutside } from "../../hooks/useClickOutside";
 import useMediaQuery from "../../hooks/useMediaQueries";
+import { AuthContext } from "../../context/auth/AuthProvider";
 
 export default function Aside_link() {
   const { openModal } = useContext(ModalContext);
+  const { isAuth, currentUser, logout } = useContext(AuthContext);
   const [show, setShow, refOutsideClick] = useClickOutside(false);
   const isDesktop = useMediaQuery("(min-width: 1281px)");
 
@@ -44,9 +46,6 @@ export default function Aside_link() {
             }}
           />
         </span>
-        <span className="bg_red">
-          <Phone_icon />
-        </span>
         <span
           className="bg_green"
           onClick={() => {
@@ -55,16 +54,28 @@ export default function Aside_link() {
         >
           <Message_icon />
         </span>
-        <span className="bg_gunMetal">
-          <Link href="/admin">
-            <a>
-              <Dashboard_icon />
-            </a>
-          </Link>
+        <span className="bg_red">
+          <Phone_icon />
         </span>
-        <span className="bg_englishViolet">
-          <Logout_icon />
-        </span>
+
+        {currentUser && (
+          <>
+            <span className="bg_gunMetal">
+              <Link href="/admin">
+                <a>
+                  <Dashboard_icon />
+                </a>
+              </Link>
+            </span>
+            <span className="bg_englishViolet">
+              <Logout_icon
+                onClick={() => {
+                  logout();
+                }}
+              />
+            </span>
+          </>
+        )}
       </div>
 
       {!isDesktop && (
@@ -74,7 +85,7 @@ export default function Aside_link() {
             toggle_aside();
           }}
         >
-          <span class={S.dotted_menu}></span>
+          <span className={S.dotted_menu}></span>
         </span>
       )}
     </aside>

@@ -2,73 +2,56 @@
 @import "./../../../Sass/abstract/variables.scss";
 @import "./../../../Sass/abstract/animation.scss";
 
-.wrapper {
-  max-width: var(--container_width);
-  border-radius: $bigradius;
+.content {
+  @include flex(row, wrap, center, flex-start);
   width: 100%;
-  background-color: $light;
-  animation-name: bottom_TO_origin;
-  animation-duration: $shortTime;
-  animation-fill-mode: both;
-  animation-timing-function: ease-in-out;
-  padding: 1rem;
-  header {
-    padding: 0 0 spacing(2) 0;
-    border-bottom: 1px solid darken($grey, 10%);
-    margin-bottom: spacing(2);
+  @media screen and (max-width: 767px) {
+    @include flex(column, wrap, center, flex-start);
   }
-
-  h2,
-  h3 {
-    margin: 0;
-    text-decoration: none;
-  }
-  .content {
-    @include flex(row, wrap, center, flex-start);
-
-    @media screen and (max-width: 767px) {
-      @include flex(column, wrap, center, flex-start);
-    }
-    .map {
-      flex: 1 0 auto;
-      padding: spacing(2) spacing(2) spacing(4);
-      @media screen and (max-width: 767px) {
-        max-width: 100%;
-        border-bottom: 1px solid $grey;
-        width: 100%;
-      }
-
-      iframe {
-        border-radius: 0;
-        box-shadow: $standartShadow;
-        width: 200px;
-        height: 340px;
-        width: 100%;
-        @media screen and (max-width: 500px) {
-          width: 100%;
-          height: 270px;
-        }
-
-        @media screen and (max-height: 732px) {
-          height: 270px;
-        }
-      }
+  .map {
+    flex: 1 0 auto;
+    padding: spacing(2) spacing(2) spacing(4);
+    @media screen and (max-width: 1024px) {
+      max-width: 100%;
+      width: 100%;
     }
 
-    .contact {
-      flex: 1;
+    iframe {
+      border-radius: 0;
+      box-shadow: $standartShadow;
+      width: 200px;
+      height: 500px;
+      width: 100%;
+      @media screen and (max-width: 500px) {
+        width: 100%;
+        height: 270px;
+      }
+
+      @media screen and (max-height: 732px) {
+        height: 270px;
+      }
+    }
+  }
+
+  .contact {
+    flex: 1;
+    align-self: stretch;
+    padding: spacing(2) spacing(2);
+    @media screen and (max-width: 1024px) {
+      flex: 1 0 100%;
+      @include flex(column, nowrap, center, center);
+    }
+    .info {
+      @include flex(column, nowrap, space-between, flex-start);
+      height: 50%;
       align-self: stretch;
-      padding: spacing(2) spacing(2);
-      @media screen and (max-width: 767px) {
+      @media screen and (max-width: 1024px) {
         flex: 1 0 100%;
+        @include flex(column, nowrap, center, center);
       }
-      .info {
-        @include flex(column, wrap, space-between, flex-start);
-        height: 50%;
-        align-self: stretch;
-        h3 {
-          margin-bottom: 0.5rem;
-        }
+
+      p {
+        font-weight: bold;
       }
     }
   }

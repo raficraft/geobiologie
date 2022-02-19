@@ -3,6 +3,8 @@
 
 .list_review {
   padding: spacing(2);
+  max-width: 100%;
+  width: 100%;
 
   &_item {
     background-color: $light;

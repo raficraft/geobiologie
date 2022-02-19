@@ -152,7 +152,7 @@ export default function EditEmail() {
         the provider.*/}
 
       {modal.embed && editMail && (
-        <Modal_body>
+        <Modal_body title="Validation de sécurité">
           <EditWithAuth
             editProfil={handleEditEmail}
             newVal={inputRef.current.value}

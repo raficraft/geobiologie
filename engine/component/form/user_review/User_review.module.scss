@@ -11,9 +11,8 @@
   animation-fill-mode: both;
   animation-timing-function: ease-in-out;
 
-  @media screen and (max-height: 767px) {
-    position: absolute;
-    top: 1rem;
+  @media screen and (max-width: $container_width) {
+    width: 100%;
   }
 
   .bloc_input {
