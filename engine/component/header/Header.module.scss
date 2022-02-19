@@ -8,7 +8,7 @@
 
   position: relative;
   padding: spacing(2) 0 spacing(2) 0;
-  border-bottom: 2px solid $black;
+  border-bottom: 5px solid $beaver;
   box-shadow: $standartShadow;
   .content {
     @include flex(row, wrap, space-between, center);

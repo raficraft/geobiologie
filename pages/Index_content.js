@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import presse from "./../public/assets/docs/presse.jpg";
 import portrait from "./../public/assets/img/illustration/david/david_michel.jpg";
+import HR from "../engine/component/atomic/HR";
 
 export default function Index_content() {
   return (
@@ -71,7 +72,12 @@ export default function Index_content() {
         </p>
       </article>
 
-      <span className="separator"></span>
+      <HR
+        css={{
+          margin: "4 0",
+          width: "100%",
+        }}
+      />
 
       <article className="article article_home">
         <h2>Revue de presse</h2>
@@ -134,8 +140,12 @@ export default function Index_content() {
           </div>
         </div>
       </article>
-
-      <span className="separator"></span>
+      <HR
+        css={{
+          margin: "4 0",
+          width: "100%",
+        }}
+      />
     </>
   );
 }

@@ -10,7 +10,7 @@ export default function List_review() {
   const [, , , , getDocumentByQuery] = useFirestore("user_review", {});
   const [sortCollection, setSortCollection] = useState();
   const [nbPage, setNbPage] = useState(1);
-  const [nbReviewPerPage, setNbReviewPerPage] = useState(2);
+  const [nbReviewPerPage, setNbReviewPerPage] = useState(6);
   const [currentCollectionForThisPage, setCurrentCollectionForThisPage] =
     useState([]);
   const [loading, setLoading] = useState(true);
@@ -42,6 +42,7 @@ export default function List_review() {
   }
 
   const handleSelectChange = (e) => {
+    //shallow copy
     let dataRow = JSON.parse(JSON.stringify(sortCollection));
     setNbReviewPerPage(e.target.value);
     setCurrentCollectionForThisPage(dataRow.slice(0, parseInt(e.target.value)));
@@ -72,18 +73,10 @@ export default function List_review() {
   }
 
   function goToPage(startIndex, pageNumber) {
-    console.log(startIndex, pageNumber);
+    //shallow copy
     const dataRow = JSON.parse(JSON.stringify(sortCollection));
-
     const start = startIndex === 0 ? 0 : startIndex * parseInt(nbReviewPerPage);
     const end = pageNumber * parseInt(nbReviewPerPage);
-
-    console.log("start", start);
-    console.log("end", end);
-    console.log("input", sortCollection);
-    console.log("shallow copy", dataRow);
-    console.log(dataRow.slice(start, end));
-
     setCurrentCollectionForThisPage(dataRow.slice(start, end));
   }
 
@@ -95,6 +88,7 @@ export default function List_review() {
       const res = await getDocumentByQuery("user_review", "active", true);
       if (res) {
         setSortCollection(res);
+        //shallowCopy
         const shallowCopy = JSON.parse(JSON.stringify(res));
         const forThisPage = shallowCopy.splice(0, nbReviewPerPage);
         setCurrentCollectionForThisPage(forThisPage);
@@ -111,34 +105,30 @@ export default function List_review() {
       {loading ? (
         <p>...Loading</p>
       ) : (
-        <section
-          className={S.list_review}
-          onChange={(e) => {
-            handleSelectChange(e);
-          }}
-          key="listReview"
-        >
+        <section className={S.list_review} key="listReview">
           <h2>Ils ont donné leurs avis.</h2>
           <header>
             <label>Nombre d'avis afficher : </label>
-            <select defaultValue={nbReviewPerPage}>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="5">5</option>
+            <select
+              defaultValue={nbReviewPerPage}
+              onChange={(e) => {
+                handleSelectChange(e);
+              }}
+            >
+              <option value="6">5</option>
               <option value="10">10</option>
               <option value="20">20</option>
             </select>
           </header>
           {listUserReview()}
 
-          <div>{createPaginate(nbReviewPerPage)}</div>
+          <div className={S.paginate}>{createPaginate(nbReviewPerPage)}</div>
 
           <footer>
             <button
               className="btn_primary bg_blue"
               onClick={() => {
-                openModal("embed");
+                openModal("review");
               }}
             >
               Donner votre avis

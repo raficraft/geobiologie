@@ -9,6 +9,7 @@ import Nav_left from "../nav_left/Nav_left";
 import Aside_link from "../aside_link/Aside_link";
 import User_review from "../form/user_review/User_review";
 import GoogleMap_modal from "../googleMap_modal/googleMap_modal";
+import HR from "../atomic/HR";
 
 export default function Layout({ children }) {
   const { modal } = useContext(ModalContext);
@@ -45,6 +46,13 @@ export default function Layout({ children }) {
             <GoogleMap_modal></GoogleMap_modal>
           </Modal_body>
         )}
+
+        <HR
+          css={{
+            margin: "4 0",
+            width: "100%",
+          }}
+        />
 
         <footer>
           <h1>Footer</h1>

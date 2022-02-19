@@ -7,18 +7,22 @@ export default function Heroes({ src, video, children }) {
     <>
       {video === "drawing" ? (
         <header className={`${S.wrapper}`}>
-          <video autoPlay muted loop>
-            <source src={src} type="video/mp4" />
-            Sorry, your browser doesn't support embedded videos.
-          </video>
-          {children}
+          <div className={S.content}>
+            <video autoPlay muted loop>
+              <source src={src} type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+            {children}
+          </div>
         </header>
       ) : (
         <header className={`${S.videoPlayer}`}>
-          <video controls>
-            <source src={src} type="video/mp4" />
-            Sorry, your browser doesn't support embedded videos.
-          </video>
+          <div className={S.content}>
+            <video controls>
+              <source src={src} type="video/mp4" />
+              Sorry, your browser doesn't support embedded videos.
+            </video>
+          </div>
         </header>
       )}
     </>
