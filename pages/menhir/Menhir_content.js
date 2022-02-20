@@ -9,7 +9,7 @@ export default function Menhir_content() {
           <h2>Pose de menhir et pierres levée</h2>
         </header>
         <p>
-          Un menhir est comme une antenne, il sert à capter l’énergie du lieu et
+          Un menhir est comme une antenne, il sert à capter l'énergie du lieu et
           à la faire rayonner autour de lui. Il crée une alchimie entre Terre et
           Ciel (tellurique-cosmique). Poser un menhir permet de dynamiser les
           terrains perturbés et de repousser des réseaux négatifs.{" "}

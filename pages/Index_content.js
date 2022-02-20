@@ -24,49 +24,49 @@ export default function Index_content() {
         </div>
         <p>Cheminement vers mon vrai chemin de vie</p>
         <p>
-          La traversée d’une épreuve difficile m’a ouvert une nouvelle vision
-          sur le monde qui nous entoure. J’ai dû faire face à ma sensibilité
+          La traversée d'une épreuve difficile m'a ouvert une nouvelle vision
+          sur le monde qui nous entoure. J'ai dû faire face à ma sensibilité
           dans la dimension énergétique.
         </p>
 
         <p>
-          Quand ce nouveau monde a commencé à s’ouvrir à moi, j’ai ressenti le
+          Quand ce nouveau monde a commencé à s'ouvrir à moi, j'ai ressenti le
           mal être des personnes que je croisais, qui travaillaient autour de
-          moi, les faiblesses liées à l’énergétiques. Ma clairvoyance, claire
+          moi, les faiblesses liées à l'énergétiques. Ma clairvoyance, claire
           sentence et claire audience se sont développées à ce moment-là.
         </p>
         <p>
           Après avoir travaillé dans différentes entreprises, je me suis éloigné
-          de ce système qui ne me correspond pas : courses à l’argent, rythme de
-          vie effréné, égoïsme… Je me consacre aujourd’hui entièrement à
-          l’ésotérisme.
+          de ce système qui ne me correspond pas : courses à l'argent, rythme de
+          vie effréné, égoïsme… Je me consacre aujourd'hui entièrement à
+          l'ésotérisme.
         </p>
         <p>
           Mes nombreuses lectures, des formations (géobiologie, soins
-          énergétiques, chamanisme sibérien, runes) et l’aide de personnes sur
-          mon chemin (guérisseuse, prêtre alchimiste) m’ont permis de comprendre
-          que ma place était ailleurs et que rien n’est lié au hasard.
+          énergétiques, chamanisme sibérien, runes) et l'aide de personnes sur
+          mon chemin (guérisseuse, prêtre alchimiste) m'ont permis de comprendre
+          que ma place était ailleurs et que rien n'est lié au hasard.
         </p>
         <p>
-          J’ai décidé de réaliser mes soins sur les personnes, harmonisations de
+          J'ai décidé de réaliser mes soins sur les personnes, harmonisations de
           lieux à distance et dégagements de toutes sortes de magies dans un
           zome énergétique. Cette structure est une forme géométrique composée
           de losanges agencés en double spirale dont la trame se veut en
           résonance avec le monde vivant.
         </p>
         <p>
-          Après plusieurs années d’approfondissement dans ce domaine afin d’être
-          à la hauteur de ce qui m’est permis de réaliser, je suis aujourd’hui
+          Après plusieurs années d'approfondissement dans ce domaine afin d'être
+          à la hauteur de ce qui m'est permis de réaliser, je suis aujourd'hui
           pleinement inscrit dans mon chemin de vie.
         </p>
         <p>
-          Faisant partie de la Fédération Française de Géobiologie, je m’inscris
+          Faisant partie de la Fédération Française de Géobiologie, je m'inscris
           au même titre que de nombreux autres géobiologues dans la charte de la
           FFG nous engageant à exercer notre activité avec objectivité, humanité
           et probité.
         </p>
         <p>
-          Mon seul but est d’accompagner les personnes venant vers moi à trouver
+          Mon seul but est d'accompagner les personnes venant vers moi à trouver
           des solutions à leur mal être, et leur permettre de retrouver un état
           de bien être dans leur vie.
         </p>
