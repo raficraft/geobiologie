@@ -19,7 +19,7 @@ export default function Masonry() {
     const ratio = file.width / file.height;
 
     if (ratio >= 2) {
-      return { gridColumn: "span 4", gridRow: "span 2" };
+      return { gridColumn: "span 4", gridRow: "span 3" };
     }
 
     if (ratio >= 1) {
@@ -35,7 +35,7 @@ export default function Masonry() {
     if (ratio > 0.3 && ratio < 0.6) {
       return {
         gridColumn: "span 2",
-        gridRow: "span 6",
+        gridRow: "span 5",
       };
     }
 
