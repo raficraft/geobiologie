@@ -1,12 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-/**
- *
- * @param {String} axis
- * @param {*} param0
- * @returns
- */
-
 export default function HR({ axis, size, css, crement, children }) {
   const [style, setStyle] = useState(css);
 
@@ -26,14 +19,6 @@ export default function HR({ axis, size, css, crement, children }) {
 
       setStyle((S) => ({ ...S, ...initial }));
     }
-    // } else if (splitAxis.length === 3 && splitAxis.length === 4) {
-    //   const top = splitAxis[0] * multiple + "px";
-    //   const right = splitAxis[1] * multiple + "px";
-    //   const bottom = splitAxis[2] ? splitAxis[2] * multiple + "px" : 0;
-    //   const left = splitAxis[3] ? splitAxis[3] * multiple + "px" : 0;
-
-    //   return { margin: `${top} ${right} ${bottom} ${left}` };
-    // }
   }
 
   useEffect(() => {
