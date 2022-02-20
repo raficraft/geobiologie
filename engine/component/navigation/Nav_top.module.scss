@@ -3,7 +3,7 @@
 @import "./../../../Sass/abstract/animation.scss";
 
 .nav {
-  @include flexCenter;
+  @include flex(row, wrap, flex-start, center);
   flex: 1 0 auto;
   padding: spacing(1);
   .navList {

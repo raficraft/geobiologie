@@ -3,25 +3,30 @@
 @import "./../../../Sass/abstract/animation";
 
 .wrapper {
-  max-height: 70vh;
-  min-height: 70vh;
-  background-color: rgb(116, 114, 62);
-  max-width: calc(100% - 20rem);
-  width: calc(100% - 20rem);
-  margin-bottom: 3rem;
+  background-image: url("/assets/bg/texture_02.png");
+  width: 100%;
   position: relative;
   @include flexCenter();
-  border: spacing(4) solid $light;
-  box-shadow: 0 0 15px 3px black inset;
+  padding: 0 0 spacing(16);
+  box-shadow: $standartShadow;
 
-  video {
-    border: 1px solid $black;
-    position: absolute;
-    display: block;
-    height: 100%;
+  @media screen and (max-width: 769px) {
+    padding: 0 0 spacing(6);
+  }
+  .content {
+    max-width: var(--container_width);
     width: 100%;
-    object-fit: cover;
-    object-position: 50% 50%;
+    position: relative;
+    max-height: 60vh;
+    height: 100%;
+    video {
+      display: block;
+      max-height: 60vh;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
   }
 }
 
@@ -32,7 +37,6 @@
   position: relative;
   @include flexCenter();
   border: spacing(4) solid $light;
-  box-shadow: 0 0 15px 3px black inset;
   margin: 0 8rem;
   video {
     border: 1px solid $black;

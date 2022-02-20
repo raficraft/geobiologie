@@ -16,14 +16,6 @@ export default function Handle_review(props) {
 
   const [listCollection, setlistCollection] = useState();
 
-  /**
-   * @param {eventHTML} e
-   * @param {number} index
-   * @param {string} goTo
-   */
-
-  //internal component
-
   function showUserReview(list) {
     console.log(listCollection);
     return listCollection.map((el, idx) => {

@@ -83,7 +83,7 @@ export default function EditUsername() {
       return;
     }
     setEditUser(true);
-    openModal("edit");
+    openModal("embed");
   }
 
   return (
@@ -137,8 +137,8 @@ export default function EditUsername() {
         control of the component that will launch the api call transmitted by
         the provider.*/}
 
-      {modal.edit && editUser && (
-        <Modal_body>
+      {modal.embed && editUser && (
+        <Modal_body title="Validation de sécurité">
           <EditWithAuth
             editProfil={handleEditUsername}
             newVal={inputRef.current.value}

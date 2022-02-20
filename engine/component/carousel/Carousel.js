@@ -38,6 +38,7 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
             src={item.src}
             blurDataURL={item.blurDataURL}
             placeholder="blur"
+            alt=""
           ></Image>
         </section>
       );

@@ -34,6 +34,30 @@
   }
 }
 
+@keyframes left_TO_origin {
+  0% {
+    opacity: 0;
+    left: -3rem;
+  }
+
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes left_TO_origin_invert {
+  0% {
+    opacity: 0;
+    left: 0;
+  }
+
+  100% {
+    left: -3rem;
+    opacity: 1;
+  }
+}
+
 @keyframes pendule {
   0% {
     transform: rotate(8deg);

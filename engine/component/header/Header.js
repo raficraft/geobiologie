@@ -3,17 +3,14 @@ import { Home_icon } from "../../../assets/icons/Icon_svg";
 
 import useMediaQuery from "../../hooks/useMediaQueries";
 import Navigation from "../navigation/Navigation";
-import Nav_top from "../nav_top/Nav_top";
-import Account_user from "./account_user/Account_user";
 import Hamburger_menu from "./hamburger_menu/Hamburger_menu";
 
 import S from "./Header.module.scss";
 import Style_nav from "../navigation/Nav_top.module.scss";
-import Lang_select from "./lang_select/Lang_select";
 
 function Header() {
-  const isMobil = useMediaQuery("(max-width: 767px)");
-  const isTablet = useMediaQuery("(min-width: 768px)");
+  const isMobil = useMediaQuery("(max-width: 1139px)");
+  const isTablet = useMediaQuery("(min-width: 1140px)");
   //Conponenet
   return (
     <header className={`${S.wrapper}`}>
@@ -28,13 +25,11 @@ function Header() {
 
         {isTablet && <Navigation css={Style_nav} />}
 
-        <div className={S.nav_right}>
-          {/* Change language */}
-
-          {/* Account user */}
-          {isTablet && <Account_user />}
-          {isMobil && <Hamburger_menu />}
-        </div>
+        {isMobil && (
+          <div className={S.nav_right}>
+            <Hamburger_menu />
+          </div>
+        )}
       </div>
       {/* Header Content END*/}
     </header>

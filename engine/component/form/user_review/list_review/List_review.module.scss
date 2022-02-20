@@ -1,2 +1,63 @@
 @import "./../../../../../Sass/abstract/function";
 @import "./../../../../../Sass/abstract/variables";
+
+.list_review {
+  @include flex(row, wrap, space-between, flex-start);
+  padding: spacing(2);
+  max-width: 100%;
+  width: 100%;
+  background-color: $light;
+
+  header {
+    width: 100%;
+  }
+
+  &_item {
+    background-color: $light;
+    padding: spacing(2) spacing(3);
+    margin: spacing(4) spacing(1);
+    border-radius: 8px;
+    background-color: wheat;
+    max-width: calc(50% - spacing(4));
+    width: 100%;
+
+    @media screen and (max-width: 769px) {
+      max-width: 100%;
+    }
+
+    .item_rate {
+      svg {
+        color: $yellow;
+        font-size: 1.25rem;
+      }
+    }
+
+    .item_comment {
+      margin: 0 0 spacing(2) 0;
+    }
+
+    .item_name {
+      text-align: right;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+  .paginate {
+    width: 100%;
+    margin: 0 0 spacing(2);
+    @include flex(row, nowrap, center, center);
+
+    button {
+      @include size(2rem, 2rem);
+      font-size: 1.125rem;
+      margin: 0.5rem;
+      color: $black;
+      background-color: $grey;
+      border: none;
+      border-radius: 5px;
+      box-shadow: $lightShadow;
+    }
+  }
+}

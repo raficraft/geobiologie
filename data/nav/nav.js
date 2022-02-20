@@ -1,8 +1,10 @@
 import {
   EarthAtlantic,
   EnergyIcon,
+  Learn_icon,
   Newspaper,
   Psy,
+  ShoppingCart_icon,
   StoneIcon,
   WaterOutline,
 } from "../../assets/icons/Icon_svg";
@@ -38,14 +40,8 @@ export const nav = [
   },
   {
     title: "menhir",
-    link: "/",
+    link: "/menhir",
     icon: <StoneIcon></StoneIcon>,
-    child: [
-      {
-        title: "diagnositque",
-        link: "/",
-      },
-    ],
   },
   {
     title: "sourcier",
@@ -56,11 +52,12 @@ export const nav = [
   {
     title: "stage",
     link: "/",
-    icon: <WaterOutline></WaterOutline>,
+    icon: <Learn_icon></Learn_icon>,
   },
+
   {
-    title: "presse",
-    link: "/presse",
-    icon: <Newspaper></Newspaper>,
+    title: "vente",
+    link: "/vente",
+    icon: <ShoppingCart_icon></ShoppingCart_icon>,
   },
 ];

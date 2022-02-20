@@ -7,7 +7,7 @@
 }
 
 .primary_content {
-  width: $container_width;
+  width: var(--container_width);
 
   @media screen and (max-width: 1439px) {
     width: calc(100% - 2rem);
@@ -34,6 +34,7 @@
   @include flex(column, nowrap, center, flex-start);
   margin: 0.5rem 0;
   position: relative;
+
   @media screen and (max-width: 700px) {
     @include flex(row, wrap, center, center);
   }

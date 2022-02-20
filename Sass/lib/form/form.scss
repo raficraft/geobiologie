@@ -26,7 +26,7 @@
   }
 
   textarea {
-    min-height: 260px;
+    min-height: 200px;
     padding: 1rem 0;
     font-size: 1rem;
     width: 100%;
@@ -37,9 +37,9 @@
     width: 100%;
     margin: 0 0 $space 0;
 
-    @media screen and (max-width: 850px) {
-      text-align: center;
-    }
+    // @media screen and (max-width: 850px) {
+    //   text-align: center;
+    // }
   }
 }
 

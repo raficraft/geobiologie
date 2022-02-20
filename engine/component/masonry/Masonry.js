@@ -19,7 +19,7 @@ export default function Masonry() {
     const ratio = file.width / file.height;
 
     if (ratio >= 2) {
-      return { gridColumn: "span 4", gridRow: "span 2" };
+      return { gridColumn: "span 4", gridRow: "span 3" };
     }
 
     if (ratio >= 1) {
@@ -35,7 +35,7 @@ export default function Masonry() {
     if (ratio > 0.3 && ratio < 0.6) {
       return {
         gridColumn: "span 2",
-        gridRow: "span 6",
+        gridRow: "span 5",
       };
     }
 
@@ -49,7 +49,7 @@ export default function Masonry() {
 
   function handleClick(file, idx) {
     setCurrentFile((s) => ({ ...s, current: file, idx: idx }));
-    openModal("edit");
+    openModal("embed");
   }
 
   function createGallery() {
@@ -66,6 +66,7 @@ export default function Masonry() {
             onClick={() => {
               handleClick(file, idx);
             }}
+            alt=""
           ></Image>
         </div>
       );
@@ -80,8 +81,8 @@ export default function Masonry() {
         <p>Loading</p>
       )}
 
-      {modal.edit && filesInfo.length && (
-        <Modal_body>
+      {modal.embed && filesInfo.length && (
+        <Modal_body addContainer={false}>
           <Carousel
             currentFile={currentFile.current}
             idx={currentFile.idx}

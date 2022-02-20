@@ -5,11 +5,13 @@
 .wrapper {
   @include flex(row, nowrap, center, center);
   background-color: rgb(255, 255, 255);
-  padding-top: calc(4 * #{$space});
-  position: relative;
 
+  position: relative;
+  padding: spacing(2) 0 spacing(2) 0;
+  border-bottom: 5px solid $beaver;
+  box-shadow: $standartShadow;
   .content {
-    @include flex(row, wrap, flex-start, center);
+    @include flex(row, wrap, space-between, center);
 
     .home_button {
       @include flexCenter;
@@ -30,6 +32,7 @@
       }
 
       @media screen and (min-width: 767px) {
+        @include flex(row, wrap, flex-start, center);
         &:after {
           @include emptyContent;
           width: 1px;

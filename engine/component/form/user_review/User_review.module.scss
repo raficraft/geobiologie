@@ -1,8 +1,19 @@
 @import "./../../../../Sass/abstract/function";
 @import "./../../../../Sass/abstract/variables";
+@import "./../../../../Sass/abstract/animation";
 
 .wrapper {
-  width: 100%;
+  width: var(--container_width);
+  background-color: $light;
+  padding: spacing(3) spacing(6);
+  animation-name: bottom_TO_origin;
+  animation-duration: $shortTime;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+
+  @media screen and (max-width: $container_width) {
+    width: 100%;
+  }
 
   .bloc_input {
     margin: 2rem 0;

@@ -14,6 +14,14 @@
   font-style: normal;
 }
 
+:root {
+  --container_width: 1330px;
+
+  @media screen and (max-width: 1330px) {
+    --container_width: calc(100% - 2rem);
+  }
+}
+
 html,
 body,
 div,
@@ -134,6 +142,7 @@ body {
   overflow-x: hidden;
   color: $text_black_light;
   scroll-behavior: smooth;
+  background-image: url("/assets/bg/texture_01.png");
 }
 
 ol,
@@ -188,11 +197,13 @@ h6 {
 }
 
 h1 {
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 
 h2 {
-  font-size: 1.325em;
+  font-size: 1.5em;
+  line-height: 1.6;
+  text-decoration: underline;
 }
 
 h3 {
@@ -251,6 +262,50 @@ button {
   background: rgb(167, 167, 167);
 }
 
-hr {
-  margin: 2rem 0;
+.separator {
+  margin: spacing(6) 0;
+  content: "";
+  @include size(100%, 1px);
+  position: relative;
+  background-color: lighten(grey, 20%);
+  display: block;
+}
+
+video {
+  cursor: pointer;
+}
+
+//Design System Class atomic
+
+.bg_blue,
+.text_blue {
+  background-color: $blue;
+}
+.bg_green,
+.text_green {
+  background-color: $green;
+}
+.bg_red,
+.text_red {
+  background-color: $red;
+}
+.bg_yellow,
+.text_yellow {
+  background-color: $yellow;
+}
+.bg_champagne,
+.text_champagne {
+  background-color: $champagne;
+}
+.bg_gunMetal,
+.text_gunMetal {
+  background-color: $gunMetal;
+}
+.bg_blackChocolate,
+.text_blackChocolate {
+  background-color: $blackChocolate;
+}
+.bg_englishViolet,
+.text_englishViolet {
+  background-color: $englishViolet;
 }
