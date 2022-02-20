@@ -5,6 +5,8 @@ import presse from "./../public/assets/docs/presse.jpg";
 import portrait from "./../public/assets/img/illustration/david/david_michel.jpg";
 import HR from "../engine/component/atomic/HR";
 
+import separator from "./../public/assets/img/illustration/separator/yggdrasil.png";
+
 export default function Index_content() {
   return (
     <>
@@ -77,7 +79,7 @@ export default function Index_content() {
           margin: "4 0",
           width: "100%",
         }}
-      />
+      ></HR>
 
       <article className="article article_home">
         <h2>Revue de presse</h2>
@@ -145,7 +147,7 @@ export default function Index_content() {
           margin: "4 0",
           width: "100%",
         }}
-      />
+      ></HR>
     </>
   );
 }

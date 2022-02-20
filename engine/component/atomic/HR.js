@@ -7,7 +7,7 @@ import React, { useState, useEffect } from "react";
  * @returns
  */
 
-export default function HR({ axis, size, css, crement }) {
+export default function HR({ axis, size, css, crement, children }) {
   const [style, setStyle] = useState(css);
 
   function getCss() {
@@ -18,7 +18,11 @@ export default function HR({ axis, size, css, crement }) {
       const X = splitAxis[0] * multiple + "px";
       const Y = splitAxis[1] * multiple + "px";
 
-      const initial = { margin: `${X} ${Y}` };
+      const initial = {
+        margin: `${X} ${Y}`,
+        display: "grid",
+        placeItems: "center",
+      };
 
       setStyle((S) => ({ ...S, ...initial }));
     }
@@ -37,5 +41,5 @@ export default function HR({ axis, size, css, crement }) {
     console.log(style);
   }, []);
 
-  return <span style={style}></span>;
+  return <span style={style}>{children}</span>;
 }
