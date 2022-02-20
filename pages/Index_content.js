@@ -72,13 +72,6 @@ export default function Index_content() {
         </p>
       </article>
 
-      <HR
-        css={{
-          margin: "4 0",
-          width: "100%",
-        }}
-      ></HR>
-
       <article className="article article_home">
         <h2>Revue de presse</h2>
         {/* VIDEO AND presse */}
@@ -140,12 +133,6 @@ export default function Index_content() {
           </div>
         </div>
       </article>
-      <HR
-        css={{
-          margin: "4 0",
-          width: "100%",
-        }}
-      ></HR>
     </>
   );
 }
