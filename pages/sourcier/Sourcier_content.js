@@ -16,7 +16,7 @@ export default function Sourcier_content() {
           courant de l’eau. Pour cela, je travaille avec des baguettes en Y et
           en L, mais aussi avec mon pendule et diagrammes.
         </p>
-        <h3>L\'eau souterraine</h3>
+        <h3>L{"'"}eau souterraine</h3>
         <p>
           Pas la peine de vous faire un dessin, tout le monde voit ici à quoi
           ressemble un cours d'eau souterrain, avec lequel nous inclusons les
