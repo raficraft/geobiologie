@@ -18,11 +18,11 @@ export default function Sourcier_content() {
         </p>
         <h3>L{"'"}eau souterraine</h3>
         <p>
-          Pas la peine de vous faire un dessin, tout le monde voit ici à quoi
-          ressemble un cours d'eau souterrain, avec lequel nous inclusons les
+          {` Pas la peine de vous faire un dessin, tout le monde voit ici à quoi
+          ressemble un cours <b>d'eau souterrain</b>, avec lequel nous inclusons les
           sources, les nappes et les lacs souterrain. Cest cours d{"'"}eau
           souterrains peuvent être petits comme un ruisseau ou grand comme un
-          fleuve ou un lac.
+          fleuve ou un lac`}
         </p>
         <p>
           Les <b>actions</b> sur les êtres vivants sont différents selon la
