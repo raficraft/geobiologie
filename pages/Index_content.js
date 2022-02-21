@@ -61,7 +61,7 @@ export default function Index_content() {
               </Link>
             </div>
             <p className="text-center">
-              Document PDF, cliquer sur l image pour consulter.
+              Document PDF, cliquer sur l'image pour consulter.
             </p>
           </div>
 
