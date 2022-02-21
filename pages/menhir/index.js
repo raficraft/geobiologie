@@ -31,7 +31,10 @@ export default function Home() {
       </Head>
 
       <main className="mainContent">
-        <Heroes src="/assets/video/video_1.mp4" video="drawing">
+        <Heroes
+          src="gs://geobiologie-loire.appspot.com/video_1.mp4"
+          video="drawing"
+        >
           <div className="inside">
             <div className="inside_content">
               <div className="logo">
