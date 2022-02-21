@@ -83,7 +83,7 @@ export default function Index_content() {
             <div className="media_home-video--container">
               <video controls width="100%">
                 <source
-                  src="gs://geobiologie-loire.appspot.com/video_0.mp4"
+                  src="https://firebasestorage.googleapis.com/v0/b/geobiologie-loire.appspot.com/o/video_0.mp4?alt=media&token=4b63d0ab-c781-4fe1-bdca-fb9e3e093cf1"
                   type="video/mp4"
                 />
               </video>
