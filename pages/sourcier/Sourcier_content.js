@@ -19,7 +19,7 @@ export default function Sourcier_content() {
         <h3>L{"'"}eau souterraine</h3>
         <p>
           Pas la peine de vous faire un dessin, tout le monde voit ici à quoi
-          ressemble un cours d'\''eau souterrain, avec lequel nous inclusons les
+          ressemble un cours d'eau souterrain, avec lequel nous inclusons les
           sources, les nappes et les lacs souterrain. Cest cours d{"'"}eau
           souterrains peuvent être petits comme un ruisseau ou grand comme un
           fleuve ou un lac.
