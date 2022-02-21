@@ -38,7 +38,7 @@ export default function Index_content() {
         <p>
           Après avoir travaillé dans différentes entreprises, je me suis éloigné
           de ce système qui ne me correspond pas : courses à l'argent, rythme de
-          vie effréné, égoïsme… Je me consacre aujourd'hui entièrement à
+          vie effréné, égoïsme... Je me consacre aujourd'hui entièrement à
           l'ésotérisme.
         </p>
         <p>
