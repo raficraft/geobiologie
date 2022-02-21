@@ -63,6 +63,26 @@ export default function Index_content() {
           </div>
 
           {/* Interview Radio  */}
+
+          <div className="media_home-radio">
+            <h3>Interview Radio</h3>
+            <div className="media_home-radio--player">
+              <figure>
+                <figcaption>Reportage David Michel</figcaption>
+                <audio controls src="/media/cc0-audio/t-rex-roar.mp3">
+                  Your browser does not support the
+                  <code>audio</code> element.
+                </audio>
+              </figure>
+              <figure>
+                <figcaption>Recontre avec David Michel</figcaption>
+                <audio controls src="/media/cc0-audio/t-rex-roar.mp3">
+                  Your browser does not support the
+                  <code>audio</code> element.
+                </audio>
+              </figure>
+            </div>
+          </div>
         </div>
       </article>
     </>
