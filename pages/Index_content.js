@@ -60,6 +60,7 @@ export default function Index_content() {
                 </a>
               </Link>
             </div>
+            <p className="text-center"></p>
           </div>
 
           {/* Interview Radio  */}
