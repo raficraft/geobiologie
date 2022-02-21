@@ -45,13 +45,13 @@ export const nav = [
   },
   {
     title: "sourcier",
-    link: "/",
+    link: "/sourcier",
     icon: <WaterOutline></WaterOutline>,
   },
 
   {
     title: "stage",
-    link: "/",
+    link: "/stage",
     icon: <Learn_icon></Learn_icon>,
   },
 

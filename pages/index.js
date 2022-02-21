@@ -1,18 +1,17 @@
 import React, { useContext } from "react";
 import Head from "next/head";
-import List_review from "../engine/component/form/user_review/list_review/List_review";
-import User_review from "../engine/component/form/user_review/User_review";
-import Heroes from "../engine/component/Heroes/Heroes";
 import Image from "next/image";
 
 import logo from "./../public/assets/svg/1.5x/logo.png";
+
 import { ModalContext } from "../engine/context/modal/ModalProvider";
+
+import Heroes from "../engine/component/Heroes/Heroes";
 import Index_content from "./Index_content";
+import List_review from "../engine/component/form/user_review/list_review/List_review";
 
 export default function Home() {
   const { openModal } = useContext(ModalContext);
-
-  /*** */
 
   function handleClick(e) {
     e.preventDefault();

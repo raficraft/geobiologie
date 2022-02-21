@@ -6,9 +6,9 @@ import Image from "next/image";
 import logo from "./../../public/assets/svg/1.5x/logo.png";
 import { ModalContext } from "../../engine/context/modal/ModalProvider";
 import Masonry from "../../engine/component/masonry/Masonry";
-import Menhir_content from "./Menhir_content";
+import Sourcier_content from "./Sourcier_content";
 
-export default function Menhir() {
+export default function Sourcier() {
   const { openModal } = useContext(ModalContext);
 
   /*** */
@@ -59,7 +59,7 @@ export default function Menhir() {
           </div>
         </Heroes>
         <section className="content">
-          <Menhir_content></Menhir_content>
+          <Sourcier_content></Sourcier_content>
           <Masonry></Masonry>
         </section>
       </main>
