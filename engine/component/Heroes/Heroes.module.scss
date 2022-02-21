@@ -7,26 +7,16 @@
   width: 100%;
   position: relative;
   @include flexCenter();
-  padding: 0 0 spacing(16);
   box-shadow: $standartShadow;
 
   @media screen and (max-width: 769px) {
-    padding: 0 0 spacing(6);
   }
   .content {
-    max-width: var(--container_width);
+    max-width: 100%;
     width: 100%;
     position: relative;
-    max-height: 60vh;
-    height: 100%;
-    video {
-      display: block;
-      max-height: 60vh;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-      object-position: 50% 50%;
-    }
+    height: 70vh;
+    content: "";
   }
 }
 

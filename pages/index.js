@@ -31,10 +31,7 @@ export default function Home() {
       </Head>
 
       <main className="mainContent">
-        <Heroes
-          src="https://firebasestorage.googleapis.com/v0/b/geobiologie-loire.appspot.com/o/video_7.mp4?alt=media&token=660daa9e-55c4-4638-84d6-14cb737aabfb"
-          video="drawing"
-        >
+        <Heroes>
           <div className="inside">
             <div className="inside_content">
               <div className="logo">
