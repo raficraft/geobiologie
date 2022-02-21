@@ -3,7 +3,7 @@ module.exports = {
 
   extends: "next",
   rules: {
-    "react/no-unescaped-entities": ["error", { forbid: [">", "}"] }],
+    "react/no-unescaped-entities": ["error", { forbid: [">", "}", "'"] }],
     // or
     "react/no-unescaped-entities": [
       "error",
@@ -16,6 +16,10 @@ module.exports = {
           {
             char: "}",
             alternatives: ["&#125;"],
+          },
+          {
+            char: "'",
+            alternatives: ["&rsquo;"],
           },
         ],
       },
