@@ -31,7 +31,7 @@ export default function Index_content() {
 
         <p>
           {
-            " Quand ce <b>nouveau monde</b> a commencé à s'ouvrir à moi, j'ai ressenti le  mal être des personnes que je croisais, qui travaillaient autour de moi, les faiblesses liées à l'énergétiques. Ma clairvoyance, claire sentence et claire audience se sont développées à ce moment-là."
+            " Quand ce nouveau monde a commencé à s'ouvrir à moi, j'ai ressenti le  mal être des personnes que je croisais, qui travaillaient autour de moi, les faiblesses liées à l'énergétiques. Ma clairvoyance, claire sentence et claire audience se sont développées à ce moment-là."
           }
         </p>
         <p>
