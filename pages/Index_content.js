@@ -60,9 +60,6 @@ export default function Index_content() {
                 </a>
               </Link>
             </div>
-            <p className="text-center">
-              Document PDF, cliquer sur l'image pour consulter.
-            </p>
           </div>
 
           {/* Interview Radio  */}
