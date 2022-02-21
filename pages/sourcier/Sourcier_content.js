@@ -6,7 +6,7 @@ export default function Sourcier_content() {
     <>
       <article className="article article_home">
         <header>
-          <h2>Pose de menhir et pierres levée</h2>
+          <h2>Mise en place de puits</h2>
         </header>
         <p>
           Il est important de bien analyser avant de se lancer dans la
@@ -19,15 +19,15 @@ export default function Sourcier_content() {
         <h3>L{"'"}eau souterraine</h3>
         <p>
           Pas la peine de vous faire un dessin, tout le monde voit ici à quoi
-          ressemble un cours d'eau souterrain, avec lequel nous inclusons les
-          sources, les nappes et les lacs souterrain. Cest cours d'au
+          ressemble un cours d{"'"}eau souterrain, avec lequel nous inclusons
+          les sources, les nappes et les lacs souterrain. Cest cours d{"'"}eau
           souterrains peuvent être petits comme un ruisseau ou grand comme un
           fleuve ou un lac.
         </p>
         <p>
           Les <b>actions</b> sur les êtres vivants sont différents selon la
-          profondeur, la largeur, la composition et dans les cas de cours d'eau,
-          le débit.
+          profondeur, la largeur, la composition et dans les cas de cours d{"'"}
+          eau, le débit.
         </p>
 
         <ul>

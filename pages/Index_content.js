@@ -50,7 +50,6 @@ export default function Index_content() {
           }
         </p>
         <p>
-          {" "}
           {
             "Après plusieurs années d'approfondissement dans ce domaine afin d'être à la hauteur de ce qui m'est permis de réaliser, je suis aujourd'hui pleinement inscrit dans mon chemin de vie. "
           }
