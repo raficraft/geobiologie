@@ -4,8 +4,9 @@ import S from "./Heroes.module.scss";
 
 import item from "./../../../public/assets/img/illustration/heroes/heroes (13).jpg";
 import Image from "next/image";
+import { arrayRemove } from "firebase/firestore";
 
-export default function Heroes({ src, video, children }) {
+export default function Heroes({ children }) {
   const [image, setImage] = useState(false);
   function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -15,23 +16,30 @@ export default function Heroes({ src, video, children }) {
     async function getRandomImage() {
       const random = getRandomInt(36);
 
-      console.log(random);
+      if (random > 0) {
+        try {
+          const i = await import(
+            `/public/assets/img/illustration/heroes/heroes (${random}).jpg`
+          );
 
-      try {
-        const i = await import(
-          `/public/assets/img/illustration/heroes/heroes (${random}).jpg`
-        );
-        console.log("yolo ", i);
-        setImage(i.default);
-      } catch (error) {}
+          setImage(i.default);
+        } catch (error) {
+          console.log(error);
+        }
+      }
     }
 
     getRandomImage();
 
     setInterval(() => {
       getRandomImage();
-    }, 5000);
+    }, 10000);
+
+    return () => {
+      getRandomImage();
+    };
   }, []);
+
   return (
     <header className={`${S.wrapper}`}>
       <div className={S.content}>

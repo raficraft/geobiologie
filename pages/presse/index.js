@@ -10,7 +10,7 @@ export default function Index() {
         <meta name="description" content="My heart in my Art" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Heroes src="/assets/video/video_0.mp4" video="playerVideo"></Heroes>
+      <Heroes></Heroes>
       <h1>Revue de presse</h1>
     </>
   );

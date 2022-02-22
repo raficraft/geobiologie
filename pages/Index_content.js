@@ -37,13 +37,13 @@ export default function Index_content() {
           ce moment-là.
         </p>
         <p>
-          "Après avoir travaillé dans différentes entreprises, je me suis
-          éloigné de ce système qui ne me correspond pas : courses à
-          l&rsquo;argent, rythme de vie effréné, égoïsme... Je me consacre
-          aujourd&rsquo;hui entièrement à l&rsquo;ésotérisme.
+          Après avoir travaillé dans différentes entreprises, je me suis éloigné
+          de ce système qui ne me correspond pas : courses à l&rsquo;argent,
+          rythme de vie effréné, égoïsme... Je me consacre aujourd&rsquo;hui
+          entièrement à l&rsquo;ésotérisme.
         </p>
         <p>
-          "Mes nombreuses lectures, des formations (géobiologie, soins
+          Mes nombreuses lectures, des formations (géobiologie, soins
           énergétiques, chamanisme sibérien, runes) et l&rsquo;aide de personnes
           sur mon chemin (guérisseuse, prêtre alchimiste) m&rsquo;ont permis de
           comprendre que ma place était ailleurs et que rien n&rsquo;est lié au
@@ -68,9 +68,9 @@ export default function Index_content() {
           objectivité, humanité et probité.
         </p>
         <p>
-          {
-            "Mon seul but est d&rsquo;accompagner les personnes venant vers moi à trouver des solutions à leur mal être, et leur permettre de retrouver un état de bien être dans leur vie. "
-          }
+          Mon seul but est d&rsquo;accompagner les personnes venant vers moi à
+          trouver des solutions à leur mal être, et leur permettre de retrouver
+          un état de bien être dans leur vie.
         </p>
       </article>
 

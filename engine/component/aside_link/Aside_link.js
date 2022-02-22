@@ -55,7 +55,11 @@ export default function Aside_link() {
           <Message_icon />
         </span>
         <span className="bg_red">
-          <Phone_icon />
+          <Link href="">
+            <a>
+              <Phone_icon />
+            </a>
+          </Link>
         </span>
 
         {currentUser && (

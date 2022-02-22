@@ -19,20 +19,3 @@
     content: "";
   }
 }
-
-.videoPlayer {
-  max-width: calc(100% - 20rem);
-  width: calc(100% - 20rem);
-  margin-bottom: 3rem;
-  position: relative;
-  @include flexCenter();
-  border: spacing(4) solid $light;
-  margin: 0 8rem;
-  video {
-    border: 1px solid $black;
-    max-width: 100%;
-    width: 100%;
-    display: block;
-    object-fit: cover;
-  }
-}
