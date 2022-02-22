@@ -22,13 +22,22 @@ export default function User_review() {
     comment: false,
   });
 
+  const [successMessage, setSuccessMessage] = useState(false);
+
   const [, , createDocument] = useFirestore("user_review", {});
 
   function handleRate(e) {
-    setRate(parseInt(e.target.value));
+    console.log("rate ====>>>", e.target.value);
+    console.log("state rate ====>>>", rate);
+    console.log("error rate", error.rate);
 
-    if (error.rate && parseInt(e.target.value) > 0) {
+    if (!error.rate && parseInt(e.target.value) > 0) {
+      return setRate(parseInt(e.target.value));
+    }
+
+    if (error.rate && parseInt(e.target.value) === 0) {
       setError((S) => ({ ...S, rate: false }));
+      return;
     }
   }
 
@@ -67,11 +76,16 @@ export default function User_review() {
   async function handleSubmit(e) {
     e.preventDefault();
 
+    console.log("in submit : >>>", rate);
+    console.log("in submit : >>>", error);
+
     if (rate === 0) {
       setError((S) => ({ ...S, rate: "Veuillez choisir une note" }));
       return;
     } else {
       setError((S) => ({ ...S, rate: false }));
+      setSuccessMessage(true);
+      console.log(rate);
     }
 
     const payload = {
@@ -83,11 +97,11 @@ export default function User_review() {
       active: false,
     };
 
+    console.log(payload);
     try {
-      const res = await createDocument("user_review", payload);
+      await createDocument("user_review", payload);
       inputs.form.current.reset();
       setRate(0);
-      console.log(res);
     } catch (error) {
       alert(error);
     }
@@ -109,8 +123,8 @@ export default function User_review() {
                 type="radio"
                 id="star1"
                 name="rate"
-                value="1"
-                onChange={(e) => {
+                value="5"
+                onClick={(e) => {
                   handleRate(e);
                 }}
               />
@@ -121,8 +135,8 @@ export default function User_review() {
                 type="radio"
                 id="star2"
                 name="rate"
-                value="2"
-                onChange={(e) => {
+                value="4"
+                onClick={(e) => {
                   handleRate(e);
                 }}
               />
@@ -134,7 +148,7 @@ export default function User_review() {
                 id="star3"
                 name="rate"
                 value="3"
-                onChange={(e) => {
+                onClick={(e) => {
                   handleRate(e);
                 }}
               />
@@ -145,8 +159,8 @@ export default function User_review() {
                 type="radio"
                 id="star4"
                 name="rate"
-                value="4"
-                onChange={(e) => {
+                value="2"
+                onClick={(e) => {
                   handleRate(e);
                 }}
               />
@@ -157,8 +171,8 @@ export default function User_review() {
                 type="radio"
                 id="star5"
                 name="rate"
-                value="5"
-                onChange={(e) => {
+                value="1"
+                onClick={(e) => {
                   handleRate(e);
                 }}
               />
@@ -246,6 +260,11 @@ export default function User_review() {
               </div>
             )}
           </div>
+          {successMessage && (
+            <p className="text_green">
+              Message envoyé. Il sera affiché quand notre équipe l'aura validé
+            </p>
+          )}
         </div>
         <button className="btn_sub btn_primary" type="submit" ref={inputs.btn}>
           Envoyer

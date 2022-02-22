@@ -277,37 +277,61 @@ video {
 
 //Design System Class atomic
 
-.bg_blue,
-.text_blue {
+.bg_blue {
   background-color: $blue;
 }
-.bg_green,
-.text_green {
+.bg_green {
   background-color: $green;
 }
-.bg_red,
-.text_red {
+.bg_red {
   background-color: $red;
 }
-.bg_yellow,
-.text_yellow {
+.bg_yellow {
   background-color: $yellow;
 }
-.bg_champagne,
-.text_champagne {
+.bg_champagne {
   background-color: $champagne;
 }
-.bg_gunMetal,
-.text_gunMetal {
+.bg_gunMetal {
   background-color: $gunMetal;
 }
-.bg_blackChocolate,
-.text_blackChocolate {
+.bg_blackChocolate {
   background-color: $blackChocolate;
 }
-.bg_englishViolet,
-.text_englishViolet {
+.bg_englishViolet {
   background-color: $englishViolet;
+}
+
+.text_blue {
+  color: $blue;
+}
+
+.text_green {
+  color: $green;
+}
+
+.text_red {
+  color: $red;
+}
+
+.text_yellow {
+  color: $yellow;
+}
+
+.text_champagne {
+  color: $champagne;
+}
+
+.text_gunMetal {
+  color: $gunMetal;
+}
+
+.text_blackChocolate {
+  color: $blackChocolate;
+}
+
+.text_englishViolet {
+  color: $englishViolet;
 }
 
 b {
