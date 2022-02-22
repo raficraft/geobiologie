@@ -5,7 +5,7 @@ export default function index() {
   return (
     <>
       <h1>GEOBIOLOGY</h1>
-      <Masonry></Masonry>
+      <Masonry dir="masonry/menhir/"></Masonry>
     </>
   );
 }

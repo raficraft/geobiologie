@@ -60,7 +60,7 @@ export default function Menhir() {
         </Heroes>
         <section className="content">
           <Menhir_content></Menhir_content>
-          <Masonry></Masonry>
+          <Masonry dir="masonry/menhir/"></Masonry>
         </section>
       </main>
     </>

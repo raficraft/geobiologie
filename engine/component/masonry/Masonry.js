@@ -7,8 +7,8 @@ import Modal_body from "../modal/Modal_body";
 
 import S from "./Masonry.module.scss";
 
-export default function Masonry() {
-  const [filesInfo, loading] = useGetimage("masonry/menhir/");
+export default function Masonry({ dir }) {
+  const [filesInfo, loading] = useGetimage(dir);
   const { modal, openModal } = useContext(ModalContext);
   const [currentFile, setCurrentFile] = useState({
     current: {},

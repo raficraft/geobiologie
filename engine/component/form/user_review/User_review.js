@@ -262,7 +262,7 @@ export default function User_review() {
           </div>
           {successMessage && (
             <p className="text_green">
-              Message envoyé. Il sera affiché quand notre équipe l'aura validé
+              Message envoyé. Il sera affiché quand notre équipe l'aura validé.
             </p>
           )}
         </div>
