@@ -69,17 +69,18 @@ export default function Sourcier_content() {
         </p>
 
         <p>
-          Si le courant d'eau passe sous un cimetierre (charnier), sous des
-          anciennes mines, dous des lignes à haute tensions, sous des radars ou
-          drelais téléphoniques cette eau transmet tout le négatif qu'elle
-          prends sur son passage.
+          Si le courant d&rsquo;eau passe sous un cimetierre (charnier), sous
+          des anciennes mines, dous des lignes à haute tensions, sous des radars
+          ou drelais téléphoniques cette eau transmet tout le négatif
+          qu&rsquo;elle prends sur son passage.
         </p>
 
         <p>
-          Les maisons construites sur d'anciens marais sont souvent des maisons
-          à cancer, car la quantité d'eau dessous est trop importante et aucune
-          énergie ne peut circuler. D'où l'importance de savoir quel type d'eau
-          passe sous la maison, ou le terrain.
+          Les maisons construites sur d&rsquo;anciens marais sont souvent des
+          maisons à cancer, car la quantité d&rsquo;eau dessous est trop
+          importante et aucune énergie ne peut circuler. D&rsquo;où
+          l&rsquo;importance de savoir quel type d&rsquo;eau passe sous la
+          maison, ou le terrain.
         </p>
       </article>
 
