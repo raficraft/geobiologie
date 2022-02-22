@@ -93,12 +93,9 @@ export default function Index_content() {
               <iframe
                 src="https://www.youtube-nocookie.com/embed/zvLa5il8CQ4"
                 title="YouTube video player"
-                frameborder="0"
-                playsinline="1"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                webkitallowfullscreen
-                mozallowfullscreen
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>
