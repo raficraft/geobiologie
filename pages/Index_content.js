@@ -131,7 +131,7 @@ export default function Index_content() {
                 <figcaption>Reportage David Michel</figcaption>
                 <audio
                   controls
-                  src="gs://geobiologie-loire.appspot.com/interview_david_michel.mp3"
+                  src="https://firebasestorage.googleapis.com/v0/b/geobiologie-loire.appspot.com/o/interview_david_michel.mp3?alt=media&token=8f384660-ebca-458e-8dc4-e6c176ed5c1d"
                 >
                   Your browser does not support the
                   <code>audio</code> element.
@@ -141,7 +141,7 @@ export default function Index_content() {
                 <figcaption>Recontre avec David Michel</figcaption>
                 <audio
                   controls
-                  src="gs://geobiologie-loire.appspot.com/recontre_dav_dmichel.mp3"
+                  src="https://firebasestorage.googleapis.com/v0/b/geobiologie-loire.appspot.com/o/recontre_dav_dmichel.mp3?alt=media&token=356bd0af-f7ad-4ea9-98d7-44fb035db2db"
                 >
                   Your browser does not support the
                   <code>audio</code> element.
