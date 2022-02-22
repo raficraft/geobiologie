@@ -9,6 +9,8 @@
   .navList {
     @include flex(row, wrap, center, center);
     margin: 0;
+    width: 100%;
+    background-color: red;
     &_item {
       @include flex(row, wrap, center, center);
       margin: 0 spacing(2);

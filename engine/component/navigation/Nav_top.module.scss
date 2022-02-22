@@ -7,7 +7,8 @@
   flex: 1 0 auto;
   padding: spacing(1);
   .navList {
-    @include flex(row, wrap, center, center);
+    @include flex(row, wrap, space-between, center);
+    width: 100%;
     margin: 0;
     &_item {
       @include flex(row, wrap, center, center);
@@ -52,16 +53,16 @@
   }
 
   .navList_nested {
-    @include flex(column, wrap, center, center);
+    @include flex(column, wrap, center, flex-start);
     position: absolute;
     top: 100%;
     background-color: $light;
     border: 1px solid $grey;
     z-index: 500;
     margin-top: spacing(1);
+    width: 250%;
 
     &_item {
-      min-width: 100%;
       transition: $shortTime;
       display: flex;
 

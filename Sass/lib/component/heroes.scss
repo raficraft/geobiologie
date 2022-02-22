@@ -9,7 +9,6 @@
   pointer-events: none;
   box-shadow: $standartShadow;
   z-index: 5;
-  border: 5px solid $black;
 
   @media screen and (max-width: 767px) {
     @include flex(row, wrap, space-between, center);
