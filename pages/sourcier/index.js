@@ -60,7 +60,7 @@ export default function Sourcier() {
         </Heroes>
         <section className="content">
           <Sourcier_content></Sourcier_content>
-          <Masonry dir="masonry/menhir/"></Masonry>
+          <Masonry dir="masonry/sourcier/"></Masonry>
         </section>
       </main>
     </>

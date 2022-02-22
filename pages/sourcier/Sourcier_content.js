@@ -16,6 +16,19 @@ export default function Sourcier_content() {
           courant de l’eau. Pour cela, je travaille avec des baguettes en Y et
           en L, mais aussi avec mon pendule et diagrammes.
         </p>
+
+        <p>Je travaille actuellement avec deux entreprises.</p>
+
+        <p>
+          La première travaille avec une pelle avec benne preneuse, idéale pour
+          les sites ayant peu d&rsquo;espace lors du forage du puits (creuse sur
+          un diamètre d&rsquo;1,40 mètre, sans dégâts aux abords du puits).
+        </p>
+        <p>
+          Je m&rsquo;associe à la seconde entreprise pour la réalisation de
+          travaux où l&rsquo;espace est plus vaste, et pour la création de
+          réserves d’eau plus importantes.
+        </p>
         <h3>L&rsquo;eau souterraine</h3>
         <p>
           Pas la peine de vous faire un dessin, tout le monde voit ici à quoi
