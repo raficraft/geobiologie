@@ -1,27 +1,16 @@
 module.exports = {
   reactStrictMode: true,
 
-  extends: "next",
-  rules: {
-    // or
-    "react/no-unescaped-entities": [
-      "error",
-      {
-        forbid: [
-          {
-            char: ">",
-            alternatives: ["&gt;"],
-          },
-          {
-            char: "}",
-            alternatives: ["&#125;"],
-          },
-          {
-            char: "'",
-            alternatives: ["&rsquo;"],
-          },
-        ],
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.pdf$/,
+      use: {
+        loader: "file-loader",
+        options: {
+          name: "[path][name].[ext]",
+        },
       },
-    ],
+    });
+    return config;
   },
 };

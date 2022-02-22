@@ -12,7 +12,7 @@ export default function Index_content() {
         <header>
           <h2>Présentation David MICHEL</h2>
         </header>
-        <div className="portrait">
+        <div className="embed_image">
           <Image
             src={portrait}
             width={portrait.width}
@@ -94,7 +94,10 @@ export default function Index_content() {
                 src="https://www.youtube-nocookie.com/embed/zvLa5il8CQ4"
                 title="YouTube video player"
                 frameborder="0"
+                playsinline="1"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                webkitallowfullscreen
+                mozallowfullscreen
                 allowfullscreen
               ></iframe>
             </div>
@@ -105,8 +108,8 @@ export default function Index_content() {
           <div className="media_home-presse">
             <h3>Article de presse</h3>
             <div className="media_home-presse--img">
-              <Link href="/">
-                <a>
+              <Link href="/assets/docs/david_michel.pdf">
+                <a target="_blank">
                   <Image
                     src={presse}
                     width={presse.width}
