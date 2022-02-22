@@ -41,11 +41,11 @@
   }
 
   .mobil_toggle {
-    @include size(10px, 2rem);
+    @include size(1.25rem, 2.5rem);
     position: absolute;
     content: "";
     background-color: rgb(160, 160, 160);
-    right: -10px;
+    right: -1.25rem;
     @include flex(column, nowrap, center, center);
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -53,6 +53,7 @@
 
     pointer-events: all;
     cursor: pointer;
+    border: none;
 
     .dotted_menu,
     .dotted_menu:before,

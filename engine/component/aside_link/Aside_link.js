@@ -55,7 +55,7 @@ export default function Aside_link() {
           <Message_icon />
         </span>
         <span className="bg_red">
-          <Link href="">
+          <Link href="tel:+33683952827">
             <a>
               <Phone_icon />
             </a>
@@ -83,14 +83,14 @@ export default function Aside_link() {
       </div>
 
       {!isDesktop && (
-        <span
+        <button
           className={S.mobil_toggle}
           onClick={() => {
             toggle_aside();
           }}
         >
           <span className={S.dotted_menu}></span>
-        </span>
+        </button>
       )}
     </aside>
   );
