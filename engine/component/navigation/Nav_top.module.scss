@@ -61,7 +61,7 @@
     margin-top: spacing(1);
 
     &_item {
-      width: 100%;
+      min-width: 100%;
       transition: $shortTime;
       display: flex;
 
@@ -80,7 +80,7 @@
       font-weight: 600;
       font-size: 1rem;
       color: $text_black_smooth;
-      width: 100%;
+      min-width: 100%;
     }
   }
 }
