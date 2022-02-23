@@ -8,11 +8,10 @@
     width: 100%;
   }
   ul {
-    padding: 1rem 1rem 3rem 3rem;
+    padding: spacing(2) spacing(2) spacing(2) spacing(6);
     li {
       list-style-type: disc;
-      padding: 0.5rem;
-      width: 70%;
+      padding: spacing(1);
     }
   }
 }
@@ -136,5 +135,21 @@
 
   @media screen and (max-width: 380px) {
     width: 100px;
+  }
+}
+
+.content_AND_image {
+  @include flex(row, wrap, center, center);
+  @media screen and (max-width: 1000px) {
+    @include flex(column, wrap, center, center);
+  }
+  &--content {
+    flex: 2;
+  }
+
+  aside {
+    flex: 1;
+    @include flex(row, wrap, center, center);
+    padding: spacing(4);
   }
 }

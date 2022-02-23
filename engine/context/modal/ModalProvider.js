@@ -14,6 +14,7 @@ export default function ModalProvider({ children }) {
     map: false,
     review: false,
     embed: false,
+    ligthbox: false,
   });
 
   function openModal(target) {
