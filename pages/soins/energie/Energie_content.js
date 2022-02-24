@@ -16,12 +16,14 @@ export default function Energie_content() {
 
         <ul>
           <li>
-            D'élever votre taux énérgétique en cas de fatiguer, période de
+            D&rsquo;élever votre taux énérgétique en cas de fatiguer, période de
             stress, où si vous avez été sujet à des énergies négatives (entités,
             mauvais oeil, magie noire...)
           </li>
 
-          <li>D'harmoniser le flux énergétique du cors et de l'esprit</li>
+          <li>
+            D&rsquo;harmoniser le flux énergétique du cors et de l&rsquo;esprit
+          </li>
 
           <li>De purifier tout les corps subtils</li>
           <li>De débloquer et rééquilibrer les chackras</li>
