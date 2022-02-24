@@ -11,8 +11,8 @@ import {
 
 export const nav = [
   {
-    title: "Géobiologie",
-    link: "/geobiologie",
+    title: "Présentation",
+    link: "/presentation",
     icon: <EarthAtlantic></EarthAtlantic>,
   },
   {
@@ -22,7 +22,7 @@ export const nav = [
     child: [
       {
         title: "Thérapie Energetique",
-        link: "/",
+        link: "/soins/energie",
       },
       {
         title: "soins de dégagement",

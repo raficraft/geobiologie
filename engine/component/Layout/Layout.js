@@ -48,6 +48,13 @@ export default function Layout({ children }) {
           </Modal_body>
         )}
 
+        <HR
+          css={{
+            margin: "6 0",
+            width: "100%",
+          }}
+        ></HR>
+
         <Footer></Footer>
       </section>
     </>

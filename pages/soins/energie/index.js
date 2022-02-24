@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import Head from "next/head";
-import Heroes from "../../engine/component/Heroes/Heroes";
+import Heroes from "../../../engine/component/Heroes/Heroes";
 import Image from "next/image";
 
-import logo from "./../../public/assets/svg/1.5x/logo.png";
-import { ModalContext } from "../../engine/context/modal/ModalProvider";
-import Masonry from "../../engine/component/masonry/Masonry";
-import Sourcier_content from "./Sourcier_content";
+import logo from "./../../../public/assets/svg/1.5x/logo.png";
+import { ModalContext } from "../../../engine/context/modal/ModalProvider";
+import Masonry from "../../../engine/component/masonry/Masonry";
+import Energie_content from "./Energie_content";
+import HR from "../../../engine/component/atomic/HR";
 
 export default function Sourcier() {
   const { openModal } = useContext(ModalContext);
@@ -56,8 +57,14 @@ export default function Sourcier() {
           </div>
         </Heroes>
         <section className="content">
-          <Sourcier_content></Sourcier_content>
-          <Masonry dir="masonry/sourcier/"></Masonry>
+          <Energie_content></Energie_content>
+          <HR
+            css={{
+              margin: "4 0",
+              width: "100%",
+            }}
+          ></HR>
+          {/* <Masonry dir="masonry/sourcier/"></Masonry> */}
         </section>
       </main>
     </>

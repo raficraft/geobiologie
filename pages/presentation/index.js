@@ -6,7 +6,8 @@ import Image from "next/image";
 import logo from "./../../public/assets/svg/1.5x/logo.png";
 import { ModalContext } from "../../engine/context/modal/ModalProvider";
 import Masonry from "../../engine/component/masonry/Masonry";
-import Geobiologie_content from "./Geobiologie_content";
+import Geobiologie_content from "./Presentation_content";
+import Presentation_content from "./Presentation_content";
 
 export default function Geobiologie() {
   const { openModal } = useContext(ModalContext);
@@ -48,7 +49,7 @@ export default function Geobiologie() {
           </div>
         </Heroes>
         <section className="content">
-          <Geobiologie_content></Geobiologie_content>
+          <Presentation_content></Presentation_content>
           {/* <Masonry dir="masonry/sourcier/"></Masonry> */}
         </section>
       </main>

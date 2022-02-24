@@ -2,75 +2,58 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import presse from "./../public/assets/docs/presse.jpg";
-import portrait from "./../public/assets/img/illustration/david/david_michel.jpg";
 import HR from "../engine/component/atomic/HR";
+import FFG from "./../public/assets/img/illustration/FFG/FFG.png";
 
 export default function Index_content() {
   return (
     <>
       <article className="article article_home">
         <header>
-          <h2>Présentation David MICHEL</h2>
+          <h2>A quoi sert la géobiologie</h2>
         </header>
-        <div className="embed_image">
-          <Image
-            src={portrait}
-            width={portrait.width}
-            height={portrait.height}
-            alt="Logo en forme de pendule"
-            blurDataURL={portrait.blurDataURL}
-            placeholder="blur"
-          />
-        </div>
-        <p>Cheminement vers mon vrai chemin de vie</p>
-        <p>
-          La traversée d&rsquo;une épreuve difficile m&rsquo;a ouvert une
-          nouvelle vision sur le monde qui nous entoure. J&rsquo;ai dû faire
-          face à ma sensibilité dans la dimension énergétique.
-        </p>
+        <div class="embed_image">
+          <Link href="https://federation-francaise-de-geobiologie.org/">
+            <a class="embed_image--link" target="_blank">
+              <Image
+                src={FFG}
+                width={FFG.width}
+                height={FFG.height}
+                alt="Logo fédération française de géobiologie"
+                blurDataURL={FFG.blurDataURL}
+                placeholder="blur"
+              />
 
+              <p>En savoir +</p>
+            </a>
+          </Link>
+        </div>
         <p>
-          Quand ce nouveau monde a commencé à s&rsquo;ouvrir à moi, j&rsquo;ai
-          ressenti le mal être des personnes que je croisais, qui travaillaient
-          autour de moi, les faiblesses liées à l&rsquo;énergétiques. Ma
-          clairvoyance, claire sentence et claire audience se sont développées à
-          ce moment-là.
+          La géobiologie étudie les impacts de l&rsquo;environnement sur la
+          santé des vivants, c&rsquo;est-à-dire non seulement des humains, mais
+          aussi des animaux et des végétaux. Le but de cette pratique est de
+          mettre en évidence les perturbations que les cours d&rsquo;eau, les
+          cavités vides, les zones de failles, les cheminées cosmo-telluriques,
+          les réseaux Hartmann et Curry et autres phénomènes géologiques
+          présentent à proximité de l&rsquo;habitation peuvent provoquer.
         </p>
+        <h3>Pourquoi une expertise Géobiologique ?</h3>
         <p>
-          Après avoir travaillé dans différentes entreprises, je me suis éloigné
-          de ce système qui ne me correspond pas : courses à l&rsquo;argent,
-          rythme de vie effréné, égoïsme... Je me consacre aujourd&rsquo;hui
-          entièrement à l&rsquo;ésotérisme.
-        </p>
-        <p>
-          Mes nombreuses lectures, des formations (géobiologie, soins
-          énergétiques, chamanisme sibérien, runes) et l&rsquo;aide de personnes
-          sur mon chemin (guérisseuse, prêtre alchimiste) m&rsquo;ont permis de
-          comprendre que ma place était ailleurs et que rien n&rsquo;est lié au
-          hasard.
-        </p>
-        <p>
-          J&rsquo;ai décidé de réaliser mes soins sur les personnes,
-          harmonisations de lieux à distance et dégagements de toutes sortes de
-          magies dans un zome énergétique. Cette structure est une forme
-          géométrique composée de losanges agencés en double spirale dont la
-          trame se veut en résonance avec le monde vivant.
-        </p>
-        <p>
-          Après plusieurs années d&rsquo;approfondissement dans ce domaine afin
-          d&rsquo;être à la hauteur de ce qui m&rsquo;est permis de réaliser, je
-          suis aujourd&rsquo;hui pleinement inscrit dans mon chemin de vie.
-        </p>
-        <p>
-          Faisant partie de la Fédération Française de Géobiologie, je
-          m&rsquo;inscris au même titre que de nombreux autres géobiologues dans
-          la charte de la FFG nous engageant à exercer notre activité avec
-          objectivité, humanité et probité.
-        </p>
-        <p>
-          Mon seul but est d&rsquo;accompagner les personnes venant vers moi à
-          trouver des solutions à leur mal être, et leur permettre de retrouver
-          un état de bien être dans leur vie.
+          L&rsquo;exposition à long terme aux diverses nuisances présentes dans
+          l&rsquo;environnement peut entraîner des maladies chroniques, des
+          allergies, des troubles du sommeil ou même une dépression. Une
+          expertise géobiologique permet de déterminer quels sont réellement les
+          phénomènes qui nuisent au bien-être d&rsquo;une habitation pour
+          ensuite trouver des corrections adéquates. Grâce à ses facultés
+          techniques et sensorielles, le spécialiste en géobiologie est en
+          mesure de neutraliser les effets des phénomènes et ondes nocives. Une
+          expertise géobiologique contribue ainsi à la résolution des problèmes
+          physiologiques que les occupants d&rsquo;une maison peuvent avoir.
+          Avant d&rsquo;entamer des travaux de construction et de rénovation,
+          demander une expertise en géobiologie permet de connaitre
+          l&rsquo;emplacement idéal pour les pièces et les modifications à
+          apporter à l&rsquo;habitation pour que la qualité de vie et le tonus
+          des personnes qui y vivent soient améliorés.
         </p>
       </article>
 

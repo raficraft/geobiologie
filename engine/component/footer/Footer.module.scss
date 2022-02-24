@@ -6,13 +6,64 @@
   background-color: $eerie-black;
   width: 100%;
   @include flex(row, wrap, center, center);
-  padding: spacing(6) 0 0 0;
-  border-top: 5px solid $beaver;
+  border-top: 16px solid $beaver;
   box-shadow: 0 -4px 5px 0 lighten($black, 50%);
-  .content {
+  .footer {
     background-color: $beaver;
     max-width: var(--container_width);
     width: 100%;
-    padding: spacing(6) spacing(4);
+    // padding: spacing(6) spacing(4);
+    @include flex(column, nowrap, flex-start, flex-start);
+
+    .content {
+      @include flex(row, wrap, space-around, stretch);
+      width: 100%;
+      @media screen and (max-height: 732px) {
+        @include flex(column, wrap, flex-start, flex-start);
+      }
+      div {
+        flex: auto;
+        padding: spacing(2) spacing(4);
+        @include flex(column, nowrap, stretch, center);
+
+        @media screen and (max-width: 768px) {
+          width: 100%;
+        }
+      }
+
+      .info {
+        max-width: 600px;
+      }
+
+      .map {
+      }
+    }
+
+    iframe {
+      align-self: stretch;
+      border-radius: 0;
+      box-shadow: $standartShadow;
+      width: 100%;
+      height: 100%;
+      width: 100%;
+      @media screen and (max-width: 500px) {
+        width: 270px;
+        height: 270px;
+      }
+
+      @media screen and (max-width: 732px) {
+        height: 270px;
+      }
+    }
+    footer {
+      @include flex(column, nowrap, center, center);
+      background-color: $black;
+      width: 100%;
+      p {
+        margin: 0;
+        color: white;
+        margin: 0.5rem;
+      }
+    }
   }
 }

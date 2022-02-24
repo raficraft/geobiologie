@@ -132,6 +132,68 @@ export default function Stage_content() {
           width: "100%",
         }}
       ></HR>
+
+      <article className="article article_home">
+        <header>
+          <h2>Stage initiatique protection</h2>
+        </header>
+        <div className="content_AND_image">
+          <article className="content_AND_image--content">
+            <p>
+              <b>Objectifs : </b>
+            </p>
+            <ul>
+              <li>
+                Soins aux 7 bois de cristal pour augmenter les vibrations.
+              </li>
+              <li>
+                Apprendre à tracer les héxagrammes et pentagrammes dans les
+                quatres directions.
+              </li>
+              <li>
+                Connaître et apprendre à utiliser son champ d&rsquo;energie
+                vitale ou bio champs.
+              </li>
+              <li>
+                Connaître les différents corps subtils qui nous entourent.
+              </li>
+              <li>
+                Connaître et se protéger des larves, entités, magie noire,
+                vampirissme énérgetique...
+              </li>
+              <li>Méthodologie passage d&rsquo;âme ou autres énergies.</li>
+              <li>
+                Travail avec le double de lumière et cape d&rsquo;invisibilité
+              </li>
+              <li>Distinguer énergie positive/négative</li>
+              <li>Consécration d&rsquo;un brûle parfum</li>
+              <li>
+                Prières pour la libération et la réintégration des esprits
+                minéraux
+              </li>
+              <li>Utiliser les cinq solides de Platon</li>
+              <li>Découverte des esprits de la nature</li>
+            </ul>
+
+            <p>
+              <b>Application : </b>
+            </p>
+            <ul>
+              <li>
+                Savoir utiliser le pendule et le diagramme d&rsquo;unités Bovis
+              </li>
+              <li>Travail sur photo et sur plan des méthodes de la journée</li>
+            </ul>
+          </article>
+          <aside>
+            <Image_WITH_Lightbox
+              src={stage_protection_low}
+              lightbox={true}
+              src_ligthbox={stage_protection_middle}
+            ></Image_WITH_Lightbox>
+          </aside>
+        </div>
+      </article>
     </>
   );
 }
