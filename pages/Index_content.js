@@ -12,9 +12,9 @@ export default function Index_content() {
         <header>
           <h2>A quoi sert la géobiologie</h2>
         </header>
-        <div class="embed_image">
+        <div className="embed_image">
           <Link href="https://federation-francaise-de-geobiologie.org/">
-            <a class="embed_image--link" target="_blank">
+            <a className="embed_image--link" target="_blank">
               <Image
                 src={FFG}
                 width={FFG.width}
