@@ -23,6 +23,28 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
     currentIdx: idx + offsetItem,
   });
 
+  function handleSlideStart(e) {
+    e.preventDefault();
+    console.log("start", e);
+  }
+  function handleSlideMove(e) {
+    // console.log("move", e);
+  }
+  function handleSlideEnd(e) {
+    e.preventDefault();
+    console.log("end", e);
+  }
+
+  const [onTouch, setOnTouch] = useState({
+    start: false,
+    move: false,
+    end: false,
+    x: 0,
+    y: 0,
+    offset_X: 0,
+    offset_y: 0,
+  });
+
   function createItem() {
     return itemCollection.map((item, key) => {
       return (
@@ -30,6 +52,24 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
           className={S.carousel_item}
           style={{ width: `${size.item}%` }}
           key={key}
+          onTouchStart={(e) => {
+            handleSlideStart(e);
+          }}
+          onTouchMove={(e) => {
+            handleSlideMove(e);
+          }}
+          onTouchEnd={(e) => {
+            handleSlideEnd(e);
+          }}
+          onMouseDown={(e) => {
+            handleSlideStart(e);
+          }}
+          onMouseMove={(e) => {
+            handleSlideMove(e);
+          }}
+          onMouseUp={(e) => {
+            handleSlideEnd(e);
+          }}
         >
           <Image
             layout="fill"
@@ -163,7 +203,7 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
       {itemCollection.length ? (
         <section className={S.carousel}>
           <div
-            class={S.closeParent}
+            className={S.closeParent}
             onClick={() => {
               closeModal();
             }}

@@ -102,7 +102,7 @@ export default function Index_content() {
               </Link>
             </div>
             <p className="text-center">
-              {" Document Pdf. Cliquer sur l&rsquo;image pour consulter"}
+              {" Document Pdf. Cliquer sur l'image pour consulter"}
             </p>
           </div>
 

@@ -14,7 +14,7 @@ $sizeClose: 2.5rem;
   display: grid;
   place-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  overflow-y: auto;
+  overflow: hidden;
   padding: 1rem 0;
   .content {
     @include flex(column, wrap, flex-start, flex-start);

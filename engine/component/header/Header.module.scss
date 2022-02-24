@@ -10,7 +10,7 @@
   padding: spacing(2) 0 spacing(2) 0;
   border-bottom: 5px solid $beaver;
   box-shadow: $standartShadow;
-  z-index: 3000;
+  z-index: -1;
   .content {
     @include flex(row, wrap, space-between, center);
 
