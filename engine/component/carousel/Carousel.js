@@ -1,5 +1,11 @@
 import Image from "next/image";
-import React, { useState, useEffect, useContext } from "react";
+import React, {
+  useState,
+  useEffect,
+  useContext,
+  useRef,
+  useLayoutEffect,
+} from "react";
 import { ModalContext } from "../../context/modal/ModalProvider";
 
 import S from "./Carousel.module.scss";
@@ -23,27 +29,84 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
     currentIdx: idx + offsetItem,
   });
 
-  function handleSlideStart(e) {
-    e.preventDefault();
-    console.log("start", e);
-  }
-  function handleSlideMove(e) {
-    // console.log("move", e);
-  }
-  function handleSlideEnd(e) {
-    e.preventDefault();
-    console.log("end", e);
-  }
-
   const [onTouch, setOnTouch] = useState({
     start: false,
     move: false,
     end: false,
-    x: 0,
-    y: 0,
-    offset_X: 0,
-    offset_y: 0,
+    start_X: 0,
+    start_Y: 0,
+    translate_X: 0,
+    translate_Y: 0,
+    baseTranslate: 0,
   });
+
+  /**
+   * Démarre le déplacement
+   * @param {MouseEvent | ToucheEvent} e
+   */
+
+  function handleSlideStart(e) {
+    e.preventDefault();
+    console.log("start", e);
+
+    // If there are two fingers on the screen, nothing is done.
+    if (e.touches) {
+      if (e.touches.length > 1) {
+        return;
+      } else {
+        e = e.touches[0];
+      }
+    }
+
+    console.log("on touch start", e);
+
+    setOnTouch((S) => ({
+      ...S,
+      start: true,
+      start_X: e.screenX,
+      start_Y: e.screenY,
+    }));
+    disableTransition();
+  }
+  function handleSlideMove(e) {
+    if (onTouch.start === true) {
+      // console.log("move", e);
+      // console.log("move on touch state", onTouch);
+      // console.log("move on touch event", e.touches[0]);
+
+      let touch = e.touches ? e.touches[0] : e;
+      let drag = {
+        X: touch.screenX - onTouch.start_X,
+        Y: touch.screenY - onTouch.start_Y,
+      };
+      console.log(drag);
+
+      let baseStart = (slider.currentIdx * -100) / itemCollection.length;
+
+      console.log(baseStart + (100 * drag.X) / size.container);
+      setSlider((S) => ({
+        ...S,
+        translate: baseStart + (100 * drag.X) / size.container,
+      }));
+    }
+  }
+  function handleSlideEnd(e) {
+    if (onTouch.start) {
+      console.log("THIS IS THE END");
+      console.log("THIS IS THE END");
+      console.log("THIS IS THE END");
+      console.log("THIS IS THE END");
+      console.log("THIS IS THE END");
+      console.log("THIS IS THE END");
+      console.log("THIS IS THE END");
+      console.log("THIS IS THE END");
+      setOnTouch((S) => ({
+        ...S,
+        start: false,
+      }));
+      enableTransition();
+    }
+  }
 
   function createItem() {
     return itemCollection.map((item, key) => {

@@ -1,14 +1,16 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import useMediaQuery from "../../hooks/useMediaQueries";
 
 import { nav } from "../../../data/nav/nav";
 import { useClickOutside } from "../../hooks/useClickOutside";
+import { ModalContext } from "../../context/modal/ModalProvider";
 
 export default function Navigation({ css }) {
   const isMobil = useMediaQuery("(max-width: 767px)");
   const isMedium = useMediaQuery("(min-width: 578px) and (max-width :767px)");
   const isTablet = useMediaQuery("(min-width: 768px)");
+
   const S = css;
 
   function createNav() {
@@ -28,11 +30,11 @@ export default function Navigation({ css }) {
 
 function NestedNav({ root, css }) {
   const [isOpen, setIsOpen, nestedRef] = useClickOutside(false);
+  const { modal, setModal, closeModal, openModal } = useContext(ModalContext);
   const S = css;
 
   function openNested(e, toggle) {
     e.preventDefault(e);
-
     setIsOpen(toggle);
   }
 
@@ -46,7 +48,9 @@ function NestedNav({ root, css }) {
               ? (e) => {
                   openNested(e, true);
                 }
-              : null
+              : (e) => {
+                  closeModal("nav_alt");
+                }
           }
         >
           {root.icon}
@@ -58,7 +62,14 @@ function NestedNav({ root, css }) {
               return (
                 <Link href={nestedLink.link} key={nestedKey}>
                   <li className={S.navList_nested_item}>
-                    <a className={S.navList_nested_link}>{nestedLink.title}</a>
+                    <a
+                      className={S.navList_nested_link}
+                      onClick={(e) => {
+                        closeModal("nav_alt");
+                      }}
+                    >
+                      {nestedLink.title}
+                    </a>
                   </li>
                 </Link>
               );
