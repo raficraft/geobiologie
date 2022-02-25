@@ -38,6 +38,7 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
     translate_X: 0,
     translate_Y: 0,
     baseTranslate: 0,
+    lastTranslate: false,
   });
 
   /**
@@ -46,7 +47,6 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
    */
 
   function handleSlideStart(e) {
-    e.preventDefault();
     console.log("start", e);
 
     // If there are two fingers on the screen, nothing is done.
@@ -81,17 +81,22 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
       };
       console.log(drag);
 
-      let baseStart = (slider.currentIdx * -100) / itemCollection.length;
+      let baseStart = (slider.currentIdx * 100) / itemCollection.length;
 
-      console.log(baseStart + (100 * drag.X) / size.container);
+      console.log(baseStart - (100 * drag.X) / size.container);
       setSlider((S) => ({
         ...S,
-        translate: baseStart + (100 * drag.X) / size.container,
+        translate: baseStart - (100 * drag.X) / size.container,
+      }));
+
+      setOnTouch((S) => ({
+        ...S,
+        lastTranslate: drag,
       }));
     }
   }
   function handleSlideEnd(e) {
-    if (onTouch.start) {
+    if (onTouch.start && onTouch.lastTranslate) {
       console.log("THIS IS THE END");
       console.log("THIS IS THE END");
       console.log("THIS IS THE END");
@@ -99,12 +104,26 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
       console.log("THIS IS THE END");
       console.log("THIS IS THE END");
       console.log("THIS IS THE END");
-      console.log("THIS IS THE END");
+      console.log("THIS IS THE END", slider);
+
+      enableTransition();
+      console.log(Math.abs(onTouch.lastTranslate.X / size.item / 10));
+
+      if (Math.abs(onTouch.lastTranslate.X / size.item / 10) > 0.2) {
+        console.log("swap");
+
+        if (onTouch.lastTranslate.X < 0) {
+          goToNext();
+        } else {
+          goToPrev();
+        }
+      } else {
+        jumpToItem(slider.currentIdx);
+      }
       setOnTouch((S) => ({
         ...S,
         start: false,
       }));
-      enableTransition();
     }
   }
 
@@ -122,6 +141,9 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
             handleSlideMove(e);
           }}
           onTouchEnd={(e) => {
+            handleSlideEnd(e);
+          }}
+          OnTouchCancel={(e) => {
             handleSlideEnd(e);
           }}
           onMouseDown={(e) => {
@@ -212,32 +234,6 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
       }, 20);
     }
   }
-
-  //   function handleKeyUp(e) {
-  //     console.log(e.key);
-  //   }
-
-  //   useGlobalDomEvent({
-  //     keydown(e) {
-  //       if (e.key === "Escape") {
-  //         closeModal();
-  //       }
-  //       if (e.key === "ArrowRight") {
-  //         goToNext(slider.currentIdx);
-  //       }
-  //       if (e.key === "ArrowLeft") {
-  //         goToPrev(slider.currentIdx);
-  //         setSlider((S) => ({
-  //           ...S,
-  //           currentIdx: slider.currentIdx + 1,
-  //         }));
-  //       }
-  //     },
-  //   });
-
-  //   //   useKey("ArrowRight", goToNext(slider.currentIdx));
-
-  //   console.log(slider);
 
   function handleKeyDown(e) {
     console.log(e);
