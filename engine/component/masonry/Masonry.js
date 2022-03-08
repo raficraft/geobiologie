@@ -1,6 +1,9 @@
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React, { useState, useContext, useEffect } from "react";
+import { ModalContext } from "../../context/modal/ModalProvider";
 import useGetimage from "../../hooks/files/useGetimage";
+import Carousel from "../carousel/Carousel";
+import Modal_body from "../modal/Modal_body";
 import S from "./Masonry.module.scss";
 
 export default function Masonry({
@@ -11,6 +14,11 @@ export default function Masonry({
   verticalPadding = "0",
 }) {
   const [filesInfo, loading] = useGetimage(dir);
+  const { modal, openModal } = useContext(ModalContext);
+  const [currentFile, setCurrentFile] = useState({
+    current: {},
+    idx: 0,
+  });
 
   console.log(S);
 
@@ -109,6 +117,17 @@ export default function Masonry({
         </section>
       ) : (
         <p>Loading</p>
+      )}
+
+      {modal.embed && filesInfo.length && (
+        <Modal_body addContainer={false}>
+          <Carousel
+            currentFile={currentFile.current}
+            idx={currentFile.idx}
+            array={filesInfo}
+            isVisible={1}
+          ></Carousel>
+        </Modal_body>
       )}
     </>
   );
