@@ -9,13 +9,16 @@
   @include flexCenter();
   box-shadow: $standartShadow;
 
-  @media screen and (max-width: 769px) {
-  }
   .content {
     max-width: 100%;
     width: 100%;
     position: relative;
     height: 70vh;
     content: "";
+    border-bottom: 5px solid $beaver;
+
+    @media screen and (max-width: 769px) {
+      height: 40vh;
+    }
   }
 }

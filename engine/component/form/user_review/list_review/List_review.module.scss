@@ -12,6 +12,7 @@
 
   header {
     width: 100%;
+    @include flex(row, wrap, space-between, flex-start);
   }
 
   &_item {

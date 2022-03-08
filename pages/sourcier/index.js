@@ -1,12 +1,10 @@
 import React, { useContext } from "react";
 import Head from "next/head";
-import Heroes from "../../engine/component/Heroes/Heroes";
-import Image from "next/image";
 
-import logo from "./../../public/assets/svg/1.5x/logo.png";
 import { ModalContext } from "../../engine/context/modal/ModalProvider";
 import Masonry from "../../engine/component/masonry/Masonry";
 import Sourcier_content from "./Sourcier_content";
+import HR from "../../engine/component/atomic/HR";
 
 export default function Sourcier() {
   const { openModal } = useContext(ModalContext);
@@ -31,33 +29,24 @@ export default function Sourcier() {
       </Head>
 
       <main className="mainContent">
-        <Heroes>
-          <div className="inside">
-            <div className="inside_content">
-              <div className="logo">
-                <Image
-                  src={logo}
-                  width={logo.width}
-                  height={logo.height}
-                  alt="Logo en forme de pendule"
-                  blurDataURL={logo.blurDataURL}
-                  placeholder="blur"
-                  onClick={(e) => {
-                    handleClick(e);
-                  }}
-                />
-              </div>
-
-              <div className="heroes_title">
-                <h3 className="title">David Michel</h3>
-                <h3 className="subtitle">Geobiologue</h3>
-              </div>
-            </div>
-          </div>
-        </Heroes>
         <section className="content">
           <Sourcier_content></Sourcier_content>
-          <Masonry dir="masonry/sourcier/"></Masonry>
+
+          <HR
+            css={{
+              margin: "4 0",
+              width: "100%",
+            }}
+          ></HR>
+
+          <Masonry
+            dir="masonry/sourcier/"
+            masonry={{
+              width: `1120px`,
+              column: "4",
+              gap: "1rem",
+            }}
+          ></Masonry>
         </section>
       </main>
     </>

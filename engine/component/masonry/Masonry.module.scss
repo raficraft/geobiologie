@@ -1,43 +1,18 @@
 @import "./../../../Sass/abstract/function";
 @import "./../../../Sass/abstract/variables";
-@import "./../../../Sass/abstract/animation";
 
-.img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  display: inline-block;
-}
-
-.masonry {
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-  display: grid;
-  grid-gap: 20px 16px;
-  grid-template-columns: repeat(auto-fit, minmax(12.5%, 1fr));
-  grid-auto-rows: calc(960px / 12.5);
-  grid-auto-flow: row dense;
-  background-color: $light;
-  padding: 2rem;
+.masonry_container {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
   filter: drop-shadow(0px 0px 4px lighten($black, 50%));
-  border-radius: $smallRadius;
+  padding: 2rem;
 
-  &_item {
-    display: flex;
-    justify-content: center;
-    align-self: stretch;
+  img {
+    transition: 0.3s;
+    border-radius: 5px;
     cursor: pointer;
-    transition: 1s;
-    filter: drop-shadow(0px 0px 4px lighten($black, 50%));
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 5px;
-      border: 5px solid $black;
-      border-radius: 5px;
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }

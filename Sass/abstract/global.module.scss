@@ -18,18 +18,6 @@
   display: none;
 }
 
-.errorText {
-  color: $red;
-}
-
-.infoText {
-  color: $green;
-}
-
-.text_switch:hover {
-  color: $blue;
-}
-
 .bloc_input {
   @include flex(column, nowrap, center, flex-start);
   margin: 0.5rem 0;

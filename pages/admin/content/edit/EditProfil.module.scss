@@ -5,6 +5,8 @@
   @include flex(column, nowrap, space-between, flex-start);
   padding-bottom: 0;
   width: 100%;
+  background-color: $light;
+  padding: 0 2rem;
 
   form {
     width: 100%;
@@ -34,7 +36,7 @@
 
   footer {
     @include flex(row, nowrap, flex-end, center);
-    margin: 2rem 0 0 0;
+    margin: 1rem 0 0 0;
     width: 100%;
     @media screen and (max-width: 1439px) {
       width: calc(100% - 4rem);

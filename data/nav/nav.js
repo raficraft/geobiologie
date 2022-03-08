@@ -7,13 +7,14 @@ import {
   ShoppingCart_icon,
   StoneIcon,
   WaterOutline,
+  AccountCircle,
 } from "../../assets/icons/Icon_svg";
 
 export const nav = [
   {
     title: "Présentation",
     link: "/presentation",
-    icon: <EarthAtlantic></EarthAtlantic>,
+    icon: <AccountCircle></AccountCircle>,
   },
   {
     title: "Soins",
@@ -25,16 +26,16 @@ export const nav = [
         link: "/soins/energie",
       },
       {
-        title: "soins de dégagement",
-        link: "/",
+        title: "Soins de dégagement",
+        link: "/soins/degagement",
       },
       {
-        title: "liens transgénérationelle",
-        link: "/",
+        title: "Liens transgénérationelle",
+        link: "/soins/transgenerationelle",
       },
       {
         title: "psychanaliste",
-        link: "/",
+        link: "/soins/psychanaliste",
       },
     ],
   },
@@ -53,11 +54,5 @@ export const nav = [
     title: "stage",
     link: "/stage",
     icon: <Learn_icon></Learn_icon>,
-  },
-
-  {
-    title: "vente",
-    link: "/vente",
-    icon: <ShoppingCart_icon></ShoppingCart_icon>,
   },
 ];

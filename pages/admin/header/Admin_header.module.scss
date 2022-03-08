@@ -5,6 +5,7 @@
   width: 100%;
   border-bottom: 4px solid $grey;
   @include flex(column, nowrap, center, center);
+  background-color: white;
   .profil_header {
     padding: calc(#{$space} * 5) 0;
     @include flex(row, wrap, flex-start, center);

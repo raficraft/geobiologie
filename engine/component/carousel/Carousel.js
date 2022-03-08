@@ -7,10 +7,15 @@ import React, {
   useLayoutEffect,
 } from "react";
 import { ModalContext } from "../../context/modal/ModalProvider";
+import useTouchEvent from "../../hooks/useTouchEvent";
 
 import S from "./Carousel.module.scss";
 
 export default function Carousel({ array, idx, currentFile, isVisible }) {
+  const refCarousel = useRef(null);
+
+  const { onTouch } = useTouchEvent(refCarousel);
+
   const { modal, openModal, closeModal } = useContext(ModalContext);
 
   //Value calculate , no state !!!
@@ -29,103 +34,10 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
     currentIdx: idx + offsetItem,
   });
 
-  const [onTouch, setOnTouch] = useState({
-    start: false,
-    move: false,
-    end: false,
-    start_X: 0,
-    start_Y: 0,
-    translate_X: 0,
-    translate_Y: 0,
-    baseTranslate: 0,
-    lastTranslate: false,
-  });
-
   /**
    * Démarre le déplacement
    * @param {MouseEvent | ToucheEvent} e
    */
-
-  function handleSlideStart(e) {
-    console.log("start", e);
-
-    // If there are two fingers on the screen, nothing is done.
-    if (e.touches) {
-      if (e.touches.length > 1) {
-        return;
-      } else {
-        e = e.touches[0];
-      }
-    }
-
-    console.log("on touch start", e);
-
-    setOnTouch((S) => ({
-      ...S,
-      start: true,
-      start_X: e.screenX,
-      start_Y: e.screenY,
-    }));
-    disableTransition();
-  }
-  function handleSlideMove(e) {
-    if (onTouch.start === true) {
-      // console.log("move", e);
-      // console.log("move on touch state", onTouch);
-      // console.log("move on touch event", e.touches[0]);
-
-      let touch = e.touches ? e.touches[0] : e;
-      let drag = {
-        X: touch.screenX - onTouch.start_X,
-        Y: touch.screenY - onTouch.start_Y,
-      };
-      console.log(drag);
-
-      let baseStart = (slider.currentIdx * 100) / itemCollection.length;
-
-      console.log(baseStart - (100 * drag.X) / size.container);
-      setSlider((S) => ({
-        ...S,
-        translate: baseStart - (100 * drag.X) / size.container,
-      }));
-
-      setOnTouch((S) => ({
-        ...S,
-        lastTranslate: drag,
-      }));
-    }
-  }
-  function handleSlideEnd(e) {
-    if (onTouch.start && onTouch.lastTranslate) {
-      console.log("THIS IS THE END");
-      console.log("THIS IS THE END");
-      console.log("THIS IS THE END");
-      console.log("THIS IS THE END");
-      console.log("THIS IS THE END");
-      console.log("THIS IS THE END");
-      console.log("THIS IS THE END");
-      console.log("THIS IS THE END", slider);
-
-      enableTransition();
-      console.log(Math.abs(onTouch.lastTranslate.X / size.item / 10));
-
-      if (Math.abs(onTouch.lastTranslate.X / size.item / 10) > 0.2) {
-        console.log("swap");
-
-        if (onTouch.lastTranslate.X < 0) {
-          goToNext();
-        } else {
-          goToPrev();
-        }
-      } else {
-        jumpToItem(slider.currentIdx);
-      }
-      setOnTouch((S) => ({
-        ...S,
-        start: false,
-      }));
-    }
-  }
 
   function createItem() {
     return itemCollection.map((item, key) => {
@@ -134,27 +46,6 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
           className={S.carousel_item}
           style={{ width: `${size.item}%` }}
           key={key}
-          onTouchStart={(e) => {
-            handleSlideStart(e);
-          }}
-          onTouchMove={(e) => {
-            handleSlideMove(e);
-          }}
-          onTouchEnd={(e) => {
-            handleSlideEnd(e);
-          }}
-          OnTouchCancel={(e) => {
-            handleSlideEnd(e);
-          }}
-          onMouseDown={(e) => {
-            handleSlideStart(e);
-          }}
-          onMouseMove={(e) => {
-            handleSlideMove(e);
-          }}
-          onMouseUp={(e) => {
-            handleSlideEnd(e);
-          }}
         >
           <Image
             layout="fill"
@@ -255,17 +146,36 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
     };
-  }, [slider]);
+  }, []);
+
+  useEffect(() => {
+    //console.log("!!!!!!!!!!!!!!! in use effect", onTouch);
+
+    if (
+      onTouch.direction_X === "left" &&
+      onTouch.percent_X > 20 &&
+      onTouch.start === false
+    ) {
+      goToNext();
+    } else if (
+      onTouch.direction_X === "right" &&
+      onTouch.percent_X > 20 &&
+      onTouch.start === false
+    ) {
+      goToPrev();
+    }
+  }, [onTouch.start]);
 
   return (
     <>
       {itemCollection.length ? (
-        <section className={S.carousel}>
+        <section className={S.carousel} ref={refCarousel}>
           <div
             className={S.closeParent}
             onClick={() => {
               closeModal();
             }}
+            data-touch={false}
           >
             <span></span>
           </div>
@@ -274,6 +184,7 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
             onClick={() => {
               goToPrev(slider.currentIdx);
             }}
+            data-touch={false}
           ></span>
 
           <span
@@ -281,6 +192,7 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
             onClick={() => {
               goToNext(slider.currentIdx);
             }}
+            data-touch={false}
           ></span>
           <div className={S.carousel_marquise}>
             <div

@@ -6,8 +6,6 @@ import Layout from "../engine/component/Layout/Layout";
 import DashboardProvider from "../engine/context/Admin/DashboardContext";
 
 function MyApp({ Component, pageProps }) {
-  console.log("pageprops ", pageProps);
-
   return (
     <AuthProvider>
       <LanguageProvider>

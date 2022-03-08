@@ -11,7 +11,6 @@ import { regexPwd } from "../../../../../data/regex";
 import Modal_body from "../../../../../engine/component/modal/Modal_body";
 import EditWithAuth from "../EditWithAuth";
 
-import G from "./../../../../../Sass/abstract/global.module.scss";
 import S from "./../EditProfil.module.scss";
 
 export default function EditPassword() {
@@ -160,9 +159,11 @@ export default function EditPassword() {
               </div>
             )}
           </div>
-          <button className="btn_sub btn_primary" type="submit">
-            {editProfil.pwd.btn[lang]}
-          </button>
+          <footer>
+            <button className="btn_sub btn_primary" type="submit">
+              {editProfil.pwd.btn[lang]}
+            </button>
+          </footer>
         </div>
         <p className={S.errorText}>{editProfil.pwd.advertText[lang]}</p>
       </form>

@@ -97,7 +97,7 @@ export default function List_review() {
     } catch (error) {
       alert(error);
     }
-  }, [nbReviewPerPage, nbReviewPerPage]);
+  }, [nbReviewPerPage]);
 
   return (
     <>
@@ -108,17 +108,21 @@ export default function List_review() {
         <section className={S.list_review} key="listReview">
           <h2>Ils ont donné leurs avis.</h2>
           <header>
-            <label>Nombre d'avis afficher : </label>
-            <select
-              defaultValue={nbReviewPerPage}
-              onChange={(e) => {
-                handleSelectChange(e);
-              }}
-            >
-              <option value="6">5</option>
-              <option value="10">10</option>
-              <option value="20">20</option>
-            </select>
+            <div>
+              <label>Nombre d'avis afficher : </label>
+              <select
+                defaultValue={nbReviewPerPage}
+                onChange={(e) => {
+                  handleSelectChange(e);
+                }}
+              >
+                <option value="6">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+              </select>
+            </div>
+
+            <p>il y à {sortCollection.length} avis.</p>
           </header>
           {listUserReview()}
 

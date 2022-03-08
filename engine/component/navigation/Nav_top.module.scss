@@ -65,6 +65,7 @@
     &_item {
       transition: $shortTime;
       display: flex;
+      width: 100%;
 
       &:hover {
         background-color: $blue;

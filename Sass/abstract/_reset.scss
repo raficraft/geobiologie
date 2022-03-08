@@ -16,9 +16,11 @@
 
 :root {
   --container_width: 1330px;
+  --content_width: 1120px;
 
   @media screen and (max-width: 1330px) {
     --container_width: calc(100% - 2rem);
+    --content_width: calc(100% - 2rem);
   }
 }
 
@@ -300,40 +302,4 @@ video {
 }
 .bg_englishViolet {
   background-color: $englishViolet;
-}
-
-.text_blue {
-  color: $blue;
-}
-
-.text_green {
-  color: $green;
-}
-
-.text_red {
-  color: $red;
-}
-
-.text_yellow {
-  color: $yellow;
-}
-
-.text_champagne {
-  color: $champagne;
-}
-
-.text_gunMetal {
-  color: $gunMetal;
-}
-
-.text_blackChocolate {
-  color: $blackChocolate;
-}
-
-.text_englishViolet {
-  color: $englishViolet;
-}
-
-b {
-  font-weight: bold;
 }

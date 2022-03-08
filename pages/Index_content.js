@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import presse from "./../public/assets/docs/presse.jpg";
+import radio from "./../public/assets/img/illustration/david/radio.jpg";
 import HR from "../engine/component/atomic/HR";
 import FFG from "./../public/assets/img/illustration/FFG/FFG.png";
 
@@ -10,7 +11,7 @@ export default function Index_content() {
     <>
       <article className="article article_home">
         <header>
-          <h2>A quoi sert la géobiologie</h2>
+          <h2>A quoi sert la géobiologie ?</h2>
         </header>
         <div className="embed_image">
           <Link href="https://federation-francaise-de-geobiologie.org/">
@@ -55,11 +56,56 @@ export default function Index_content() {
           apporter à l&rsquo;habitation pour que la qualité de vie et le tonus
           des personnes qui y vivent soient améliorés.
         </p>
+
+        <p>
+          La géobiologie étudie aussi la position des antennes relais et des
+          pylônes haute tension pour savoir si elles n&rsquo;entrainent pas une
+          pollution électrique et électromagnétique au sein de
+          l&rsquo;habitation.
+        </p>
+
+        <p>
+          Les spécialistes en géobiologie se servent également de
+          l&rsquo;histoire des lieux pour déterminer s&rsquo;il n&rsquo;y a pas
+          de famines, de maladies, de violences ou de guerres qui y ont eu lieu.
+          Si c&rsquo;est le cas, les murs et les sols ont pu les mémoriser, ce
+          qui peut être à l&rsquo;origine des sensations de mal-être éprouvées
+          par une personne quand elle se trouve sur les lieux.
+        </p>
+
+        <p>
+          Pour déterminer toutes ces perturbations, l&rsquo;expert en
+          géobiologie ne mise pas uniquement sur ses sens. Il utilise des outils
+          professionnels qui lui permettent de détecter et de mesurer les
+          différentes perturbations avec précisions. Pour mesurer le niveau de
+          nuisance géotellurique, l&rsquo;expert utilise, par exemple, des
+          baguettes rade master et une antenne de Lécher.
+        </p>
+
+        <h2>Une harmonisation du lieu de vie et de la santé</h2>
+
+        <p>
+          Certaines personnes ressentent de la fatigue ou un stress quand elles
+          pénètrent dans un lieu. D&rsquo;autres encore retrouvent de la
+          vitalité et voient leurs ennuis de santé disparaître quand elles
+          quittent leurs maisons pour quelques jours. Parfois, nous nous sentons
+          plus à l&rsquo;aise dans une pièce de notre maison que dans une autre.
+          Toutes ces impressions différentes sont dues aux perturbations
+          invisibles qui « plombent » notre atmosphère. Pour limiter au maximum
+          les effets nocifs de ces perturbations, il est important
+          d&rsquo;agencer avec soin les meubles de l&rsquo;habitation. La
+          géobiologie apporte les informations utiles dans l&rsquo;aménagement
+          de l&rsquo;intérieur.
+        </p>
+
+        <Link href="/charte">
+          <a>Consulter la Charte de la FFG</a>
+        </Link>
       </article>
 
       <HR
         css={{
-          margin: "4 0",
+          margin: "6 0",
           width: "100%",
         }}
       ></HR>
@@ -110,27 +156,40 @@ export default function Index_content() {
 
           <div className="media_home-radio">
             <h3>Interview Radio</h3>
-            <div className="media_home-radio--player">
-              <figure>
-                <figcaption>Reportage David Michel</figcaption>
-                <audio
-                  controls
-                  src="https://firebasestorage.googleapis.com/v0/b/geobiologie-loire.appspot.com/o/interview_david_michel.mp3?alt=media&token=8f384660-ebca-458e-8dc4-e6c176ed5c1d"
-                >
-                  Your browser does not support the
-                  <code>audio</code> element.
-                </audio>
-              </figure>
-              <figure>
-                <figcaption>Recontre avec David Michel</figcaption>
-                <audio
-                  controls
-                  src="https://firebasestorage.googleapis.com/v0/b/geobiologie-loire.appspot.com/o/recontre_dav_dmichel.mp3?alt=media&token=356bd0af-f7ad-4ea9-98d7-44fb035db2db"
-                >
-                  Your browser does not support the
-                  <code>audio</code> element.
-                </audio>
-              </figure>
+
+            <div className="media_home-radio--content">
+              <div className="img_radio">
+                <Image
+                  src={radio}
+                  width={radio.width}
+                  height={radio.height}
+                  alt="Logo fédération française de géobiologie"
+                  blurDataURL={radio.blurDataURL}
+                  placeholder="blur"
+                />
+              </div>
+              <div className="media_home-radio--player">
+                <figure>
+                  <figcaption>Reportage David Michel</figcaption>
+                  <audio
+                    controls
+                    src="https://firebasestorage.googleapis.com/v0/b/geobiologie-loire.appspot.com/o/interview_david_michel.mp3?alt=media&token=8f384660-ebca-458e-8dc4-e6c176ed5c1d"
+                  >
+                    Your browser does not support the
+                    <code>audio</code> element.
+                  </audio>
+                </figure>
+                <figure>
+                  <figcaption>Recontre avec David Michel</figcaption>
+                  <audio
+                    controls
+                    src="https://firebasestorage.googleapis.com/v0/b/geobiologie-loire.appspot.com/o/recontre_dav_dmichel.mp3?alt=media&token=356bd0af-f7ad-4ea9-98d7-44fb035db2db"
+                  >
+                    Your browser does not support the
+                    <code>audio</code> element.
+                  </audio>
+                </figure>
+              </div>
             </div>
           </div>
         </div>
