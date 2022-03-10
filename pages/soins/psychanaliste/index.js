@@ -1,6 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import HR from "../../../engine/component/atomic/HR";
+import Masonry from "../../../engine/component/masonry/Masonry";
 import Psy_content from "./Psy_content";
 
 export default function Psychanaliste() {
