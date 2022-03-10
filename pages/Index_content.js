@@ -6,6 +6,8 @@ import radio from "./../public/assets/img/illustration/david/radio.jpg";
 import HR from "../engine/component/atomic/HR";
 import FFG from "./../public/assets/img/illustration/FFG/FFG.png";
 
+import Masonry from "./../engine/component/masonry/Masonry";
+
 export default function Index_content() {
   return (
     <>
@@ -105,7 +107,24 @@ export default function Index_content() {
 
       <HR
         css={{
-          margin: "6 0",
+          margin: "4 0",
+          width: "100%",
+        }}
+      ></HR>
+
+      <Masonry
+        dir="masonry/home/"
+        masonry={{
+          width: `1120px`,
+          column: "4",
+          gap: "1rem",
+        }}
+        horizontalPadding="2rem"
+      ></Masonry>
+
+      <HR
+        css={{
+          margin: "4 0",
           width: "100%",
         }}
       ></HR>

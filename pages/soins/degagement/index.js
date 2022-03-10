@@ -29,7 +29,7 @@ export default function Degagement() {
             dir="masonry/soins/"
             masonry={{
               width: `1120px`,
-              column: "2",
+              column: "3",
               gap: "1rem",
             }}
             horizontalPadding="2rem"

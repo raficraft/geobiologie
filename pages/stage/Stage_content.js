@@ -90,7 +90,7 @@ export default function Stage_content() {
                 pentagramme
               </li>
               <li>Découvrir les esprits de la nature</li>
-              <li>Préparation avant une étude biologique</li>
+              <li>Préparation avant une étude géobiologique</li>
             </ul>
 
             <p>

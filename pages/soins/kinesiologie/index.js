@@ -1,9 +1,9 @@
 import Head from "next/head";
-import React from "react";
 import HR from "../../../engine/component/atomic/HR";
-import Psy_content from "./Psy_content";
+import Masonry from "../../../engine/component/masonry/Masonry";
+import Kinesiologie_content from "./Kinesiologie_content";
 
-export default function Psychanaliste() {
+export default function Kinesiologie() {
   return (
     <>
       <Head>
@@ -14,8 +14,7 @@ export default function Psychanaliste() {
 
       <main className="mainContent">
         <section className="content">
-          <Psy_content></Psy_content>
-          {/* <Masonry dir="masonry/sourcier/"></Masonry> */}
+          <Kinesiologie_content></Kinesiologie_content>
         </section>
 
         <HR
@@ -26,7 +25,7 @@ export default function Psychanaliste() {
         ></HR>
 
         <Masonry
-          dir="masonry/soins/"
+          dir={["masonry/soins/"]}
           masonry={{
             width: `1120px`,
             column: "3",

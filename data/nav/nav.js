@@ -37,6 +37,10 @@ export const nav = [
         title: "psychanaliste",
         link: "/soins/psychanaliste",
       },
+      {
+        title: "kinesiologie",
+        link: "/soins/kinesiologie",
+      },
     ],
   },
   {

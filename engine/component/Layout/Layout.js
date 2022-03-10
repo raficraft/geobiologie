@@ -76,11 +76,11 @@ export default function Layout({ children }) {
                 <span className="text_red">
                   {" "}
                   <Link href="tel:+33683952827">
-                    <a className="text_red text_switch">06 83 59 28 27</a>
+                    <a className="text_red text_switch">06 58 02 17 24</a>
                   </Link>
                 </span>
               </p>
-              <p>Intervient à distance dans toute la france.</p>
+              <p>Intervient sur place et à distance dans toute la france.</p>
             </article>
 
             <HR

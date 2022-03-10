@@ -16,6 +16,7 @@ export default function Home() {
       <main className="mainContent">
         <section className="content">
           <Index_content></Index_content>
+
           <List_review></List_review>
         </section>
       </main>
