@@ -22,9 +22,9 @@ export default function Trans_content() {
         <p>
           En d&rsquo;autres termes, un thérapeute transgénérationnel
           s&rsquo;appuie sur l&rsquo;arbre généalogique de son sujet pour
-          identifier d'éventuels traumas. L'analyse transgénérationnelle est une
-          approche intéressante pour se libérer des chocs amassés sur plusieurs
-          générations.
+          identifier d La traversée d&rsquo;éventuels traumas. La traversée
+          d&rsquo;analyse transgénérationnelle est une approche intéressante
+          pour se libérer des chocs amassés sur plusieurs générations.
         </p>
         <p>
           Selon les principes de cette discipline, la diffusion des traumas
@@ -38,8 +38,8 @@ export default function Trans_content() {
           Certaines blessures, trop anciennes ou trop douloureuses, deviennent
           des secrets, des non-dits ou des sujets tabous. Ces mystères
           continuent de vivre en nous sous la forme de normes familiales, de
-          règles et de principes que l'on s'impose et qui viennent perturber
-          notre équilibre.
+          règles et de principes que l La traversée d&rsquo;on s La traversée
+          d&rsquo;impose et qui viennent perturber notre équilibre.
         </p>
       </article>
     </>
