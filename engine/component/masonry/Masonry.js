@@ -44,7 +44,6 @@ export default function Masonry({
 
   function createGallery() {
     if (dir && dir !== null && filesInfo !== []) {
-      console.log("CHIOTTE ", filesInfo);
       return filesInfo.map((file, idx) => {
         //console.log("calc", file.height / file.width);
         return (
@@ -72,8 +71,8 @@ export default function Masonry({
   }
 
   function resizeGridItem(item) {
-    console.log(item);
     const rowGap = parseFloat(masonryStyles.gridGap);
+
     const rowSpan = Math.ceil(
       item
         .querySelector('[data-selector="masonry_img"]')
@@ -86,6 +85,7 @@ export default function Masonry({
   function getItems() {
     if (!loading) {
       const items = document.querySelectorAll('[data-selector="masonry_item"]');
+
       for (const item of items) {
         resizeGridItem(item);
       }
@@ -112,6 +112,7 @@ export default function Masonry({
             maxWidth: masonry.width ? masonry.width : "960px",
             width: "100%",
           }}
+          data-selector="masonry_container"
         >
           <div style={masonryStyles}>{createGallery()}</div>
         </section>

@@ -13,9 +13,7 @@ import S from "./Carousel.module.scss";
 
 export default function Carousel({ array, idx, currentFile, isVisible }) {
   const refCarousel = useRef(null);
-
   const { onTouch } = useTouchEvent(refCarousel);
-
   const { modal, openModal, closeModal } = useContext(ModalContext);
 
   //Value calculate , no state !!!
@@ -36,7 +34,7 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
 
   /**
    * Démarre le déplacement
-   * @param {MouseEvent | ToucheEvent} e
+   * @param {MouseEvent | TouchEvent} e
    */
 
   function createItem() {
@@ -206,6 +204,29 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
               {createItem()}
             </div>
           </div>
+          <footer>
+            <div className={S.paginate}>
+              <button
+                onClick={() => {
+                  goToPrev(slider.currentIdx);
+                }}
+              >
+                prev
+              </button>
+              <div className={S.number}>
+                <p>{slider.currentIdx - offsetItem + 1}</p>
+                <p>/</p>
+                <p>{array.length}</p>
+              </div>
+              <button
+                onClick={() => {
+                  goToNext(slider.currentIdx);
+                }}
+              >
+                next
+              </button>
+            </div>
+          </footer>
         </section>
       ) : (
         <h1>Loading</h1>
