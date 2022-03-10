@@ -8,9 +8,9 @@ export default function Kinesiologie_content() {
           <h2>Kinesiologie</h2>
         </header>
         <p>
-          Etymologiquement, la kynésiologie est la "science du mouvement". C La
-          traversée d&rsquo;est une technique de rééquilibrage
-          psycho-corporelle.
+          Etymologiquement, la kynésiologie est la &quot;science du
+          mouvement&quot;. C La traversée d&rsquo;est une technique de
+          rééquilibrage psycho-corporelle.
         </p>
         <p>
           Elle s La traversée d&rsquo;intéresse au bien être global de la
