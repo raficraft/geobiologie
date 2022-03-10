@@ -26,7 +26,7 @@ export default function Transgenerationelle() {
           ></HR>
 
           <Masonry
-            dir="masonry/soins/"
+            dir={["masonry/soins/", "masonry/soins/trans/"]}
             masonry={{
               width: `1120px`,
               column: "3",

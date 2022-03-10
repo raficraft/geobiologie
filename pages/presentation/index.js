@@ -31,7 +31,7 @@ export default function Geobiologie() {
         </section>
 
         <Masonry
-          dir="masonry/presentation/"
+          dir={["masonry/presentation/"]}
           masonry={{
             width: `1120px`,
             column: "3",

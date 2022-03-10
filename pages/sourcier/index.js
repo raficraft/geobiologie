@@ -40,7 +40,7 @@ export default function Sourcier() {
           ></HR>
 
           <Masonry
-            dir="masonry/sourcier/"
+            dir={["masonry/sourcier/"]}
             masonry={{
               width: `1120px`,
               column: "4",

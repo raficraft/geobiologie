@@ -10,8 +10,15 @@ export default (req, res) => {
   try {
     const filenames = fs.readdirSync(dir);
     console.log("yolo : ", filenames);
+    const validFiles = [];
 
-    res.status(200).json(filenames);
+    for (const file of filenames) {
+      if (file.match(/.(jpg|jpeg|png|gif)$/i)) {
+        validFiles.push(file);
+      }
+    }
+
+    res.status(200).json(validFiles);
   } catch (err) {
     res.status(500).json(err);
   }

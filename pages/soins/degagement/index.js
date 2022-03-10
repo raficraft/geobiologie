@@ -26,7 +26,7 @@ export default function Degagement() {
           ></HR>
 
           <Masonry
-            dir="masonry/soins/"
+            dir={["masonry/soins/", "masonry/soins/degagement/"]}
             masonry={{
               width: `1120px`,
               column: "3",

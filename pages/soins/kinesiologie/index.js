@@ -25,7 +25,7 @@ export default function Kinesiologie() {
         ></HR>
 
         <Masonry
-          dir={["masonry/soins/"]}
+          dir={["masonry/soins/", "masonry/soins/kine/"]}
           masonry={{
             width: `1120px`,
             column: "3",

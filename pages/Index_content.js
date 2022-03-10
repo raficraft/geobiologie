@@ -113,13 +113,12 @@ export default function Index_content() {
       ></HR>
 
       <Masonry
-        dir="masonry/home/"
+        dir={["masonry/home/"]}
         masonry={{
           width: `1120px`,
           column: "4",
           gap: "1rem",
         }}
-        horizontalPadding="2rem"
       ></Masonry>
 
       <HR

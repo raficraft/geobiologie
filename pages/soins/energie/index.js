@@ -26,10 +26,10 @@ export default function Energie() {
         ></HR>
 
         <Masonry
-          dir="masonry/soins/"
+          dir={["masonry/soins/", "masonry/soins/energie/"]}
           masonry={{
             width: `1120px`,
-            column: "2",
+            column: "3",
             gap: "1rem",
           }}
           horizontalPadding="2rem"
