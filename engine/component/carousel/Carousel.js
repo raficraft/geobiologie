@@ -6,6 +6,7 @@ import React, {
   useRef,
   useLayoutEffect,
 } from "react";
+import { ArrowLeft, ArrowRight } from "../../../assets/icons/Icon_svg";
 import { ModalContext } from "../../context/modal/ModalProvider";
 import useTouchEvent from "../../hooks/useTouchEvent";
 
@@ -206,25 +207,25 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
           </div>
           <footer>
             <div className={S.paginate}>
-              <button
+              <ArrowLeft
+                className={S.paginate_button}
                 onClick={() => {
                   goToPrev(slider.currentIdx);
                 }}
-              >
-                prev
-              </button>
+              ></ArrowLeft>
+
               <div className={S.number}>
                 <p>{slider.currentIdx - offsetItem + 1}</p>
-                <p>/</p>
+                <p>&#10240;/&#10240; </p>
                 <p>{array.length}</p>
               </div>
-              <button
+
+              <ArrowRight
+                className={S.paginate_button}
                 onClick={() => {
                   goToNext(slider.currentIdx);
                 }}
-              >
-                next
-              </button>
+              ></ArrowRight>
             </div>
           </footer>
         </section>

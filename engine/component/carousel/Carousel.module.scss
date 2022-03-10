@@ -140,6 +140,16 @@ $rotate-arrow2: -45deg;
     margin: 0.5rem 0 0;
     .paginate {
       @include flex(row, wrap, center, center);
+      &_button {
+        cursor: pointer;
+        transition: 0.3s;
+        svg {
+          color: red;
+        }
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
       .number {
         background-color: $black;
         @include flex(row, wrap, center, center);
