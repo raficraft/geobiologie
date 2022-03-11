@@ -93,7 +93,6 @@ export default function Masonry({
   }
 
   useEffect(() => {
-    console.log("check", filesInfo);
     getItems();
     window.addEventListener("resize", getItems, true);
 

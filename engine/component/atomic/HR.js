@@ -23,7 +23,6 @@ export default function HR({ axis, size, css, crement, children }) {
 
   useEffect(() => {
     getCss();
-    console.log(style);
   }, []);
 
   return <span style={style}>{children}</span>;

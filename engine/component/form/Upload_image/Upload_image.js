@@ -22,7 +22,6 @@ export default function Upload_image() {
   function handleControlTrigger(target) {
     for (const key in controlTrigger) {
       if (Object.hasOwnProperty.call(controlTrigger, key)) {
-        console.log("key in loop", key);
         if (key !== target) {
           setControlTrigger((s) => ({ ...s, [key]: true }));
         }

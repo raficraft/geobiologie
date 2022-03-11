@@ -30,8 +30,6 @@ export default function Layout({ children }) {
     }
   }
 
-  console.log("modal", modal);
-
   return (
     <>
       <Aside_link></Aside_link>

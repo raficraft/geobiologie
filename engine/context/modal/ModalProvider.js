@@ -32,7 +32,6 @@ export default function ModalProvider({ children }) {
   };
 
   function openModal(target) {
-    console.log(target);
     for (const key in modal) {
       if (Object.hasOwnProperty.call(modal, key)) {
         if (key !== target) {
