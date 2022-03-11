@@ -1,13 +1,8 @@
 import Image from "next/image";
-import React, {
-  useState,
-  useEffect,
-  useContext,
-  useRef,
-  useLayoutEffect,
-} from "react";
+import React, { useState, useEffect, useContext, useRef } from "react";
 import { ArrowLeft, ArrowRight } from "../../../assets/icons/Icon_svg";
 import { ModalContext } from "../../context/modal/ModalProvider";
+import useGlobalDOMEvents from "../../hooks/useGlobalDOMEvents";
 import useTouchEvent from "../../hooks/useTouchEvent";
 
 import S from "./Carousel.module.scss";
@@ -31,6 +26,16 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
     transition: 0.5,
     translate: idx * size.item + offsetItem * size.item,
     currentIdx: idx + offsetItem,
+  });
+
+  const onFocus = useRef();
+
+  useGlobalDOMEvents({
+    keydown(ev) {
+      if (ev.key === "Escape") {
+        closeModal();
+      }
+    },
   });
 
   /**
@@ -91,8 +96,12 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
 
   function goToNext(idx = slider.currentIdx) {
     console.log("goToNext", idx);
+    console.log("currentIdx", slider.currentIdx);
     const nextIndex = idx + 1;
     const nextTranslate = nextIndex * size.item;
+
+    console.log("next index", nextIndex);
+    console.log("next translate", nextTranslate);
 
     setSlider((S) => ({
       ...S,
@@ -108,7 +117,7 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
   }
 
   function goToPrev(idx = slider.currentIdx) {
-    console.log("goToNext", idx);
+    console.log("goToPrev", idx);
     const prevIndex = idx - 1;
     const prevTranslate = prevIndex * size.item;
 
@@ -125,30 +134,10 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
     }
   }
 
-  function handleKeyDown(e) {
-    console.log(e);
-
-    if (e.key === "Escape") {
-      closeModal();
-    }
-    if (e.key === "ArrowRight") {
-      goToNext(slider.currentIdx);
-    }
-    if (e.key === "ArrowLeft") {
-      goToPrev(slider.currentIdx);
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener("keydown", handleKeyDown);
-    // Remove event listeners on cleanup
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, []);
-
   useEffect(() => {
     //console.log("!!!!!!!!!!!!!!! in use effect", onTouch);
+
+    onFocus.current.focus();
 
     if (
       onTouch.direction_X === "left" &&
@@ -170,6 +159,7 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
       {itemCollection.length ? (
         <section className={S.carousel} ref={refCarousel}>
           <div
+            tabindex="0"
             className={S.closeParent}
             onClick={() => {
               closeModal();
@@ -179,6 +169,7 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
             <span></span>
           </div>
           <span
+            tabindex="1"
             className={S.carousel_prev}
             onClick={() => {
               goToPrev(slider.currentIdx);
@@ -187,6 +178,8 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
           ></span>
 
           <span
+            tabindex="2"
+            ref={onFocus}
             className={S.carousel_next}
             onClick={() => {
               goToNext(slider.currentIdx);

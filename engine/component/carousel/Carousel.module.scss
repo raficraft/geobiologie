@@ -64,6 +64,10 @@ $rotate-arrow2: -45deg;
     cursor: pointer;
     border: 2px solid rgb(191, 191, 191);
     transition: 0.3s;
+
+    @media screen and (max-width: 1330px) {
+      display: none;
+    }
   }
 
   &_next {

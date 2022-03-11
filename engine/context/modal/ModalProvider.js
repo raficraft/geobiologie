@@ -17,12 +17,27 @@ export default function ModalProvider({ children }) {
     ligthbox: false,
   });
 
+  const hiddenScrollBar = () => {
+    let htmlElt = document.documentElement;
+    let bodyElt = document.body;
+    //Enlève la scrollbar lors de l'ouverture du carousel.
+    htmlElt.scrollTop = 0;
+    bodyElt.scrollTop = 0;
+    bodyElt.style.overflow = "hidden";
+  };
+
+  const restoreScrollBar = () => {
+    let bodyElt = document.body;
+    bodyElt.style.overflow = "";
+  };
+
   function openModal(target) {
     console.log(target);
     for (const key in modal) {
       if (Object.hasOwnProperty.call(modal, key)) {
         if (key !== target) {
           setModal((s) => ({ ...s, [key]: false }));
+          hiddenScrollBar();
         }
       }
     }
@@ -36,6 +51,7 @@ export default function ModalProvider({ children }) {
       for (const key in modal) {
         if (Object.hasOwnProperty.call(modal, key)) {
           setModal((s) => ({ ...s, [key]: false }));
+          restoreScrollBar();
         }
       }
     });
