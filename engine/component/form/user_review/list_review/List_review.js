@@ -116,8 +116,8 @@ export default function List_review() {
                   handleSelectChange(e);
                 }}
               >
-                <option value="6">5</option>
-                <option value="10">10</option>
+                <option value="6">6</option>
+                <option value="12">12</option>
                 <option value="20">20</option>
               </select>
             </div>
