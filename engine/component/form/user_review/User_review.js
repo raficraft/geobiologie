@@ -31,13 +31,8 @@ export default function User_review() {
     console.log("state rate ====>>>", rate);
     console.log("error rate", error.rate);
 
-    if (!error.rate && parseInt(e.target.value) > 0) {
+    if (parseInt(e.target.value) > 0) {
       return setRate(parseInt(e.target.value));
-    }
-
-    if (error.rate && parseInt(e.target.value) === 0) {
-      setError((S) => ({ ...S, rate: false }));
-      return;
     }
   }
 
@@ -79,7 +74,7 @@ export default function User_review() {
     console.log("in submit : >>>", rate);
     console.log("in submit : >>>", error);
 
-    if (rate === 0) {
+    if (rate < 1) {
       setError((S) => ({ ...S, rate: "Veuillez choisir une note" }));
       return;
     } else {
@@ -94,7 +89,7 @@ export default function User_review() {
       name: inputs.name.current.value,
       email: inputs.email.current.value,
       comment: inputs.comment.current.value,
-      active: false,
+      active: true,
     };
 
     console.log(payload);
