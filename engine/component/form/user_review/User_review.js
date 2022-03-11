@@ -89,7 +89,7 @@ export default function User_review() {
       name: inputs.name.current.value,
       email: inputs.email.current.value,
       comment: inputs.comment.current.value,
-      active: true,
+      active: false,
     };
 
     console.log(payload);
