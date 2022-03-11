@@ -14,7 +14,7 @@ export default function Heroes({ children }) {
 
   useEffect(() => {
     async function getRandomImage() {
-      const random = getRandomInt(38);
+      const random = getRandomInt(32);
 
       if (random > 0) {
         try {
