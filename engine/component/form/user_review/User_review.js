@@ -27,10 +27,6 @@ export default function User_review() {
   const [, , createDocument] = useFirestore("user_review", {});
 
   function handleRate(e) {
-    console.log("rate ====>>>", e.target.value);
-    console.log("state rate ====>>>", rate);
-    console.log("error rate", error.rate);
-
     if (parseInt(e.target.value) > 0) {
       return setRate(parseInt(e.target.value));
     }
@@ -70,9 +66,6 @@ export default function User_review() {
 
   async function handleSubmit(e) {
     e.preventDefault();
-
-    console.log("in submit : >>>", rate);
-    console.log("in submit : >>>", error);
 
     if (rate < 1) {
       setError((S) => ({ ...S, rate: "Veuillez choisir une note" }));

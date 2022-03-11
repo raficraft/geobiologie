@@ -15,7 +15,6 @@ export default function Sourcier() {
     e.preventDefault();
     console.log(e);
     if (e.detail === 2) {
-      console.log("double");
       openModal("signin");
     }
   }

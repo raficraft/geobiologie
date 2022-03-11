@@ -20,7 +20,6 @@ export default function Upload_image() {
   });
 
   function handleControlTrigger(target) {
-    console.log("?????");
     for (const key in controlTrigger) {
       if (Object.hasOwnProperty.call(controlTrigger, key)) {
         console.log("key in loop", key);

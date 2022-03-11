@@ -36,7 +36,6 @@ export default function useFirestore(thisCollection, initialState) {
    * @returns {json}
    */
   async function setDocument(table, payload) {
-    console.log("in hooks set doc");
     const docRef = doc(db, table, payload.id);
     setDoc(docRef, payload);
   }

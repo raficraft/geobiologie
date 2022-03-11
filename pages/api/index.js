@@ -9,7 +9,6 @@ export default (req, res) => {
 
   try {
     const filenames = fs.readdirSync(dir);
-    console.log("yolo : ", filenames);
     const validFiles = [];
 
     for (const file of filenames) {

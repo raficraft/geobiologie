@@ -16,7 +16,6 @@ export default function Nav_top() {
 
   function openNested(e, toggle) {
     e.preventDefault(e);
-    console.log("yolo");
     setIsOpen(toggle);
   }
 
@@ -47,7 +46,6 @@ export function NestedNav({ root }) {
 
   function openNested(e, toggle) {
     e.preventDefault(e);
-    console.log("yolo");
     setIsOpen(toggle);
   }
 

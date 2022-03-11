@@ -17,7 +17,6 @@ export default function Handle_review(props) {
   const [listCollection, setlistCollection] = useState();
 
   function showUserReview(list) {
-    console.log(listCollection);
     return listCollection.map((el, idx) => {
       return <Review key={el.id} review={el} {...props}></Review>;
     });

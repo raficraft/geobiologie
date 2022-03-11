@@ -79,7 +79,6 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
   }
 
   function jumpToItem(idx) {
-    console.log("jump to");
     disableTransition();
 
     const nextTranslate = size.item * idx;
@@ -95,13 +94,8 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
   }
 
   function goToNext(idx = slider.currentIdx) {
-    console.log("goToNext", idx);
-    console.log("currentIdx", slider.currentIdx);
     const nextIndex = idx + 1;
     const nextTranslate = nextIndex * size.item;
-
-    console.log("next index", nextIndex);
-    console.log("next translate", nextTranslate);
 
     setSlider((S) => ({
       ...S,
@@ -117,7 +111,6 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
   }
 
   function goToPrev(idx = slider.currentIdx) {
-    console.log("goToPrev", idx);
     const prevIndex = idx - 1;
     const prevTranslate = prevIndex * size.item;
 
@@ -135,8 +128,6 @@ export default function Carousel({ array, idx, currentFile, isVisible }) {
   }
 
   useEffect(() => {
-    //console.log("!!!!!!!!!!!!!!! in use effect", onTouch);
-
     onFocus.current.focus();
 
     if (

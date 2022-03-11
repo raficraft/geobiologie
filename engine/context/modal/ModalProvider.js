@@ -46,7 +46,6 @@ export default function ModalProvider({ children }) {
   }
 
   function closeModal() {
-    console.log("??????");
     setModal(() => {
       for (const key in modal) {
         if (Object.hasOwnProperty.call(modal, key)) {

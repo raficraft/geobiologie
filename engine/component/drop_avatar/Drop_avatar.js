@@ -33,20 +33,14 @@ export default function Drop_avatar() {
     for (let i = 0; i < files.length; i++) {
       if (validateFile(files[i])) {
         // add to an array so we can display the name of file
-        console.log("yolo is great", files);
         setSelectedFiles((prevArray) => [...prevArray, files[i]]);
         setErrorMessage("");
-
-        console.log(fileSize(files[0].size));
       } else {
         // add a new property called invalid
         files[i]["invalid"] = true;
         // add to the same array so we can display the name of the file
         // set error message
         setErrorMessage("Gnnn");
-        console.log("error format");
-
-        console.log(files);
       }
     }
   }

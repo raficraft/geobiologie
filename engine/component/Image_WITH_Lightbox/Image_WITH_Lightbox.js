@@ -13,9 +13,6 @@ export default function Image_WITH_Lightbox({
   css_lightbox = {},
 }) {
   const { modal, setModal, openModal } = useContext(ModalContext);
-  console.log("lighbox modal ", modal);
-  console.log("src ", src);
-  console.log("src lightbox ", src_ligthbox);
   return (
     <>
       <div className={S.content_target} style={css_src}>
