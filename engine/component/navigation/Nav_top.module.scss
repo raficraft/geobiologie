@@ -37,7 +37,7 @@
         &:before {
           @include size(0, 100%);
           z-index: -1;
-          background-color: $blue;
+          background-color: $yellow;
           border-radius: $smallRadius;
           @include emptyContent;
         }
@@ -55,9 +55,9 @@
       }
       [data-currentpath="true"] {
         color: white;
-        background-color: $green;
+        background-color: $blue;
         &:before {
-          background-color: $green;
+          background-color: $blue;
           padding: spacing(0.5) spacing(1.25);
           animation-name: zero_TO_full;
           animation-fill-mode: both;

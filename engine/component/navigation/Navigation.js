@@ -61,6 +61,9 @@ function NestedNav({ root, css, currentPath }) {
     if (e) {
       //console.log(allLink);
 
+      console.log("WTF", e.target);
+      console.log("WTF", linkRef.current);
+
       for (const link of allLink) {
         link.dataset.currentpath = false;
       }
@@ -78,7 +81,7 @@ function NestedNav({ root, css, currentPath }) {
     //console.log(allLink);
 
     for (const link of allLink) {
-      link.dataset.currentPath = false;
+      link.dataset.currentpath = false;
 
       if (link.dataset.path === "/" + currentPath) {
         link.dataset.currentpath = true;
@@ -106,7 +109,7 @@ function NestedNav({ root, css, currentPath }) {
                 }
               : (e) => {
                   closeModal("nav_alt");
-                  lol(e, root.link);
+                  lol(e);
                 }
           }
           data-path={root.link}

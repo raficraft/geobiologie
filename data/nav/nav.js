@@ -8,14 +8,19 @@ import {
   StoneIcon,
   WaterOutline,
   AccountCircle,
+  Home_icon,
 } from "../../assets/icons/Icon_svg";
 
 export const nav = [
   {
+    title: "Home",
+    link: "/",
+    icon: <Home_icon></Home_icon>,
+  },
+  {
     title: "Présentation",
     link: "/presentation",
     icon: <AccountCircle></AccountCircle>,
-    current: "/presentation",
   },
   {
     title: "Soins",

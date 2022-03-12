@@ -19,13 +19,6 @@ export default function Psychanaliste() {
           {/* <Masonry dir="masonry/sourcier/"></Masonry> */}
         </section>
 
-        <HR
-          css={{
-            margin: "4 0",
-            width: "100%",
-          }}
-        ></HR>
-
         <Masonry
           dir={["masonry/soins/"]}
           masonry={{

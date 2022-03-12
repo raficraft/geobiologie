@@ -34,7 +34,7 @@ export default function List_review() {
     for (let i = 0; i < count; i++) {
       rate.push(
         <span key={`star_${key}_${i}`}>
-          <Star id={`star_${key}_${i}`}></Star>
+          <Star key={`starKey_${key}_${i}`}></Star>
         </span>
       );
     }
@@ -59,7 +59,7 @@ export default function List_review() {
       let pageNumber = idx + 1;
       paginate.push(
         <button
-          key={idx}
+          key={`paginate_${idx}`}
           onClick={(e) => {
             goToPage(idx, pageNumber);
           }}

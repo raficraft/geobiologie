@@ -1,3 +1,4 @@
+import React, { useContext, useEffect, useRef, useLayoutEffect } from "react";
 import Link from "next/link";
 import { Home_icon } from "../../../assets/icons/Icon_svg";
 
@@ -11,24 +12,44 @@ import Style_nav from "../navigation/Nav_top.module.scss";
 function Header() {
   const isMobil = useMediaQuery("(max-width: 1139px)");
   const isTablet = useMediaQuery("(min-width: 1140px)");
+
+  // function handleClick() {
+  //   const allLink = document.querySelectorAll('[data-selector="link"]');
+
+  //   //console.log(allLink);
+
+  //   for (const link of allLink) {
+  //     link.dataset.currentpath = false;
+  //   }
+  // }
+
+  // useEffect(() => {
+  //   console.log("yolo");
+  //   handleClick();
+  // }, [handleClick]);
+
   //Conponenet
+
   return (
     <header className={`${S.wrapper}`}>
       {/* Header Content */}
       <div className={`${S.content} primary_content`}>
         {/* Home Button */}
-        <Link href="/" className={S.home_button}>
-          <a className={S.home_button}>
-            <Home_icon />
-          </a>
-        </Link>
 
         {isTablet && <Navigation css={Style_nav} />}
 
         {isMobil && (
-          <div className={S.nav_right}>
-            <Hamburger_menu />
-          </div>
+          <>
+            <Link href="/" className={S.home_button}>
+              <a className={S.home_button}>
+                <Home_icon />
+              </a>
+            </Link>
+
+            <div className={S.nav_right}>
+              <Hamburger_menu />
+            </div>
+          </>
         )}
       </div>
       {/* Header Content END*/}
