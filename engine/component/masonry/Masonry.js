@@ -20,7 +20,7 @@ export default function Masonry({
     idx: 0,
   });
 
-  console.log(S);
+  //console.log(S);
 
   function handleClick(file, idx) {
     setCurrentFile((s) => ({ ...s, current: file, idx: idx }));

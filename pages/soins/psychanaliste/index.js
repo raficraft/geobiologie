@@ -27,7 +27,7 @@ export default function Psychanaliste() {
         ></HR>
 
         <Masonry
-          dir="masonry/soins/"
+          dir={["masonry/soins/"]}
           masonry={{
             width: `1120px`,
             column: "3",

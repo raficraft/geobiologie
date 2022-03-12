@@ -15,10 +15,11 @@ export const nav = [
     title: "Présentation",
     link: "/presentation",
     icon: <AccountCircle></AccountCircle>,
+    current: "/presentation",
   },
   {
     title: "Soins",
-    link: "/",
+    link: "/soins",
     icon: <EnergyIcon></EnergyIcon>,
     child: [
       {
