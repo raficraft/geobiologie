@@ -18,19 +18,9 @@ import { AuthContext } from "../../context/auth/AuthProvider";
 export default function Aside_link() {
   const { openModal } = useContext(ModalContext);
   const { isAuth, currentUser, logout } = useContext(AuthContext);
-  const [show, setShow, refOutsideClick] = useClickOutside(false);
-  const isDesktop = useMediaQuery("(min-width: 1281px)");
-
-  function toggle_aside() {
-    setShow(!show);
-  }
-
-  useLayoutEffect(() => {
-    isDesktop && setShow(true);
-  });
 
   return (
-    <aside className={S.aside_link} data-show={show} ref={refOutsideClick}>
+    <aside className={S.aside_link}>
       <div className={S.aside_link_container}>
         <span className="bg_blue">
           <Link href="https://www.facebook.com/profile.php?id=100030549198574">
@@ -81,17 +71,6 @@ export default function Aside_link() {
           </>
         )}
       </div>
-
-      {!isDesktop && (
-        <button
-          className={S.mobil_toggle}
-          onClick={() => {
-            toggle_aside();
-          }}
-        >
-          <span className={S.dotted_menu}></span>
-        </button>
-      )}
     </aside>
   );
 }

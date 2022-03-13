@@ -12,14 +12,8 @@
   z-index: 1500;
   left: 0;
 
-  &[data-show="false"] {
-    left: -3rem;
-  }
-  &[data-show="true"] {
-    animation-name: left_TO_origin;
-    animation-duration: 0.3s;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
+  @media screen and (max-width: 769px) {
+    max-width: 2.5rem;
   }
 
   &_container {
@@ -38,39 +32,13 @@
         filter: brightness(1.4);
       }
     }
-  }
-
-  .mobil_toggle {
-    @include size(1.25rem, 2.5rem);
-    position: absolute;
-    content: "";
-    background-color: rgb(160, 160, 160);
-    right: -1.25rem;
-    @include flex(column, nowrap, center, center);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    padding: spacing(1) 0;
-
-    pointer-events: all;
-    cursor: pointer;
-    border: none;
-
-    .dotted_menu,
-    .dotted_menu:before,
-    .dotted_menu:after {
-      @include flex(column, nowrap, center, center);
-      @include circle();
-      @include size(4px, 4px);
-      content: "";
-      background-color: black;
-      position: absolute;
-    }
-
-    .dotted_menu:before {
-      top: -8px;
-    }
-    .dotted_menu:after {
-      top: 8px;
+    @media screen and (max-width: 769px) {
+      span {
+        @include size(2.5rem, 2.5rem);
+        svg {
+          font-size: 2rem;
+        }
+      }
     }
   }
 }
