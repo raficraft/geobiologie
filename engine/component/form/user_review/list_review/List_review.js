@@ -58,15 +58,12 @@ export default function List_review() {
     for (let idx = 0; idx < count; idx++) {
       let pageNumber = idx + 1;
       paginate.push(
-        <button
+        <PaginateButton
           key={`paginate_${idx}`}
-          onClick={(e) => {
-            goToPage(idx, pageNumber);
-          }}
-          data-current={nbPage === pageNumber ? true : false}
-        >
-          {pageNumber}
-        </button>
+          nbPage={nbPage}
+          pageNumber={pageNumber}
+          goToPage={goToPage}
+        ></PaginateButton>
       );
     }
 
@@ -142,5 +139,18 @@ export default function List_review() {
         </section>
       )}
     </>
+  );
+}
+
+function PaginateButton({ nbPage, pageNumber, goToPage }) {
+  return (
+    <button
+      onClick={(e) => {
+        goToPage(pageNumber - 1, pageNumber);
+      }}
+      data-current={nbPage === pageNumber ? true : false}
+    >
+      {pageNumber}
+    </button>
   );
 }
