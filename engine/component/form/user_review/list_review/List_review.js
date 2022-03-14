@@ -53,27 +53,6 @@ export default function List_review() {
     goToPage(0, currentPage);
   };
 
-  function createPaginate() {
-    const paginate = [];
-
-    const count = Math.ceil(sortCollection.length / nbReviewPerPage);
-
-    for (let idx = 0; idx < count; idx++) {
-      let pageNumber = idx + 1;
-      paginate.push(
-        <PaginateButton
-          key={`paginate_${idx}`}
-          currentPage={currentPage}
-          pageNumber={pageNumber}
-          goToPage={goToPage}
-          nbPage={nbPage}
-        ></PaginateButton>
-      );
-    }
-
-    return paginate;
-  }
-
   function goToPage(startIndex, pageNumber) {
     //shallow copy
     const dataRow = JSON.parse(JSON.stringify(sortCollection));
@@ -129,7 +108,15 @@ export default function List_review() {
           </header>
           {listUserReview()}
 
-          <div className={S.paginate}>{createPaginate(nbReviewPerPage)}</div>
+          <div className={S.paginate}>
+            <Paginate
+              perPage={nbReviewPerPage}
+              collectionLength={sortCollection.length}
+              currentPage={currentPage}
+              goToPage={goToPage}
+              nbPage={nbPage}
+            ></Paginate>
+          </div>
 
           <footer>
             <button
@@ -147,10 +134,36 @@ export default function List_review() {
   );
 }
 
+function Paginate({
+  collectionLength,
+  perPage,
+  currentPage,
+  goToPage,
+  nbPage,
+}) {
+  const paginate = [];
+  const count = Math.ceil(collectionLength / perPage);
+
+  for (let idx = 0; idx < count; idx++) {
+    let pageNumber = idx + 1;
+    paginate.push(
+      <PaginateButton
+        key={`paginate_${idx}`}
+        currentPage={currentPage}
+        pageNumber={pageNumber}
+        goToPage={goToPage}
+        nbPage={nbPage}
+      ></PaginateButton>
+    );
+  }
+
+  return paginate;
+}
+
 function PaginateButton({ currentPage, pageNumber, goToPage, nbPage }) {
   return (
     <button
-      onClick={(e) => {
+      onClick={() => {
         goToPage(pageNumber - 1, pageNumber);
       }}
       data-current={currentPage === pageNumber ? true : false}
