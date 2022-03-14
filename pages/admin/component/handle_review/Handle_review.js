@@ -46,7 +46,7 @@ export default function Handle_review(props) {
       ) : !loading && listCollection.length > 0 ? (
         <>
           <div className={S.content_review}>
-            <div class={S.select}>
+            <div className={S.select}>
               <label>Trier par : </label>
               <select defaultValue="5">
                 <option value="all">All</option>

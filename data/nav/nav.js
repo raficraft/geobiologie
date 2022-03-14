@@ -13,7 +13,7 @@ import {
 
 export const nav = [
   {
-    title: "Home",
+    title: "Acceuil",
     link: "/",
     icon: <Home_icon></Home_icon>,
   },
