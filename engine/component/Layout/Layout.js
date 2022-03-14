@@ -24,7 +24,6 @@ export default function Layout({ children }) {
 
   function handleClick(e) {
     e.preventDefault();
-    console.log(e);
     if (e.detail === 2) {
       openModal("signin");
     }

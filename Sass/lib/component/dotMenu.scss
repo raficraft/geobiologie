@@ -58,7 +58,6 @@
     //right: calc(100% + 0.5rem);
     right: 0;
     top: 0;
-    background-color: red;
     &--content {
       background-color: aqua;
     }
@@ -69,5 +68,19 @@
   display: block;
   @include size(32px, 100%);
   content: "";
-  background-color: red;
+  .dotMenu_sub {
+    background-color: white;
+    border-radius: $smallRadius;
+    filter: $dropShadow;
+    button {
+      border: none;
+      background: none;
+      padding: 0.5rem 0.5rem;
+      width: 100%;
+      &:hover {
+        background: $blue;
+        color: white;
+      }
+    }
+  }
 }

@@ -20,8 +20,6 @@ export default function Masonry({
     idx: 0,
   });
 
-  //console.log(S);
-
   function handleClick(file, idx) {
     setCurrentFile((s) => ({ ...s, current: file, idx: idx }));
     openModal("embed");
@@ -45,7 +43,6 @@ export default function Masonry({
   function createGallery() {
     if (dir && dir !== null && filesInfo !== []) {
       return filesInfo.map((file, idx) => {
-        //console.log("calc", file.height / file.width);
         return (
           <span
             key={idx}

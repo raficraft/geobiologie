@@ -52,18 +52,10 @@ function NestedNav({ root, css, currentPath }) {
     setIsOpen(toggle);
   }
 
-  function lol(e) {
-    console.log("lol");
-    console.log(router);
-
+  function defineCurrentLink(e) {
     const allLink = document.querySelectorAll('[data-selector="link"]');
 
     if (e) {
-      //console.log(allLink);
-
-      console.log("WTF", e.target);
-      console.log("WTF", linkRef.current);
-
       for (const link of allLink) {
         link.dataset.currentpath = false;
       }
@@ -74,11 +66,7 @@ function NestedNav({ root, css, currentPath }) {
   }
 
   function defineCurrentOnLoad() {
-    console.log("second render on Nav on Load", "/" + currentPath);
-
     const allLink = document.querySelectorAll('[data-selector="link"]');
-
-    //console.log(allLink);
 
     for (const link of allLink) {
       link.dataset.currentpath = false;
@@ -88,8 +76,6 @@ function NestedNav({ root, css, currentPath }) {
       }
     }
   }
-
-  //console.log("root", root);
 
   useEffect(() => {
     defineCurrentOnLoad();
@@ -105,11 +91,11 @@ function NestedNav({ root, css, currentPath }) {
             root.child
               ? (e) => {
                   openNested(e, true);
-                  lol(e);
+                  defineCurrentLink(e);
                 }
               : (e) => {
                   closeModal("nav_alt");
-                  lol(e);
+                  defineCurrentLink(e);
                 }
           }
           data-path={root.link}

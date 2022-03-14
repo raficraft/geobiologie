@@ -73,7 +73,6 @@ export default function User_review() {
     } else {
       setError((S) => ({ ...S, rate: false }));
       setSuccessMessage(true);
-      console.log(rate);
     }
 
     const payload = {
@@ -85,7 +84,6 @@ export default function User_review() {
       active: false,
     };
 
-    console.log(payload);
     try {
       await createDocument("user_review", payload);
       inputs.form.current.reset();

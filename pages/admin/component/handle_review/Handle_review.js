@@ -43,19 +43,25 @@ export default function Handle_review(props) {
     <>
       {loading ? (
         <p>Loading ...</p>
-      ) : (
+      ) : !loading && listCollection.length > 0 ? (
         <>
-          <div>
-            <select defaultValue="5">
-              <option value="all">All</option>
-              <option value="1">1</option>
-              <option value="5">5</option>
-              <option value="10">10</option>
-            </select>
+          <div className={S.content_review}>
+            <div class={S.select}>
+              <label>Trier par : </label>
+              <select defaultValue="5">
+                <option value="all">All</option>
+                <option value="1">1</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+              </select>
+              <p> Avis</p>
+            </div>
             <p>{Object.keys(listCollection).length} avis.</p>
           </div>
           {showUserReview()}
         </>
+      ) : (
+        <p>Aucun nouvelle a valider</p>
       )}
     </>
   );
@@ -86,7 +92,6 @@ function Review({ review, active }) {
   }
   function setReview(review) {
     const payload = { ...review, active: !active };
-    console.log(payload);
     setDocument("user_review", payload);
   }
 
@@ -123,8 +128,9 @@ function Review({ review, active }) {
       </div>
 
       <div className={S.content}>
-        <p>{review.comment}</p>
-        <p>{date}</p>
+        <p>{review.rate}</p>
+        <p className={S.review}>{review.comment}</p>
+        <p className={S.date}>{date}</p>
       </div>
     </div>
   );

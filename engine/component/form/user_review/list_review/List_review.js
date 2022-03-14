@@ -63,6 +63,7 @@ export default function List_review() {
           onClick={(e) => {
             goToPage(idx, pageNumber);
           }}
+          data-current={nbPage === pageNumber ? true : false}
         >
           {pageNumber}
         </button>

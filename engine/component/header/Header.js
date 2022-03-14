@@ -13,23 +13,6 @@ function Header() {
   const isMobil = useMediaQuery("(max-width: 1139px)");
   const isTablet = useMediaQuery("(min-width: 1140px)");
 
-  // function handleClick() {
-  //   const allLink = document.querySelectorAll('[data-selector="link"]');
-
-  //   //console.log(allLink);
-
-  //   for (const link of allLink) {
-  //     link.dataset.currentpath = false;
-  //   }
-  // }
-
-  // useEffect(() => {
-  //   console.log("yolo");
-  //   handleClick();
-  // }, [handleClick]);
-
-  //Conponenet
-
   return (
     <header className={`${S.wrapper}`}>
       {/* Header Content */}

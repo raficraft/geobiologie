@@ -1,24 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import Head from "next/head";
 
-import { ModalContext } from "../../engine/context/modal/ModalProvider";
 import Masonry from "../../engine/component/masonry/Masonry";
 import Sourcier_content from "./Sourcier_content";
 import HR from "../../engine/component/atomic/HR";
 
 export default function Sourcier() {
-  const { openModal } = useContext(ModalContext);
-
-  /*** */
-
-  function handleClick(e) {
-    e.preventDefault();
-    console.log(e);
-    if (e.detail === 2) {
-      openModal("signin");
-    }
-  }
-
   return (
     <>
       <Head>
