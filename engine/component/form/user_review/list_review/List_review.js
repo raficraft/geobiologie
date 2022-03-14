@@ -13,6 +13,7 @@ export default function List_review() {
   const [nbReviewPerPage, setNbReviewPerPage] = useState(6);
   const [currentCollectionForThisPage, setCurrentCollectionForThisPage] =
     useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
 
   function listUserReview(list) {
@@ -48,6 +49,8 @@ export default function List_review() {
     setCurrentCollectionForThisPage(dataRow.slice(0, parseInt(e.target.value)));
     const count = sortCollection.length / e.target.value;
     setNbPage(Math.ceil(count));
+    console.log("before jump to currentPage", currentPage);
+    goToPage(0, currentPage);
   };
 
   function createPaginate() {
@@ -60,7 +63,7 @@ export default function List_review() {
       paginate.push(
         <PaginateButton
           key={`paginate_${idx}`}
-          nbPage={nbPage}
+          currentPage={currentPage}
           pageNumber={pageNumber}
           goToPage={goToPage}
         ></PaginateButton>
@@ -76,7 +79,7 @@ export default function List_review() {
     const start = startIndex === 0 ? 0 : startIndex * parseInt(nbReviewPerPage);
     const end = pageNumber * parseInt(nbReviewPerPage);
     setCurrentCollectionForThisPage(dataRow.slice(start, end));
-    setNbPage(pageNumber);
+    setCurrentPage(pageNumber);
   }
 
   //Get all review validate in firebase user_review collection
@@ -92,6 +95,7 @@ export default function List_review() {
         const forThisPage = shallowCopy.splice(0, nbReviewPerPage);
         setCurrentCollectionForThisPage(forThisPage);
         setLoading(false);
+        goToPage(0, currentPage);
       }
     } catch (error) {
       alert(error);
@@ -143,13 +147,13 @@ export default function List_review() {
   );
 }
 
-function PaginateButton({ nbPage, pageNumber, goToPage }) {
+function PaginateButton({ currentPage, pageNumber, goToPage }) {
   return (
     <button
       onClick={(e) => {
         goToPage(pageNumber - 1, pageNumber);
       }}
-      data-current={nbPage === pageNumber ? true : false}
+      data-current={currentPage === pageNumber ? true : false}
     >
       {pageNumber}
     </button>
