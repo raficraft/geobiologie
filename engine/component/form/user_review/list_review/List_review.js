@@ -76,6 +76,7 @@ export default function List_review() {
     const start = startIndex === 0 ? 0 : startIndex * parseInt(nbReviewPerPage);
     const end = pageNumber * parseInt(nbReviewPerPage);
     setCurrentCollectionForThisPage(dataRow.slice(start, end));
+    setNbPage(pageNumber);
   }
 
   //Get all review validate in firebase user_review collection
