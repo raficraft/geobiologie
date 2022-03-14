@@ -1,3 +1,4 @@
+import { collection } from "firebase/firestore";
 import React, { useState, useEffect, useContext } from "react";
 import { Star } from "../../../../../assets/icons/Icon_svg";
 import { ModalContext } from "../../../../context/modal/ModalProvider";
@@ -58,6 +59,8 @@ export default function List_review() {
     const dataRow = JSON.parse(JSON.stringify(sortCollection));
     const start = startIndex === 0 ? 0 : startIndex * parseInt(nbReviewPerPage);
     const end = pageNumber * parseInt(nbReviewPerPage);
+
+    console.log("start", start, "end", end);
     setCurrentCollectionForThisPage(dataRow.slice(start, end));
     setCurrentPage(pageNumber);
   }
@@ -115,7 +118,7 @@ export default function List_review() {
               currentPage={currentPage}
               goToPage={goToPage}
               nbPage={nbPage}
-              limit={3}
+              limit={[4, 2]}
             ></Paginate>
           </div>
 
@@ -141,16 +144,29 @@ function Paginate({
   currentPage,
   goToPage,
   nbPage,
-  limit = 2,
+  limit = [3, 1],
 }) {
   const paginate = [];
-  console.log(collectionLength - 2);
+  let getDotted = false;
+  let addPrevButton = false;
+  let addNextButton = false;
   const count = Math.ceil(parseInt(collectionLength) / parseInt(perPage));
 
-  if (count > limit * 2) {
-    for (let idx = 0; idx < count; idx++) {
-      let pageNumber = idx + 1;
-      if (pageNumber <= limit || pageNumber > count - limit) {
+  if (count > limit[0] + limit[1]) {
+    for (let idx = currentPage; idx <= count; idx++) {
+      if (!addPrevButton) {
+        if (currentPage > 1) {
+          paginate.push(
+            <button
+              onClick={() => goToPage(idx - 2, pageNumber - 1)}
+            >{`<<`}</button>
+          );
+        }
+        addPrevButton = true;
+      }
+
+      let pageNumber = idx;
+      if (pageNumber < limit[0] + currentPage) {
         paginate.push(
           <PaginateButton
             key={`paginate_${idx}`}
@@ -160,14 +176,17 @@ function Paginate({
             nbPage={nbPage}
           ></PaginateButton>
         );
-      } else {
-        <button>...</button>;
+      } else if (pageNumber > limit[0] + currentPage) {
+        if (!getDotted) {
+          paginate.push(<button disabled="disabled">...</button>);
+          getDotted = true;
+        }
       }
     }
   } else {
+    console.log("loop 2");
     for (let idx = 0; idx < count; idx++) {
       let pageNumber = idx + 1;
-
       paginate.push(
         <PaginateButton
           key={`paginate_${idx}`}
@@ -180,10 +199,22 @@ function Paginate({
     }
   }
 
+  if (!addNextButton) {
+    if (currentPage < count - limit[0] + 1) {
+      paginate.push(
+        <button
+          onClick={() => goToPage(currentPage, currentPage + 1)}
+        >{`>>`}</button>
+      );
+    }
+    addNextButton = true;
+  }
+
+  console.log(paginate);
   return paginate;
 }
 
-function PaginateButton({ currentPage, pageNumber, goToPage, nbPage }) {
+function PaginateButton({ currentPage, pageNumber, goToPage }) {
   return (
     <button
       onClick={() => {
