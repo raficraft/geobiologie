@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 import S from "./Heroes.module.scss";
 
-import item from "./../../../public/assets/img/illustration/heroes/heroes (13).jpg";
 import Image from "next/image";
 import { arrayRemove } from "firebase/firestore";
 
@@ -14,12 +13,12 @@ export default function Heroes({ children }) {
 
   useEffect(() => {
     async function getRandomImage() {
-      const random = getRandomInt(32);
+      const random = getRandomInt(31);
 
       if (random > 0) {
         try {
           const i = await import(
-            `/public/assets/img/illustration/heroes/heroes (${random}).jpg`
+            `/public/assets/img/illustration/heroes/david_michel (${random}).jpg`
           );
 
           setImage(i.default);
@@ -49,7 +48,7 @@ export default function Heroes({ children }) {
             objectFit="cover"
             className={S.flex}
             src={image.src}
-            blurDataURL={item.blurDataURL}
+            blurDataURL={image.blurDataURL}
             placeholder="blur"
             alt=""
           ></Image>

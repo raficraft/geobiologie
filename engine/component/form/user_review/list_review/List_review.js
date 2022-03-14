@@ -115,6 +115,7 @@ export default function List_review() {
               currentPage={currentPage}
               goToPage={goToPage}
               nbPage={nbPage}
+              limit={3}
             ></Paginate>
           </div>
 
@@ -140,21 +141,43 @@ function Paginate({
   currentPage,
   goToPage,
   nbPage,
+  limit = 2,
 }) {
   const paginate = [];
-  const count = Math.ceil(collectionLength / perPage);
+  console.log(collectionLength - 2);
+  const count = Math.ceil(parseInt(collectionLength) / parseInt(perPage));
 
-  for (let idx = 0; idx < count; idx++) {
-    let pageNumber = idx + 1;
-    paginate.push(
-      <PaginateButton
-        key={`paginate_${idx}`}
-        currentPage={currentPage}
-        pageNumber={pageNumber}
-        goToPage={goToPage}
-        nbPage={nbPage}
-      ></PaginateButton>
-    );
+  if (count > limit * 2) {
+    for (let idx = 0; idx < count; idx++) {
+      let pageNumber = idx + 1;
+      if (pageNumber <= limit || pageNumber > count - limit) {
+        paginate.push(
+          <PaginateButton
+            key={`paginate_${idx}`}
+            currentPage={currentPage}
+            pageNumber={pageNumber}
+            goToPage={goToPage}
+            nbPage={nbPage}
+          ></PaginateButton>
+        );
+      } else {
+        <button>...</button>;
+      }
+    }
+  } else {
+    for (let idx = 0; idx < count; idx++) {
+      let pageNumber = idx + 1;
+
+      paginate.push(
+        <PaginateButton
+          key={`paginate_${idx}`}
+          currentPage={currentPage}
+          pageNumber={pageNumber}
+          goToPage={goToPage}
+          nbPage={nbPage}
+        ></PaginateButton>
+      );
+    }
   }
 
   return paginate;
