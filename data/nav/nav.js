@@ -1,10 +1,6 @@
 import {
-  EarthAtlantic,
   EnergyIcon,
   Learn_icon,
-  Newspaper,
-  Psy,
-  ShoppingCart_icon,
   StoneIcon,
   WaterOutline,
   AccountCircle,

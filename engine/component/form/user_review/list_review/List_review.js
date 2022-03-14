@@ -66,6 +66,7 @@ export default function List_review() {
           currentPage={currentPage}
           pageNumber={pageNumber}
           goToPage={goToPage}
+          nbPage={nbPage}
         ></PaginateButton>
       );
     }
@@ -98,13 +99,12 @@ export default function List_review() {
         goToPage(0, currentPage);
       }
     } catch (error) {
-      alert(error);
+      console.log(error);
     }
   }, [nbReviewPerPage]);
 
   return (
     <>
-      {" "}
       {loading ? (
         <p>...Loading</p>
       ) : (
@@ -147,7 +147,7 @@ export default function List_review() {
   );
 }
 
-function PaginateButton({ currentPage, pageNumber, goToPage }) {
+function PaginateButton({ currentPage, pageNumber, goToPage, nbPage }) {
   return (
     <button
       onClick={(e) => {
