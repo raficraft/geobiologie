@@ -92,34 +92,67 @@ export default function List_review() {
       ) : (
         <section className={S.list_review} key="listReview">
           <h2>Ils ont donné leurs avis.</h2>
-          <header>
-            <div>
-              <label>Nombre d'avis afficher : </label>
-              <select
-                defaultValue={nbReviewPerPage}
-                onChange={(e) => {
-                  handleSelectChange(e);
-                }}
-              >
-                <option value="6">6</option>
-                <option value="12">12</option>
-                <option value="20">20</option>
-              </select>
-            </div>
+          <div className={S.paginate_container}>
+            <header className={S.paginate_header}>
+              <div class={S.bloc_select}>
+                <label>Nombre d'avis afficher : </label>
+                <select
+                  defaultValue={nbReviewPerPage}
+                  onChange={(e) => {
+                    handleSelectChange(e);
+                  }}
+                >
+                  <option value="6">6</option>
+                  <option value="12">12</option>
+                  <option value="20">20</option>
+                </select>
+              </div>
 
-            <p>il y à {sortCollection.length} avis.</p>
-          </header>
+              <p>il y à {sortCollection.length} avis.</p>
+            </header>
+
+            <div className={S.paginate}>
+              <Paginate
+                perPage={nbReviewPerPage}
+                collectionLength={sortCollection.length}
+                currentPage={currentPage}
+                goToPage={goToPage}
+                nbPage={nbPage}
+                limit={[4, 2]}
+              ></Paginate>
+            </div>
+          </div>
           {listUserReview()}
 
-          <div className={S.paginate}>
-            <Paginate
-              perPage={nbReviewPerPage}
-              collectionLength={sortCollection.length}
-              currentPage={currentPage}
-              goToPage={goToPage}
-              nbPage={nbPage}
-              limit={[4, 2]}
-            ></Paginate>
+          <div className={`${S.paginate_container} ${S.pa3}`}>
+            <header className={S.paginate_header}>
+              <div class={S.bloc_select}>
+                <label>Nombre d'avis afficher : </label>
+                <select
+                  defaultValue={nbReviewPerPage}
+                  onChange={(e) => {
+                    handleSelectChange(e);
+                  }}
+                >
+                  <option value="6">6</option>
+                  <option value="12">12</option>
+                  <option value="20">20</option>
+                </select>
+              </div>
+
+              <p>il y à {sortCollection.length} avis.</p>
+            </header>
+
+            <div className={S.paginate}>
+              <Paginate
+                perPage={nbReviewPerPage}
+                collectionLength={sortCollection.length}
+                currentPage={currentPage}
+                goToPage={goToPage}
+                nbPage={nbPage}
+                limit={[4, 2]}
+              ></Paginate>
+            </div>
           </div>
 
           <footer>
@@ -147,25 +180,40 @@ function Paginate({
   limit = [3, 1],
 }) {
   const paginate = [];
-  let getDotted = false;
+  let getDottedEnd = false;
+  let getDottedStart = false;
   let addPrevButton = false;
   let addNextButton = false;
+  let nbMax = limit[0] + limit[1];
   const count = Math.ceil(parseInt(collectionLength) / parseInt(perPage));
+  const startLoop =
+    currentPage > count - limit[0] ? count - limit[0] : currentPage;
 
   if (count > limit[0] + limit[1]) {
-    for (let idx = currentPage; idx <= count; idx++) {
+    for (let idx = startLoop; idx <= count; idx++) {
       if (!addPrevButton) {
         if (currentPage > 1) {
           paginate.push(
-            <button
-              onClick={() => goToPage(idx - 2, pageNumber - 1)}
-            >{`<<`}</button>
+            <>
+              <button onClick={() => goToPage(0, 1)}>First page</button>
+              <button
+                onClick={() => goToPage(idx - 2, pageNumber - 1)}
+              >{`<<`}</button>
+            </>
           );
         }
         addPrevButton = true;
       }
 
       let pageNumber = idx;
+
+      if (currentPage > 2) {
+        if (!getDottedStart) {
+          paginate.push(<button disabled="disabled">...</button>);
+          getDottedStart = true;
+        }
+      }
+
       if (pageNumber < limit[0] + currentPage) {
         paginate.push(
           <PaginateButton
@@ -177,9 +225,9 @@ function Paginate({
           ></PaginateButton>
         );
       } else if (pageNumber > limit[0] + currentPage) {
-        if (!getDotted) {
+        if (!getDottedEnd) {
           paginate.push(<button disabled="disabled">...</button>);
-          getDotted = true;
+          getDottedEnd = true;
         }
       }
     }
@@ -200,11 +248,14 @@ function Paginate({
   }
 
   if (!addNextButton) {
-    if (currentPage < count - limit[0] + 1) {
+    if (currentPage < count - limit[0] + 1 && count > nbMax) {
       paginate.push(
-        <button
-          onClick={() => goToPage(currentPage, currentPage + 1)}
-        >{`>>`}</button>
+        <>
+          <button
+            onClick={() => goToPage(currentPage, currentPage + 1)}
+          >{`>>`}</button>
+          <button onClick={() => goToPage(count - 1, count)}>Last Page</button>
+        </>
       );
     }
     addNextButton = true;
