@@ -94,7 +94,7 @@ export default function List_review() {
           <h2>Ils ont donné leurs avis.</h2>
           <div className={S.paginate_container}>
             <header className={S.paginate_header}>
-              <div class={S.bloc_select}>
+              <div className={S.bloc_select}>
                 <label>Nombre d'avis afficher : </label>
                 <select
                   defaultValue={nbReviewPerPage}
@@ -126,7 +126,7 @@ export default function List_review() {
 
           <div className={`${S.paginate_container} ${S.pa3}`}>
             <header className={S.paginate_header}>
-              <div class={S.bloc_select}>
+              <div className={S.bloc_select}>
                 <label>Nombre d'avis afficher : </label>
                 <select
                   defaultValue={nbReviewPerPage}
