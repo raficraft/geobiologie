@@ -151,6 +151,7 @@ export default function List_review() {
                 goToPage={goToPage}
                 nbPage={nbPage}
                 limit={[4, 2]}
+                keyPrefix="secondaryPaginate"
               ></Paginate>
             </div>
           </div>
@@ -178,6 +179,7 @@ function Paginate({
   goToPage,
   nbPage,
   limit = [3, 1],
+  keyPrefix = "paginate",
 }) {
   const paginate = [];
   let getDottedEnd = false;
@@ -192,16 +194,17 @@ function Paginate({
   if (count > limit[0] + limit[1]) {
     for (let idx = startLoop; idx <= count; idx++) {
       if (!addPrevButton) {
-        if (currentPage > 1) {
+        if (currentPage > 2) {
           paginate.push(
-            <>
-              <button onClick={() => goToPage(0, 1)}>First page</button>
-              <button
-                onClick={() => goToPage(idx - 2, pageNumber - 1)}
-              >{`<<`}</button>
-            </>
+            <button
+              onClick={() => goToPage(idx - 2, pageNumber - 1)}
+            >{`<<`}</button>
           );
         }
+        if (currentPage > 1) {
+          paginate.push(<button onClick={() => goToPage(0, 1)}>1</button>);
+        }
+
         addPrevButton = true;
       }
 
@@ -217,7 +220,7 @@ function Paginate({
       if (pageNumber < limit[0] + currentPage) {
         paginate.push(
           <PaginateButton
-            key={`paginate_${idx}`}
+            key={`${keyPrefix}_${idx}`}
             currentPage={currentPage}
             pageNumber={pageNumber}
             goToPage={goToPage}
@@ -251,10 +254,10 @@ function Paginate({
     if (currentPage < count - limit[0] + 1 && count > nbMax) {
       paginate.push(
         <>
+          <button onClick={() => goToPage(count - 1, count)}>{count}</button>
           <button
             onClick={() => goToPage(currentPage, currentPage + 1)}
           >{`>>`}</button>
-          <button onClick={() => goToPage(count - 1, count)}>Last Page</button>
         </>
       );
     }
