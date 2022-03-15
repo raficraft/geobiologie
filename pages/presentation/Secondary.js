@@ -25,36 +25,33 @@ export default function Secondary() {
           mon travail.
         </p>
         <p>
-          Mes séances se font à distance ou en présenciel, elles permettent d La
-          traversée d&rsquo;accéder à la libération de toutes les mémoires,
-          inscriptions négatives, tensions blocages, disfonctionnements.
-          Purification des centres d La traversée d&rsquo;énergie, des plans
-          subtils, de l La traversée d&rsquo;aura!
+          Mes séances se font à distance ou en présenciel, elles permettent
+          d&rsquo;accéder à la libération de toutes les mémoires, inscriptions
+          négatives, tensions blocages, disfonctionnements. Purification des
+          centres d&rsquo;énergie, des plans subtils, de l&rsquo;aura! Se
+          reconnecter terre-ciel et univers! Retrouver la paix intérieure, le
+          bien Être et la santé.
         </p>
         <p>
-          Se reconnecter terre-ciel et univers! Retrouver la paix intérieure, le
-          bien Être et la santé. Les dessins sacrés de l&rsquo;âme ou dessins
-          vibratoires, agissants, nous permettent de prendre conscience de l La
-          traversée d&rsquo;Etre que nous sommes afin de mieux utiliser notre
-          potentiel Divin . Ces dessins, qu La traversée d&rsquo;ils soient
-          réalisés au crayon, pastels ou peinture sont de merveilleux outils de
-          transformation, de guérison et d La traversée d&rsquo;évolution.
-          Réalisés en état modifié de conscience et en reliance avec la Source,
-          ils nous permettent de libérer nos tensions, nos peurs, nos blessures
-          profondes et de lâcher prise... sur tout ce qui nous empêche d La
-          traversée d&rsquo; évoluer dans notre mission d La traversée d&rsquo;
-          âme.
-        </p>{" "}
+          Les dessins sacrés de l’âme ou dessins vibratoires, agissants, nous
+          permettent de prendre conscience de l&rsquo;Etre que nous sommes afin
+          de mieux utiliser notre potentiel Divin . Ces dessins, qu&rsquo;ils
+          soient réalisés au crayon, pastels ou peinture sont de merveilleux
+          outils de transformation, de guérison et d&rsquo;évolution. Réalisés
+          en état modifié de conscience et en reliance avec la Source, ils nous
+          permettent de libérer nos tensions, nos peurs, nos blessures profondes
+          et de lâcher prise... sur tout ce qui nous empêche d&rsquo; évoluer
+          dans notre mission d&rsquo; âme.
+        </p>
         <p>
-          Les formes, mouvements ou couleurs possèdent des codes de Lumière et d
-          La traversée d&rsquo;amour qui agissent sur notre psyché et nos corps
-          subtils. Notre aura à ce moment là rayonne, s La traversée
-          d&rsquo;illumine et nous nous réconcilions avec notre Essence Divine.
-          Les dessins de l La traversée d&rsquo;aura nous révèlent nos
-          capacités: artistiques, créatives, médiumniques etc... ou nos
-          faiblesses afin de prendre conscience de ce que nous avons à
-          travailler. De merveilleux outils d La traversée d&rsquo;évolution et
-          de réalisation de Soi.
+          Les formes, mouvements ou couleurs possèdent des codes de Lumière et
+          d&rsquo; Amour qui agissent sur notre psyché et nos corps subtils.
+          Notre aura à ce moment là rayonne, s&rsquo;illumine et nous nous
+          réconcilions avec notre Essence Divine. Les dessins de l&rsquo;aura
+          nous révèlent nos capacités: artistiques, créatives, médiumniques
+          etc... ou nos faiblesses afin de prendre conscience de ce que nous
+          avons à travailler. De merveilleux outils d&rsquo;évolution et de
+          réalisation de Soi.
         </p>
         <p>Monique SAUZAY</p>
       </article>
