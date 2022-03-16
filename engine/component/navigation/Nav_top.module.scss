@@ -75,6 +75,9 @@
           animation-fill-mode: both;
           animation-duration: $shortTime;
         }
+        svg {
+          fill: white !important;
+        }
       }
 
       [data-isdropdown="true"] .dropArrow {
