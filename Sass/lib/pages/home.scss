@@ -147,8 +147,11 @@
   float: right;
   margin: 0 0 spacing(3) spacing(6);
   overflow: hidden;
-  padding: spacing(2);
+  padding: 0 spacing(2) spacing(2) spacing(2);
   box-sizing: content-box;
+  max-width: 100%;
+  width: 100%;
+
   &--link {
     @include flex(column, wrap, center, center);
     transition: 0.3s;
@@ -168,17 +171,13 @@
   }
 
   &--portrait {
-    width: 320px;
+    width: 420px;
 
     @media screen and (max-width: 769px) {
-      width: 180px;
-    }
-    @media screen and (max-width: 500px) {
-      width: 130px;
-    }
-
-    @media screen and (max-width: 380px) {
-      width: 100px;
+      float: none;
+      padding: spacing(2) 0;
+      width: 100%;
+      margin: auto auto;
     }
   }
 }

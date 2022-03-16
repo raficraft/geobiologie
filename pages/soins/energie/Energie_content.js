@@ -1,4 +1,7 @@
 import React from "react";
+import Image from "next/image";
+
+import embed from "../../../public/assets/img/masonry/soins/energie/energie.jpg";
 
 export default function Energie_content() {
   return (
@@ -7,6 +10,17 @@ export default function Energie_content() {
         <header>
           <h2>Soins énergétiques</h2>
         </header>
+
+        <div className={`embed_image embed_image--portrait`}>
+          <Image
+            src={embed}
+            width={embed.width}
+            height={embed.height}
+            alt="Logo en forme de pendule"
+            blurDataURL={embed.blurDataURL}
+            placeholder="blur"
+          />
+        </div>
         <p>
           Je réalise des soins énergétiques (à distance sur photographie de la
           personne ou sur place au sein de mon zome énergétiques)
@@ -16,20 +30,20 @@ export default function Energie_content() {
 
         <ul>
           <li>
-            D&rsquo;élever votre taux énérgétique en cas de fatiguer, période de
-            stress, où si vous avez été sujet à des énergies négatives (entités,
+            D&rsquo;élever votre taux énergétique en cas de fatigue, période de
+            stress, ou si vous avez été sujet à des énergies négatives (entités,
             mauvais oeil, magie noire...)
           </li>
 
           <li>
-            D&rsquo;harmoniser le flux énergétique du cors et de l&rsquo;esprit
+            D&rsquo;harmoniser le flux énergétique du corps et de l&rsquo;esprit
           </li>
 
-          <li>De purifier tout les corps subtils</li>
-          <li>De débloquer et rééquilibrer les chackras</li>
+          <li>De purifier tous les corps subtils</li>
+          <li>De débloquer et rééquilibrer les chakras</li>
         </ul>
 
-        <p>Elever votre taux énergétique sur vos défenses immunitaire. </p>
+        <p>Elevé votre taux énergétique sur vos défenses immunitaires. </p>
       </article>
     </>
   );

@@ -5,6 +5,7 @@ import { nav } from "../../../data/nav/nav";
 import { useClickOutside } from "../../hooks/useClickOutside";
 import { ModalContext } from "../../context/modal/ModalProvider";
 import { useRouter } from "next/router";
+import { ArrowDown } from "../../../assets/icons/Icon_svg";
 
 export default function Navigation({ css }) {
   const S = css;
@@ -101,9 +102,15 @@ function NestedNav({ root, css, currentPath }) {
           data-path={root.link}
           data-selector="link"
           data-currentpath="false"
+          data-isdropdown={root.child ? isOpen : false}
         >
           {root.icon}
           {root.title}
+          {root.child ? (
+            <span className={S.dropArrow}>
+              <ArrowDown></ArrowDown>
+            </span>
+          ) : null}
         </a>
         {root.child && isOpen && (
           <ul ref={nestedRef} className={S.navList_nested}>

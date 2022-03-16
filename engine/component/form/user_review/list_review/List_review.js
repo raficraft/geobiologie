@@ -1,6 +1,12 @@
 import { collection } from "firebase/firestore";
 import React, { useState, useEffect, useContext } from "react";
-import { Star } from "../../../../../assets/icons/Icon_svg";
+import {
+  ArrowLeft,
+  ArrowRight,
+  FirstPage,
+  LastPage,
+  Star,
+} from "../../../../../assets/icons/Icon_svg";
 import { ModalContext } from "../../../../context/modal/ModalProvider";
 import useFirestore from "../../../../hooks/firestore/useFirestore";
 
@@ -194,15 +200,19 @@ function Paginate({
   if (count > limit[0] + limit[1]) {
     for (let idx = startLoop; idx <= count; idx++) {
       if (!addPrevButton) {
-        if (currentPage > 2) {
+        if (currentPage > 1) {
           paginate.push(
-            <button
-              onClick={() => goToPage(idx - 2, pageNumber - 1)}
-            >{`<<`}</button>
+            <button onClick={() => goToPage(0, 1)}>
+              <FirstPage></FirstPage>
+            </button>
           );
         }
-        if (currentPage > 1) {
-          paginate.push(<button onClick={() => goToPage(0, 1)}>1</button>);
+        if (currentPage > 2) {
+          paginate.push(
+            <button onClick={() => goToPage(idx - 2, pageNumber - 1)}>
+              <ArrowLeft></ArrowLeft>
+            </button>
+          );
         }
 
         addPrevButton = true;
@@ -254,10 +264,12 @@ function Paginate({
     if (currentPage < count - limit[0] + 1 && count > nbMax) {
       paginate.push(
         <>
-          <button onClick={() => goToPage(count - 1, count)}>{count}</button>
-          <button
-            onClick={() => goToPage(currentPage, currentPage + 1)}
-          >{`>>`}</button>
+          <button onClick={() => goToPage(currentPage, currentPage + 1)}>
+            <ArrowRight></ArrowRight>
+          </button>
+          <button onClick={() => goToPage(count - 1, count)}>
+            <LastPage></LastPage>
+          </button>
         </>
       );
     }

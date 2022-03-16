@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import embed from "../../../public/assets/img/masonry/soins/trans/transgenerationelle.jpg";
 
 export default function Trans_content() {
   return (
@@ -7,6 +9,17 @@ export default function Trans_content() {
         <header>
           <h2>Liens transgénerationelle</h2>
         </header>
+
+        <div className={`embed_image embed_image--portrait`}>
+          <Image
+            src={embed}
+            width={embed.width}
+            height={embed.height}
+            alt="Logo en forme de pendule"
+            blurDataURL={embed.blurDataURL}
+            placeholder="blur"
+          />
+        </div>
 
         <p>
           Elle est semblable à la méthode des constellations familiales qui est

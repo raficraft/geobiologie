@@ -20,6 +20,36 @@ export function ArrowRight(props) {
   );
 }
 
+export function ArrowDown(props) {
+  return (
+    <svg width="1em" height="1em" viewBox="0 0 24 24" {...props}>
+      <path d="m7 10l5 5l5-5z"></path>
+    </svg>
+  );
+}
+
+export function FirstPage(props) {
+  return (
+    <svg width="1em" height="1em" viewBox="0 0 20 20" {...props}>
+      <path
+        fill="#888888"
+        d="M3 1h2v18H3zm13.5 1.5L15 1l-9 9l9 9l1.5-1.5L9 10z"
+      ></path>
+    </svg>
+  );
+}
+
+export function LastPage(props) {
+  return (
+    <svg width="1em" height="1em" viewBox="0 0 20 20" {...props}>
+      <path
+        fill="#888888"
+        d="M15 1h2v18h-2zM3.5 2.5L11 10l-7.5 7.5L5 19l9-9l-9-9z"
+      ></path>
+    </svg>
+  );
+}
+
 export function Home_icon(props) {
   return (
     <svg width="1em" height="1em" viewBox="0 0 24 24" {...props}>
