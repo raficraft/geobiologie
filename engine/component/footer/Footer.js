@@ -1,16 +1,13 @@
 import React from "react";
-
+import Link from "next/link";
 import S from "./Footer.module.scss";
-
-import CV from "./../../../public/assets/img/illustration/carte_visite/carte_visite.jpg";
-import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className={S.wrapper}>
       <section className={S.footer}>
         <div className={S.content}>
-          <div className={S.info}>
+          {/* <div className={S.card}>
             <Image
               src={CV}
               width={CV.width}
@@ -21,8 +18,9 @@ export default function Footer() {
               onClick={(e) => {
                 handleClick(e);
               }}
+              object-fit="cover"
             />
-          </div>
+          </div> */}
           <div className={S.map}>
             <iframe
               frameBorder="0"
@@ -33,9 +31,44 @@ export default function Footer() {
               src="https://maps.google.com/maps?width=800&amp;height=700&amp;hl=fr&amp;q=1440%20route%20de%20Lyon%20saint%20martin%20lestra+(David%20Michel)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             ></iframe>
           </div>
+          <div className={S.list}>
+            <header>
+              <h2>Zone d'activité</h2>
+            </header>
+            <div className={S.list_content}>
+              <ul>
+                <li>Ain</li>
+                <li>Ardèche</li>
+                <li>Creuse</li>
+                <li>Drôme</li>
+                <li>Gard</li>
+                <li>Hautes-Alpes</li>
+                <li>Hautes-Loire</li>
+                <li>Hautes-Vienne</li>
+              </ul>
+              <ul>
+                <li>Indre</li>
+                <li>Isère</li>
+                <li>Loire</li>
+                <li>Puy de dôme</li>
+                <li>Rhône</li>
+                <li>Saône-et-loire</li>
+                <li>Vaucluse</li>
+                <li>Vienne</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <footer>
-          <p>Site web réalisé par R.Parodi</p>
+        <footer className={S.footer_inside}>
+          <p>
+            Site web réalisé par R.Parodi pour{" "}
+            <Link href="/presentation">
+              <a>David Michel, géobiologue.</a>
+            </Link>
+          </p>
+          <Link href="legal">
+            <a className={S.fakeButton}>Mentions Legal</a>
+          </Link>
         </footer>
       </section>
     </footer>

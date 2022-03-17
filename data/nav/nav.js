@@ -43,6 +43,10 @@ export const nav = [
         title: "kinesiologie",
         link: "/soins/kinesiologie",
       },
+      {
+        title: "Electrosensible",
+        link: "/soins/ondes",
+      },
     ],
   },
   {

@@ -16,10 +16,10 @@
       .navList_link {
         @include flex(row-reverse, nowrap, flex-start, center);
 
-        font-size: 1.75rem;
-        line-height: 2rem;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
         color: $black;
-        padding: spacing(3) 0;
+        padding: spacing(2) 0;
         opacity: 0;
         animation-name: right_TO_origin;
         animation-fill-mode: both;
@@ -29,8 +29,8 @@
 
         svg {
           margin: 0 0 0 spacing(3);
-          min-width: 2rem;
-          min-height: 2rem;
+          min-width: 1.5rem;
+          min-height: 1.5rem;
         }
 
         &:hover {
@@ -65,13 +65,12 @@
       }
     }
     &_link {
-      padding: spacing(2) spacing(9) spacing(2) 0;
+      padding: spacing(0) spacing(9) spacing(0) 0;
       color: $light;
       text-transform: capitalize;
       font-size: 1rem;
       color: $text_black_smooth;
       width: 100%;
-      font-size: 1.75rem;
       line-height: 2rem;
       color: $black;
       animation-name: right_TO_origin;
