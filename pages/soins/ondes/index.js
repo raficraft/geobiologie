@@ -1,6 +1,6 @@
-import Head from "next/head";
 import HR from "../../../engine/component/atomic/HR";
 import Ondes_content from "./Ondes_content";
+import Head from "next/head";
 
 export default function Ondes() {
   return (
