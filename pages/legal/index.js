@@ -1,6 +1,6 @@
 import React from "react";
 import Legal_content from "./Legal_content";
-import Head from "next/Head";
+import Head from "next/head";
 
 export default function Legal() {
   return (
