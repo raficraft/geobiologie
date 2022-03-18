@@ -35,10 +35,10 @@ export default function Ondes_content() {
             <p>
               De nombreux films de protection solaires sont obtenus par
               apllication de divers métaux sur la surface du film. Ces métaux
-              assurent la reflexion d'énergie solaire et de lumière visible
+              assurent la reflexion d&rsquoénergie solaire et de lumière visible
               souhaitée pour ces produits. Ils permettent également de réduire
-              ou d'atténuer les fréquances radio ou de communication du spectre
-              électromagnétique.
+              ou d&rsquoatténuer les fréquances radio ou de communication du
+              spectre électromagnétique.
             </p>
           </div>
 
