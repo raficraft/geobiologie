@@ -8,10 +8,11 @@
   @include flex(row, wrap, center, center);
   border-top: 16px solid $beaver;
   box-shadow: 0 -4px 5px 0 lighten($black, 50%);
+  padding: 0 0 4rem 0;
   .footer {
     background-color: $beaver;
     max-width: var(--container_width);
-    padding: 1rem;
+    padding: 0 1rem;
     width: 100%;
     // padding: spacing(6) spacing(4);
     @include flex(column, nowrap, flex-start, flex-start);
@@ -19,14 +20,15 @@
     .content {
       @include flex(row, wrap, space-around, stretch);
       width: 100%;
-      @media screen and (max-height: 732px) {
+
+      @media screen and (max-width: 1034px) {
         @include flex(column, wrap, flex-start, flex-start);
       }
       > div {
         @include flex(row, nowrap, stretch, center);
         margin: 1rem 0;
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 1034px) {
           width: 100%;
         }
       }
@@ -40,7 +42,13 @@
       }
 
       .map {
+        flex: 3;
+        padding: 0 2rem 0 1rem;
         width: 100%;
+        @media screen and (max-width: 1034px) {
+          padding: 0;
+          flex: 1;
+        }
       }
 
       .list {
@@ -81,7 +89,7 @@
         height: 270px;
       }
 
-      @media screen and (max-width: 732px) {
+      @media screen and (max-width: 1034px) {
         height: 270px;
       }
     }
