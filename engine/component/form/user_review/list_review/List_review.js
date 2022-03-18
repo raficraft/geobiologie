@@ -9,6 +9,7 @@ import {
 } from "../../../../../assets/icons/Icon_svg";
 import { ModalContext } from "../../../../context/modal/ModalProvider";
 import useFirestore from "../../../../hooks/firestore/useFirestore";
+import Paginate from "../../../paginate/Paginate";
 
 import S from "./List_review.module.scss";
 
@@ -18,10 +19,15 @@ export default function List_review() {
   const [sortCollection, setSortCollection] = useState();
   const [nbPage, setNbPage] = useState(1);
   const [nbReviewPerPage, setNbReviewPerPage] = useState(6);
+
   const [currentCollectionForThisPage, setCurrentCollectionForThisPage] =
     useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
+
+  /**
+   * UX
+   */
 
   function listUserReview(list) {
     return currentCollectionForThisPage.map((el, idx) => {
@@ -48,6 +54,10 @@ export default function List_review() {
     }
     return rate;
   }
+
+  /**
+   *  UI
+   */
 
   const handleSelectChange = (e) => {
     //shallow copy
@@ -175,120 +185,5 @@ export default function List_review() {
         </section>
       )}
     </>
-  );
-}
-
-function Paginate({
-  collectionLength,
-  perPage,
-  currentPage,
-  goToPage,
-  nbPage,
-  limit = [3, 1],
-  keyPrefix = "paginate",
-}) {
-  const paginate = [];
-  let getDottedEnd = false;
-  let getDottedStart = false;
-  let addPrevButton = false;
-  let addNextButton = false;
-  let nbMax = limit[0] + limit[1];
-  const count = Math.ceil(parseInt(collectionLength) / parseInt(perPage));
-  const startLoop =
-    currentPage > count - limit[0] ? count - limit[0] : currentPage;
-
-  if (count > limit[0] + limit[1]) {
-    for (let idx = startLoop; idx <= count; idx++) {
-      if (!addPrevButton) {
-        if (currentPage > 1) {
-          paginate.push(
-            <button onClick={() => goToPage(0, 1)}>
-              <FirstPage></FirstPage>
-            </button>
-          );
-        }
-        if (currentPage > 2) {
-          paginate.push(
-            <button onClick={() => goToPage(idx - 2, pageNumber - 1)}>
-              <ArrowLeft></ArrowLeft>
-            </button>
-          );
-        }
-
-        addPrevButton = true;
-      }
-
-      let pageNumber = idx;
-
-      if (currentPage > 2) {
-        if (!getDottedStart) {
-          paginate.push(<button disabled="disabled">...</button>);
-          getDottedStart = true;
-        }
-      }
-
-      if (pageNumber < limit[0] + currentPage) {
-        paginate.push(
-          <PaginateButton
-            key={`${keyPrefix}_${idx}`}
-            currentPage={currentPage}
-            pageNumber={pageNumber}
-            goToPage={goToPage}
-            nbPage={nbPage}
-          ></PaginateButton>
-        );
-      } else if (pageNumber > limit[0] + currentPage) {
-        if (!getDottedEnd) {
-          paginate.push(<button disabled="disabled">...</button>);
-          getDottedEnd = true;
-        }
-      }
-    }
-  } else {
-    console.log("loop 2");
-    for (let idx = 0; idx < count; idx++) {
-      let pageNumber = idx + 1;
-      paginate.push(
-        <PaginateButton
-          key={`paginate_${idx}`}
-          currentPage={currentPage}
-          pageNumber={pageNumber}
-          goToPage={goToPage}
-          nbPage={nbPage}
-        ></PaginateButton>
-      );
-    }
-  }
-
-  if (!addNextButton) {
-    if (currentPage < count - limit[0] + 1 && count > nbMax) {
-      paginate.push(
-        <>
-          <button onClick={() => goToPage(currentPage, currentPage + 1)}>
-            <ArrowRight></ArrowRight>
-          </button>
-          <button onClick={() => goToPage(count - 1, count)}>
-            <LastPage></LastPage>
-          </button>
-        </>
-      );
-    }
-    addNextButton = true;
-  }
-
-  console.log(paginate);
-  return paginate;
-}
-
-function PaginateButton({ currentPage, pageNumber, goToPage }) {
-  return (
-    <button
-      onClick={() => {
-        goToPage(pageNumber - 1, pageNumber);
-      }}
-      data-current={currentPage === pageNumber ? true : false}
-    >
-      {pageNumber}
-    </button>
   );
 }
