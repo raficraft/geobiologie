@@ -1,13 +1,14 @@
 import React from "react";
 import pdf from "./../../../public/assets/img/illustration/ondes/capture.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Ondes_content() {
   return (
     <>
       <article className="article article_home article_2col">
         <header className="article_2col--header">
-          <h2>Protection éléctrosensible</h2>
+          <h2>Pose de protection éléctrosensible</h2>
         </header>
         <div className="article_2col--content">
           <div className="article_2col--firstChild">
@@ -30,17 +31,32 @@ export default function Ondes_content() {
                 micro-ondes et radio
               </li>
             </ul>
+
+            <p>
+              De nombreux films de protection solaires sont obtenus par
+              apllication de divers métaux sur la surface du film. Ces métaux
+              assurent la reflexion d'énergie solaire et de lumière visible
+              souhaitée pour ces produits. Ils permettent également de réduire
+              ou d'atténuer les fréquances radio ou de communication du spectre
+              électromagnétique.
+            </p>
           </div>
 
-          <div className="article_2col--lastChild">
-            <Image
-              src={pdf}
-              width={pdf.width}
-              height={pdf.height}
-              alt="Logo fédération française de géobiologie"
-              blurDataURL={pdf.blurDataURL}
-              placeholder="blur"
-            />
+          <div className="article_2col--lastChild shadow">
+            <Link href="/assets/docs/Filtration_des_ondes.pdf">
+              <Image
+                src={pdf}
+                width={pdf.width}
+                height={pdf.height}
+                alt="Logo fédération française de géobiologie"
+                blurDataURL={pdf.blurDataURL}
+                placeholder="blur"
+                className="pointer"
+              />
+            </Link>
+            <p className="text-center">
+              {" Document Pdf. Cliquer sur l'image pour consulter"}
+            </p>
           </div>
         </div>
         <p className="BigInfo"></p>

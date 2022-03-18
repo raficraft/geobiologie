@@ -5,7 +5,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "push": "git add . && git commit -m 'auto-commit' && git push -f"
   },
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.1.24",

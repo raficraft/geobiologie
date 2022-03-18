@@ -249,3 +249,11 @@
     margin: 0 spacing(3);
   }
 }
+
+.pointer {
+  cursor: pointer;
+}
+
+.shadow {
+  filter: $dropShadow;
+}
