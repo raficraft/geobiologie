@@ -231,6 +231,7 @@
 
 .article_2col {
   @include flex(column, wrap, center, center);
+
   &--header {
     width: 100%;
     h2 {
@@ -239,7 +240,11 @@
     }
   }
   &--content {
-    @include flex(row, nowrap, flex-start, flex-start);
+    @include flex(row, wrap, flex-start, flex-start);
+
+    @media screen and (max-width: 769px) {
+      @include flex(column, wrap, flex-start, flex-start);
+    }
   }
   &--firstChild {
     flex: 2;
