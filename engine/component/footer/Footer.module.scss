@@ -43,7 +43,7 @@
 
       .map {
         flex: 3;
-        padding: 0 2rem 0 1rem;
+        padding: 0 2rem 0 0;
         width: 100%;
         @media screen and (max-width: 1034px) {
           padding: 0;
@@ -98,6 +98,7 @@
       background-color: $eerie-black;
       width: 100%;
       padding: spacing(1.5) spacing(2);
+      margin-top: 2rem;
       p {
         margin: 0;
         color: white;

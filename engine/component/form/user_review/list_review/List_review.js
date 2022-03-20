@@ -59,17 +59,6 @@ export default function List_review() {
    *  UI
    */
 
-  const handleSelectChange = (e) => {
-    //shallow copy
-    let dataRow = JSON.parse(JSON.stringify(sortCollection));
-    setNbReviewPerPage(e.target.value);
-    setCurrentCollectionForThisPage(dataRow.slice(0, parseInt(e.target.value)));
-    const count = sortCollection.length / e.target.value;
-    setNbPage(Math.ceil(count));
-    console.log("before jump to currentPage", currentPage);
-    goToPage(0, currentPage);
-  };
-
   function goToPage(startIndex, pageNumber) {
     //shallow copy
     const dataRow = JSON.parse(JSON.stringify(sortCollection));

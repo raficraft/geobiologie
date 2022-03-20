@@ -24,6 +24,7 @@ export default function Handle_review(props) {
 
   useEffect(async () => {
     async function callApi() {
+      console.log("What", currentCollection);
       setLoading(true);
       try {
         const res = await getDocumentByQuery("user_review", "active", active);
