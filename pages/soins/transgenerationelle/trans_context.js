@@ -27,7 +27,7 @@ export default function Trans_content() {
         </p>
         <p>
           En effet, l&rsquo;analyse transgénérationnelle se base sur
-          l&rsquo;idée que nous pouvons être victime de problèmes familiaux
+          l&rsquo;idée que nous pouvons être victimes de problèmes familiaux
           antérieurs, datant même de plusieurs générations. Nous serions donc
           porteurs de l&rsquo;héritage de notre famille, et ce dans tous les
           aspects. (migrations, guerres, blessures, fausses couches).
@@ -44,15 +44,15 @@ export default function Trans_content() {
           familiaux peut se faire de deux manières. Quand la transmission des
           blessures se fait explicitement entre des générations qui se
           connaissent, on parle d&rsquo;intergénérationnel. A l&rsquo;inverse,
-          letransgénérationnel intervient lorsque cette transmission se fait
+          le transgénérationnel intervient lorsque cette transmission se fait
           entre générations distantes dans le temps.
         </p>
         <p>
           Certaines blessures, trop anciennes ou trop douloureuses, deviennent
           des secrets, des non-dits ou des sujets tabous. Ces mystères
           continuent de vivre en nous sous la forme de normes familiales, de
-          règles et de principes que l La traversée d&rsquo;on s La traversée
-          d&rsquo;impose et qui viennent perturber notre équilibre.
+          règles et de principes que l&rsquo;on s'impose et qui viennent
+          perturber notre équilibre.
         </p>
       </article>
     </>

@@ -14,9 +14,9 @@ export default function Ondes_content() {
           <div className="article_2col--firstChild">
             <p>
               L&rsquo;énergie électrique et magnétique émise par de nombreux
-              appareils electroniques peut perturber les fonctions
+              appareils électroniques peut perturber les fonctions
               d&rsquo;autres appareils électroniques. La majorité des problèmes
-              d&rsquo;interférences electromagnétques (EMI) a pour origine la
+              d&rsquo;interférences électromagnétiques (EMI) a pour origine la
               bande des radiofréquences (RF) comprise entre 30 kHz et 10 GHz. Le
               blindage contre les EMI et/ou les RF est généralement nécessaire
               pour les raisons suivantes.
@@ -34,10 +34,10 @@ export default function Ondes_content() {
 
             <p>
               De nombreux films de protection solaires sont obtenus par
-              apllication de divers métaux sur la surface du film. Ces métaux
-              assurent la reflexion d&rsquo;énergie solaire et de lumière
+              aplication de divers métaux sur la surface du film. Ces métaux
+              assurent la réflexion d&rsquo;énergie solaire et de lumière
               visible souhaitée pour ces produits. Ils permettent également de
-              réduire ou d&rsquo;atténuer les fréquances radio ou de
+              réduire ou d&rsquo;atténuer les fréquences radio ou de
               communication du spectre électromagnétique.
             </p>
           </div>

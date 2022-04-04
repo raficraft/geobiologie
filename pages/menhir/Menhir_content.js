@@ -17,12 +17,12 @@ export default function Menhir_content() {
         <p>
           La géo poncture (pose de pierres levées ou menhirs) permet aussi de
           finaliser le rééquilibrage énergétique de la maison et du lieu. D{"'"}
-          une aide efficace dans les habitations, le menhir devient un outils
+          une aide efficace dans les habitations, le menhir devient un outil
           indispensable dans les lieux tel que les exploitations agricoles et
           les maisons de grandes superficies.
         </p>
         <p>
-          Un menhir a aussi pour rôle de contrer les ondes de formes créer par
+          Un menhir a aussi pour rôle de contrer les ondes de formes créées par
           les éoliennes, antennes relais, poteaux électriques mal positionnés.
         </p>
       </article>

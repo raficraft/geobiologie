@@ -23,8 +23,8 @@ export default function Presentation_content() {
         </div>
 
         <p>
-          L&rsquo;objectif du soin de dégagement est de débarasser la personne
-          de toutes entités négatives, magies noires , envoûtements, anathèmes,
+          L&rsquo;objectif du soin de dégagement est de débarrasser la personne
+          de toute entité négative, magies noires , envoûtements, anathèmes,
           malédictions, sort, exorcisme.
         </p>
 

@@ -22,8 +22,8 @@ export default function Energie_content() {
           />
         </div>
         <p>
-          Je réalise des soins énergétiques (à distance sur photographie de la
-          personne ou sur place au sein de mon zome énergétiques)
+          Je réalise des soins énergétiques (à distance sur une photographie de
+          la personne ou sur place au sein de mon zome énergétiques)
         </p>
 
         <p>Ce soin permet :</p>
@@ -43,7 +43,7 @@ export default function Energie_content() {
           <li>De débloquer et rééquilibrer les chakras</li>
         </ul>
 
-        <p>Elevé votre taux énergétique sur vos défenses immunitaires. </p>
+        <p>Elevez votre taux énergétique sur vos défenses immunitaires. </p>
       </article>
     </>
   );

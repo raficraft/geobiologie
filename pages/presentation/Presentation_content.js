@@ -29,7 +29,7 @@ export default function Presentation_content() {
 
         <p>
           Quand ce nouveau monde a commencé à s&rsquo;ouvrir à moi, j&rsquo;ai
-          ressenti le mal être des personnes que je croisais, qui travaillaient
+          ressenti le mal-être des personnes que je croisais, qui travaillaient
           autour de moi, les faiblesses liées à l&rsquo;énergétiques. Ma
           clairvoyance, claire sentence et claire audience se sont développées à
           ce moment-là.
@@ -49,7 +49,7 @@ export default function Presentation_content() {
         </p>
         <p>
           J&rsquo;ai décidé de réaliser mes soins sur les personnes,
-          harmonisations de lieux à distance et dégagements de toutes sortes de
+          harmonisations de lieux à distance et dégagements de toute sorte de
           magies dans un zome énergétique. Cette structure est une forme
           géométrique composée de losanges agencés en double spirale dont la
           trame se veut en résonance avec le monde vivant.
@@ -67,7 +67,7 @@ export default function Presentation_content() {
         </p>
         <p>
           Mon seul but est d&rsquo;accompagner les personnes venant vers moi à
-          trouver des solutions à leur mal être, et leur permettre de retrouver
+          trouver des solutions à leur mal-être, et leur permettre de retrouver
           un état de bien être dans leur vie.
         </p>
       </article>

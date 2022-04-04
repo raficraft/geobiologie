@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
 import Paginate from "../paginate/Paginate";
-
 import useFirestore from "../../hooks/firestore/useFirestore";
 
 /**HOC GET the data and hydrate children */

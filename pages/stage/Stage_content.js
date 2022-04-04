@@ -27,7 +27,7 @@ export default function Stage_content() {
               <li>
                 Connaître la notion de filon d&rsquo;eau, une source, une nappe.
               </li>
-              <li>Savoir repérer de formes pensées.</li>
+              <li>Savoir repérer des formes pensées.</li>
               <li>
                 Reconnaitre des poches d&rsquo;eau et l&rsquo;eau de surface.
               </li>
@@ -42,7 +42,7 @@ export default function Stage_content() {
                 profondeur)
               </li>
               <li>Repérer le sens du courant</li>
-              <li>Repérer le point le plus appropier pour forage et puits.</li>
+              <li>Repérer le point le plus approprié pour forage et puits.</li>
             </ul>
           </article>
           <aside>
@@ -74,7 +74,7 @@ export default function Stage_content() {
             <ul>
               <li>
                 Apprendre à tracer les hexagrammes et pentagrammes dans les
-                quatre direction.
+                quatre directions.
               </li>
               <li>
                 Comprendre les eaux souterraines, failles sèches, failles
@@ -99,7 +99,7 @@ export default function Stage_content() {
             <ul>
               <li>
                 Savoir utiliser le pendule, les diagrammes, le cadran Bovis, les
-                echelles de nocivité et le diagramme de l&rsquo;équilibre cosmo
+                échelles de nocivité et le diagramme de l&rsquo;équilibre cosmo
                 tellurique.
               </li>
               <li>
@@ -159,14 +159,14 @@ export default function Stage_content() {
               </li>
               <li>
                 Connaître et se protéger des larves, entités, magie noire,
-                vampirissme énérgetique...
+                vampirisme énérgetique...
               </li>
               <li>Méthodologie passage d&rsquo;âme ou autres énergies.</li>
               <li>
                 Travail avec le double de lumière et cape d&rsquo;invisibilité
               </li>
-              <li>Distinguer énergie positive/négative</li>
-              <li>Consécration d&rsquo;un brûle parfum</li>
+              <li>Distinguer l&rsquo;énergie positive/négative</li>
+              <li>Consécration d&rsquo;un brûle-parfum</li>
               <li>
                 Prières pour la libération et la réintégration des esprits
                 minéraux
