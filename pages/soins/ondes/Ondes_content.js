@@ -21,6 +21,7 @@ export default function Ondes_content() {
               blindage contre les EMI et/ou les RF est généralement nécessaire
               pour les raisons suivantes.
             </p>
+
             <ul>
               <li>
                 Pour exclure les signaux électromagnétiques ou RF indésirables.
