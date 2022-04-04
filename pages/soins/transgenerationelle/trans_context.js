@@ -51,7 +51,7 @@ export default function Trans_content() {
           Certaines blessures, trop anciennes ou trop douloureuses, deviennent
           des secrets, des non-dits ou des sujets tabous. Ces mystères
           continuent de vivre en nous sous la forme de normes familiales, de
-          règles et de principes que l&rsquo;on s'impose et qui viennent
+          règles et de principes que l&rsquo;on s&rsquo;impose et qui viennent
           perturber notre équilibre.
         </p>
       </article>
