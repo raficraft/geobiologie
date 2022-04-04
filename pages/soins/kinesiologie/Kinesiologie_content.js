@@ -8,12 +8,12 @@ export default function Kinesiologie_content() {
           <h2>Kinesiologie</h2>
         </header>
         <p>
-          Étymologiquement, la kinésiologie est la "science du mouvement". C'est
-          une technique de rééquilibrage psycho-corporelle.
+          Étymologiquement, la kinésiologie est la "science du mouvement".
+          C&rsquo;est une technique de rééquilibrage psycho-corporelle.
         </p>
         <p>
-          Elle s'intéresse au bien-être global de la personne en tenant compte
-          des aspects physiques, mentaux et émotionnels.
+          Elle s&rsquo;intéresse au bien-être global de la personne en tenant
+          compte des aspects physiques, mentaux et émotionnels.
         </p>
         <p>
           Cette science permet de connaître, à l&rsquo;aide de test musculaire,
