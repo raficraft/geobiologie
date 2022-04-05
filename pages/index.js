@@ -14,7 +14,14 @@ export default function Home() {
     <>
       <Head>
         <title>David Michel. Géobiologie Loire 42</title>
-        <meta name="description" content="My heart in my Art" />
+        <meta
+          name="description"
+          content="Page d'acceuil du site de David michel géoiologue"
+        />
+        <meta
+          name="keywords"
+          content="forage, puits, Loire , Rhône, géobiologie, soins, kinésiologie, menhir, pierres levées, david michel, mal être, FFG, psychologie, psychanalyste, zone énergétique ,soins à distance, paris  Saint-Etienne, Lyon, rituel, habitat sain, diagnostique, études techniques."
+        ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
