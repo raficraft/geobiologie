@@ -20,7 +20,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="forage, puits, Loire , Rhône, géobiologie, soins, kinésiologie, menhir, pierres levées, david michel, mal être, FFG, psychologie, psychanalyste, zone énergétique ,soins à distance, paris  Saint-Etienne, Lyon, rituel, habitat sain, diagnostique, études techniques."
+          content="forage, puits, Loire , Rhône, géobiologie, soins, kinésiologie, menhir, pierres levées, david michel, sourcier, FFG, psychologie, psychanalyste, soins énergétique ,soins à distance, paris  Saint-Etienne, Lyon, rituel, habitat sain, diagnostique, études techniques, magnétisme."
         ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
