@@ -7,8 +7,6 @@ import List_paginate, {
   Items,
 } from "../engine/component/list_paginate/List_paginate";
 
-import useFirestore from "../engine/hooks/firestore/useFirestore";
-
 export default function Home() {
   return (
     <>
@@ -16,11 +14,11 @@ export default function Home() {
         <title>David Michel. Géobiologie Loire 42</title>
         <meta
           name="description"
-          content="Page d'acceuil du site de David michel géoiologue"
+          content="Page d'acceuil du site de David michel géobiologue"
         />
         <meta
           name="keywords"
-          content="forage, puits, Loire , Rhône, géobiologie, soins, kinésiologie, menhir, pierres levées, david michel, sourcier, FFG, psychologie, psychanalyste, soins énergétique ,soins à distance, paris  Saint-Etienne, Lyon, rituel, habitat sain, diagnostique, études techniques, magnétisme."
+          content="Loire , Rhône, géobiologie, soins, menhir, pierres levées, david michel, sourcier, FFG, psychologie, psychanalyste, soins énergétique ,soins à distance, paris  Saint-Etienne, Lyon, rituel, habitat sain, diagnostique, études techniques, magnétisme, forage, puits"
         ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
