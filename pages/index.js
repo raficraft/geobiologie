@@ -28,9 +28,6 @@ export default function Home() {
           <Index_content></Index_content>
 
           <List_review></List_review>
-          <List_paginate paginate={{ perPage: 5 }}>
-            <Items></Items>
-          </List_paginate>
         </section>
       </main>
     </>
