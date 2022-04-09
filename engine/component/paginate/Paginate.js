@@ -115,24 +115,7 @@ export default function Paginate({
   console.log("render Paginate");
   return (
     <>
-      <header>
-        <div>
-          <label>Nombre d'avis afficher : </label>
-          <select
-            defaultValue={perPage}
-            onChange={(e) => {
-              handleSelectChange(e);
-            }}
-          >
-            <option value="6">6</option>
-            <option value="12">12</option>
-            <option value="20">20</option>
-          </select>
-        </div>
-
-        <p>{collectionLength} avis.</p>
-      </header>
-      <div>,{createPaginate()}</div>
+      <div>{createPaginate()}</div>
     </>
   );
 }
