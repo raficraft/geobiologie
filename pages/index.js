@@ -29,9 +29,9 @@ export default function Home() {
 
           <List_review></List_review>
 
-          <List_paginate paginate={{ perPage: 5 }}>
+          {/* <List_paginate paginate={{ perPage: 5 }}>
             <Items></Items>
-          </List_paginate>
+          </List_paginate> */}
         </section>
       </main>
     </>
