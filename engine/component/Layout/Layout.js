@@ -71,7 +71,7 @@ export default function Layout({ children }) {
                 Appelez le{" "}
                 <span className="text_red">
                   {" "}
-                  <Link href="tel:+33683952827">
+                  <Link href="tel:+33658021724">
                     <a className="text_red text_switch">06 58 02 17 24</a>
                   </Link>
                 </span>
