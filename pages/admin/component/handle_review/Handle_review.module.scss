@@ -5,7 +5,7 @@
   max-width: 100%;
   width: 100%;
   position: relative;
-  @include flex(row, nowrap, flex-start, flex-start);
+  @include flex(row, wrap, center, flex-start);
   margin: 1.5rem 0;
 
   cursor: pointer;
@@ -14,9 +14,10 @@
     padding: 1rem;
     border-radius: $smallRadius;
     border: 1px solid $grey;
-    flex: 1;
     background-color: wheat;
     filter: $dropShadow;
+    max-width: 80%;
+    width: 100%;
     &:hover {
       background-color: white;
     }
