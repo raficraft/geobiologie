@@ -179,7 +179,7 @@ function Review({ review, active }) {
       </div>
 
       <div className={S.content}>
-        <p>{getRating(review.rate)}</p>
+        <p className={S.item_rate}>{getRating(review.rate)}</p>
         <p className={S.review}>{review.comment}</p>
         <p className={S.date}>{date}</p>
       </div>
