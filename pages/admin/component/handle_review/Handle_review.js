@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
+import { Star } from "../../../../assets/icons/Icon_svg";
+import Paginate from "../../../../engine/component/paginate/Paginate";
 import { SubDotMenuContext } from "../../../../engine/context/subDotMenu/SubdotMenu";
 import useFirestore from "../../../../engine/hooks/firestore/useFirestore";
 import { useClickOutside } from "../../../../engine/hooks/useClickOutside";
@@ -13,13 +15,32 @@ export default function Handle_review(props) {
     "user_review",
     {}
   );
-
   const [listCollection, setlistCollection] = useState();
+  const [currentCollectionForThisPage, setCurrentCollectionForThisPage] =
+    useState([]);
+  const [nbReviewPerPage, setNbReviewPerPage] = useState(6);
+  const [nbPage, setNbPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  function handleSelectChange(e) {
+    setNbReviewPerPage(e.target.value);
+  }
 
   function showUserReview(list) {
-    return listCollection.map((el, idx) => {
+    return currentCollectionForThisPage.map((el, idx) => {
       return <Review key={el.id} review={el} {...props}></Review>;
     });
+  }
+
+  function goToPage(startIndex, pageNumber) {
+    //shallow copy
+    const dataRow = JSON.parse(JSON.stringify(listCollection));
+    const start = startIndex === 0 ? 0 : startIndex * parseInt(nbReviewPerPage);
+    const end = pageNumber * parseInt(nbReviewPerPage);
+
+    console.log("start", start, "end", end);
+    setCurrentCollectionForThisPage(dataRow.slice(start, end));
+    setCurrentPage(pageNumber);
   }
 
   useEffect(async () => {
@@ -28,8 +49,11 @@ export default function Handle_review(props) {
       setLoading(true);
       try {
         const res = await getDocumentByQuery("user_review", "active", active);
+        const shallowCopy = JSON.parse(JSON.stringify(res));
+        const forThisPage = shallowCopy.splice(0, nbReviewPerPage);
         if (res) {
           setlistCollection(res);
+          setCurrentCollectionForThisPage(forThisPage);
           setLoading(false);
         }
       } catch (error) {
@@ -38,7 +62,7 @@ export default function Handle_review(props) {
     }
 
     return callApi();
-  }, [currentCollection]);
+  }, [currentCollection, nbReviewPerPage]);
 
   return (
     <>
@@ -49,15 +73,29 @@ export default function Handle_review(props) {
           <div className={S.content_review}>
             <div className={S.select}>
               <label>Trier par : </label>
-              <select defaultValue="5">
-                <option value="all">All</option>
-                <option value="1">1</option>
-                <option value="5">5</option>
-                <option value="10">10</option>
+              <select
+                defaultValue="5"
+                onChange={(e) => {
+                  handleSelectChange(e);
+                }}
+              >
+                <option value="6">6</option>
+                <option value="12">12</option>
+                <option value="20">20</option>
               </select>
               <p> Avis</p>
             </div>
             <p>{Object.keys(listCollection).length} avis.</p>
+          </div>
+          <div>
+            <Paginate
+              perPage={nbReviewPerPage}
+              collectionLength={listCollection.length}
+              currentPage={currentPage}
+              goToPage={goToPage}
+              nbPage={nbPage}
+              limit={[4, 2]}
+            ></Paginate>
           </div>
           {showUserReview()}
         </>
@@ -77,6 +115,18 @@ function Review({ review, active }) {
   const date = convertTimestamp(review.createAt);
   const [showDotMenu, setShowDotMenu, refOutsideClick] = useClickOutside(false);
   const { isSub, setIsSub, refSub } = useContext(SubDotMenuContext);
+
+  function getRating(count) {
+    const rate = [];
+    for (let i = 0; i < count; i++) {
+      rate.push(
+        <span>
+          <Star></Star>
+        </span>
+      );
+    }
+    return rate;
+  }
 
   function toggle_dotMenu(e, toggle) {
     !isSub && setShowDotMenu(toggle);
@@ -129,7 +179,7 @@ function Review({ review, active }) {
       </div>
 
       <div className={S.content}>
-        <p>{review.rate}</p>
+        <p>{getRating(review.rate)}</p>
         <p className={S.review}>{review.comment}</p>
         <p className={S.date}>{date}</p>
       </div>

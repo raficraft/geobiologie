@@ -1,0 +1,58 @@
+@import "./../../../Sass/abstract/function";
+@import "./../../../Sass/abstract/variables";
+
+.paginate_container {
+  width: 100%;
+  @include flex(column, wrap, space-between, center);
+}
+
+.paginate {
+  max-width: 100%;
+  @include flex(row, wrap, center, center);
+
+  button {
+    height: 2rem;
+    min-width: 2rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    color: $black;
+    background-color: $grey;
+    border: none;
+    border-radius: 5px;
+    filter: $dropShadow;
+    transition: 0.3s;
+
+    &[data-current="true"] {
+      background-color: $blue;
+      color: white;
+    }
+
+    &:hover {
+      background-color: $yellow;
+      color: white;
+    }
+
+    &:disabled:hover {
+      background-color: $grey;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.pa3 {
+  padding: spacing(6) 0;
+}
+
+.paginate_header {
+  @include flex(row, wrap, space-between, center);
+  width: 100%;
+  margin: 0 0 1rem 0;
+
+  select {
+    margin: 0 0 0 0.5rem;
+  }
+  p {
+    align-self: flex-end;
+    margin: 0 0 0 1rem;
+  }
+}

@@ -5,6 +5,8 @@ import {
   LastPage,
 } from "../../../assets/icons/Icon_svg";
 
+import S from "./Paginate.module.scss";
+
 export default function Paginate({
   collectionLength,
   perPage,
@@ -115,7 +117,7 @@ export default function Paginate({
   console.log("render Paginate");
   return (
     <>
-      <div>{createPaginate()}</div>
+      <div className="">{createPaginate()}</div>
     </>
   );
 }

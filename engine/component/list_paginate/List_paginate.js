@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import Paginate from "../paginate/Paginate";
 import useFirestore from "../../hooks/firestore/useFirestore";
+import S from "./List_paginate.module.scss";
 
 /**HOC GET the data and hydrate children */
 
@@ -123,19 +124,23 @@ export default function List_paginate({
         <p>Loading ...</p>
       ) : !loading && collection.input.length > 0 ? (
         <>
-          <div>
+          <div className={S.list_review}>
             {`il y à ${pagination.nbPage} page`}
-            <Paginate
-              perPage={pagination.nbItemPerPage}
-              collectionLength={Object.keys(collection.input).length}
-              currentPage={pagination.currentPage}
-              goToPage={goToPage}
-              limit={[4, 3]}
-              nbPage={pagination.pageNumber}
-              keyPrefix="primaryPaginate"
-              setter={{ setCollection, setPagination }}
-              handleSelectChange={handleSelectChange}
-            ></Paginate>
+            <div className={S.paginate_container}>
+              <div className={S.paginate}>
+                <Paginate
+                  perPage={pagination.nbItemPerPage}
+                  collectionLength={Object.keys(collection.input).length}
+                  currentPage={pagination.currentPage}
+                  goToPage={goToPage}
+                  limit={[4, 3]}
+                  nbPage={pagination.pageNumber}
+                  keyPrefix="primaryPaginate"
+                  setter={{ setCollection, setPagination }}
+                  handleSelectChange={handleSelectChange}
+                ></Paginate>
+              </div>
+            </div>
             {dispatchItem()}
           </div>
         </>
@@ -148,5 +153,9 @@ export default function List_paginate({
 
 export function Items(props) {
   console.log("on children", props);
-  return <p>{props.name}</p>;
+  return (
+    <div className={S.list_review_item}>
+      <p>{props.name}</p>
+    </div>
+  );
 }

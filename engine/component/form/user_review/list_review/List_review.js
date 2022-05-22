@@ -17,13 +17,17 @@ export default function List_review() {
   const { openModal } = useContext(ModalContext);
   const [, , , , getDocumentByQuery] = useFirestore("user_review", {});
   const [sortCollection, setSortCollection] = useState();
-  const [nbPage, setNbPage] = useState(1);
-  const [nbReviewPerPage, setNbReviewPerPage] = useState(6);
 
   const [currentCollectionForThisPage, setCurrentCollectionForThisPage] =
     useState([]);
+  const [nbReviewPerPage, setNbReviewPerPage] = useState(6);
+  const [nbPage, setNbPage] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
   const [loading, setLoading] = useState(true);
+
+  function handleSelectChange(e) {
+    setNbReviewPerPage(e.target.value);
+  }
 
   /**
    * UX
