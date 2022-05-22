@@ -87,7 +87,7 @@ export default function Handle_review(props) {
             </div>
             <p>{Object.keys(listCollection).length} avis.</p>
           </div>
-          <div class={S.paginate}>
+          <div className={S.paginate}>
             <Paginate
               perPage={nbReviewPerPage}
               collectionLength={listCollection.length}
