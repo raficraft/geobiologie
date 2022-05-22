@@ -68,3 +68,37 @@
     font-size: 1.25rem;
   }
 }
+
+.paginate {
+  max-width: 100%;
+  @include flex(row, wrap, center, center);
+  background-color: white;
+
+  button {
+    height: 2rem;
+    min-width: 2rem;
+    font-size: 1rem;
+    margin: 0.5rem;
+    color: $black;
+    background-color: $grey;
+    border: none;
+    border-radius: 5px;
+    filter: $dropShadow;
+    transition: 0.3s;
+
+    &[data-current="true"] {
+      background-color: $blue;
+      color: white;
+    }
+
+    &:hover {
+      background-color: $yellow;
+      color: white;
+    }
+
+    &:disabled:hover {
+      background-color: $grey;
+      cursor: not-allowed;
+    }
+  }
+}

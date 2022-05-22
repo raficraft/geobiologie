@@ -87,7 +87,7 @@ export default function Handle_review(props) {
             </div>
             <p>{Object.keys(listCollection).length} avis.</p>
           </div>
-          <div>
+          <div class={S.paginate}>
             <Paginate
               perPage={nbReviewPerPage}
               collectionLength={listCollection.length}
@@ -181,6 +181,7 @@ function Review({ review, active }) {
       <div className={S.content}>
         <p className={S.item_rate}>{getRating(review.rate)}</p>
         <p className={S.review}>{review.comment}</p>
+        <p className={S.review}>{review.name}</p>
         <p className={S.date}>{date}</p>
       </div>
     </div>
