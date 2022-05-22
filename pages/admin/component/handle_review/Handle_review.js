@@ -168,10 +168,10 @@ function Review({ review, active }) {
             <span className={`dotMenu_item dot_right`}></span>
             {isSub && (
               <div className="dotMenu_sub" ref={refSub}>
-                <button onClick={() => delReview()}>Supprimer</button>
                 <button onClick={() => setReview(review)}>
                   {active === true ? "Désactiver" : "Activer"}
                 </button>
+                <button onClick={() => delReview()}>Supprimer</button>
               </div>
             )}
           </span>
