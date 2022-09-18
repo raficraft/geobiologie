@@ -8,6 +8,7 @@ import FFG from "./../public/assets/img/illustration/FFG/FFG.png";
 
 import Masonry from "./../engine/component/masonry/Masonry";
 
+
 export default function Index_content() {
   return (
     <>
@@ -206,6 +207,17 @@ export default function Index_content() {
                     Your browser does not support the
                     <code>audio</code> element.
                   </audio>
+                </figure>
+                <figure>
+                  <figcaption>Recontre avec David Michel</figcaption>
+                  <audio
+                    controls
+                    src="assets/audio/audio.MP3"
+                  >
+                    Your browser does not support the
+                    <code>audio</code> element.
+                  </audio>
+                  
                 </figure>
               </div>
             </div>
