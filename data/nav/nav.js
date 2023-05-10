@@ -24,7 +24,7 @@ export const nav = [
     icon: <EnergyIcon></EnergyIcon>,
     child: [
       {
-        title: "Thérapie Energetique",
+        title: "Thérapie Énergétique",
         link: "/soins/energie",
       },
       {
@@ -40,7 +40,7 @@ export const nav = [
         link: "/soins/psychanaliste",
       },
       {
-        title: "Kinesiologie",
+        title: "Kinésiologie",
         link: "/soins/kinesiologie",
       },
       {
@@ -50,7 +50,7 @@ export const nav = [
     ],
   },
   {
-    title: "menhir",
+    title: "Menhir",
     link: "/menhir",
     icon: <StoneIcon></StoneIcon>,
   },

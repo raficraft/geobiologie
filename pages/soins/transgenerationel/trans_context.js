@@ -7,7 +7,7 @@ export default function Trans_content() {
     <>
       <article className="article article_home">
         <header>
-          <h2>Liens transgénerationelle</h2>
+          <h2>Liens transgénerationels</h2>
         </header>
 
         <div className={`embed_image embed_image--portrait`}>

@@ -8,7 +8,7 @@ export default function Transgenerationelle() {
   return (
     <>
       <Head>
-        <title>David Michel. Thérapie energétique</title>
+        <title>David Michel. Liens transgénérationels</title>
         <meta name="description" content="My heart in my Art" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
