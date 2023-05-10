@@ -36,11 +36,11 @@ export const nav = [
         link: "/soins/transgenerationel",
       },
       {
-        title: "psychanaliste",
+        title: "Psychanaliste",
         link: "/soins/psychanaliste",
       },
       {
-        title: "kinesiologie",
+        title: "Kinesiologie",
         link: "/soins/kinesiologie",
       },
       {
@@ -55,13 +55,13 @@ export const nav = [
     icon: <StoneIcon></StoneIcon>,
   },
   {
-    title: "sourcier",
+    title: "Sourcier",
     link: "/sourcier",
     icon: <WaterOutline></WaterOutline>,
   },
 
   {
-    title: "stage",
+    title: "Stage",
     link: "/stage",
     icon: <Learn_icon></Learn_icon>,
   },
