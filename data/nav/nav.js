@@ -32,8 +32,8 @@ export const nav = [
         link: "/soins/degagement",
       },
       {
-        title: "Liens transgénérationelle",
-        link: "/soins/transgenerationelle",
+        title: "Liens transgénérationels",
+        link: "/soins/transgenerationel",
       },
       {
         title: "psychanaliste",
