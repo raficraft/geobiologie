@@ -36,8 +36,8 @@ export const nav = [
         link: "/soins/transgenerationel",
       },
       {
-        title: "Psychanaliste",
-        link: "/soins/psychanaliste",
+        title: "Psychanalise",
+        link: "/soins/psychanalise",
       },
       {
         title: "Kinésiologie",
