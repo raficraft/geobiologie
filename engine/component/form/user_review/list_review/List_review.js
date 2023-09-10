@@ -1,25 +1,18 @@
-import { collection } from "firebase/firestore";
-import React, { useState, useEffect, useContext } from "react";
-import {
-  ArrowLeft,
-  ArrowRight,
-  FirstPage,
-  LastPage,
-  Star,
-} from "../../../../../assets/icons/Icon_svg";
-import { ModalContext } from "../../../../context/modal/ModalProvider";
-import useFirestore from "../../../../hooks/firestore/useFirestore";
-import Paginate from "../../../paginate/Paginate";
+import { collection } from 'firebase/firestore';
+import React, { useState, useEffect, useContext } from 'react';
+import { ArrowLeft, ArrowRight, FirstPage, LastPage, Star } from '../../../../../assets/icons/Icon_svg';
+import { ModalContext } from '../../../../context/modal/ModalProvider';
+import useFirestore from '../../../../hooks/firestore/useFirestore';
+import Paginate from '../../../paginate/Paginate';
 
-import S from "./List_review.module.scss";
+import S from './List_review.module.scss';
 
 export default function List_review() {
   const { openModal } = useContext(ModalContext);
-  const [, , , , getDocumentByQuery] = useFirestore("user_review", {});
+  const [, , , , getDocumentByQuery] = useFirestore('user_review', {});
   const [sortCollection, setSortCollection] = useState();
 
-  const [currentCollectionForThisPage, setCurrentCollectionForThisPage] =
-    useState([]);
+  const [currentCollectionForThisPage, setCurrentCollectionForThisPage] = useState([]);
   const [nbReviewPerPage, setNbReviewPerPage] = useState(6);
   const [nbPage, setNbPage] = useState(1);
   const [currentPage, setCurrentPage] = useState(1);
@@ -69,7 +62,7 @@ export default function List_review() {
     const start = startIndex === 0 ? 0 : startIndex * parseInt(nbReviewPerPage);
     const end = pageNumber * parseInt(nbReviewPerPage);
 
-    console.log("start", start, "end", end);
+    console.log('start', start, 'end', end);
     setCurrentCollectionForThisPage(dataRow.slice(start, end));
     setCurrentPage(pageNumber);
   }
@@ -79,7 +72,7 @@ export default function List_review() {
   useEffect(async () => {
     setLoading(true);
     try {
-      const res = await getDocumentByQuery("user_review", "active", true);
+      const res = await getDocumentByQuery('user_review', 'active', true);
       if (res) {
         setSortCollection(res);
         //shallowCopy
@@ -99,7 +92,7 @@ export default function List_review() {
       {loading ? (
         <p>...Loading</p>
       ) : (
-        <section className={S.list_review} key="listReview">
+        <section className={S.list_review} key='listReview'>
           <h2>Ils ont donné leurs avis.</h2>
           <div className={S.paginate_container}>
             <header className={S.paginate_header}>
@@ -111,9 +104,9 @@ export default function List_review() {
                     handleSelectChange(e);
                   }}
                 >
-                  <option value="6">6</option>
-                  <option value="12">12</option>
-                  <option value="20">20</option>
+                  <option value='6'>6</option>
+                  <option value='12'>12</option>
+                  <option value='20'>20</option>
                 </select>
               </div>
 
@@ -131,7 +124,7 @@ export default function List_review() {
               ></Paginate>
             </div>
           </div>
-          {listUserReview()}
+          <section class={S.listItem}>{listUserReview()}</section>
 
           <div className={`${S.paginate_container} ${S.pa3}`}>
             <header className={S.paginate_header}>
@@ -143,9 +136,9 @@ export default function List_review() {
                     handleSelectChange(e);
                   }}
                 >
-                  <option value="6">6</option>
-                  <option value="12">12</option>
-                  <option value="20">20</option>
+                  <option value='6'>6</option>
+                  <option value='12'>12</option>
+                  <option value='20'>20</option>
                 </select>
               </div>
 
@@ -160,16 +153,16 @@ export default function List_review() {
                 goToPage={goToPage}
                 nbPage={nbPage}
                 limit={[4, 2]}
-                keyPrefix="secondaryPaginate"
+                keyPrefix='secondaryPaginate'
               ></Paginate>
             </div>
           </div>
 
           <footer>
             <button
-              className="btn_primary bg_blue"
+              className='btn_primary bg_blue'
               onClick={() => {
-                openModal("review");
+                openModal('review');
               }}
             >
               Donner votre avis

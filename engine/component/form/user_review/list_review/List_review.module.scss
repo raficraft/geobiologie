@@ -18,11 +18,13 @@
   &_item {
     background-color: $light;
     padding: spacing(2) spacing(3);
-    margin: spacing(4) spacing(1);
     border-radius: 8px;
     background-color: wheat;
-    max-width: calc(50% - spacing(4));
-    width: 100%;
+
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
 
     @media screen and (max-width: 769px) {
       max-width: 100%;
@@ -97,4 +99,16 @@
     align-self: flex-end;
     margin: 0 0 0 1rem;
   }
+}
+
+.listItem {
+  padding: 3rem 0;
+  column-count: 2;
+  column-gap: 2rem;
+}
+
+.listItem > div {
+  grid-row: 1 / -1;
+  grid-column: 1;
+  margin-bottom: 2rem;
 }
