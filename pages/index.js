@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>David Michel. Géobiologie Loire 42</title>
+        <title>David Michel. Géobiologie Isere 38</title>
         <meta
           name="description"
           content="Page d'acceuil du site de David michel géobiologue"
