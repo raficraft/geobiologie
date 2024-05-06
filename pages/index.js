@@ -18,7 +18,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="Loire , Rhône,Isère ,Grenoble,  géobiologie, soins, menhir, pierres levées, david michel, sourcier, FFG, psychologie, psychanalyste, soins énergétique ,soins à distance, paris  Saint-Etienne, Lyon, rituel, habitat sain, diagnostique, études techniques, magnétisme, forage, puits"
+          content="Loire , Rhône,Isère ,Grenoble,  géobiologie, soins, menhir, pierres levées, david michel, sourcier, FFG, psychologie, psychanalyste, soins énergétique ,soins à distance, Paris,  Saint-Etienne, Lyon, rituel, habitat sain, diagnostique, études techniques, magnétisme, forage, puits"
         ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>

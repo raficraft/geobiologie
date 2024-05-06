@@ -8,7 +8,10 @@ export default function Charte() {
     <>
       <Head>
         <title>David Michel. Géobiologie Loire 42</title>
-        <meta name="description" content="My heart in my Art" />
+        <meta
+          name="description"
+          content="Page d'acceuil du site de David michel géobiologue"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
