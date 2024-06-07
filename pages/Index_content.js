@@ -8,7 +8,6 @@ import FFG from "./../public/assets/img/illustration/FFG/FFG.png";
 
 import Masonry from "./../engine/component/masonry/Masonry";
 
-
 export default function Index_content() {
   return (
     <>
@@ -136,6 +135,17 @@ export default function Index_content() {
           {/* video */}
 
           <div className="media_home-video">
+            <h3>Interview Youtube</h3>
+            <div className="media_home-video--container">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/wbn2-KDPDhQ?si=u_SHtElgQ4YPjuUy"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+
             <h3>Interview France 3</h3>
             <div className="media_home-video--container">
               <iframe
@@ -146,11 +156,22 @@ export default function Index_content() {
                 allowFullScreen
               ></iframe>
             </div>
+
+            <h3>Interview TL7</h3>
+            <div className="media_home-video--container">
+              <iframe
+                src="https://www.dailymotion.com/embed/video/x8qgly1?autoplay=0"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </div>
 
           {/* presse */}
 
-          <div className="media_home-presse">
+          {/* <div className="media_home-presse">
             <h3>Article de presse</h3>
             <div className="media_home-presse--img">
               <Link href="/assets/docs/david_michel.pdf">
@@ -169,7 +190,7 @@ export default function Index_content() {
             <p className="text-center">
               {" Document Pdf. Cliquer sur l'image pour consulter"}
             </p>
-          </div>
+          </div> */}
 
           {/* Interview Radio  */}
 
@@ -210,14 +231,10 @@ export default function Index_content() {
                 </figure>
                 <figure>
                   <figcaption>Recontre avec David Michel</figcaption>
-                  <audio
-                    controls
-                    src="assets/audio/audio.MP3"
-                  >
+                  <audio controls src="assets/audio/audio.MP3">
                     Your browser does not support the
                     <code>audio</code> element.
                   </audio>
-                  
                 </figure>
               </div>
             </div>
