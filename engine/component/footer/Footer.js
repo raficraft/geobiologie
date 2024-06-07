@@ -14,7 +14,7 @@ export default function Footer() {
               marginHeight="0"
               marginWidth="0"
               id="gmap_canvas"
-              src="https://maps.google.com/maps?width=800&amp;height=700&amp;hl=fr&amp;q=1440%20route%20de%20Lyon%20saint%20martin%20lestra+(David%20Michel)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              src="https://maps.google.com/maps?width=800&amp;height=700&amp;hl=fr&amp;q=125%20chemin%20du%20moulin%2C%2038410%20Saint-Martin-d'Uriage&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             ></iframe>
           </div>
           <div className={S.list}>
