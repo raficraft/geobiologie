@@ -7,10 +7,17 @@ export default function Energie() {
   return (
     <>
       <Head>
-        <title>David Michel. Thérapie energétique</title>
+        <title>
+          Soins Énergétiques Professionnels - Boostez Votre Bien-Être et Votre
+          Énergie Vitale - Isère 38
+        </title>
         <meta
           name="description"
-          content="Page d'acceuil du site de David michel géobiologue"
+          content="Découvrez les soins énergétiques de David Michel pour rééquilibrer votre énergie vitale, harmoniser vos chakras et renforcer votre bien-être général."
+        />
+        <meta
+          name="keywords"
+          content="David Michel, loire, Rhône , isère ,soins énergétiques, énergie vitale, bien-être, rééquilibrage énergétique, harmonisation chakras, purification corps subtils, renforcement système immunitaire"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

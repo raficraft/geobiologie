@@ -9,10 +9,17 @@ export default function Degagement() {
   return (
     <>
       <Head>
-        <title>David Michel. Géobiologie Loire 42</title>
+        <title>
+          Soin de Dégagement - Libérez-vous des Énergies Négatives et Retrouver
+          la Sérénité - Isère 38
+        </title>
         <meta
           name="description"
-          content="Page d'acceuil du site de David michel géobiologue"
+          content="Découvrez le soin de dégagement de David Michel pour éliminer les entités négatives, neutraliser les magies noires et rétablir l'équilibre énergétique."
+        />
+        <meta
+          name="keywords"
+          content="soin de dégagement, énergie négative, entités négatives, magie noire, envoûtements, purification énergétique, équilibre énergétique, protection aura"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

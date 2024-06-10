@@ -61,8 +61,22 @@ export const nav = [
   },
 
   {
-    title: "Stage",
+    title: "Stages",
     link: "/stage",
     icon: <Learn_icon></Learn_icon>,
+    child: [
+      {
+        title: "Sourcier",
+        link: "/stage/sourcier",
+      },
+      {
+        title: "Géobiologie",
+        link: "/stage/géobiologie",
+      },
+      {
+        title: "Protection",
+        link: "/stage/protection",
+      },
+    ],
   },
 ];

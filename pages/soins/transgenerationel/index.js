@@ -8,10 +8,16 @@ export default function Transgenerationelle() {
   return (
     <>
       <Head>
-        <title>David Michel. Liens transgénérationels</title>
+        <title>
+          Liens Transgénérationnels - Libérez-vous des Fardeaux Ancestraux
+        </title>
         <meta
           name="description"
-          content="Page d'acceuil du site de David michel géobiologue"
+          content="Découvrez l'analyse transgénérationnelle avec David Michel pour comprendre et vous libérer des traumas hérités de vos ancêtres et améliorer votre bien-être global."
+        />
+        <meta
+          name="keywords"
+          content="analyse transgénérationnelle, constellations familiales, traumas hérités, bien-être émotionnel, David Michel, fardeaux ancestraux, dynamiques familiales"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

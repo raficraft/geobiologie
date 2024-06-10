@@ -8,10 +8,16 @@ export default function Menhir() {
   return (
     <>
       <Head>
-        <title>David Michel. Géobiologie Loire 42</title>
+        <title>
+          Mise en Place de Puits - Expertise de Sourcier pour Votre Projet d’Eau
+        </title>
         <meta
           name="description"
-          content="Page d'acceuil du site de David michel géobiologue"
+          content="Découvrez notre service de mise en place de puits avec David Michel, sourcier expérimenté, pour garantir une analyse précise et une installation efficace de votre puits."
+        />
+        <meta
+          name="keywords"
+          content="mise en place de puits, sourcier, David Michel, analyse site puits, techniques sourcier, baguettes en Y, baguettes en L, pendule, construction puits"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

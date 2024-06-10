@@ -6,10 +6,17 @@ export default function Ondes() {
   return (
     <>
       <Head>
-        <title>David Michel. Thérapie energétique</title>
+        <title>
+          Pose de Protection Électrosensible - Protégez-vous des Interférences
+          Électromagnétiques
+        </title>
         <meta
           name="description"
-          content="Page d'acceuil du site de David michel géobiologue"
+          content="Découvrez comment la pose de protection électrosensible avec David Michel peut vous aider à vous protéger des interférences électromagnétiques et à garantir la sécurité de vos appareils électroniques."
+        />
+        <meta
+          name="keywords"
+          content="protection électrosensible, interférences électromagnétiques, EMI, RF, blindage EMI, protection RF, David Michel, films de protection solaires métallisés"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

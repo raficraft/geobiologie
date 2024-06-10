@@ -16,35 +16,161 @@ export default function Stage_content() {
     <>
       <article className="article article_home">
         <header>
-          <h2>Stage initiatique sourcier</h2>
+          <h1>
+            Stage Initiatique Sourcier - Maîtrisez l&rsquo;Art de la Détection
+            de l&rsquo;Eau
+          </h1>
         </header>
         <div className="content_AND_image">
-          <article className="content_AND_image--content">
-            <p>
-              <b>Objectifs : </b>
-            </p>
+          <section className="content_AND_image--content">
+            <h2>
+              Découvrez le stage initiatique sourcier avec [Nom de votre
+              entreprise]
+            </h2>
+
+            <h3>Objectifs du Stage</h3>
             <ul>
               <li>
-                Connaître la notion de filon d&rsquo;eau, une source, une nappe.
+                <h4>
+                  Connaître la notion de filon d&rsquo;eau, une source, une
+                  nappe
+                </h4>
+                <p>
+                  Apprenez à identifier et comprendre les différentes formations
+                  d&rsquo;eau souterraine, y compris les filons d&rsquo;eau, les
+                  sources et les nappes phréatiques.
+                </p>
               </li>
-              <li>Savoir repérer des formes pensées.</li>
               <li>
-                Reconnaitre des poches d&rsquo;eau et l&rsquo;eau de surface.
+                <h4>Savoir repérer des formes pensées</h4>
+                <p>
+                  Acquérez la capacité de détecter des influences énergétiques
+                  et des formes pensées qui peuvent affecter la recherche et la
+                  qualité de l&rsquo;eau.
+                </p>
               </li>
               <li>
-                Savoir utiliser plusieurs outils pour détecter l&rsquo;eau ;
-                lobe antenne, baguette en L, pendule.
+                <h4>
+                  Reconnaître des poches d&rsquo;eau et l&rsquo;eau de surface
+                </h4>
+                <p>
+                  Distinguez entre les poches d&rsquo;eau souterraine et
+                  l&rsquo;eau de surface, et apprenez à évaluer leur importance
+                  pour l&rsquo;utilisation humaine et agricole.
+                </p>
               </li>
-              <li>Analyser le contexte hydrologique environnant</li>
-              <li>Avoir la bonne convention mentale</li>
               <li>
-                Savoir utiliser les diagrammes (eau potable ou non, débit,
-                profondeur)
+                <h4>
+                  Savoir utiliser plusieurs outils pour détecter l&rsquo;eau ;
+                  lobe antenne, baguette en L, pendule
+                </h4>
+                <p>
+                  Maîtrisez l&rsquo;utilisation de divers outils traditionnels
+                  et modernes pour localiser efficacement les sources
+                  d&rsquo;eau souterraine.
+                </p>
               </li>
-              <li>Repérer le sens du courant</li>
-              <li>Repérer le point le plus approprié pour forage et puits.</li>
+              <li>
+                <h4>Analyser le contexte hydrologique environnant</h4>
+                <p>
+                  Étudiez l&rsquo;environnement hydrologique pour mieux
+                  comprendre comment les caractéristiques géologiques et les
+                  activités humaines influencent la disponibilité et la qualité
+                  de l&rsquo;eau.
+                </p>
+              </li>
+              <li>
+                <h4>Avoir la bonne convention mentale</h4>
+                <p>
+                  Développez l&rsquo;attitude mentale et les conventions de
+                  pensée nécessaires pour réussir dans le métier de sourcier, en
+                  renforçant la sensibilité et la réceptivité aux signaux
+                  environnementaux.
+                </p>
+              </li>
+              <li>
+                <h4>
+                  Savoir utiliser les diagrammes (eau potable ou non, débit,
+                  profondeur)
+                </h4>
+                <p>
+                  Utilisez des diagrammes pour évaluer des paramètres critiques
+                  tels que la potabilité de l&rsquo;eau, son débit et sa
+                  profondeur, essentiels pour la planification des ressources en
+                  eau.
+                </p>
+              </li>
+              <li>
+                <h4>Repérer le sens du courant</h4>
+                <p>
+                  Identifiez la direction du flux des eaux souterraines, une
+                  compétence clé pour déterminer les meilleurs sites de forage
+                  et de puits.
+                </p>
+              </li>
+              <li>
+                <h4>Repérer le point le plus approprié pour forage et puits</h4>
+                <p>
+                  Apprenez à sélectionner les sites optimaux pour le forage de
+                  puits, en maximisant l&rsquo;efficacité et en minimisant les
+                  impacts environnementaux.
+                </p>
+              </li>
             </ul>
-          </article>
+
+            <h3>Pourquoi Participer à ce Stage ?</h3>
+            <ul>
+              <li>
+                <h4>Expertise Professionnelle</h4>
+                <p>
+                  Bénéficiez de l&rsquo;expérience et des connaissances
+                  d&rsquo;experts reconnus dans le domaine de la détection de
+                  l&rsquo;eau.
+                </p>
+              </li>
+              <li>
+                <h4>Approche Pratique</h4>
+                <p>
+                  Engagez-vous dans des exercices pratiques et des
+                  démonstrations sur le terrain pour solidifier votre
+                  apprentissage.
+                </p>
+              </li>
+              <li>
+                <h4>Petits Groupes</h4>
+                <p>
+                  Nous limitons la taille des groupes pour assurer une attention
+                  personnalisée et une expérience d&rsquo;apprentissage de
+                  qualité.
+                </p>
+              </li>
+              <li>
+                <h4>Certification</h4>
+                <p>
+                  Recevez une certification à la fin du stage, attestant de vos
+                  nouvelles compétences en tant que sourcier.
+                </p>
+              </li>
+            </ul>
+
+            <h3>Détails et Inscription</h3>
+            <ul>
+              <li>Durée : [X jours/semaines]</li>
+              <li>Lieu : [Localisation précise]</li>
+              <li>Coût : [Prix du stage]</li>
+              <li>Prochaines Dates : [Indiquer les dates disponibles]</li>
+            </ul>
+            <p>
+              Pour vous inscrire ou obtenir plus d&rsquo;informations sur notre
+              stage initiatique sourcier, veuillez visiter notre site web ou
+              nous contacter directement. Nous sommes ravis de vous guider dans
+              votre parcours pour devenir un sourcier compétent.
+            </p>
+            <p>
+              [Nom de votre entreprise] - Votre partenaire en exploration et
+              détection d&rsquo;eau
+            </p>
+          </section>
           <aside>
             <Image_WITH_Lightbox
               src={stage_sourcier_low}
@@ -64,58 +190,168 @@ export default function Stage_content() {
 
       <article className="article article_home">
         <header>
-          <h2>Stage initiatique géobiolologie</h2>
+          <h1>
+            Stage Avancé en Géobiologie - Maîtrise des Techniques Ésotériques et
+            Énergétiques
+          </h1>
         </header>
         <div className="content_AND_image">
-          <article className="content_AND_image--content">
-            <p>
-              <b>Objectifs : </b>
-            </p>
+          <section className="content_AND_image--content">
+            <h2>
+              Explorez les profondeurs de la géobiologie avec [Nom de votre
+              entreprise]
+            </h2>
+
+            <h3>Objectifs du Stage</h3>
             <ul>
               <li>
-                Apprendre à tracer les hexagrammes et pentagrammes dans les
-                quatre directions.
+                <h4>
+                  Apprendre à tracer les hexagrammes et pentagrammes dans les
+                  quatre directions
+                </h4>
+                <p>
+                  Maîtrisez les techniques de tracé de ces puissants symboles
+                  ésotériques, utilisés pour canaliser et harmoniser les
+                  énergies dans divers contextes.
+                </p>
               </li>
               <li>
-                Comprendre les eaux souterraines, failles sèches, failles
-                humides, réseaux Hartman et Cury, cheminées cosmo-telluriques et
-                vortex
+                <h4>
+                  Comprendre les eaux souterraines, failles sèches, failles
+                  humides, réseaux Hartman et Curry, cheminées cosmo-telluriques
+                  et vortex
+                </h4>
+                <p>
+                  Acquérez une compréhension approfondie des divers phénomènes
+                  géologiques et énergétiques, et de leur impact sur
+                  l&rsquo;environnement et la santé.
+                </p>
               </li>
               <li>
-                Savoir se servir de son champ d&rsquo;énergie vitale ou bio
-                champ d&rsquo;energie vitale ou bio champs.
+                <h4>
+                  Savoir se servir de son champ d&rsquo;énergie vitale ou bio
+                  champ
+                </h4>
+                <p>
+                  Apprenez à détecter et manipuler votre propre champ
+                  énergétique pour une meilleure santé et bien-être.
+                </p>
               </li>
               <li>
-                Comprendre l&rsquo;utilité d&rsquo;un menhir, la pose et le
-                pentagramme
+                <h4>
+                  Comprendre l&rsquo;utilité d&rsquo;un menhir, la pose et le
+                  pentagramme
+                </h4>
+                <p>
+                  Découvrez comment les menhirs et les pentagrammes sont
+                  utilisés pour influencer les énergies telluriques et cosmiques
+                  dans un lieu.
+                </p>
               </li>
-              <li>Découvrir les esprits de la nature</li>
-              <li>Préparation avant une étude géobiologique</li>
+              <li>
+                <h4>Découvrir les esprits de la nature</h4>
+                <p>
+                  Initiez-vous à la communication avec les esprits de la nature
+                  et à l&rsquo;intégration de leur sagesse dans les pratiques
+                  géobiologiques.
+                </p>
+              </li>
+              <li>
+                <h4>Préparation avant une étude géobiologique</h4>
+                <p>
+                  Développez les compétences nécessaires pour préparer et
+                  conduire une étude géobiologique complète.
+                </p>
+              </li>
             </ul>
 
-            <p>
-              <b>Application : </b>
-            </p>
+            <h3>Application Pratique</h3>
             <ul>
               <li>
-                Savoir utiliser le pendule, les diagrammes, le cadran Bovis, les
-                échelles de nocivité et le diagramme de l&rsquo;équilibre cosmo
-                tellurique.
+                <h4>
+                  Savoir utiliser le pendule, les diagrammes, le cadran Bovis,
+                  les échelles de nocivité et le diagramme de l&rsquo;équilibre
+                  cosmo-tellurique
+                </h4>
+                <p>
+                  Utilisez divers outils diagnostiques pour mesurer et ajuster
+                  les énergies environnementales.
+                </p>
               </li>
               <li>
-                Exercice sur le terrain pour rechercher et ressentir ce qui a
-                été vu dans la partie théorique
+                <h4>
+                  Exercice sur le terrain pour rechercher et ressentir ce qui a
+                  été vu dans la partie théorique
+                </h4>
+                <p>
+                  Participez à des exercices pratiques pour appliquer et
+                  ressentir directement les concepts appris en salle.
+                </p>
               </li>
               <li>
-                Pose d&rsquo;un menhir pour exemple sur le terrain et
-                méthodologie
+                <h4>
+                  Pose d&rsquo;un menhir pour exemple sur le terrain et
+                  méthodologie
+                </h4>
+                <p>
+                  Observez et participez à la pose d&rsquo;un menhir, en
+                  apprenant les méthodes et les considérations pratiques.
+                </p>
               </li>
               <li>
-                Travail sur un plan pour application des méthodes vues dans la
-                journée.
+                <h4>
+                  Travail sur un plan pour application des méthodes vues dans la
+                  journée
+                </h4>
+                <p>
+                  Mettez en pratique les techniques étudiées en travaillant sur
+                  des plans concrets pour l&rsquo;application des méthodes
+                  géobiologiques.
+                </p>
               </li>
             </ul>
-          </article>
+
+            <h3>Pourquoi Participer à ce Stage ?</h3>
+            <ul>
+              <li>
+                <h4>Expertise Approfondie</h4>
+                <p>
+                  Profitez de l&rsquo;expérience et des connaissances
+                  approfondies de spécialistes en géobiologie et en énergétique.
+                </p>
+              </li>
+              <li>
+                <h4>Approche Holistique</h4>
+                <p>
+                  Engagez-vous dans une formation qui intègre des aspects
+                  scientifiques, spirituels, et pratiques.
+                </p>
+              </li>
+              <li>
+                <h4>Certification</h4>
+                <p>
+                  Obtenez une certification qui valide vos compétences avancées
+                  en géobiologie et techniques énergétiques.
+                </p>
+              </li>
+            </ul>
+
+            <h3>Détails et Inscription</h3>
+            <ul>
+              <li>Durée : [X jours/semaines]</li>
+              <li>Lieu : [Localisation précise]</li>
+              <li>Coût : [Prix du stage]</li>
+              <li>Prochaines Dates : [Indiquer les dates disponibles]</li>
+            </ul>
+            <p>
+              Pour plus d&rsquo;informations ou pour vous inscrire à notre stage
+              avancé en géobiologie, veuillez visiter notre site web ou nous
+              contacter directement. Nous sommes impatients de vous aider à
+              explorer et à maîtriser les mystères de la terre et de son
+              énergie.
+            </p>
+            <p>[Nom de votre entreprise] - Votre guide avancé en géobiologie</p>
+          </section>
           <aside>
             <Image_WITH_Lightbox
               src={stage_geobiologie_low}
@@ -135,56 +371,199 @@ export default function Stage_content() {
 
       <article className="article article_home">
         <header>
-          <h2>Stage initiatique protection</h2>
+          <h1>
+            Stage Initiatique Protection - Maîtrisez les Techniques de Défense
+            Énergétique
+          </h1>
         </header>
         <div className="content_AND_image">
-          <article className="content_AND_image--content">
-            <p>
-              <b>Objectifs : </b>
-            </p>
+          <section className="content_AND_image--content">
+            <h2>
+              Explorez les secrets de la protection énergétique avec [Nom de
+              votre entreprise]
+            </h2>
+
+            <h3>Objectifs du Stage</h3>
             <ul>
               <li>
-                Soins aux 7 bois de cristal pour augmenter les vibrations.
+                <h4>
+                  Soins aux 7 bois de cristal pour augmenter les vibrations
+                </h4>
+                <p>
+                  Découvrez les pratiques ancestrales pour utiliser les 7 bois
+                  de cristal afin d&rsquo;augmenter les vibrations et renforcer
+                  votre aura.
+                </p>
               </li>
               <li>
-                Apprendre à tracer les héxagrammes et pentagrammes dans les
-                quatres directions.
+                <h4>
+                  Apprendre à tracer les hexagrammes et pentagrammes dans les
+                  quatre directions
+                </h4>
+                <p>
+                  Maîtrisez l&rsquo;art du tracé des symboles sacrés pour créer
+                  des barrières de protection et diriger les énergies
+                  bénéfiques.
+                </p>
               </li>
               <li>
-                Connaître et apprendre à utiliser son champ d&rsquo;energie
-                vitale ou bio champs.
+                <h4>
+                  Connaître et apprendre à utiliser son champ d&rsquo;énergie
+                  vitale ou biochamps
+                </h4>
+                <p>
+                  Explorez les techniques pour comprendre et manipuler votre
+                  champ d&rsquo;énergie vitale afin de renforcer votre
+                  protection personnelle.
+                </p>
               </li>
               <li>
-                Connaître les différents corps subtils qui nous entourent.
+                <h4>
+                  Connaître les différents corps subtils qui nous entourent
+                </h4>
+                <p>
+                  Étudiez les différents plans énergétiques et les corps subtils
+                  pour mieux comprendre les influences énergétiques extérieures.
+                </p>
               </li>
               <li>
-                Connaître et se protéger des larves, entités, magie noire,
-                vampirisme énérgetique...
+                <h4>
+                  Connaître et se protéger des larves, entités, magie noire,
+                  vampirisme énergétique
+                </h4>
+                <p>
+                  Apprenez à reconnaître et à vous protéger contre les
+                  influences énergétiques négatives et les attaques psychiques.
+                </p>
               </li>
-              <li>Méthodologie passage d&rsquo;âme ou autres énergies.</li>
               <li>
-                Travail avec le double de lumière et cape d&rsquo;invisibilité
+                <h4>Méthodologie passage d&rsquo;âme ou autres énergies</h4>
+                <p>
+                  Familiarisez-vous avec les processus de transition énergétique
+                  et apprenez à les gérer de manière appropriée pour assurer la
+                  protection.
+                </p>
               </li>
-              <li>Distinguer l&rsquo;énergie positive/négative</li>
-              <li>Consécration d&rsquo;un brûle-parfum</li>
               <li>
-                Prières pour la libération et la réintégration des esprits
-                minéraux
+                <h4>
+                  Travail avec le double de lumière et cape d&rsquo;invisibilité
+                </h4>
+                <p>
+                  Explorez des techniques avancées pour renforcer votre
+                  protection énergétique et vous dissimuler des influences
+                  indésirables.
+                </p>
               </li>
-              <li>Utiliser les cinq solides de Platon</li>
-              <li>Découverte des esprits de la nature</li>
+              <li>
+                <h4>Distinguer l&rsquo;énergie positive/négative</h4>
+                <p>
+                  Développez votre discernement énergétique pour identifier les
+                  énergies bénéfiques et nuisibles dans votre environnement.
+                </p>
+              </li>
+              <li>
+                <h4>Consécration d&rsquo;un brûle-parfum</h4>
+                <p>
+                  Apprenez des rituels de consécration pour purifier et
+                  sanctifier votre espace personnel avec un brûle-parfum.
+                </p>
+              </li>
+              <li>
+                <h4>
+                  Prières pour la libération et la réintégration des esprits
+                  minéraux
+                </h4>
+                <p>
+                  Explorez des prières et des rituels pour libérer et réintégrer
+                  les esprits minéraux dans le flux naturel de l&rsquo;énergie.
+                </p>
+              </li>
+              <li>
+                <h4>Utiliser les cinq solides de Platon</h4>
+                <p>
+                  Intégrez les cinq solides de Platon dans votre pratique pour
+                  renforcer votre protection énergétique et votre connexion
+                  spirituelle.
+                </p>
+              </li>
+              <li>
+                <h4>Découverte des esprits de la nature</h4>
+                <p>
+                  Plongez dans le royaume des esprits de la nature et apprenez à
+                  collaborer avec eux pour renforcer votre protection.
+                </p>
+              </li>
             </ul>
 
-            <p>
-              <b>Application : </b>
-            </p>
+            <h3>Application Pratique</h3>
             <ul>
               <li>
-                Savoir utiliser le pendule et le diagramme d&rsquo;unités Bovis
+                <h4>
+                  Savoir utiliser le pendule et le diagramme d&rsquo;unités
+                  Bovis
+                </h4>
+                <p>
+                  Maîtrisez l&rsquo;utilisation de ces outils pour mesurer et
+                  évaluer les niveaux d&rsquo;énergie dans votre environnement
+                  et dans votre aura.
+                </p>
               </li>
-              <li>Travail sur photo et sur plan des méthodes de la journée</li>
+              <li>
+                <h4>
+                  Travail sur photo et sur plan des méthodes de la journée
+                </h4>
+                <p>
+                  Appliquez les techniques apprises lors de ce stage sur des
+                  photos et des plans pour renforcer votre protection au
+                  quotidien.
+                </p>
+              </li>
             </ul>
-          </article>
+
+            <h3>Pourquoi Participer à ce Stage ?</h3>
+            <ul>
+              <li>
+                <h4>Sécurité Énergétique</h4>
+                <p>
+                  Acquérez les connaissances et les compétences nécessaires pour
+                  protéger votre énergie et votre bien-être.
+                </p>
+              </li>
+              <li>
+                <h4>Expertise Avancée</h4>
+                <p>
+                  Bénéficiez de l&rsquo;expertise d&rsquo;instructeurs
+                  expérimentés dans le domaine de la protection énergétique.
+                </p>
+              </li>
+              <li>
+                <h4>Transformation Personnelle</h4>
+                <p>
+                  Expérimentez une transformation personnelle profonde en
+                  renforçant votre connexion avec votre propre force intérieure.
+                </p>
+              </li>
+            </ul>
+
+            <h3>Détails et Inscription</h3>
+            <ul>
+              <li>Durée : [X jours/semaines]</li>
+              <li>Lieu : [Localisation précise]</li>
+              <li>Coût : [Prix du stage]</li>
+              <li>Prochaines Dates : [Indiquer les dates disponibles]</li>
+            </ul>
+            <p>
+              Pour plus d&rsquo;informations ou pour vous inscrire à notre stage
+              initiatique en protection énergétique, veuillez visiter notre site
+              web ou nous contacter directement. Protégez-vous et renforcez
+              votre pouvoir intérieur avec notre stage dédié à la protection
+              énergétique.
+            </p>
+            <p>
+              [Nom de votre entreprise] - Votre guide vers une protection
+              énergétique optimale
+            </p>
+          </section>
           <aside>
             <Image_WITH_Lightbox
               src={stage_protection_low}
