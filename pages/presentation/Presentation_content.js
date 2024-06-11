@@ -3,73 +3,211 @@ import React from "react";
 import HR from "../../engine/component/atomic/HR";
 import portrait from "./../../public/assets/img/illustration/david/david_michel.jpg";
 
-export default function Presentation_content() {
+export default function PresentationContent() {
   return (
     <>
       <article className="article article_home">
         <header>
-          <h2>Présentation David MICHEL</h2>
+          <h1>David Michel : Votre Expert en Énergétique et Géobiologie</h1>
         </header>
-        <div className={`embed_image embed_image--portrait`}>
+        <div className="embed_image embed_image--portrait">
           <Image
             src={portrait}
             width={portrait.width}
             height={portrait.height}
-            alt="Logo en forme de pendule"
+            alt="David Michel"
             blurDataURL={portrait.blurDataURL}
             placeholder="blur"
           />
         </div>
-        <p>Cheminement vers mon vrai chemin de vie</p>
-        <p>
-          La traversée d&rsquo;une épreuve difficile m&rsquo;a ouvert une
-          nouvelle vision sur le monde qui nous entoure. J&rsquo;ai dû faire
-          face à ma sensibilité dans la dimension énergétique.
-        </p>
 
-        <p>
-          Quand ce nouveau monde a commencé à s&rsquo;ouvrir à moi, j&rsquo;ai
-          ressenti le mal-être des personnes que je croisais, qui travaillaient
-          autour de moi, les faiblesses liées à l&rsquo;énergétiques. Ma
-          clairvoyance, claire sentence et claire audience se sont développées à
-          ce moment-là.
-        </p>
-        <p>
-          Après avoir travaillé dans différentes entreprises, je me suis éloigné
-          de ce système qui ne me correspond pas : courses à l&rsquo;argent,
-          rythme de vie effréné, égoïsme... Je me consacre aujourd&rsquo;hui
-          entièrement à l&rsquo;ésotérisme.
-        </p>
-        <p>
-          Mes nombreuses lectures, des formations (géobiologie, soins
-          énergétiques, chamanisme sibérien, runes) et l&rsquo;aide de personnes
-          sur mon chemin (guérisseuse, prêtre alchimiste) m&rsquo;ont permis de
-          comprendre que ma place était ailleurs et que rien n&rsquo;est lié au
-          hasard.
-        </p>
-        <p>
-          J&rsquo;ai décidé de réaliser mes soins sur les personnes,
-          harmonisations de lieux à distance et dégagements de toute sorte de
-          magies dans un zome énergétique. Cette structure est une forme
-          géométrique composée de losanges agencés en double spirale dont la
-          trame se veut en résonance avec le monde vivant.
-        </p>
-        <p>
-          Après plusieurs années d&rsquo;approfondissement dans ce domaine afin
-          d&rsquo;être à la hauteur de ce qui m&rsquo;est permis de réaliser, je
-          suis aujourd&rsquo;hui pleinement inscrit dans mon chemin de vie.
-        </p>
-        <p>
-          Faisant partie de la Fédération Française de Géobiologie, je
-          m&rsquo;inscris au même titre que de nombreux autres géobiologues dans
-          la charte de la FFG nous engageant à exercer notre activité avec
-          objectivité, humanité et probité.
-        </p>
-        <p>
-          Mon seul but est d&rsquo;accompagner les personnes venant vers moi à
-          trouver des solutions à leur mal-être, et leur permettre de retrouver
-          un état de bien être dans leur vie.
-        </p>
+        <section>
+          <h2>
+            Découvrez le parcours unique de David Michel, spécialiste en soins
+            énergétiques et géobiologie
+          </h2>
+
+          <h3>Cheminement vers mon vrai chemin de vie</h3>
+          <p>
+            La confrontation avec des défis personnels a profondément transformé
+            ma perception du monde, éveillant une sensibilité particulière aux
+            dimensions énergétiques de notre environnement. Cette prise de
+            conscience m&rsquo;a permis de développer des capacités telles que
+            la clairvoyance, la clairsentience, et la clairaudience, me rendant
+            particulièrement réceptif au mal-être des personnes autour de moi.
+          </p>
+          <p>
+            Après plusieurs expériences dans le milieu corporate, j&rsquo;ai
+            choisi de me détacher d&rsquo;un système axé sur la compétition, le
+            matérialisme et un rythme de vie effréné pour me consacrer
+            pleinement à l&rsquo;étude et la pratique de l&rsquo;ésotérisme.
+          </p>
+        </section>
+
+        <section>
+          <h3>Formation et influences</h3>
+          <p>
+            Mon parcours est enrichi par d&rsquo;intenses périodes de lecture,
+            des formations diversifiées en géobiologie, soins énergétiques,
+            chamanisme sibérien, et l&rsquo;interprétation des runes. Les
+            rencontres avec des mentors tels qu&rsquo;une guérisseuse et un
+            prêtre alchimiste ont été cruciales pour confirmer que ma vocation
+            était de suivre un chemin bien différent, guidé par le destin.
+          </p>
+        </section>
+
+        <section>
+          <h3>Services professionnels en géobiologie et soins énergétiques</h3>
+          <p>
+            Je propose aujourd&rsquo;hui des soins énergétiques personnels, des
+            harmonisations de lieux à distance, ainsi que des dégagements des
+            diverses formes de magies négatives. Ces services sont réalisés dans
+            un zome énergétique, une structure en forme de double spirale
+            composée de losanges, conçue pour être en harmonie avec les énergies
+            du monde vivant.
+          </p>
+          <p>
+            Mon expertise et ma pratique sont reconnues par mon affiliation à la
+            Fédération Française de Géobiologie, dont je respecte
+            scrupuleusement la charte en m&rsquo;engageant à exercer avec
+            objectivité, humanité et probité.
+          </p>
+        </section>
+
+        <section>
+          <h3>Engagement et philosophie</h3>
+          <p>
+            Mon objectif est d&rsquo;aider ceux qui me consultent à trouver des
+            solutions à leur mal-être, et à améliorer leur bien-être général. En
+            me basant sur une approche holistique et personnalisée, je
+            m&rsquo;efforce de restaurer l&rsquo;équilibre énergétique et
+            spirituel de mes clients, les aidant ainsi à retrouver la paix et la
+            sérénité dans leur vie quotidienne.
+          </p>
+        </section>
+
+        <section>
+          <h3>Contactez David Michel pour un accompagnement sur mesure</h3>
+          <p>
+            Si vous ressentez le besoin d&rsquo;un accompagnement énergétique ou
+            d&rsquo;une expertise en géobiologie, n&rsquo;hésitez pas à me
+            contacter. Ensemble, explorons les solutions adaptées à votre
+            situation et travaillons à rétablir votre bien-être.
+          </p>
+          <p>
+            David Michel - Spécialiste reconnu en soins énergétiques et
+            géobiologie, engagé à enrichir votre parcours de vie.
+          </p>
+        </section>
+      </article>
+
+      <HR
+        css={{
+          margin: "4 0",
+          width: "100%",
+        }}
+      ></HR>
+
+      <article className="article article_home">
+        <header>
+          <h1>
+            Présentation de Monique Sauzay - Spécialiste en Dessins Vibratoires
+            et Guérison Énergétique
+          </h1>
+        </header>
+
+        <section>
+          <h2>Découvrez l&rsquo;approche complémentaire de Monique Sauzay</h2>
+          <p>
+            Mme Monique Sauzay apporte une dimension unique et complémentaire à
+            mon travail. Son expertise et ses techniques ont profondément
+            enrichi ma pratique et ma vie personnelle. Voici pourquoi je tiens à
+            vous la présenter.
+          </p>
+        </section>
+
+        <section>
+          <h3>Séances de Guérison Énergétique</h3>
+          <p>
+            Les séances de Monique peuvent se dérouler à distance ou en
+            présentiel. Elles visent à libérer les mémoires, inscriptions
+            négatives, tensions, blocages et dysfonctionnements. Grâce à une
+            purification des centres d’énergie, des plans subtils et de l’aura,
+            ces séances permettent de se reconnecter aux énergies de la Terre,
+            du Ciel et de l’Univers. L&rsquo;objectif est de retrouver la paix
+            intérieure, le bien-être et la santé.
+          </p>
+        </section>
+
+        <section>
+          <h3>Dessins Sacrés de l&rsquo;Âme</h3>
+          <p>
+            Monique Sauzay utilise les dessins sacrés de l&rsquo;âme, également
+            appelés dessins vibratoires, pour aider à la transformation et à la
+            guérison. Réalisés au crayon, pastels ou peinture, ces dessins
+            agissent comme de puissants outils de conscience et de développement
+            personnel. En état modifié de conscience et en connexion avec la
+            Source, Monique crée des œuvres qui libèrent les tensions, les peurs
+            et les blessures profondes, permettant ainsi de lâcher prise sur
+            tout ce qui freine notre évolution spirituelle.
+          </p>
+        </section>
+
+        <section>
+          <h3>Les Bienfaits des Dessins Vibratoires</h3>
+          <ul>
+            <li>
+              <h4>Transformation et Guérison</h4>
+              <p>
+                Les dessins sacrés agissent sur notre psyché et nos corps
+                subtils grâce aux codes de Lumière et d&rsquo;Amour intégrés
+                dans les formes, mouvements et couleurs.
+              </p>
+            </li>
+            <li>
+              <h4>Révélation de l&rsquo;Essence Divine</h4>
+              <p>
+                Ils permettent à notre aura de rayonner et de s&rsquo;illuminer,
+                facilitant la réconciliation avec notre Essence Divine.
+              </p>
+            </li>
+            <li>
+              <h4>Développement des Capacités</h4>
+              <p>
+                Les dessins de l’aura révèlent nos capacités artistiques,
+                créatives et médiumniques, ainsi que nos faiblesses, nous
+                guidant sur les aspects à travailler pour notre évolution.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Outils d’Évolution et de Réalisation de Soi</h3>
+          <p>
+            Les créations de Monique Sauzay sont de merveilleux outils pour
+            l’évolution personnelle et la réalisation de soi. Elles offrent une
+            opportunité unique de prendre conscience de notre véritable
+            potentiel divin et de l&rsquo;utiliser pour notre guérison et notre
+            croissance spirituelle.
+          </p>
+        </section>
+
+        <section>
+          <h3>Contactez Monique Sauzay</h3>
+          <p>
+            Si vous souhaitez explorer les bienfaits des dessins vibratoires et
+            des séances de guérison énergétique, n&rsquo;hésitez pas à contacter
+            Monique Sauzay. Elle vous accompagnera avec bienveillance dans votre
+            cheminement vers la libération émotionnelle, la guérison et
+            l&rsquo;épanouissement spirituel.
+          </p>
+          <p>
+            Monique Sauzay - Spécialiste en Dessins Vibratoires et Guérison
+            Énergétique, dédiée à votre bien-être et à votre évolution
+            spirituelle.
+          </p>
+        </section>
       </article>
     </>
   );

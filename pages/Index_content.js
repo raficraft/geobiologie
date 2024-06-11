@@ -5,15 +5,14 @@ import presse from "./../public/assets/docs/presse.jpg";
 import radio from "./../public/assets/img/illustration/david/radio.jpg";
 import HR from "../engine/component/atomic/HR";
 import FFG from "./../public/assets/img/illustration/FFG/FFG.png";
-
 import Masonry from "./../engine/component/masonry/Masonry";
 
-export default function Index_content() {
+export default function IndexContent() {
   return (
     <>
       <article className="article article_home">
         <header>
-          <h2>A quoi sert la géobiologie ?</h2>
+          <h1>À Quoi Sert la Géobiologie ?</h1>
         </header>
         <div className="embed_image">
           <Link href="https://federation-francaise-de-geobiologie.org/">
@@ -26,114 +25,167 @@ export default function Index_content() {
                 blurDataURL={FFG.blurDataURL}
                 placeholder="blur"
               />
-
               <p>En savoir +</p>
             </a>
           </Link>
         </div>
-        <p>
-          La géobiologie étudie les impacts de l&rsquo;environnement sur la
-          santé des vivants, c&rsquo;est-à-dire non seulement des humains, mais
-          aussi des animaux et des végétaux. Le but de cette pratique est de
-          mettre en évidence les perturbations que les cours d&rsquo;eau, les
-          cavités vides, les zones de failles, les cheminées cosmo-telluriques,
-          les réseaux Hartmann et Curry et autres phénomènes géologiques
-          présentent à proximité de l&rsquo;habitation peuvent provoquer.
-        </p>
-        <h3>Pourquoi une expertise Géobiologique ?</h3>
-        <p>
-          L&rsquo;exposition à long terme aux diverses nuisances présentes dans
-          l&rsquo;environnement peut entraîner des maladies chroniques, des
-          allergies, des troubles du sommeil ou même une dépression. Une
-          expertise géobiologique permet de déterminer quels sont réellement les
-          phénomènes qui nuisent au bien-être d&rsquo;une habitation pour
-          ensuite trouver des corrections adéquates. Grâce à ses facultés
-          techniques et sensorielles, le spécialiste en géobiologie est en
-          mesure de neutraliser les effets des phénomènes et ondes nocives. Une
-          expertise géobiologique contribue ainsi à la résolution des problèmes
-          physiologiques que les occupants d&rsquo;une maison peuvent avoir.
-          Avant d&rsquo;entamer des travaux de construction et de rénovation,
-          demander une expertise en géobiologie permet de connaitre
-          l&rsquo;emplacement idéal pour les pièces et les modifications à
-          apporter à l&rsquo;habitation pour que la qualité de vie et le tonus
-          des personnes qui y vivent soient améliorés.
-        </p>
 
-        <p>
-          La géobiologie étudie aussi la position des antennes relais et des
-          pylônes haute tension pour savoir si elles n&rsquo;entrainent pas une
-          pollution électrique et électromagnétique au sein de
-          l&rsquo;habitation.
-        </p>
+        <section>
+          <h2>
+            Découvrez l&rsquo;importance de la géobiologie avec [Nom de votre
+            entreprise]
+          </h2>
+          <h3>En savoir plus</h3>
+          <p>
+            La géobiologie est une discipline qui étudie les impacts de
+            l&rsquo;environnement sur la santé des êtres vivants, qu&rsquo;il
+            s&rsquo;agisse des humains, des animaux ou des végétaux. Cette
+            pratique vise à identifier et à corriger les perturbations
+            géopathogènes telles que les cours d&rsquo;eau souterrains, les
+            cavités vides, les zones de failles, les cheminées
+            cosmo-telluriques, et les réseaux Hartmann et Curry. Ces phénomènes
+            géologiques peuvent avoir des effets négatifs sur le bien-être des
+            occupants d&rsquo;une habitation.
+          </p>
 
-        <p>
-          Les spécialistes en géobiologie se servent également de
-          l&rsquo;histoire des lieux pour déterminer s&rsquo;il n&rsquo;y a pas
-          de famines, de maladies, de violences ou de guerres qui y ont eu lieu.
-          Si c&rsquo;est le cas, les murs et les sols ont pu les mémoriser, ce
-          qui peut être à l&rsquo;origine des sensations de mal-être éprouvées
-          par une personne quand elle se trouve sur les lieux.
-        </p>
+          <h3>Pourquoi une Expertise Géobiologique est-elle Essentielle ?</h3>
+          <ul>
+            <li>
+              <h4>Prévenir les Problèmes de Santé</h4>
+              <p>
+                L&rsquo;exposition prolongée aux diverses nuisances
+                environnementales peut entraîner des maladies chroniques, des
+                allergies, des troubles du sommeil, et même des états
+                dépressifs. Une expertise géobiologique permet
+                d&rsquo;identifier les facteurs exacts qui nuisent à la qualité
+                de vie dans une maison et de trouver des solutions adéquates.
+              </p>
+            </li>
+            <li>
+              <h4>Optimiser le Bien-Être et le Confort</h4>
+              <p>
+                Grâce à ses compétences techniques et sensorielles, le
+                spécialiste en géobiologie est capable de neutraliser les effets
+                des ondes nocives et des perturbations géologiques. Cette
+                intervention contribue à améliorer la santé et le bien-être des
+                occupants, en résolvant des problèmes physiologiques
+                potentiellement liés à l&rsquo;environnement de la maison.
+              </p>
+            </li>
+            <li>
+              <h4>Prévenir les Pollutions Électromagnétiques</h4>
+              <p>
+                La géobiologie inclut également l&rsquo;étude des positions des
+                antennes relais et des pylônes haute tension pour déterminer
+                s&rsquo;ils provoquent une pollution électrique et
+                électromagnétique dans l&rsquo;habitation. En identifiant ces
+                sources de pollution, des mesures peuvent être prises pour
+                protéger les occupants.
+              </p>
+            </li>
+          </ul>
 
-        <p>
-          Pour déterminer toutes ces perturbations, l&rsquo;expert en
-          géobiologie ne mise pas uniquement sur ses sens. Il utilise des outils
-          professionnels qui lui permettent de détecter et de mesurer les
-          différentes perturbations avec précisions. Pour mesurer le niveau de
-          nuisance géotellurique, l&rsquo;expert utilise, par exemple, des
-          baguettes rade master et une antenne de Lécher.
-        </p>
+          <h3>Comment une Expertise Géobiologique est-elle Réalisée ?</h3>
+          <ul>
+            <li>
+              <h4>Analyse Initiale</h4>
+              <p>
+                Une expertise géobiologique commence par une analyse détaillée
+                de l&rsquo;environnement. Le spécialiste utilise ses capacités
+                sensorielles et des outils spécifiques comme les baguettes
+                radmaster et l&rsquo;antenne de Lécher pour détecter et mesurer
+                les perturbations géopathogènes.
+              </p>
+            </li>
+            <li>
+              <h4>Étude de l&rsquo;Histoire des Lieux</h4>
+              <p>
+                Les spécialistes prennent en compte l&rsquo;histoire des lieux
+                pour identifier d&rsquo;éventuelles mémoires énergétiques liées
+                à des événements passés tels que des famines, des maladies, des
+                violences ou des guerres. Ces mémoires peuvent imprégner les
+                murs et les sols, causant un mal-être chez les occupants.
+              </p>
+            </li>
+            <li>
+              <h4>Identification des Perturbations</h4>
+              <p>
+                Le spécialiste identifie les cours d&rsquo;eau souterrains, les
+                failles géologiques, les cheminées cosmo-telluriques, et les
+                réseaux Hartmann et Curry. Il évalue également l&rsquo;impact
+                des structures modernes comme les antennes relais et les pylônes
+                haute tension.
+              </p>
+            </li>
+            <li>
+              <h4>Propositions de Solutions</h4>
+              <p>
+                Après avoir identifié les perturbations, des solutions sont
+                proposées pour harmoniser l&rsquo;espace de vie. Cela peut
+                inclure le réagencement des meubles, la pose de dispositifs de
+                neutralisation des ondes, et des conseils sur
+                l&rsquo;emplacement idéal des pièces lors de travaux de
+                construction ou de rénovation.
+              </p>
+            </li>
+          </ul>
 
-        <h2>Une harmonisation du lieu de vie et de la santé</h2>
+          <h3>Les Bénéfices Concrets d&rsquo;une Expertise Géobiologique</h3>
+          <ul>
+            <li>
+              <h4>Amélioration de la Santé</h4>
+              <p>
+                En éliminant les nuisances géopathogènes, les occupants peuvent
+                constater une amélioration significative de leur santé physique
+                et mentale.
+              </p>
+            </li>
+            <li>
+              <h4>Harmonisation de l&rsquo;Espace de Vie</h4>
+              <p>
+                Une maison harmonisée énergétiquement offre un environnement
+                plus serein et équilibré, favorisant la vitalité et le
+                bien-être.
+              </p>
+            </li>
+            <li>
+              <h4>Prévention des Troubles</h4>
+              <p>
+                Une expertise géobiologique permet de prévenir divers troubles
+                liés à des influences environnementales néfastes, assurant ainsi
+                une meilleure qualité de vie.
+              </p>
+            </li>
+          </ul>
 
-        <p>
-          Certaines personnes ressentent de la fatigue ou un stress quand elles
-          pénètrent dans un lieu. D&rsquo;autres encore retrouvent de la
-          vitalité et voient leurs ennuis de santé disparaître quand elles
-          quittent leurs maisons pour quelques jours. Parfois, nous nous sentons
-          plus à l&rsquo;aise dans une pièce de notre maison que dans une autre.
-          Toutes ces impressions différentes sont dues aux perturbations
-          invisibles qui « plombent » notre atmosphère. Pour limiter au maximum
-          les effets nocifs de ces perturbations, il est important
-          d&rsquo;agencer avec soin les meubles de l&rsquo;habitation. La
-          géobiologie apporte les informations utiles dans l&rsquo;aménagement
-          de l&rsquo;intérieur.
-        </p>
-
-        <Link href="/charte">
-          <a>Consulter la Charte de la FFG</a>
-        </Link>
+          <h2>Harmonisation du Lieu de Vie et de la Santé</h2>
+          <p>
+            Certaines personnes ressentent de la fatigue ou un stress en entrant
+            dans certains lieux, tandis que d&rsquo;autres retrouvent de la
+            vitalité en quittant leur maison pour quelques jours. Ces sensations
+            sont souvent dues aux perturbations invisibles qui affectent
+            l&rsquo;atmosphère. La géobiologie fournit des informations
+            cruciales pour l&rsquo;aménagement intérieur, afin de limiter au
+            maximum les effets nocifs de ces perturbations.
+          </p>
+          <Link href="/charte">
+            <a>Consulter la Charte de la FFG</a>
+          </Link>
+        </section>
       </article>
 
-      <HR
-        css={{
-          margin: "4 0",
-          width: "100%",
-        }}
-      ></HR>
+      <HR css={{ margin: "4 0", width: "100%" }}></HR>
 
       <Masonry
         dir={["masonry/home/"]}
-        masonry={{
-          width: `1120px`,
-          column: "4",
-          gap: "1rem",
-        }}
+        masonry={{ width: `1120px`, column: "4", gap: "1rem" }}
       ></Masonry>
 
-      <HR
-        css={{
-          margin: "4 0",
-          width: "100%",
-        }}
-      ></HR>
+      <HR css={{ margin: "4 0", width: "100%" }}></HR>
 
       <article className="article article_home">
         <h2>Revue de presse</h2>
-        {/* VIDEO AND presse */}
         <div className="media_home">
-          {/* video */}
-
           <div className="media_home-video">
             <h3>Interview Youtube</h3>
             <div className="media_home-video--container">
@@ -169,31 +221,6 @@ export default function Index_content() {
             </div>
           </div>
 
-          {/* presse */}
-
-          {/* <div className="media_home-presse">
-            <h3>Article de presse</h3>
-            <div className="media_home-presse--img">
-              <Link href="/assets/docs/david_michel.pdf">
-                <a target="_blank">
-                  <Image
-                    src={presse}
-                    width={presse.width}
-                    height={presse.height}
-                    alt="Logo en forme de pendule"
-                    blurDataURL={presse.blurDataURL}
-                    placeholder="blur"
-                  />
-                </a>
-              </Link>
-            </div>
-            <p className="text-center">
-              {" Document Pdf. Cliquer sur l'image pour consulter"}
-            </p>
-          </div> */}
-
-          {/* Interview Radio  */}
-
           <div className="media_home-radio">
             <h3>Interview Radio</h3>
 
@@ -203,7 +230,7 @@ export default function Index_content() {
                   src={radio}
                   width={radio.width}
                   height={radio.height}
-                  alt="Logo fédération française de géobiologie"
+                  alt="Interview Radio"
                   blurDataURL={radio.blurDataURL}
                   placeholder="blur"
                 />
@@ -230,7 +257,7 @@ export default function Index_content() {
                   </audio>
                 </figure>
                 <figure>
-                  <figcaption>Recontre avec David Michel</figcaption>
+                  <figcaption>Rencontre avec David Michel</figcaption>
                   <audio controls src="assets/audio/audio.MP3">
                     Your browser does not support the
                     <code>audio</code> element.
@@ -242,12 +269,7 @@ export default function Index_content() {
         </div>
       </article>
 
-      <HR
-        css={{
-          margin: "4 0",
-          width: "100%",
-        }}
-      ></HR>
+      <HR css={{ margin: "4 0", width: "100%" }}></HR>
     </>
   );
 }

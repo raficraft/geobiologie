@@ -18,8 +18,8 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="Loire , Rhône,Isère ,Grenoble,  géobiologie, soins, menhir, pierres levées, david michel, sourcier, FFG, psychologie, psychanalyste, soins énergétique ,soins à distance, Paris,  Saint-Etienne, Lyon, rituel, habitat sain, diagnostique, études techniques, magnétisme, forage, puits"
-        ></meta>
+          content="Géobiologie, soins énergétiques, David Michel, sourcier, FFG, géobiologue Isère, diagnostic habitat, perturbations géopathogènes, ondes nocives, bien-être habitation, menhirs, pierres levées, analyse géobiologique, magnétisme, forage, puits, santé environnementale, failles géologiques, réseaux Hartmann, réseaux Curry, neutralisation des ondes, expertise géobiologique, Rhône-Alpes,Isère, Grenoble, Lyon, Paris, Saint-Etienne"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

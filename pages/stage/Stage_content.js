@@ -387,7 +387,7 @@ export default function Stage_content() {
             <ul>
               <li>
                 <h4>
-                  Soins aux 7 bois de cristal pour augmenter les vibrations
+                  Soins aux 7 bols de cristal pour augmenter les vibrations
                 </h4>
                 <p>
                   Découvrez les pratiques ancestrales pour utiliser les 7 bois
