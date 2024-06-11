@@ -7,10 +7,14 @@ export default function Charte() {
   return (
     <>
       <Head>
-        <title>David Michel. Géobiologie Loire 42</title>
+        <title>David Michel. Géobiologie Isère 38</title>
         <meta
           name="description"
-          content="Page d'acceuil du site de David michel géobiologue"
+          content="Page d'accueil du site de David Michel, géobiologue expert, présentant la charte de la Fédération Française de Géobiologie et les principes éthiques des géobiologues."
+        />
+        <meta
+          name="keywords"
+          content="David Michel, géobiologue, Géobiologie, géobiologue Isère,  géobiologue Rhône, géobiologue Loire, santé environnementale, charte géobiologie, Fédération Française de Géobiologie, FFG, déontologie géobiologie, bien-être habitat, analyse géobiologique, perturbations géopathogènes, sourcier, radiesthésie, ondes électromagnétiques, santé énergétique, éthique géobiologue, expertise géobiologique, Rhône-Alpes,Isère,Loire, Grenoble, Lyon, Paris, Saint-Etienne"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

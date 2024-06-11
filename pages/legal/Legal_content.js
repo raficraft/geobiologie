@@ -11,7 +11,7 @@ export default function Legal_content() {
           <ul>
             <li>DAVID-MICHEL - Géobiologue</li>
             <li>125 chemin du moulin</li>
-            <li>38410 Saint-Martin d'uriage</li>
+            <li>38410 Saint-Martin d&rsquo;uriage</li>
             <li>TEL : 06.58.02.17.24</li>
             <li>N SIRET : 84996618900011</li>
           </ul>

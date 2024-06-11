@@ -14,14 +14,14 @@ export default function Geobiologie() {
   return (
     <>
       <Head>
-        <title>David Michel. Géobiologie Loire 42</title>
+        <title>David Michel. Géobiologie Isère 38</title>
         <meta
           name="description"
           content="Présentation de David michel géobiologue"
         />
         <meta
           name="keywords"
-          content="forage, puits, Loire , Rhône, géobiologie, soins, kinésiologie, menhir, pierres levées, david michel, sourcier, FFG, psychologie, psychanalyste, soins énergétique ,soins à distance, paris  Saint-Etienne, Lyon, rituel, habitat sain, diagnostique, études techniques, magnétisme, Hartmann et Curry."
+          content="géobiologue Isère,  géobiologue Rhône, géobiologue Loire, géobilogue Loire, forage, puits, géobiologie, soins, kinésiologie, menhir, pierres levées, David Michel, sourcier, FFG, psychologie, psychanalyste, soins énergétique ,soins à distance, rituel, habitat sain, diagnostique, études techniques, magnétisme, Hartmann et Curry, Rhône-Alpes,Isère,Loire, Grenoble, Lyon, Paris, Saint-Etienne"
         ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>

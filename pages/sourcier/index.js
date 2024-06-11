@@ -18,7 +18,7 @@ export default function Sourcier() {
         />
         <meta
           name="keywords"
-          content="mise en place de puits, sourcier, David Michel, analyse site puits, techniques sourcier, baguettes en Y, baguettes en L, pendule, construction puits"
+          content="mise en place de puits, sourcier, sourcier Isère, sourcier Rhône, sourcie Loire, David Michel, analyse site puits, techniques sourcier, baguettes en Y, baguettes en L, pendule, construction puits , Saint-Martin d'uriage, Rhône-Alpes,Isère,Loire, Grenoble, Lyon, Paris, Saint-Etienne"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

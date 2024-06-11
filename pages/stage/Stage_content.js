@@ -23,10 +23,7 @@ export default function Stage_content() {
         </header>
         <div className="content_AND_image">
           <section className="content_AND_image--content">
-            <h2>
-              Découvrez le stage initiatique sourcier avec [Nom de votre
-              entreprise]
-            </h2>
+            <h2>Découvrez le stage initiatique sourcier avec David Michel</h2>
 
             <h3>Objectifs du Stage</h3>
             <ul>
@@ -167,8 +164,8 @@ export default function Stage_content() {
               votre parcours pour devenir un sourcier compétent.
             </p>
             <p>
-              [Nom de votre entreprise] - Votre partenaire en exploration et
-              détection d&rsquo;eau
+              David Michel - Votre partenaire en exploration et détection
+              d&rsquo;eau
             </p>
           </section>
           <aside>
@@ -350,7 +347,7 @@ export default function Stage_content() {
               explorer et à maîtriser les mystères de la terre et de son
               énergie.
             </p>
-            <p>[Nom de votre entreprise] - Votre guide avancé en géobiologie</p>
+            <p>David Michel - Votre guide avancé en géobiologie</p>
           </section>
           <aside>
             <Image_WITH_Lightbox
@@ -560,8 +557,8 @@ export default function Stage_content() {
               énergétique.
             </p>
             <p>
-              [Nom de votre entreprise] - Votre guide vers une protection
-              énergétique optimale
+              David Michel - Votre guide vers une protection énergétique
+              optimale
             </p>
           </section>
           <aside>

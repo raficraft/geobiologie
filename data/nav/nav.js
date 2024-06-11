@@ -71,7 +71,7 @@ export const nav = [
       },
       {
         title: "Géobiologie",
-        link: "/stage/géobiologie",
+        link: "/stage/geobiologie",
       },
       {
         title: "Protection",

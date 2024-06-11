@@ -9,15 +9,15 @@ export default function Menhir() {
     <>
       <Head>
         <title>
-          Mise en Place de Puits - Expertise de Sourcier pour Votre Projet d’Eau
+          Pose de Menhir et Pierres Levées - Harmonisation Énergétique
         </title>
         <meta
           name="description"
-          content="Découvrez notre service de mise en place de puits avec David Michel, sourcier expérimenté, pour garantir une analyse précise et une installation efficace de votre puits."
+          content="Découvrez la pose de menhirs et de pierres levées avec David Michel, expert en géobiologie et harmonisation énergétique, pour revitaliser et équilibrer les espaces."
         />
         <meta
           name="keywords"
-          content="mise en place de puits, sourcier, David Michel, analyse site puits, techniques sourcier, baguettes en Y, baguettes en L, pendule, construction puits"
+          content="pose de menhir,pose de menhir Loire, pose de mehnir Isère, pose de menhir Rhône pierres levées, harmonisation énergétique, David Michel, géobiologie, géo-poncture, énergies telluriques, énergies cosmiques, dynamisation des terrains, rééquilibrage énergétique, protection ondes négatives, amélioration productivité agricole, évaluation énergétique, activation énergétique, Rhône-Alpes, Isère, Loire, Grenoble, Lyon, Saint-Etienne"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

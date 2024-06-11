@@ -18,7 +18,7 @@ export default function Home() {
         />
         <meta
           name="keywords"
-          content="Géobiologie, soins énergétiques, David Michel, sourcier, FFG, géobiologue Isère, diagnostic habitat, perturbations géopathogènes, ondes nocives, bien-être habitation, menhirs, pierres levées, analyse géobiologique, magnétisme, forage, puits, santé environnementale, failles géologiques, réseaux Hartmann, réseaux Curry, neutralisation des ondes, expertise géobiologique, Rhône-Alpes,Isère, Grenoble, Lyon, Paris, Saint-Etienne"
+          content="Géobiologie, soins énergétiques, David Michel, sourcier, FFG, géobiologue Isère,  géobiologue Rhône, géobiologue Loire, diagnostic habitat, perturbations géopathogènes, ondes nocives, bien-être habitation, menhirs, pierres levées, analyse géobiologique, magnétisme, forage, puits, santé environnementale, failles géologiques, réseaux Hartmann, réseaux Curry, neutralisation des ondes, expertise géobiologique, Rhône-Alpes,Isère,Loire, Grenoble, Lyon, Paris, Saint-Etienne"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

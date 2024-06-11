@@ -6,10 +6,14 @@ export default function Legal() {
   return (
     <>
       <Head>
-        <title>David Michel. Géobiologie Loire 42</title>
+        <title>David Michel. Géobiologie Isère 38</title>
         <meta
           name="description"
-          content="Page d'acceuil du site de David michel géobiologue"
+          content="Page légale du site de David Michel, géobiologue, comprenant les informations sur la confidentialité, la propriété intellectuelle et les conditions d'utilisation."
+        />
+        <meta
+          name="keywords"
+          content="David Michel, géobiologue, géobiologie, Geobiologue Isère, Géobiologue Rhöne, Géobiologue Isère,  santé environnementale, législation, confidentialité, propriété intellectuelle, conditions d'utilisation, données personnelles, formulaires d'envoi, liens hypertextes, Saint-Martin d'uriage, Rhône-Alpes,Isère,Loire, Grenoble, Lyon, Paris, Saint-Etienne"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

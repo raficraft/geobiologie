@@ -132,8 +132,8 @@ export default function TransContent() {
 
       <section>
         <h2>
-          Pourquoi choisir [Nom de votre entreprise] pour votre analyse
-          transgénérationnelle ?
+          Pourquoi choisir David Michel pour votre analyse transgénérationnelle
+          ?
         </h2>
         <ul>
           <li>
