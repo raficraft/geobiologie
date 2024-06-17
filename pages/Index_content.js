@@ -14,21 +14,6 @@ export default function IndexContent() {
         <header>
           <h1>À Quoi Sert la Géobiologie ?</h1>
         </header>
-        <div className="embed_image">
-          <Link href="https://federation-francaise-de-geobiologie.org/">
-            <a className="embed_image--link" target="_blank">
-              <Image
-                src={FFG}
-                width={FFG.width}
-                height={FFG.height}
-                alt="Logo fédération française de géobiologie"
-                blurDataURL={FFG.blurDataURL}
-                placeholder="blur"
-              />
-              <p>En savoir +</p>
-            </a>
-          </Link>
-        </div>
 
         <section>
           <h2>

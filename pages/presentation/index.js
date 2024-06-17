@@ -52,10 +52,6 @@ export default function Geobiologie() {
             margin: "4 0",
           }}
         ></HR>
-
-        <section className="content">
-          <Secondary></Secondary>
-        </section>
       </main>
     </>
   );
