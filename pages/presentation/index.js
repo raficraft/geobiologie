@@ -6,7 +6,6 @@ import Masonry from "../../engine/component/masonry/Masonry";
 import Geobiologie_content from "./Presentation_content";
 import Presentation_content from "./Presentation_content";
 import HR from "../../engine/component/atomic/HR";
-import Secondary from "./Secondary";
 
 export default function Geobiologie() {
   const { openModal } = useContext(ModalContext);

@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import Stage_content from "./Stage_content";
 
 export default function Sourcier() {
   return (
