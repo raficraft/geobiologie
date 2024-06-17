@@ -17,8 +17,7 @@ export default function IndexContent() {
 
         <section>
           <h2>
-            Découvrez l&apos;importance de la géobiologie avec [Nom de votre
-            entreprise]
+            Découvrez l&apos;importance de la géobiologie avec David Michel
           </h2>
           <h3>En savoir plus</h3>
           <p>
