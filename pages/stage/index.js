@@ -16,7 +16,7 @@ export default function Sourcier() {
 
       <main className="mainContent">
         <section className="content">
-          <Stage_content></Stage_content>
+          {/* <Stage_content></Stage_content> */}
         </section>
       </main>
     </>
