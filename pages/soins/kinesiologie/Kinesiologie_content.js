@@ -11,13 +11,13 @@ export default function KinesiologieContent() {
         <h2>Découvrez la kinésiologie avec David Michel</h2>
         <h3>Qu&apos;est-ce que la kinésiologie ?</h3>
         <p>
-          Étymologiquement, la kinésiologie signifie "science du mouvement".
-          Cette technique de rééquilibrage psycho-corporel vise à améliorer le
-          bien-être global de la personne en tenant compte des aspects
-          physiques, mentaux et émotionnels. En intégrant différentes approches,
-          la kinésiologie aide à comprendre le fonctionnement de
-          l&apos;individu, à détecter et à lever ses déséquilibres, et à
-          éveiller son potentiel.
+          Étymologiquement, la kinésiologie signifie &ldquo;science du
+          mouvement&ldquo;. Cette technique de rééquilibrage psycho-corporel
+          vise à améliorer le bien-être global de la personne en tenant compte
+          des aspects physiques, mentaux et émotionnels. En intégrant
+          différentes approches, la kinésiologie aide à comprendre le
+          fonctionnement de l&apos;individu, à détecter et à lever ses
+          déséquilibres, et à éveiller son potentiel.
         </p>
       </section>
 

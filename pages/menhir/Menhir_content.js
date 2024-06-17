@@ -16,7 +16,7 @@ export default function MenhirContent() {
           <h2>Découvrez la pose de menhir avec David Michel</h2>
           <h3>Qu&apos;est-ce qu&apos;un menhir ?</h3>
           <p>
-            Un menhir, souvent perçu comme une "antenne" naturelle, est un grand
+            Un menhir, souvent perçu comme une &ldquo;antenne&ldquo; naturelle, est un grand
             monolithe vertical utilisé depuis la préhistoire. Il capte
             l&apos;énergie du lieu et la redistribue, créant une alchimie entre
             les énergies telluriques de la Terre et cosmiques du Ciel. Poser un
