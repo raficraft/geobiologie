@@ -17,8 +17,8 @@ export default function Stage_content() {
       <article className="article article_home">
         <header>
           <h1>
-            Stage Initiatique Sourcier - Maîtrisez l&rsquo;Art de la Détection
-            de l&rsquo;Eau
+            Stage Initiatique Sourcier - Maîtrisez l'Art de la Détection de
+            l'Eau
           </h1>
         </header>
         <div className="content_AND_image">
@@ -29,13 +29,12 @@ export default function Stage_content() {
             <ul>
               <li>
                 <h4>
-                  Connaître la notion de filon d&rsquo;eau, une source, une
-                  nappe
+                  Connaître la notion de filon d'eau, une source, une nappe
                 </h4>
                 <p>
                   Apprenez à identifier et comprendre les différentes formations
-                  d&rsquo;eau souterraine, y compris les filons d&rsquo;eau, les
-                  sources et les nappes phréatiques.
+                  d'eau souterraine, y compris les filons d'eau, les sources et
+                  les nappes phréatiques.
                 </p>
               </li>
               <li>
@@ -43,44 +42,41 @@ export default function Stage_content() {
                 <p>
                   Acquérez la capacité de détecter des influences énergétiques
                   et des formes pensées qui peuvent affecter la recherche et la
-                  qualité de l&rsquo;eau.
+                  qualité de l'eau.
+                </p>
+              </li>
+              <li>
+                <h4>Reconnaître des poches d'eau et l'eau de surface</h4>
+                <p>
+                  Distinguez entre les poches d'eau souterraine et l'eau de
+                  surface, et apprenez à évaluer leur importance pour
+                  l'utilisation humaine et agricole.
                 </p>
               </li>
               <li>
                 <h4>
-                  Reconnaître des poches d&rsquo;eau et l&rsquo;eau de surface
+                  Savoir utiliser plusieurs outils pour détecter l'eau ; lobe
+                  antenne, baguette en L, pendule
                 </h4>
                 <p>
-                  Distinguez entre les poches d&rsquo;eau souterraine et
-                  l&rsquo;eau de surface, et apprenez à évaluer leur importance
-                  pour l&rsquo;utilisation humaine et agricole.
-                </p>
-              </li>
-              <li>
-                <h4>
-                  Savoir utiliser plusieurs outils pour détecter l&rsquo;eau ;
-                  lobe antenne, baguette en L, pendule
-                </h4>
-                <p>
-                  Maîtrisez l&rsquo;utilisation de divers outils traditionnels
-                  et modernes pour localiser efficacement les sources
-                  d&rsquo;eau souterraine.
+                  Maîtrisez l'utilisation de divers outils traditionnels et
+                  modernes pour localiser efficacement les sources d'eau
+                  souterraine.
                 </p>
               </li>
               <li>
                 <h4>Analyser le contexte hydrologique environnant</h4>
                 <p>
-                  Étudiez l&rsquo;environnement hydrologique pour mieux
-                  comprendre comment les caractéristiques géologiques et les
-                  activités humaines influencent la disponibilité et la qualité
-                  de l&rsquo;eau.
+                  Étudiez l'environnement hydrologique pour mieux comprendre
+                  comment les caractéristiques géologiques et les activités
+                  humaines influencent la disponibilité et la qualité de l'eau.
                 </p>
               </li>
               <li>
                 <h4>Avoir la bonne convention mentale</h4>
                 <p>
-                  Développez l&rsquo;attitude mentale et les conventions de
-                  pensée nécessaires pour réussir dans le métier de sourcier, en
+                  Développez l'attitude mentale et les conventions de pensée
+                  nécessaires pour réussir dans le métier de sourcier, en
                   renforçant la sensibilité et la réceptivité aux signaux
                   environnementaux.
                 </p>
@@ -92,9 +88,8 @@ export default function Stage_content() {
                 </h4>
                 <p>
                   Utilisez des diagrammes pour évaluer des paramètres critiques
-                  tels que la potabilité de l&rsquo;eau, son débit et sa
-                  profondeur, essentiels pour la planification des ressources en
-                  eau.
+                  tels que la potabilité de l'eau, son débit et sa profondeur,
+                  essentiels pour la planification des ressources en eau.
                 </p>
               </li>
               <li>
@@ -109,8 +104,8 @@ export default function Stage_content() {
                 <h4>Repérer le point le plus approprié pour forage et puits</h4>
                 <p>
                   Apprenez à sélectionner les sites optimaux pour le forage de
-                  puits, en maximisant l&rsquo;efficacité et en minimisant les
-                  impacts environnementaux.
+                  puits, en maximisant l'efficacité et en minimisant les impacts
+                  environnementaux.
                 </p>
               </li>
             </ul>
@@ -120,9 +115,8 @@ export default function Stage_content() {
               <li>
                 <h4>Expertise Professionnelle</h4>
                 <p>
-                  Bénéficiez de l&rsquo;expérience et des connaissances
-                  d&rsquo;experts reconnus dans le domaine de la détection de
-                  l&rsquo;eau.
+                  Bénéficiez de l'expérience et des connaissances d'experts
+                  reconnus dans le domaine de la détection de l'eau.
                 </p>
               </li>
               <li>
@@ -137,8 +131,7 @@ export default function Stage_content() {
                 <h4>Petits Groupes</h4>
                 <p>
                   Nous limitons la taille des groupes pour assurer une attention
-                  personnalisée et une expérience d&rsquo;apprentissage de
-                  qualité.
+                  personnalisée et une expérience d'apprentissage de qualité.
                 </p>
               </li>
               <li>
@@ -158,14 +151,13 @@ export default function Stage_content() {
               <li>Prochaines Dates : [Indiquer les dates disponibles]</li>
             </ul>
             <p>
-              Pour vous inscrire ou obtenir plus d&rsquo;informations sur notre
-              stage initiatique sourcier, veuillez visiter notre site web ou
-              nous contacter directement. Nous sommes ravis de vous guider dans
-              votre parcours pour devenir un sourcier compétent.
+              Pour vous inscrire ou obtenir plus d'informations sur notre stage
+              initiatique sourcier, veuillez visiter notre site web ou nous
+              contacter directement. Nous sommes ravis de vous guider dans votre
+              parcours pour devenir un sourcier compétent.
             </p>
             <p>
-              David Michel - Votre partenaire en exploration et détection
-              d&rsquo;eau
+              David Michel - Votre partenaire en exploration et détection d'eau
             </p>
           </section>
           <aside>
@@ -221,13 +213,12 @@ export default function Stage_content() {
                 <p>
                   Acquérez une compréhension approfondie des divers phénomènes
                   géologiques et énergétiques, et de leur impact sur
-                  l&rsquo;environnement et la santé.
+                  l'environnement et la santé.
                 </p>
               </li>
               <li>
                 <h4>
-                  Savoir se servir de son champ d&rsquo;énergie vitale ou bio
-                  champ
+                  Savoir se servir de son champ d'énergie vitale ou bio champ
                 </h4>
                 <p>
                   Apprenez à détecter et manipuler votre propre champ
@@ -236,8 +227,7 @@ export default function Stage_content() {
               </li>
               <li>
                 <h4>
-                  Comprendre l&rsquo;utilité d&rsquo;un menhir, la pose et le
-                  pentagramme
+                  Comprendre l'utilité d'un menhir, la pose et le pentagramme
                 </h4>
                 <p>
                   Découvrez comment les menhirs et les pentagrammes sont
@@ -249,7 +239,7 @@ export default function Stage_content() {
                 <h4>Découvrir les esprits de la nature</h4>
                 <p>
                   Initiez-vous à la communication avec les esprits de la nature
-                  et à l&rsquo;intégration de leur sagesse dans les pratiques
+                  et à l'intégration de leur sagesse dans les pratiques
                   géobiologiques.
                 </p>
               </li>
@@ -267,7 +257,7 @@ export default function Stage_content() {
               <li>
                 <h4>
                   Savoir utiliser le pendule, les diagrammes, le cadran Bovis,
-                  les échelles de nocivité et le diagramme de l&rsquo;équilibre
+                  les échelles de nocivité et le diagramme de l'équilibre
                   cosmo-tellurique
                 </h4>
                 <p>
@@ -287,12 +277,11 @@ export default function Stage_content() {
               </li>
               <li>
                 <h4>
-                  Pose d&rsquo;un menhir pour exemple sur le terrain et
-                  méthodologie
+                  Pose d'un menhir pour exemple sur le terrain et méthodologie
                 </h4>
                 <p>
-                  Observez et participez à la pose d&rsquo;un menhir, en
-                  apprenant les méthodes et les considérations pratiques.
+                  Observez et participez à la pose d'un menhir, en apprenant les
+                  méthodes et les considérations pratiques.
                 </p>
               </li>
               <li>
@@ -302,7 +291,7 @@ export default function Stage_content() {
                 </h4>
                 <p>
                   Mettez en pratique les techniques étudiées en travaillant sur
-                  des plans concrets pour l&rsquo;application des méthodes
+                  des plans concrets pour l'application des méthodes
                   géobiologiques.
                 </p>
               </li>
@@ -313,8 +302,8 @@ export default function Stage_content() {
               <li>
                 <h4>Expertise Approfondie</h4>
                 <p>
-                  Profitez de l&rsquo;expérience et des connaissances
-                  approfondies de spécialistes en géobiologie et en énergétique.
+                  Profitez de l'expérience et des connaissances approfondies de
+                  spécialistes en géobiologie et en énergétique.
                 </p>
               </li>
               <li>
@@ -341,7 +330,7 @@ export default function Stage_content() {
               <li>Prochaines Dates : [Indiquer les dates disponibles]</li>
             </ul>
             <p>
-              Pour plus d&rsquo;informations ou pour vous inscrire à notre stage
+              Pour plus d'informations ou pour vous inscrire à notre stage
               avancé en géobiologie, veuillez visiter notre site web ou nous
               contacter directement. Nous sommes impatients de vous aider à
               explorer et à maîtriser les mystères de la terre et de son
@@ -388,8 +377,8 @@ export default function Stage_content() {
                 </h4>
                 <p>
                   Découvrez les pratiques ancestrales pour utiliser les 7 bois
-                  de cristal afin d&rsquo;augmenter les vibrations et renforcer
-                  votre aura.
+                  de cristal afin d'augmenter les vibrations et renforcer votre
+                  aura.
                 </p>
               </li>
               <li>
@@ -398,20 +387,19 @@ export default function Stage_content() {
                   quatre directions
                 </h4>
                 <p>
-                  Maîtrisez l&rsquo;art du tracé des symboles sacrés pour créer
-                  des barrières de protection et diriger les énergies
-                  bénéfiques.
+                  Maîtrisez l'art du tracé des symboles sacrés pour créer des
+                  barrières de protection et diriger les énergies bénéfiques.
                 </p>
               </li>
               <li>
                 <h4>
-                  Connaître et apprendre à utiliser son champ d&rsquo;énergie
-                  vitale ou biochamps
+                  Connaître et apprendre à utiliser son champ d'énergie vitale
+                  ou biochamps
                 </h4>
                 <p>
                   Explorez les techniques pour comprendre et manipuler votre
-                  champ d&rsquo;énergie vitale afin de renforcer votre
-                  protection personnelle.
+                  champ d'énergie vitale afin de renforcer votre protection
+                  personnelle.
                 </p>
               </li>
               <li>
@@ -434,7 +422,7 @@ export default function Stage_content() {
                 </p>
               </li>
               <li>
-                <h4>Méthodologie passage d&rsquo;âme ou autres énergies</h4>
+                <h4>Méthodologie passage d'âme ou autres énergies</h4>
                 <p>
                   Familiarisez-vous avec les processus de transition énergétique
                   et apprenez à les gérer de manière appropriée pour assurer la
@@ -443,7 +431,7 @@ export default function Stage_content() {
               </li>
               <li>
                 <h4>
-                  Travail avec le double de lumière et cape d&rsquo;invisibilité
+                  Travail avec le double de lumière et cape d'invisibilité
                 </h4>
                 <p>
                   Explorez des techniques avancées pour renforcer votre
@@ -452,14 +440,14 @@ export default function Stage_content() {
                 </p>
               </li>
               <li>
-                <h4>Distinguer l&rsquo;énergie positive/négative</h4>
+                <h4>Distinguer l'énergie positive/négative</h4>
                 <p>
                   Développez votre discernement énergétique pour identifier les
                   énergies bénéfiques et nuisibles dans votre environnement.
                 </p>
               </li>
               <li>
-                <h4>Consécration d&rsquo;un brûle-parfum</h4>
+                <h4>Consécration d'un brûle-parfum</h4>
                 <p>
                   Apprenez des rituels de consécration pour purifier et
                   sanctifier votre espace personnel avec un brûle-parfum.
@@ -472,7 +460,7 @@ export default function Stage_content() {
                 </h4>
                 <p>
                   Explorez des prières et des rituels pour libérer et réintégrer
-                  les esprits minéraux dans le flux naturel de l&rsquo;énergie.
+                  les esprits minéraux dans le flux naturel de l'énergie.
                 </p>
               </li>
               <li>
@@ -496,13 +484,12 @@ export default function Stage_content() {
             <ul>
               <li>
                 <h4>
-                  Savoir utiliser le pendule et le diagramme d&rsquo;unités
-                  Bovis
+                  Savoir utiliser le pendule et le diagramme d'unités Bovis
                 </h4>
                 <p>
-                  Maîtrisez l&rsquo;utilisation de ces outils pour mesurer et
-                  évaluer les niveaux d&rsquo;énergie dans votre environnement
-                  et dans votre aura.
+                  Maîtrisez l'utilisation de ces outils pour mesurer et évaluer
+                  les niveaux d'énergie dans votre environnement et dans votre
+                  aura.
                 </p>
               </li>
               <li>
@@ -529,8 +516,8 @@ export default function Stage_content() {
               <li>
                 <h4>Expertise Avancée</h4>
                 <p>
-                  Bénéficiez de l&rsquo;expertise d&rsquo;instructeurs
-                  expérimentés dans le domaine de la protection énergétique.
+                  Bénéficiez de l'expertise d'instructeurs expérimentés dans le
+                  domaine de la protection énergétique.
                 </p>
               </li>
               <li>
@@ -550,7 +537,7 @@ export default function Stage_content() {
               <li>Prochaines Dates : [Indiquer les dates disponibles]</li>
             </ul>
             <p>
-              Pour plus d&rsquo;informations ou pour vous inscrire à notre stage
+              Pour plus d'informations ou pour vous inscrire à notre stage
               initiatique en protection énergétique, veuillez visiter notre site
               web ou nous contacter directement. Protégez-vous et renforcez
               votre pouvoir intérieur avec notre stage dédié à la protection

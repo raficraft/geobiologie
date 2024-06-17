@@ -26,14 +26,13 @@ export default function EnergieContent() {
 
       <section>
         <h2>Découvrez les soins énergétiques de David Michel</h2>
-        <h3>Qu&rsquo;est-ce qu&rsquo;un soin énergétique ?</h3>
+        <h3>Qu'est-ce qu'un soin énergétique ?</h3>
         <p>
           Les soins énergétiques sont des pratiques ancestrales visant à
-          rééquilibrer l&rsquo;énergie vitale du corps et de l&rsquo;esprit. Ils
-          peuvent être réalisés à distance, à partir d&rsquo;une photographie de
-          la personne, ou directement sur place, au sein de notre espace
-          énergétique spécialement conçu pour maximiser les bienfaits des
-          séances.
+          rééquilibrer l'énergie vitale du corps et de l'esprit. Ils peuvent
+          être réalisés à distance, à partir d'une photographie de la personne,
+          ou directement sur place, au sein de notre espace énergétique
+          spécialement conçu pour maximiser les bienfaits des séances.
         </p>
       </section>
 
@@ -51,9 +50,8 @@ export default function EnergieContent() {
           <li>
             <h3>Harmonisation du Flux Énergétique</h3>
             <p>
-              Les séances permettent d&rsquo;harmoniser les flux d&rsquo;énergie
-              entre le corps et l&rsquo;esprit, favorisant ainsi un état de
-              bien-être général.
+              Les séances permettent d'harmoniser les flux d'énergie entre le
+              corps et l'esprit, favorisant ainsi un état de bien-être général.
             </p>
           </li>
           <li>
@@ -84,18 +82,18 @@ export default function EnergieContent() {
       <section>
         <h2>Comment se déroule une séance de soin énergétique ?</h2>
         <p>
-          Lors d&rsquo;une séance de soin énergétique, nous utilisons diverses
-          techniques pour canaliser et diriger l&rsquo;énergie vers les zones de
-          votre corps qui en ont le plus besoin. Nos méthodes incluent
-          l&rsquo;utilisation de cristaux, de pendules, et d&rsquo;autres outils
-          énergétiques pour maximiser les effets thérapeutiques.
+          Lors d'une séance de soin énergétique, nous utilisons diverses
+          techniques pour canaliser et diriger l'énergie vers les zones de votre
+          corps qui en ont le plus besoin. Nos méthodes incluent l'utilisation
+          de cristaux, de pendules, et d'autres outils énergétiques pour
+          maximiser les effets thérapeutiques.
         </p>
       </section>
 
       <section>
-        <h2>À qui s&rsquo;adressent nos soins énergétiques ?</h2>
+        <h2>À qui s'adressent nos soins énergétiques ?</h2>
         <p>
-          Nos soins énergétiques s&rsquo;adressent à toute personne souhaitant
+          Nos soins énergétiques s'adressent à toute personne souhaitant
           améliorer son bien-être physique et mental, que vous soyez :
         </p>
         <ul>
@@ -119,7 +117,7 @@ export default function EnergieContent() {
         <ul>
           <li>
             <strong>Expertise et expérience :</strong> Avec 10 années
-            d&rsquo;expérience dans le domaine des soins énergétiques et de la
+            d'expérience dans le domaine des soins énergétiques et de la
             géobiologie, nous avons aidé de nombreuses personnes à retrouver
             leur équilibre énergétique.
           </li>
@@ -137,12 +135,11 @@ export default function EnergieContent() {
       </section>
 
       <section>
-        <h2>Contactez-nous dès aujourd&rsquo;hui !</h2>
+        <h2>Contactez-nous dès aujourd'hui !</h2>
         <p>
           Prenez rendez-vous pour une séance de soin énergétique et ressentez
-          les bienfaits d&rsquo;une énergie renouvelée. Que ce soit à distance
-          ou sur place, nous sommes là pour vous accompagner vers un mieux-être
-          global.
+          les bienfaits d'une énergie renouvelée. Que ce soit à distance ou sur
+          place, nous sommes là pour vous accompagner vers un mieux-être global.
         </p>
       </section>
     </article>

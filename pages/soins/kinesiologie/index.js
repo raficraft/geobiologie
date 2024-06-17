@@ -9,15 +9,14 @@ export default function KinesiologieContent() {
 
       <section>
         <h2>Découvrez la kinésiologie avec David Michel</h2>
-        <h3>Qu&rsquo;est-ce que la kinésiologie ?</h3>
+        <h3>Qu'est-ce que la kinésiologie ?</h3>
         <p>
           Étymologiquement, la kinésiologie signifie "science du mouvement".
           Cette technique de rééquilibrage psycho-corporel vise à améliorer le
           bien-être global de la personne en tenant compte des aspects
           physiques, mentaux et émotionnels. En intégrant différentes approches,
-          la kinésiologie aide à comprendre le fonctionnement de
-          l&rsquo;individu, à détecter et à lever ses déséquilibres, et à
-          éveiller son potentiel.
+          la kinésiologie aide à comprendre le fonctionnement de l'individu, à
+          détecter et à lever ses déséquilibres, et à éveiller son potentiel.
         </p>
       </section>
 
@@ -34,15 +33,15 @@ export default function KinesiologieContent() {
           <li>
             <h3>Approche Holistique</h3>
             <p>
-              Prise en compte de l&rsquo;ensemble de l&rsquo;être, y compris les
-              dimensions physiques, mentales et émotionnelles.
+              Prise en compte de l'ensemble de l'être, y compris les dimensions
+              physiques, mentales et émotionnelles.
             </p>
           </li>
           <li>
             <h3>Rééquilibrage Énergétique</h3>
             <p>
-              Techniques spécifiques pour rétablir l&rsquo;équilibre énergétique
-              et améliorer le bien-être général.
+              Techniques spécifiques pour rétablir l'équilibre énergétique et
+              améliorer le bien-être général.
             </p>
           </li>
         </ul>
@@ -62,7 +61,7 @@ export default function KinesiologieContent() {
             <h3>Amélioration du Bien-être Émotionnel</h3>
             <p>
               Libération des émotions refoulées et réduction du stress, de
-              l&rsquo;anxiété et des phobies.
+              l'anxiété et des phobies.
             </p>
           </li>
           <li>
@@ -84,14 +83,14 @@ export default function KinesiologieContent() {
       </section>
 
       <section>
-        <h2>Exemples d&rsquo;applications de la kinésiologie</h2>
+        <h2>Exemples d'applications de la kinésiologie</h2>
         <ul>
           <li>
             <h3>Gestion des Allergies</h3>
             <p>
               Détection et gestion des allergies alimentaires et
-              environnementales à l&rsquo;aide de tests musculaires et de
-              techniques de rééquilibrage.
+              environnementales à l'aide de tests musculaires et de techniques
+              de rééquilibrage.
             </p>
           </li>
           <li>
@@ -103,9 +102,9 @@ export default function KinesiologieContent() {
             </p>
           </li>
           <li>
-            <h3>Réduction du Stress et de l&rsquo;Anxiété</h3>
+            <h3>Réduction du Stress et de l'Anxiété</h3>
             <p>
-              Techniques spécifiques pour réduire le stress et l&rsquo;anxiété,
+              Techniques spécifiques pour réduire le stress et l'anxiété,
               améliorant ainsi la qualité de vie globale.
             </p>
           </li>
@@ -115,13 +114,13 @@ export default function KinesiologieContent() {
       <section>
         <h2>Comment se déroule une séance de kinésiologie ?</h2>
         <p>
-          Lors d&rsquo;une séance de kinésiologie, le praticien utilise des
-          tests musculaires pour évaluer la réponse du corps à différents
-          stimuli. Ces tests permettent d&rsquo;identifier les déséquilibres
-          énergétiques et les blocages émotionnels. Ensuite, des techniques
-          spécifiques de rééquilibrage sont appliquées pour restaurer
-          l&rsquo;harmonie et le bien-être. Chaque séance est personnalisée en
-          fonction des besoins spécifiques de l&rsquo;individu.
+          Lors d'une séance de kinésiologie, le praticien utilise des tests
+          musculaires pour évaluer la réponse du corps à différents stimuli. Ces
+          tests permettent d'identifier les déséquilibres énergétiques et les
+          blocages émotionnels. Ensuite, des techniques spécifiques de
+          rééquilibrage sont appliquées pour restaurer l'harmonie et le
+          bien-être. Chaque séance est personnalisée en fonction des besoins
+          spécifiques de l'individu.
         </p>
       </section>
 
@@ -133,9 +132,8 @@ export default function KinesiologieContent() {
           <li>
             <h3>Expertise et expérience</h3>
             <p>
-              Avec [X] années d&rsquo;expérience en kinésiologie, nous avons
-              aidé de nombreux clients à retrouver leur équilibre et leur
-              bien-être.
+              Avec [X] années d'expérience en kinésiologie, nous avons aidé de
+              nombreux clients à retrouver leur équilibre et leur bien-être.
             </p>
           </li>
           <li>
@@ -149,8 +147,8 @@ export default function KinesiologieContent() {
             <h3>Cadre bienveillant et sécurisant</h3>
             <p>
               Nous offrons un environnement sûr et bienveillant pour vous
-              permettre de vous sentir à l&rsquo;aise et soutenu tout au long de
-              votre parcours.
+              permettre de vous sentir à l'aise et soutenu tout au long de votre
+              parcours.
             </p>
           </li>
         </ul>
@@ -160,8 +158,8 @@ export default function KinesiologieContent() {
         <h2>Contactez-nous pour une consultation en kinésiologie</h2>
         <p>
           Si vous souhaitez découvrir les bienfaits de la kinésiologie et
-          améliorer votre bien-être global, n&rsquo;hésitez pas à nous contacter
-          pour une consultation. Nous sommes là pour vous accompagner vers un
+          améliorer votre bien-être global, n'hésitez pas à nous contacter pour
+          une consultation. Nous sommes là pour vous accompagner vers un
           équilibre harmonieux et une meilleure qualité de vie.
         </p>
       </section>

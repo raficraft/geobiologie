@@ -36,8 +36,8 @@ export default function Stage_content() {
                 </h4>
                 <p>
                   Découvrez les pratiques ancestrales pour utiliser les 7 bois
-                  de cristal afin d&rsquo;augmenter les vibrations et renforcer
-                  votre aura.
+                  de cristal afin d'augmenter les vibrations et renforcer votre
+                  aura.
                 </p>
               </li>
               <li>
@@ -46,20 +46,19 @@ export default function Stage_content() {
                   quatre directions
                 </h4>
                 <p>
-                  Maîtrisez l&rsquo;art du tracé des symboles sacrés pour créer
-                  des barrières de protection et diriger les énergies
-                  bénéfiques.
+                  Maîtrisez l'art du tracé des symboles sacrés pour créer des
+                  barrières de protection et diriger les énergies bénéfiques.
                 </p>
               </li>
               <li>
                 <h4>
-                  Connaître et apprendre à utiliser son champ d&rsquo;énergie
-                  vitale ou biochamps
+                  Connaître et apprendre à utiliser son champ d'énergie vitale
+                  ou biochamps
                 </h4>
                 <p>
                   Explorez les techniques pour comprendre et manipuler votre
-                  champ d&rsquo;énergie vitale afin de renforcer votre
-                  protection personnelle.
+                  champ d'énergie vitale afin de renforcer votre protection
+                  personnelle.
                 </p>
               </li>
               <li>
@@ -82,7 +81,7 @@ export default function Stage_content() {
                 </p>
               </li>
               <li>
-                <h4>Méthodologie passage d&rsquo;âme ou autres énergies</h4>
+                <h4>Méthodologie passage d'âme ou autres énergies</h4>
                 <p>
                   Familiarisez-vous avec les processus de transition énergétique
                   et apprenez à les gérer de manière appropriée pour assurer la
@@ -91,7 +90,7 @@ export default function Stage_content() {
               </li>
               <li>
                 <h4>
-                  Travail avec le double de lumière et cape d&rsquo;invisibilité
+                  Travail avec le double de lumière et cape d'invisibilité
                 </h4>
                 <p>
                   Explorez des techniques avancées pour renforcer votre
@@ -100,14 +99,14 @@ export default function Stage_content() {
                 </p>
               </li>
               <li>
-                <h4>Distinguer l&rsquo;énergie positive/négative</h4>
+                <h4>Distinguer l'énergie positive/négative</h4>
                 <p>
                   Développez votre discernement énergétique pour identifier les
                   énergies bénéfiques et nuisibles dans votre environnement.
                 </p>
               </li>
               <li>
-                <h4>Consécration d&rsquo;un brûle-parfum</h4>
+                <h4>Consécration d'un brûle-parfum</h4>
                 <p>
                   Apprenez des rituels de consécration pour purifier et
                   sanctifier votre espace personnel avec un brûle-parfum.
@@ -120,7 +119,7 @@ export default function Stage_content() {
                 </h4>
                 <p>
                   Explorez des prières et des rituels pour libérer et réintégrer
-                  les esprits minéraux dans le flux naturel de l&rsquo;énergie.
+                  les esprits minéraux dans le flux naturel de l'énergie.
                 </p>
               </li>
               <li>
@@ -144,13 +143,12 @@ export default function Stage_content() {
             <ul>
               <li>
                 <h4>
-                  Savoir utiliser le pendule et le diagramme d&rsquo;unités
-                  Bovis
+                  Savoir utiliser le pendule et le diagramme d'unités Bovis
                 </h4>
                 <p>
-                  Maîtrisez l&rsquo;utilisation de ces outils pour mesurer et
-                  évaluer les niveaux d&rsquo;énergie dans votre environnement
-                  et dans votre aura.
+                  Maîtrisez l'utilisation de ces outils pour mesurer et évaluer
+                  les niveaux d'énergie dans votre environnement et dans votre
+                  aura.
                 </p>
               </li>
               <li>
@@ -177,8 +175,8 @@ export default function Stage_content() {
               <li>
                 <h4>Expertise Avancée</h4>
                 <p>
-                  Bénéficiez de l&rsquo;expertise d&rsquo;instructeurs
-                  expérimentés dans le domaine de la protection énergétique.
+                  Bénéficiez de l'expertise d'instructeurs expérimentés dans le
+                  domaine de la protection énergétique.
                 </p>
               </li>
               <li>
@@ -191,7 +189,7 @@ export default function Stage_content() {
             </ul>
 
             <p>
-              Pour plus d&rsquo;informations ou pour vous inscrire à notre stage
+              Pour plus d'informations ou pour vous inscrire à notre stage
               initiatique en protection énergétique, veuillez visiter notre site
               web ou nous contacter directement. Protégez-vous et renforcez
               votre pouvoir intérieur avec notre stage dédié à la protection

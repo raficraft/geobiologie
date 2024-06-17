@@ -14,15 +14,14 @@ export default function MenhirContent() {
 
         <section>
           <h2>Découvrez la pose de menhir avec David Michel</h2>
-          <h3>Qu&rsquo;est-ce qu&rsquo;un menhir ?</h3>
+          <h3>Qu'est-ce qu'un menhir ?</h3>
           <p>
             Un menhir, souvent perçu comme une "antenne" naturelle, est un grand
-            monolithe vertical utilisé depuis la préhistoire. Il capte
-            l&rsquo;énergie du lieu et la redistribue, créant une alchimie entre
-            les énergies telluriques de la Terre et cosmiques du Ciel. Poser un
-            menhir dans un environnement spécifique permet de dynamiser les
-            terrains perturbés et de repousser les réseaux énergétiques
-            négatifs.
+            monolithe vertical utilisé depuis la préhistoire. Il capte l'énergie
+            du lieu et la redistribue, créant une alchimie entre les énergies
+            telluriques de la Terre et cosmiques du Ciel. Poser un menhir dans
+            un environnement spécifique permet de dynamiser les terrains
+            perturbés et de repousser les réseaux énergétiques négatifs.
           </p>
         </section>
 
@@ -57,7 +56,7 @@ export default function MenhirContent() {
               <h3>Amélioration de la Productivité Agricole</h3>
               <p>
                 Dans les exploitations agricoles, les menhirs aident à améliorer
-                l&rsquo;équilibre énergétique, ce qui peut se traduire par une
+                l'équilibre énergétique, ce qui peut se traduire par une
                 augmentation de la productivité et de la santé des cultures et
                 des animaux.
               </p>
@@ -93,7 +92,7 @@ export default function MenhirContent() {
               <h3>Installation et Orientation</h3>
               <p>
                 Les menhirs sont érigés et orientés précisément pour maximiser
-                leur capacité à canaliser et redistribuer l&rsquo;énergie.
+                leur capacité à canaliser et redistribuer l'énergie.
               </p>
             </li>
             <li>
@@ -101,7 +100,7 @@ export default function MenhirContent() {
               <p>
                 Une fois en place, les menhirs sont activés à travers des
                 rituels qui visent à harmoniser leur énergie avec celle de
-                l&rsquo;environnement.
+                l'environnement.
               </p>
             </li>
           </ul>
@@ -113,9 +112,9 @@ export default function MenhirContent() {
             <li>
               <h3>Expertise et expérience</h3>
               <p>
-                Avec [X] années d&rsquo;expérience dans la géo-poncture, notre
-                équipe possède une expertise unique en matière de manipulation
-                et d&rsquo;harmonisation des énergies telluriques et cosmiques.
+                Avec [X] années d'expérience dans la géo-poncture, notre équipe
+                possède une expertise unique en matière de manipulation et
+                d'harmonisation des énergies telluriques et cosmiques.
               </p>
             </li>
             <li>
@@ -138,11 +137,11 @@ export default function MenhirContent() {
         <section>
           <h2>Contactez-nous pour une consultation en pose de menhirs</h2>
           <p>
-            Si vous êtes intéressé par l&rsquo;amélioration de l&rsquo;équilibre
-            énergétique de votre maison, de votre exploitation agricole ou de
-            tout autre grand espace, n&rsquo;hésitez pas à nous contacter pour
-            une consultation. Nous sommes prêts à vous aider à créer un
-            environnement harmonieux et énergétiquement équilibré.
+            Si vous êtes intéressé par l'amélioration de l'équilibre énergétique
+            de votre maison, de votre exploitation agricole ou de tout autre
+            grand espace, n'hésitez pas à nous contacter pour une consultation.
+            Nous sommes prêts à vous aider à créer un environnement harmonieux
+            et énergétiquement équilibré.
           </p>
         </section>
       </article>

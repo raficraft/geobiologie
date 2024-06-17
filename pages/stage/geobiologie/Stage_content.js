@@ -49,13 +49,12 @@ export default function Stage_content() {
                 <p>
                   Acquérez une compréhension approfondie des divers phénomènes
                   géologiques et énergétiques, et de leur impact sur
-                  l&rsquo;environnement et la santé.
+                  l'environnement et la santé.
                 </p>
               </li>
               <li>
                 <h4>
-                  Savoir se servir de son champ d&rsquo;énergie vitale ou bio
-                  champ
+                  Savoir se servir de son champ d'énergie vitale ou bio champ
                 </h4>
                 <p>
                   Apprenez à détecter et manipuler votre propre champ
@@ -64,8 +63,7 @@ export default function Stage_content() {
               </li>
               <li>
                 <h4>
-                  Comprendre l&rsquo;utilité d&rsquo;un menhir, la pose et le
-                  pentagramme
+                  Comprendre l'utilité d'un menhir, la pose et le pentagramme
                 </h4>
                 <p>
                   Découvrez comment les menhirs et les pentagrammes sont
@@ -77,7 +75,7 @@ export default function Stage_content() {
                 <h4>Découvrir les esprits de la nature</h4>
                 <p>
                   Initiez-vous à la communication avec les esprits de la nature
-                  et à l&rsquo;intégration de leur sagesse dans les pratiques
+                  et à l'intégration de leur sagesse dans les pratiques
                   géobiologiques.
                 </p>
               </li>
@@ -95,7 +93,7 @@ export default function Stage_content() {
               <li>
                 <h4>
                   Savoir utiliser le pendule, les diagrammes, le cadran Bovis,
-                  les échelles de nocivité et le diagramme de l&rsquo;équilibre
+                  les échelles de nocivité et le diagramme de l'équilibre
                   cosmo-tellurique
                 </h4>
                 <p>
@@ -115,12 +113,11 @@ export default function Stage_content() {
               </li>
               <li>
                 <h4>
-                  Pose d&rsquo;un menhir pour exemple sur le terrain et
-                  méthodologie
+                  Pose d'un menhir pour exemple sur le terrain et méthodologie
                 </h4>
                 <p>
-                  Observez et participez à la pose d&rsquo;un menhir, en
-                  apprenant les méthodes et les considérations pratiques.
+                  Observez et participez à la pose d'un menhir, en apprenant les
+                  méthodes et les considérations pratiques.
                 </p>
               </li>
               <li>
@@ -130,7 +127,7 @@ export default function Stage_content() {
                 </h4>
                 <p>
                   Mettez en pratique les techniques étudiées en travaillant sur
-                  des plans concrets pour l&rsquo;application des méthodes
+                  des plans concrets pour l'application des méthodes
                   géobiologiques.
                 </p>
               </li>
@@ -141,8 +138,8 @@ export default function Stage_content() {
               <li>
                 <h4>Expertise Approfondie</h4>
                 <p>
-                  Profitez de l&rsquo;expérience et des connaissances
-                  approfondies de spécialistes en géobiologie et en énergétique.
+                  Profitez de l'expérience et des connaissances approfondies de
+                  spécialistes en géobiologie et en énergétique.
                 </p>
               </li>
               <li>
@@ -162,7 +159,7 @@ export default function Stage_content() {
             </ul>
 
             <p>
-              Pour plus d&rsquo;informations ou pour vous inscrire à notre stage
+              Pour plus d'informations ou pour vous inscrire à notre stage
               avancé en géobiologie, veuillez visiter notre site web ou nous
               contacter directement. Nous sommes impatients de vous aider à
               explorer et à maîtriser les mystères de la terre et de son
