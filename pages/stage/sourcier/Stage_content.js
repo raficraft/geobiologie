@@ -17,8 +17,8 @@ export default function Stage_content() {
       <article className="article article_home">
         <header>
           <h1>
-            Stage Initiatique Sourcier - Maîtrisez l'Art de la Détection de
-            l'Eau
+            Stage Initiatique Sourcier - Maîtrisez l&apos;Art de la Détection de
+            l&apos;Eau
           </h1>
         </header>
         <div className="content_AND_image">
@@ -29,12 +29,12 @@ export default function Stage_content() {
             <ul>
               <li>
                 <h4>
-                  Connaître la notion de filon d'eau, une source, une nappe
+                  Connaître la notion de filon d&apos;eau, une source, une nappe
                 </h4>
                 <p>
                   Apprenez à identifier et comprendre les différentes formations
-                  d'eau souterraine, y compris les filons d'eau, les sources et
-                  les nappes phréatiques.
+                  d&apos;eau souterraine, y compris les filons d&apos;eau, les
+                  sources et les nappes phréatiques.
                 </p>
               </li>
               <li>
@@ -42,41 +42,44 @@ export default function Stage_content() {
                 <p>
                   Acquérez la capacité de détecter des influences énergétiques
                   et des formes pensées qui peuvent affecter la recherche et la
-                  qualité de l'eau.
-                </p>
-              </li>
-              <li>
-                <h4>Reconnaître des poches d'eau et l'eau de surface</h4>
-                <p>
-                  Distinguez entre les poches d'eau souterraine et l'eau de
-                  surface, et apprenez à évaluer leur importance pour
-                  l'utilisation humaine et agricole.
+                  qualité de l&apos;eau.
                 </p>
               </li>
               <li>
                 <h4>
-                  Savoir utiliser plusieurs outils pour détecter l'eau ; lobe
-                  antenne, baguette en L, pendule
+                  Reconnaître des poches d&apos;eau et l&apos;eau de surface
                 </h4>
                 <p>
-                  Maîtrisez l'utilisation de divers outils traditionnels et
-                  modernes pour localiser efficacement les sources d'eau
+                  Distinguez entre les poches d&apos;eau souterraine et
+                  l&apos;eau de surface, et apprenez à évaluer leur importance
+                  pour l&apos;utilisation humaine et agricole.
+                </p>
+              </li>
+              <li>
+                <h4>
+                  Savoir utiliser plusieurs outils pour détecter l&apos;eau ;
+                  lobe antenne, baguette en L, pendule
+                </h4>
+                <p>
+                  Maîtrisez l&apos;utilisation de divers outils traditionnels et
+                  modernes pour localiser efficacement les sources d&apos;eau
                   souterraine.
                 </p>
               </li>
               <li>
                 <h4>Analyser le contexte hydrologique environnant</h4>
                 <p>
-                  Étudiez l'environnement hydrologique pour mieux comprendre
-                  comment les caractéristiques géologiques et les activités
-                  humaines influencent la disponibilité et la qualité de l'eau.
+                  Étudiez l&apos;environnement hydrologique pour mieux
+                  comprendre comment les caractéristiques géologiques et les
+                  activités humaines influencent la disponibilité et la qualité
+                  de l&apos;eau.
                 </p>
               </li>
               <li>
                 <h4>Avoir la bonne convention mentale</h4>
                 <p>
-                  Développez l'attitude mentale et les conventions de pensée
-                  nécessaires pour réussir dans le métier de sourcier, en
+                  Développez l&apos;attitude mentale et les conventions de
+                  pensée nécessaires pour réussir dans le métier de sourcier, en
                   renforçant la sensibilité et la réceptivité aux signaux
                   environnementaux.
                 </p>
@@ -88,8 +91,9 @@ export default function Stage_content() {
                 </h4>
                 <p>
                   Utilisez des diagrammes pour évaluer des paramètres critiques
-                  tels que la potabilité de l'eau, son débit et sa profondeur,
-                  essentiels pour la planification des ressources en eau.
+                  tels que la potabilité de l&apos;eau, son débit et sa
+                  profondeur, essentiels pour la planification des ressources en
+                  eau.
                 </p>
               </li>
               <li>
@@ -104,8 +108,8 @@ export default function Stage_content() {
                 <h4>Repérer le point le plus approprié pour forage et puits</h4>
                 <p>
                   Apprenez à sélectionner les sites optimaux pour le forage de
-                  puits, en maximisant l'efficacité et en minimisant les impacts
-                  environnementaux.
+                  puits, en maximisant l&apos;efficacité et en minimisant les
+                  impacts environnementaux.
                 </p>
               </li>
             </ul>
@@ -115,8 +119,9 @@ export default function Stage_content() {
               <li>
                 <h4>Expertise Professionnelle</h4>
                 <p>
-                  Bénéficiez de l'expérience et des connaissances d'experts
-                  reconnus dans le domaine de la détection de l'eau.
+                  Bénéficiez de l&apos;expérience et des connaissances
+                  d&apos;experts reconnus dans le domaine de la détection de
+                  l&apos;eau.
                 </p>
               </li>
               <li>
@@ -131,7 +136,8 @@ export default function Stage_content() {
                 <h4>Petits Groupes</h4>
                 <p>
                   Nous limitons la taille des groupes pour assurer une attention
-                  personnalisée et une expérience d'apprentissage de qualité.
+                  personnalisée et une expérience d&apos;apprentissage de
+                  qualité.
                 </p>
               </li>
               <li>
@@ -144,13 +150,14 @@ export default function Stage_content() {
             </ul>
 
             <p>
-              Pour vous inscrire ou obtenir plus d'informations sur notre stage
-              initiatique sourcier, veuillez visiter notre site web ou nous
-              contacter directement. Nous sommes ravis de vous guider dans votre
-              parcours pour devenir un sourcier compétent.
+              Pour vous inscrire ou obtenir plus d&apos;informations sur notre
+              stage initiatique sourcier, veuillez visiter notre site web ou
+              nous contacter directement. Nous sommes ravis de vous guider dans
+              votre parcours pour devenir un sourcier compétent.
             </p>
             <p>
-              David Michel - Votre partenaire en exploration et détection d'eau
+              David Michel - Votre partenaire en exploration et détection
+              d&apos;eau
             </p>
           </section>
           <aside>
