@@ -24,8 +24,8 @@ export default function Stage_content() {
         <div className="content_AND_image">
           <section className="content_AND_image--content">
             <h2>
-              Explorez les secrets de la protection énergétique avec [Nom de
-              votre entreprise]
+              Explorez les secrets de la protection énergétique avec David
+              Michel
             </h2>
 
             <h3>Objectifs du Stage</h3>
