@@ -21,17 +21,19 @@ export default function OndesContent() {
             électromagnétiques (EMI) ?
           </h3>
           <p>
-            L'énergie électrique et magnétique émise par de nombreux appareils
-            électroniques peut perturber le fonctionnement d'autres appareils
-            électroniques. La majorité des problèmes d'interférences
-            électromagnétiques (EMI) proviennent de la bande des radiofréquences
-            (RF) comprise entre 30 kHz et 10 GHz. Le blindage contre les EMI
-            et/ou les RF est essentiel pour diverses raisons, notamment pour
-            exclure et bloquer les signaux indésirables et pour empêcher
-            l'interception non autorisée de signaux.
+            L&apos;énergie électrique et magnétique émise par de nombreux
+            appareils électroniques peut perturber le fonctionnement
+            d&apos;autres appareils électroniques. La majorité des problèmes
+            d&apos;interférences électromagnétiques (EMI) proviennent de la
+            bande des radiofréquences (RF) comprise entre 30 kHz et 10 GHz. Le
+            blindage contre les EMI et/ou les RF est essentiel pour diverses
+            raisons, notamment pour exclure et bloquer les signaux indésirables
+            et pour empêcher l&apos;interception non autorisée de signaux.
           </p>
 
-          <h3>Les raisons d'installer une protection contre les EMI et RF</h3>
+          <h3>
+            Les raisons d&apos;installer une protection contre les EMI et RF
+          </h3>
           <ul>
             <li>
               <h4>Exclusion des Signaux Indésirables</h4>
@@ -48,9 +50,9 @@ export default function OndesContent() {
               </p>
             </li>
             <li>
-              <h4>Prévention de l'Interception Non Autorisée</h4>
+              <h4>Prévention de l&apos;Interception Non Autorisée</h4>
               <p>
-                Protéger contre l'interception non autorisée de signaux
+                Protéger contre l&apos;interception non autorisée de signaux
                 micro-ondes et radio, assurant ainsi la confidentialité des
                 communications.
               </p>
@@ -60,7 +62,7 @@ export default function OndesContent() {
           <h3>Les avantages des films de protection solaires métallisés</h3>
           <ul>
             <li>
-              <h4>Réflexion de l'Énergie Solaire</h4>
+              <h4>Réflexion de l&apos;Énergie Solaire</h4>
               <p>
                 Réduire la chaleur transmise par le soleil, contribuant à une
                 meilleure régulation de la température intérieure.
@@ -69,8 +71,8 @@ export default function OndesContent() {
             <li>
               <h4>Réduction de la Lumière Visible</h4>
               <p>
-                Atténuer l'intensité de la lumière visible, améliorant ainsi le
-                confort visuel à l'intérieur.
+                Atténuer l&apos;intensité de la lumière visible, améliorant
+                ainsi le confort visuel à l&apos;intérieur.
               </p>
             </li>
             <li>
@@ -97,7 +99,7 @@ export default function OndesContent() {
             />
           </Link>
           <p className="text-center">
-            Document Pdf. Cliquer sur l'image pour consulter
+            Document Pdf. Cliquer sur l&apos;image pour consulter
           </p>
         </div>
       </section>
@@ -112,8 +114,8 @@ export default function OndesContent() {
           <li>
             <h4>Évaluation des Besoins</h4>
             <p>
-              Analyse des appareils électroniques et de l'environnement pour
-              déterminer les sources potentielles d'interférences
+              Analyse des appareils électroniques et de l&apos;environnement
+              pour déterminer les sources potentielles d&apos;interférences
               électromagnétiques.
             </p>
           </li>
@@ -121,7 +123,7 @@ export default function OndesContent() {
             <h4>Sélection des Matériaux</h4>
             <p>
               Choix des films de protection métallisés adaptés aux besoins
-              spécifiques de l'espace à protéger.
+              spécifiques de l&apos;espace à protéger.
             </p>
           </li>
           <li>
@@ -135,7 +137,7 @@ export default function OndesContent() {
           <li>
             <h4>Tests et Vérifications</h4>
             <p>
-              Réalisation de tests pour s'assurer que les interférences
+              Réalisation de tests pour s&apos;assurer que les interférences
               électromagnétiques sont effectivement atténuées ou éliminées.
             </p>
           </li>
@@ -151,7 +153,7 @@ export default function OndesContent() {
           <li>
             <h4>Expertise et expérience</h4>
             <p>
-              Avec [X] années d'expérience dans le domaine de la protection
+              Avec [X] années d&apos;expérience dans le domaine de la protection
               électrosensible, nous avons aidé de nombreux clients à protéger
               leurs appareils et leurs espaces contre les interférences
               électromagnétiques.
@@ -181,7 +183,7 @@ export default function OndesContent() {
         </h2>
         <p>
           Si vous souhaitez protéger vos appareils électroniques et votre espace
-          contre les interférences électromagnétiques, n'hésitez pas à nous
+          contre les interférences électromagnétiques, n&apos;hésitez pas à nous
           contacter pour une consultation. Nous sommes là pour vous offrir des
           solutions de protection sur mesure et efficaces.
         </p>

@@ -5,22 +5,23 @@ export default function PsyContent() {
     <article className="article article_home">
       <header>
         <h1>
-          Psychanalyse - Exploration de l'Inconscient pour une Transformation
-          Profonde
+          Psychanalyse - Exploration de l&apos;Inconscient pour une
+          Transformation Profonde
         </h1>
       </header>
 
       <section>
         <h2>Découvrez la méthode psychanalytique de David Michel</h2>
-        <h3>Qu'est-ce que la psychanalyse ?</h3>
+        <h3>Qu&apos;est-ce que la psychanalyse ?</h3>
         <p>
           La psychanalyse est une méthode psychothérapeutique développée par
           Sigmund Freud au début du XXe siècle. Cette pratique vise à explorer
-          l'inconscient des patients pour les aider à résoudre leurs difficultés
-          psychologiques et à améliorer leur bien-être mental. En plongeant dans
-          les profondeurs de l'inconscient, la psychanalyse permet de mettre en
-          lumière les conflits internes, les souvenirs refoulés et les désirs
-          inconscients qui influencent notre comportement et nos émotions.
+          l&apos;inconscient des patients pour les aider à résoudre leurs
+          difficultés psychologiques et à améliorer leur bien-être mental. En
+          plongeant dans les profondeurs de l&apos;inconscient, la psychanalyse
+          permet de mettre en lumière les conflits internes, les souvenirs
+          refoulés et les désirs inconscients qui influencent notre comportement
+          et nos émotions.
         </p>
       </section>
 
@@ -28,7 +29,7 @@ export default function PsyContent() {
         <h2>Les principes fondamentaux de la psychanalyse</h2>
         <ul>
           <li>
-            <h3>Exploration de l'Inconscient</h3>
+            <h3>Exploration de l&apos;Inconscient</h3>
             <p>
               Identifier et comprendre les pensées, les sentiments et les
               souvenirs cachés qui influencent notre comportement.
@@ -87,8 +88,9 @@ export default function PsyContent() {
           <li>
             <h3>Réduction des Symptômes Psychologiques</h3>
             <p>
-              Elle peut aider à atténuer divers symptômes tels que l'anxiété, la
-              dépression, les phobies et les troubles de l'humeur.
+              Elle peut aider à atténuer divers symptômes tels que
+              l&apos;anxiété, la dépression, les phobies et les troubles de
+              l&apos;humeur.
             </p>
           </li>
         </ul>
@@ -97,13 +99,13 @@ export default function PsyContent() {
       <section>
         <h2>Comment se déroule une séance de psychanalyse ?</h2>
         <p>
-          Lors d'une séance de psychanalyse, le patient est encouragé à parler
-          librement de ses pensées, de ses émotions et de ses souvenirs. Le
-          psychanalyste écoute attentivement et propose des interprétations pour
-          aider le patient à comprendre ses conflits internes. Ce processus
-          d'exploration et d'interprétation permet au patient de prendre
-          conscience des aspects inconscients de sa psyché et de travailler sur
-          eux.
+          Lors d&apos;une séance de psychanalyse, le patient est encouragé à
+          parler librement de ses pensées, de ses émotions et de ses souvenirs.
+          Le psychanalyste écoute attentivement et propose des interprétations
+          pour aider le patient à comprendre ses conflits internes. Ce processus
+          d&apos;exploration et d&apos;interprétation permet au patient de
+          prendre conscience des aspects inconscients de sa psyché et de
+          travailler sur eux.
         </p>
       </section>
 
@@ -115,9 +117,9 @@ export default function PsyContent() {
           <li>
             <h3>Expertise et expérience</h3>
             <p>
-              Avec [X] années d'expérience en psychanalyse, nous avons aidé de
-              nombreux patients à surmonter leurs difficultés psychologiques et
-              à améliorer leur bien-être.
+              Avec [X] années d&apos;expérience en psychanalyse, nous avons aidé
+              de nombreux patients à surmonter leurs difficultés psychologiques
+              et à améliorer leur bien-être.
             </p>
           </li>
           <li>
@@ -131,7 +133,7 @@ export default function PsyContent() {
             <h3>Cadre bienveillant et confidentiel</h3>
             <p>
               Nous offrons un environnement sûr et confidentiel pour vous
-              permettre d'explorer votre inconscient en toute sérénité.
+              permettre d&apos;explorer votre inconscient en toute sérénité.
             </p>
           </li>
         </ul>
@@ -141,8 +143,8 @@ export default function PsyContent() {
         <h2>Contactez-nous pour une consultation en psychanalyse</h2>
         <p>
           Si vous souhaitez explorer votre inconscient et travailler sur vos
-          difficultés psychologiques, n'hésitez pas à nous contacter pour une
-          consultation. Nous sommes là pour vous accompagner dans votre
+          difficultés psychologiques, n&apos;hésitez pas à nous contacter pour
+          une consultation. Nous sommes là pour vous accompagner dans votre
           cheminement vers une meilleure compréhension de vous-même et un
           bien-être mental accru.
         </p>

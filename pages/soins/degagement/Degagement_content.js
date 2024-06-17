@@ -19,16 +19,16 @@ export default function PresentationContent() {
 
       <section>
         <h2>Découvrez le soin de dégagement de David Michel</h2>
-        <h3>Qu'est-ce qu'un soin de dégagement ?</h3>
+        <h3>Qu&apos;est-ce qu&apos;un soin de dégagement ?</h3>
         <p>
           Le soin de dégagement est une pratique énergétique puissante visant à
           libérer une personne des influences négatives qui peuvent perturber
           son bien-être physique, émotionnel et spirituel. Cela inclut
-          l'élimination des entités négatives, de la magie noire, des
+          l&apos;élimination des entités négatives, de la magie noire, des
           envoûtements, des anathèmes, des malédictions, et des sorts. Nos
           techniques de dégagement énergétique sont également efficaces pour des
-          processus d'exorcisme doux, permettant une purification profonde de
-          votre être.
+          processus d&apos;exorcisme doux, permettant une purification profonde
+          de votre être.
         </p>
       </section>
 
@@ -46,17 +46,17 @@ export default function PresentationContent() {
             </p>
           </li>
           <li>
-            <h3>Irritabilité et Changements d'humeur</h3>
+            <h3>Irritabilité et Changements d&apos;humeur</h3>
             <p>
               Vous devenez facilement irritable ou constatez des changements
-              d'humeur soudains et inexpliqués.
+              d&apos;humeur soudains et inexpliqués.
             </p>
           </li>
           <li>
             <h3>Perte de Soi</h3>
             <p>
-              Vous avez l'impression de ne plus être vous-même, comme si quelque
-              chose perturbait votre véritable essence.
+              Vous avez l&apos;impression de ne plus être vous-même, comme si
+              quelque chose perturbait votre véritable essence.
             </p>
           </li>
           <li>
@@ -70,7 +70,7 @@ export default function PresentationContent() {
       </section>
 
       <section>
-        <h2>Les Bienfaits d'un Soin de Dégagement</h2>
+        <h2>Les Bienfaits d&apos;un Soin de Dégagement</h2>
         <p>Un soin de dégagement permet de :</p>
         <ul>
           <li>
@@ -88,10 +88,10 @@ export default function PresentationContent() {
             </p>
           </li>
           <li>
-            <h3>Rétablir l'Équilibre Énergétique</h3>
+            <h3>Rétablir l&apos;Équilibre Énergétique</h3>
             <p>
-              Nous rétablissons l'équilibre énergétique de votre corps et de
-              votre esprit, vous aidant à retrouver votre pleine vitalité.
+              Nous rétablissons l&apos;équilibre énergétique de votre corps et
+              de votre esprit, vous aidant à retrouver votre pleine vitalité.
             </p>
           </li>
           <li>
@@ -107,10 +107,10 @@ export default function PresentationContent() {
       <section>
         <h2>Comment se déroule un soin de dégagement ?</h2>
         <p>
-          Lors d'un soin de dégagement, nous utilisons diverses méthodes
-          énergétiques, y compris l'utilisation de pendules, de cristaux, et de
-          rituels spécifiques. Chaque séance est adaptée à la situation unique
-          de chaque individu, garantissant ainsi une purification et une
+          Lors d&apos;un soin de dégagement, nous utilisons diverses méthodes
+          énergétiques, y compris l&apos;utilisation de pendules, de cristaux,
+          et de rituels spécifiques. Chaque séance est adaptée à la situation
+          unique de chaque individu, garantissant ainsi une purification et une
           libération profondes.
         </p>
       </section>
@@ -121,7 +121,7 @@ export default function PresentationContent() {
           <li>
             <h3>Expertise Professionnelle</h3>
             <p>
-              Avec 10 années d'expérience, nous avons aidé de nombreuses
+              Avec 10 années d&apos;expérience, nous avons aidé de nombreuses
               personnes à se libérer des influences négatives et à retrouver une
               vie harmonieuse.
             </p>
@@ -147,8 +147,8 @@ export default function PresentationContent() {
         <h2>Contactez-nous pour un Soin de Dégagement Personnalisé</h2>
         <p>
           Si vous ressentez le besoin de vous libérer des influences négatives
-          et de retrouver un état de bien-être et de sérénité, n'hésitez pas à
-          nous contacter pour une consultation. Nous sommes là pour vous
+          et de retrouver un état de bien-être et de sérénité, n&apos;hésitez
+          pas à nous contacter pour une consultation. Nous sommes là pour vous
           accompagner dans votre chemin vers une vie harmonieuse et
           énergétiquement équilibrée.
         </p>

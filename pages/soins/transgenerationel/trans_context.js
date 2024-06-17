@@ -23,28 +23,28 @@ export default function TransContent() {
       </div>
 
       <section>
-        <h2>Découvrez l'analyse transgénérationnelle de David Michel</h2>
-        <h3>Qu'est-ce que l'analyse transgénérationnelle ?</h3>
+        <h2>Découvrez l&apos;analyse transgénérationnelle de David Michel</h2>
+        <h3>Qu&apos;est-ce que l&apos;analyse transgénérationnelle ?</h3>
         <p>
-          L'analyse transgénérationnelle est une méthode thérapeutique qui
-          s'apparente aux constellations familiales. Cette approche familiale
-          transgénérationnelle se base sur l'idée que nous pouvons être
-          influencés par des problèmes familiaux datant de plusieurs
-          générations. Ces influences peuvent inclure des migrations, des
-          guerres, des blessures, des fausses couches, et d'autres événements
-          marquants dans l'histoire familiale.
+          L&apos;analyse transgénérationnelle est une méthode thérapeutique qui
+          s&apos;apparente aux constellations familiales. Cette approche
+          familiale transgénérationnelle se base sur l&apos;idée que nous
+          pouvons être influencés par des problèmes familiaux datant de
+          plusieurs générations. Ces influences peuvent inclure des migrations,
+          des guerres, des blessures, des fausses couches, et d&apos;autres
+          événements marquants dans l&apos;histoire familiale.
         </p>
       </section>
 
       <section>
-        <h2>Les principes de l'analyse transgénérationnelle</h2>
+        <h2>Les principes de l&apos;analyse transgénérationnelle</h2>
         <p>
-          L'analyse transgénérationnelle repose sur l'exploration de l'arbre
-          généalogique pour identifier et comprendre les traumas hérités. En
-          d'autres termes, un thérapeute transgénérationnel examine les
-          événements marquants et les traumatismes de vos ancêtres pour vous
-          aider à vous libérer des chocs émotionnels et psychologiques accumulés
-          au fil des générations.
+          L&apos;analyse transgénérationnelle repose sur l&apos;exploration de
+          l&apos;arbre généalogique pour identifier et comprendre les traumas
+          hérités. En d&apos;autres termes, un thérapeute transgénérationnel
+          examine les événements marquants et les traumatismes de vos ancêtres
+          pour vous aider à vous libérer des chocs émotionnels et psychologiques
+          accumulés au fil des générations.
         </p>
       </section>
 
@@ -112,19 +112,21 @@ export default function TransContent() {
           familiales, de règles et de principes que nous nous imposons
           inconsciemment. Ces héritages invisibles peuvent perturber notre
           équilibre émotionnel et mental, et il est essentiel de les identifier
-          et de les comprendre pour s'en libérer.
+          et de les comprendre pour s&apos;en libérer.
         </p>
       </section>
 
       <section>
-        <h2>Comment se déroule une séance d'analyse transgénérationnelle ?</h2>
+        <h2>
+          Comment se déroule une séance d&apos;analyse transgénérationnelle ?
+        </h2>
         <p>
-          Lors d'une séance d'analyse transgénérationnelle, nous utilisons
-          divers outils thérapeutiques pour explorer votre arbre généalogique.
-          Cette exploration permet de mettre en lumière les événements marquants
-          et les traumas qui ont pu se transmettre de génération en génération.
-          Nous travaillons ensemble pour comprendre ces influences et vous aider
-          à vous en libérer.
+          Lors d&apos;une séance d&apos;analyse transgénérationnelle, nous
+          utilisons divers outils thérapeutiques pour explorer votre arbre
+          généalogique. Cette exploration permet de mettre en lumière les
+          événements marquants et les traumas qui ont pu se transmettre de
+          génération en génération. Nous travaillons ensemble pour comprendre
+          ces influences et vous aider à vous en libérer.
         </p>
       </section>
 
@@ -137,7 +139,7 @@ export default function TransContent() {
           <li>
             <h3>Expertise et expérience</h3>
             <p>
-              Avec [X] années d'expérience dans le domaine de la thérapie
+              Avec [X] années d&apos;expérience dans le domaine de la thérapie
               transgénérationnelle, nous avons aidé de nombreuses personnes à
               retrouver un équilibre émotionnel en se libérant des traumas
               familiaux.
@@ -154,7 +156,8 @@ export default function TransContent() {
             <h3>Cadre bienveillant et sécurisé</h3>
             <p>
               Nous offrons un environnement sûr et bienveillant pour vous
-              permettre d'explorer votre histoire familiale en toute confiance.
+              permettre d&apos;explorer votre histoire familiale en toute
+              confiance.
             </p>
           </li>
         </ul>
@@ -166,7 +169,7 @@ export default function TransContent() {
         </h2>
         <p>
           Si vous ressentez le besoin de comprendre et de vous libérer des
-          fardeaux ancestraux, n'hésitez pas à nous contacter pour une
+          fardeaux ancestraux, n&apos;hésitez pas à nous contacter pour une
           consultation. Nous sommes là pour vous accompagner dans votre parcours
           vers une vie équilibrée et épanouissante.
         </p>

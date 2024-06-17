@@ -8,7 +8,7 @@ export default function SourcierContent() {
         <header>
           <h1>
             Mise en Place de Puits - Expertise de Sourcier pour Votre Projet
-            d'Eau
+            d&apos;Eau
           </h1>
         </header>
 
@@ -17,16 +17,17 @@ export default function SourcierContent() {
             Découvrez notre service de mise en place de puits avec David Michel
           </h2>
           <h3>
-            L'importance d'une Analyse Précise avant la Construction d'un Puits
+            L&apos;importance d&apos;une Analyse Précise avant la Construction
+            d&apos;un Puits
           </h3>
           <p>
-            La construction d'un puits nécessite une préparation et une analyse
-            minutieuses pour garantir la viabilité et l'efficacité du projet. En
-            tant que sourcier expérimenté, je mets à votre disposition toutes
-            mes compétences pour établir un diagnostic précis du site prévu pour
-            le puits. Il est essentiel d'évaluer la profondeur à laquelle l'eau
-            est accessible, le débit potentiel de l'eau, ainsi que le sens du
-            courant aquatique.
+            La construction d&apos;un puits nécessite une préparation et une
+            analyse minutieuses pour garantir la viabilité et l&apos;efficacité
+            du projet. En tant que sourcier expérimenté, je mets à votre
+            disposition toutes mes compétences pour établir un diagnostic précis
+            du site prévu pour le puits. Il est essentiel d&apos;évaluer la
+            profondeur à laquelle l&apos;eau est accessible, le débit potentiel
+            de l&apos;eau, ainsi que le sens du courant aquatique.
           </p>
         </section>
 
@@ -36,9 +37,9 @@ export default function SourcierContent() {
             <li>
               <h3>Baguettes en Y et en L</h3>
               <p>
-                Utilisées traditionnellement pour détecter la présence d'eau
-                souterraine, ces baguettes permettent de localiser avec
-                précision les veines d'eau souterraines.
+                Utilisées traditionnellement pour détecter la présence
+                d&apos;eau souterraine, ces baguettes permettent de localiser
+                avec précision les veines d&apos;eau souterraines.
               </p>
             </li>
             <li>
@@ -46,7 +47,7 @@ export default function SourcierContent() {
               <p>
                 Le pendule, associé à des diagrammes spécifiques, aide à affiner
                 les mesures et à obtenir des informations détaillées sur la
-                qualité et la dynamique de l'eau souterraine.
+                qualité et la dynamique de l&apos;eau souterraine.
               </p>
             </li>
           </ul>
@@ -63,19 +64,21 @@ export default function SourcierContent() {
             <li>
               <h3>Première Entreprise</h3>
               <p>
-                Utilisation d'une pelle avec benne preneuse, idéale pour les
-                sites avec un espace limité. Cette technique permet de creuser
-                sur un diamètre de 1,40 mètre sans causer de dégâts aux abords
-                du puits, garantissant une installation propre et efficace.
+                Utilisation d&apos;une pelle avec benne preneuse, idéale pour
+                les sites avec un espace limité. Cette technique permet de
+                creuser sur un diamètre de 1,40 mètre sans causer de dégâts aux
+                abords du puits, garantissant une installation propre et
+                efficace.
               </p>
             </li>
             <li>
               <h3>Seconde Entreprise</h3>
               <p>
                 Idéale pour les travaux sur des sites plus vastes et pour la
-                création de réserves d'eau plus importantes. Cette collaboration
-                permet de gérer efficacement les projets de plus grande
-                envergure, où un volume d'eau conséquent est nécessaire.
+                création de réserves d&apos;eau plus importantes. Cette
+                collaboration permet de gérer efficacement les projets de plus
+                grande envergure, où un volume d&apos;eau conséquent est
+                nécessaire.
               </p>
             </li>
           </ul>
@@ -89,9 +92,9 @@ export default function SourcierContent() {
             <li>
               <h3>Expertise et expérience</h3>
               <p>
-                Fort de nombreuses années d'expérience en tant que sourcier,
-                j'apporte une expertise unique à chaque projet, assurant des
-                résultats précis et fiables.
+                Fort de nombreuses années d&apos;expérience en tant que
+                sourcier, j&apos;apporte une expertise unique à chaque projet,
+                assurant des résultats précis et fiables.
               </p>
             </li>
             <li>
@@ -119,11 +122,11 @@ export default function SourcierContent() {
             puits
           </h2>
           <p>
-            Si vous envisagez la construction d'un puits et souhaitez assurer
-            l'efficacité et la durabilité de votre investissement, n'hésitez pas
-            à nous contacter pour une consultation. Nous sommes là pour vous
-            guider dans chaque étape de votre projet, depuis l'analyse initiale
-            jusqu'à la réalisation finale.
+            Si vous envisagez la construction d&apos;un puits et souhaitez
+            assurer l&apos;efficacité et la durabilité de votre investissement,
+            n&apos;hésitez pas à nous contacter pour une consultation. Nous
+            sommes là pour vous guider dans chaque étape de votre projet, depuis
+            l&apos;analyse initiale jusqu&apos;à la réalisation finale.
           </p>
         </section>
       </article>
