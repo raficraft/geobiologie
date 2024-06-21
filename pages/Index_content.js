@@ -152,9 +152,6 @@ export default function IndexContent() {
             pour l&apos;aménagement intérieur, afin de limiter au maximum les
             effets nocifs de ces perturbations.
           </p>
-          <Link href="/charte">
-            <a>Consulter la Charte de la FFG</a>
-          </Link>
         </section>
       </article>
 
