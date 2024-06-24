@@ -189,7 +189,7 @@
     @include flex(column, wrap, center, center);
   }
   &--content {
-    flex: 2;
+    // flex: 2;
   }
 
   aside {

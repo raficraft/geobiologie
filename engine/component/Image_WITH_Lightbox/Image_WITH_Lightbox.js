@@ -15,7 +15,7 @@ export default function Image_WITH_Lightbox({
   const { modal, setModal, openModal } = useContext(ModalContext);
   return (
     <>
-      <div className={S.content_target} style={css_src}>
+      <div className="embed_image embed_image--portrait" style={css_src}>
         <Image
           src={src}
           width={src.width}

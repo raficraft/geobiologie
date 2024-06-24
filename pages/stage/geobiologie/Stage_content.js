@@ -2,14 +2,8 @@ import React from "react";
 import Image_WITH_Lightbox from "../../../engine/component/Image_WITH_Lightbox/Image_WITH_Lightbox";
 import HR from "../../../engine/component/atomic/HR";
 
-import stage_sourcier_low from "./../../../public/assets/img/stage/LOW/stage_sourcier.jpg";
-import stage_sourcier_middle from "./../../../public/assets/img/stage/MIDDLE/stage_sourcier.jpg";
-
-import stage_geobiologie_low from "./../../../public/assets/img/stage/LOW/stage_geobiologie.jpg";
-import stage_geobiologie_middle from "./../../../public/assets/img/stage/MIDDLE/stage_geobiologie.jpg";
-
-import stage_protection_low from "./../../../public/assets/img/stage/LOW/stage_protection.jpg";
-import stage_protection_middle from "./../../../public/assets/img/stage/MIDDLE/stage_protection.jpg";
+import stage_low from "./../../../public/assets/img/stage/LOW/stages.jpg";
+import stage_middle from "./../../../public/assets/img/stage/MIDDLE/stages.jpg";
 
 export default function Stage_content() {
   return (
@@ -172,9 +166,9 @@ export default function Stage_content() {
           </section>
           <aside>
             <Image_WITH_Lightbox
-              src={stage_geobiologie_low}
+              src={stage_low}
               lightbox={true}
-              src_ligthbox={stage_geobiologie_middle}
+              src_ligthbox={stage_middle}
             ></Image_WITH_Lightbox>
           </aside>
         </div>
