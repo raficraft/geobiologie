@@ -6,11 +6,22 @@ import radio from "./../public/assets/img/illustration/david/radio.jpg";
 import HR from "../engine/component/atomic/HR";
 import FFG from "./../public/assets/img/illustration/FFG/FFG.png";
 import Masonry from "./../engine/component/masonry/Masonry";
+import Image_WITH_Lightbox from "../engine/component/Image_WITH_Lightbox/Image_WITH_Lightbox";
+
+import carte_low from "./../public/assets/img/illustration/carte_visite/carte_visite.jpg";
+import carte_middle from "./../public/assets/img/illustration/carte_visite/carte_visite.jpg";
 
 export default function IndexContent() {
   return (
     <>
       <article className="article article_home">
+        <section className="what">
+          <Image_WITH_Lightbox
+            src={carte_low}
+            lightbox={true}
+            src_ligthbox={carte_middle}
+          ></Image_WITH_Lightbox>
+        </section>
         <header>
           <h1>À Quoi Sert la Géobiologie ?</h1>
         </header>
@@ -177,6 +188,17 @@ export default function IndexContent() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
+              <p>
+                Dans cette vidéo, David Michel, géobiologue et guerrier de
+                lumière, discute de son travail d&apos;harmonisation des
+                énergies dans les habitats. Il explique l&apos;importance de la
+                géobiologie pour équilibrer les énergies négatives et positives
+                dans les maisons, les fermes et les lieux de vie. David partage
+                également des anecdotes personnelles sur son parcours et la
+                façon dont il aide ses clients à retrouver un bien-être
+                énergétique. La vidéo souligne l&apos;importance de la prière,
+                de la gratitude et de l&apos;amour dans le travail énergétique.
+              </p>
             </div>
 
             <h3>Interview France 3</h3>
@@ -188,6 +210,17 @@ export default function IndexContent() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
+              <p>
+                Dans cette vidéo, David Michel, géobiologue, explique comment
+                les menhirs peuvent neutraliser les énergies négatives et
+                revitaliser les terrains perturbés. En visitant une ferme
+                maraîchère, il démontre les étapes de la pose d&apos;un menhir,
+                depuis l&apos;extraction du granit jusqu&apos;à
+                l&apos;installation et l&apos;activation énergétique. La vidéo
+                met en lumière les bienfaits de cette pratique ancienne sur la
+                santé et le bien-être des habitants, ainsi que sur la
+                productivité agricole.
+              </p>
             </div>
 
             <h3>Interview TL7</h3>
