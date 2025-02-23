@@ -23,7 +23,7 @@ export default function IndexContent() {
           ></Image_WITH_Lightbox>
         </section>
         <header>
-          <h1>À Quoi Sert donc bien la Géobiologie ?</h1>
+          <h1>À Quoi Sert la Géobiologie ?</h1>
         </header>
 
         <section>
