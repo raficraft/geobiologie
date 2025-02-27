@@ -16,10 +16,10 @@ export const accountForm = {
       FR: "Se souvenir de moi",
       EN: "Remember me",
     },
-    switchForm: {
-      FR: "Créer un compte",
-      EN: "Create an account",
-    },
+    // switchForm: {
+    //   FR: "Créer un compte",
+    //   EN: "Create an account",
+    // },
     button: {
       FR: "Connection",
       EN: "Connection",

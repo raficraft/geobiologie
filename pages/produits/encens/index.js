@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import assets0 from "../../../public/assets/img/masonry/produits/encens/encens.jpeg";
+import assets0 from "../../../public/assets/img/masonry/produits/encens/encens.jpg";
 
 const dataProduct = {
   name: "Encens alchimique universel",
