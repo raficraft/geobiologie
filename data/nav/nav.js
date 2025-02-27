@@ -5,11 +5,12 @@ import {
   WaterOutline,
   AccountCircle,
   Home_icon,
+  Shopping
 } from "../../assets/icons/Icon_svg";
 
 export const nav = [
   {
-    title: "Acceuil",
+    title: "Geobiologue",
     link: "/",
     icon: <Home_icon></Home_icon>,
   },
@@ -78,5 +79,10 @@ export const nav = [
         link: "/stage/protection",
       },
     ],
+  },
+  {
+    title: "Produits",
+    link: "/produits",
+    icon: <Shopping></Shopping>,  
   },
 ];

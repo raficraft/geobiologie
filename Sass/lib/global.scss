@@ -18,6 +18,7 @@
   width: 100%;
   min-height: 100%;
   height: 100%;
+
   .content {
     @include flex(column, wrap, center, center);
     flex: 1;
@@ -30,6 +31,7 @@
 .oldLink {
   text-decoration: underline;
   color: rgb(255, 0, 111) !important;
+
   h1 {
     color: rgb(255, 0, 111) !important;
   }
@@ -72,4 +74,45 @@ button[disabled] {
 
 .flex_end {
   float: right;
+}
+
+
+.mini_product {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+
+
+
+.link_product {
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  padding: calc(0.5rem + 1px);
+  border-radius: 0.5rem;
+}
+
+.link_product:hover{
+  border: 1px solid rgb(179, 179, 179);
+}
+
+.info_product .name_product {
+  font-size: 0.9rem;
+  font-weight: normal;
+  /* supprime le gras */
+  margin-bottom: 0.2rem;
+  // text-overflow: ellipsis !important;
+  //   white-space: nowrap !important;
+  //   min-width: 0 !important;
+  //   overflow: hidden !important;
+}
+
+.info_product .price_product {
+  font-size: 0.85rem;
+  font-weight: normal;
+  /* supprime le gras */
+  color: #555;
+  /* optionnel pour une couleur plus discrète */
 }
